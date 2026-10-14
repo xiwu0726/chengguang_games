@@ -11,7 +11,17 @@
 - [时光之痕-试玩.exe（GitHub Release v1.0.0 下载）](https://github.com/xiwu0726/chengguang_games/releases/download/v1.0.0/TimeOfFragments-demo-v1.0.0.exe)
 - Release 页：https://github.com/xiwu0726/chengguang_games/releases/tag/v1.0.0
 - 首次运行若出现 SmartScreen 蓝框，点「更多信息 → 仍要运行」即可（未做代码签名）。
-- 轻量网页版：打开 [`preview/index.html`](preview/index.html) 同样可玩（0.86 MB，单文件）。
+- 轻量网页版：打开 [`preview/index.html`](preview/index.html) 同样可玩（1.03 MB，单文件；美术走相对路径）。
+
+## 界面预览
+
+网页播放器界面于 2026-10-14 重做：深夜蓝底 + 古铜金，电影感压角遮罩、人物姓名板、失眠度实时可视化，回想 / 存档 / 结局结算全部重绘。
+
+| 标题页 | 对话 | 选择 | 结局结算 |
+| --- | --- | --- | --- |
+| ![标题页](docs/ui/01-title.png) | ![对话](docs/ui/02-dialogue.png) | ![选择](docs/ui/03-choices.png) | ![结局结算](docs/ui/07-ending.png) |
+
+其余截图（CG 演出、回想、存档、第三幕深夜）见 [`docs/ui/`](docs/ui/)。
 
 ## 项目状态
 

@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>时光之痕 · 剧本试玩</title>
+<!--
+  player-template.html —— 试玩播放器的「页面」本体，由 build-preview.js 注入数据后产出单文件试玩版。
+  占位符注入（由 build-preview.js 完成，共 5 处：剧本数据、内嵌美术表、结局规则表、
+  人物顺序、next 写法解析器）。替换失败就该报错，不要静默留着。
+  硬约束：
+    · 本页只允许存在一段可执行脚本标签（冒烟门禁用正则抓第一段脚本来跑；注释里连写标签
+      都会被抓错，所以这里一律不写标签原文）
+    · 只使用最小 DOM 桩里存在的 API：getElementById / createElement / appendChild /
+      textContent / className / classList / style / dataset / addEventListener /
+      new Image / localStorage / requestAnimationFrame / setTimeout
+      —— 不要用 document.querySelector、window.*、createTextNode、setAttribute、closest
+      （脚本标签之外的地方写文字说明是安全的）
+-->
+<style>
+  /* ============ 设计令牌：深夜蓝底 + 古铜金（时间）+ 青（记忆）============= */
+  :root{
+    --bg:#05070c;
+    --ink:#eef2f8;           /* 正文 */
+    --dim:#a7b0c2;           /* 次要（对比度 ≥7:1） */
+    --faint:#8b94a3;
+    --gold:#d8b878;          /* 时间/主线 */
+    --gold-ink:#f4e2b4;
+    --gold-deep:#8c6a30;
+    --cyan:#7fd6e6;          /* 记忆/时间线 */
+    --violet:#b39ad6;        /* 时间领主 */
+    --panel:rgba(9,12,20,.74);
+    --panel-solid:rgba(7,9,15,.94);
+    --line:rgba(216,184,120,.22);
+    --line-soft:rgba(255,255,255,.10);
+    --shadow:0 26px 64px rgba(0,0,0,.58);
+    --r:16px;
+    --font-ui:"Noto Sans SC","Microsoft YaHei UI","Microsoft YaHei","PingFang SC",system-ui,sans-serif;
+    --font-nar:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,serif;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);
+    font-family:var(--font-ui);-webkit-font-smoothing:antialiased}
+  body{overflow:hidden}
+  ::selection{background:rgba(216,184,120,.35)}
+  button{font-family:inherit}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+  #app{position:relative;width:100vw;height:100vh;overflow:hidden;
+    background:radial-gradient(120% 90% at 50% 0%,#0d1220 0%,#05070c 62%)}
+
+  /* ============ 16:9 舞台（居中留黑边）============ */
+  #stage-wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  /* 尺寸只交给一条轴：width 取「视口宽」与「视口高换算出的 16:9 宽」里的小值，
+     height 由 aspect-ratio 推出来。两边都写 100% 会把 aspect-ratio 顶掉（原来就是这样，
+     舞台只剩 454px 高，上下各空一条黑带）。 */
+  #stage{position:relative;width:min(100%,calc(100vh * 16 / 9));height:auto;
+    aspect-ratio:16/9;background:#080a10;overflow:hidden;
+    box-shadow:0 40px 120px rgba(0,0,0,.85)}
+  .layer{position:absolute;inset:0}
+
+  /* ---- 背景 / CG：交叉淡入，轻微呼吸位移 ---- */
+  #bg,#cglayer{overflow:hidden;background:#080a10}
+  #cglayer{display:none;z-index:2}
+  #bg .art,#cglayer .art{position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover;display:block;opacity:0;transition:opacity .55s var(--ease);
+    filter:saturate(.94) brightness(.9) contrast(1.03)}
+  #bg .art.in,#cglayer .art.in{opacity:1}
+  #bg .art.in{animation:drift 56s ease-in-out infinite alternate}
+  @keyframes drift{
+    from{transform:scale(1.02) translate3d(-.6%,-.4%,0)}
+    to{transform:scale(1.09) translate3d(.8%,.6%,0)}
+  }
+  /* 占位图/缺图时的文字层（占位美术是浅色卡片，这里给它压下去） */
+  .art-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-ui);font-size:clamp(14px,1.4vw,22px);letter-spacing:.18em;
+    color:rgba(238,242,248,.30);background:
+      radial-gradient(90% 70% at 50% 30%,rgba(56,72,104,.55),rgba(7,9,15,.92)),
+      repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 2px,transparent 2px 7px);
+    transition:opacity .5s var(--ease);pointer-events:none}
+  #portrait .art-fallback{font-size:0}
+
+  /* ---- 立绘：底部压边、落地阴影、轻微上浮入场 ---- */
+  #portrait{overflow:hidden;pointer-events:none;z-index:3}
+  #portrait .art{position:absolute;left:50%;bottom:-2%;height:82%;width:auto;max-width:none;
+    transform:translateX(-50%) translateY(14px);opacity:0;
+    transition:opacity .4s var(--ease),transform .5s var(--ease);
+    filter:drop-shadow(0 26px 44px rgba(0,0,0,.72)) drop-shadow(0 0 1px rgba(255,255,255,.22))}
+  #portrait .art.in{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* ---- 电影感遮罩：任何美术都能压出层次 ---- */
+  #scrim{z-index:4;pointer-events:none;background:
+    linear-gradient(180deg,rgba(4,6,11,.76) 0%,rgba(4,6,11,.30) 24%,rgba(4,6,11,.12) 42%,rgba(4,6,11,.70) 76%,rgba(4,6,11,.95) 100%),
+    radial-gradient(112% 84% at 50% 44%,transparent 38%,rgba(3,4,8,.78) 100%),
+    linear-gradient(180deg,transparent 34%,rgba(4,6,11,.30) 60%,rgba(4,6,11,.55) 100%)}
+  #tint{opacity:0;transition:opacity .7s var(--ease);mix-blend-mode:screen;z-index:5;pointer-events:none}
+  #grain{opacity:0;transition:opacity .7s var(--ease);z-index:6;pointer-events:none;
+    background-image:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1px);
+    background-size:3px 3px}
+  #vignette{pointer-events:none;z-index:7;box-shadow:inset 0 0 220px rgba(0,0,0,.78)}
+  #flash{background:#fff;opacity:0;pointer-events:none;z-index:8}
+
+  /* ============ HUD：章节 / 场景 + 失眠表 / 进度 / 用时 / 入口 ============ */
+  #hud{position:absolute;top:0;left:0;right:0;z-index:9;display:flex;justify-content:space-between;
+    align-items:flex-start;gap:16px;padding:14px 20px 26px;pointer-events:none;
+    background:linear-gradient(180deg,rgba(3,5,10,.72),transparent)}
+  .hud-left{display:flex;flex-direction:column;gap:4px;min-width:0;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+  #hud-chapter{font-size:12px;letter-spacing:.34em;color:var(--gold);text-transform:uppercase}
+  #hud-title{font-size:13px;color:var(--dim);letter-spacing:.06em;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;max-width:38ch}
+  .hud-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+  .meter{display:flex;align-items:center;gap:7px;font-size:12px;letter-spacing:.1em;color:var(--dim);
+    text-shadow:0 1px 8px rgba(0,0,0,.8)}
+  .meter .lbl{color:var(--faint)}
+  .meter .bar{position:relative;width:104px;height:5px;border-radius:99px;overflow:hidden;
+    background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+  .meter .bar i{position:absolute;inset:0 auto 0 0;width:0;border-radius:99px;
+    background:linear-gradient(90deg,#7fd6e6,#d8b878);transition:width .6s var(--ease),background .6s}
+  .meter b{font-weight:600;color:var(--ink);min-width:2.4em;text-align:right;font-variant-numeric:tabular-nums}
+  .meter[data-tier="2"] .bar i{background:linear-gradient(90deg,#a98bd6,#d8b878)}
+  .meter[data-tier="3"] .bar i{background:linear-gradient(90deg,#e0708a,#d8b878)}
+  #hud-progress{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--faint);
+    letter-spacing:.08em;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+  #hud-progress .pbar{position:relative;width:74px;height:5px;border-radius:99px;overflow:hidden;
+    background:rgba(255,255,255,.12)}
+  #hud-progress .pbar i{position:absolute;inset:0 auto 0 0;background:var(--gold);opacity:.75;
+    transition:width .5s var(--ease)}
+  #hud-time{font-size:12px;color:var(--faint);letter-spacing:.08em;font-variant-numeric:tabular-nums}
+  .hud-btns{display:flex;gap:6px;pointer-events:auto}
+  .ibtn{min-width:44px;min-height:44px;padding:0 12px;border-radius:10px;cursor:pointer;
+    border:1px solid var(--line-soft);background:rgba(12,16,26,.62);color:var(--dim);
+    font-size:13px;letter-spacing:.1em;backdrop-filter:blur(8px);
+    transition:border-color .18s,color .18s,background .18s}
+  .ibtn:hover{border-color:var(--gold);color:var(--gold-ink);background:rgba(26,22,12,.72)}
+
+  /* ============ 对话框 ============ */
+  #dialog{position:absolute;left:5.5%;right:5.5%;bottom:4.6%;z-index:9;
+    padding:28px 32px 22px;min-height:24%;max-height:54%;overflow:auto;
+    background:linear-gradient(180deg,var(--panel),rgba(5,7,12,.94));
+    border:1px solid var(--line-soft);border-top-color:var(--line);
+    border-radius:var(--r);backdrop-filter:blur(16px) saturate(140%);
+    box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.06);
+    display:none;animation:rise .3s var(--ease)}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  #dialog::before{content:"";position:absolute;left:32px;right:32px;top:0;height:1px;
+    background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.55}
+  #dialog.cg-mode{padding-top:22px;text-align:center}
+  /* 姓名板：面板内左上角的名牌。
+     别用 top:-18px 压在边框上——#dialog 是 overflow:auto，会把名牌上沿裁掉一半。 */
+  #speaker{display:inline-block;max-width:60%;padding:6px 16px;margin:0 0 10px;
+    border-radius:9px;font-size:16px;font-weight:600;letter-spacing:.1em;
+    color:#140f04;background:linear-gradient(180deg,#f0d9a8,#cfa964);
+    box-shadow:0 10px 24px rgba(0,0,0,.55);
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #speaker.empty{display:none}
+  #dialog-text{white-space:pre-wrap}
+  #body{font-family:var(--font-nar);font-size:clamp(15px,1.45vw,23px);font-weight:400;
+    line-height:1.95;letter-spacing:.02em;color:var(--ink);
+    text-shadow:0 1px 14px rgba(0,0,0,.6)}
+  #dialog.narration #body{color:#d3dae7}
+  #dialog.cg-mode #body{color:#f2f5fb}
+  #caret{display:inline-block;margin-left:2px;color:var(--gold);opacity:0;
+    animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .dialog-foot{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin-top:14px;
+    min-height:20px}
+  #next-hint{display:flex;align-items:center;gap:7px;font-size:12px;letter-spacing:.14em;
+    color:var(--faint);opacity:0;transition:opacity .3s}
+  #next-hint .chev{display:inline-block;font-size:15px;color:var(--gold);animation:bob 1.5s var(--ease) infinite}
+  @keyframes bob{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(3px);opacity:1}}
+
+  /* ============ 选项 ============ */
+  #choices{position:absolute;inset:0;z-index:10;display:none;flex-direction:column;
+    align-items:center;justify-content:center;gap:18px;padding:6%;
+    background:radial-gradient(120% 100% at 50% 58%,rgba(4,6,11,.58),rgba(4,6,11,.9));
+    backdrop-filter:blur(3px)}
+  #choice-prompt{font-family:var(--font-nar);font-size:clamp(16px,1.6vw,24px);line-height:1.8;
+    color:var(--gold-ink);text-align:center;max-width:34em;margin-bottom:4px;
+    text-shadow:0 2px 18px rgba(0,0,0,.8)}
+  #choice-list{display:flex;flex-direction:column;gap:12px;align-items:center;width:100%}
+  .choice{display:flex;align-items:center;gap:14px;width:min(760px,80%);min-height:56px;
+    padding:15px 20px;text-align:left;cursor:pointer;font-family:var(--font-nar);
+    font-size:clamp(15px,1.3vw,20px);line-height:1.6;color:var(--ink);
+    background:linear-gradient(180deg,rgba(20,25,38,.86),rgba(11,14,22,.9));
+    border:1px solid var(--line-soft);border-left:3px solid rgba(216,184,120,.35);
+    border-radius:12px;backdrop-filter:blur(10px);
+    box-shadow:0 14px 34px rgba(0,0,0,.45);
+    animation:choice-in .32s var(--ease) backwards;
+    transition:transform .16s var(--ease),border-color .18s,background .18s,box-shadow .18s}
+  @keyframes choice-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .choice:hover,.choice:focus-visible{transform:translateX(7px);border-color:var(--gold);
+    border-left-color:var(--gold);background:linear-gradient(180deg,rgba(34,30,16,.9),rgba(18,18,16,.94));
+    box-shadow:0 18px 44px rgba(0,0,0,.6),0 0 0 1px rgba(216,184,120,.28)}
+  .choice .key{flex:0 0 auto;width:30px;height:30px;border-radius:8px;display:flex;
+    align-items:center;justify-content:center;font-family:var(--font-ui);font-size:14px;
+    font-weight:600;color:#150f03;background:linear-gradient(180deg,#ecd39c,#c9a25f)}
+  .choice .label{flex:1}
+  .choice .kbd{flex:0 0 auto;font-family:var(--font-ui);font-size:11px;letter-spacing:.1em;
+    color:var(--faint);border:1px solid var(--line-soft);border-radius:6px;padding:3px 7px}
+
+  /* ============ 覆盖层：回想 / 存档 / 调试 ============ */
+  .overlay{position:absolute;inset:0;z-index:12;display:none;align-items:center;justify-content:center;
+    padding:4%;background:rgba(3,4,8,.72);backdrop-filter:blur(6px)}
+  .overlay.open{display:flex}
+  .sheet{width:min(880px,92%);max-height:82%;display:flex;flex-direction:column;
+    background:linear-gradient(180deg,rgba(11,14,23,.96),rgba(6,8,14,.98));
+    border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);
+    animation:rise .26s var(--ease)}
+  .sheet-head{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:16px 20px;border-bottom:1px solid var(--line-soft)}
+  .sheet-head h3{margin:0;font-size:14px;font-weight:600;letter-spacing:.3em;color:var(--gold)}
+  .sheet-body{padding:16px 20px 20px;overflow:auto}
+  .sheet-foot{padding:12px 20px 16px;border-top:1px solid var(--line-soft);display:flex;
+    justify-content:space-between;align-items:center;gap:12px;font-size:12px;color:var(--faint)}
+  .xbtn{min-width:44px;min-height:44px;border-radius:10px;cursor:pointer;border:1px solid var(--line-soft);
+    background:transparent;color:var(--dim);font-size:15px}
+  .xbtn:hover{border-color:var(--gold);color:var(--gold-ink)}
+
+  #backlog-list{display:flex;flex-direction:column;gap:14px}
+  .log-row{display:flex;gap:12px;align-items:baseline}
+  .log-who{flex:0 0 5.5em;text-align:right;font-size:13px;font-weight:600;color:var(--gold);letter-spacing:.06em}
+  .log-who.none{color:#98a2b6;font-weight:400}
+  .log-text{flex:1;font-family:var(--font-nar);font-size:15px;line-height:1.85;color:#dfe5f0;white-space:pre-wrap}
+  .log-row.current .log-text{color:var(--gold-ink)}
+
+  /* 固定两列：auto-fit 在 880px 宽的弹层里会排成 3+1，第 4 个槽位掉到滚动区外面去 */
+  #slot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .slot{display:flex;flex-direction:column;gap:10px;padding:14px;border-radius:12px;
+    border:1px solid var(--line-soft);background:rgba(16,20,32,.6)}
+  .slot .slot-name{font-size:12px;letter-spacing:.2em;color:var(--gold)}
+  .slot .slot-meta{font-size:13px;line-height:1.7;color:var(--dim);min-height:3.4em}
+  .slot .slot-meta .empty{color:var(--faint)}
+  .slot .slot-btns{display:flex;gap:8px}
+  .mini{flex:1;min-height:44px;border-radius:9px;cursor:pointer;font-size:13px;
+    border:1px solid var(--line-soft);background:rgba(255,255,255,.04);color:var(--ink)}
+  .mini:hover{border-color:var(--gold);color:var(--gold-ink)}
+  .mini:disabled{opacity:.38;cursor:not-allowed}
+
+  /* ============ 标题 / 结局 ============ */
+  #title,#ending{position:absolute;inset:0;z-index:14;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:18px;padding:6%;text-align:center;
+    background:radial-gradient(120% 100% at 50% 16%,rgba(10,15,28,.74),rgba(4,5,10,.95));
+    backdrop-filter:blur(22px) saturate(1.1);animation:fade .4s var(--ease)}
+  /* 标题页背后多半是占位卡：重度模糊把它揉成色块，再补一层自发光，
+     页面就不至于空成一块黑板（占位卡上的文件名也就读不出来了）。 */
+  #title::before,#ending::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(58% 44% at 50% 32%,rgba(216,184,120,.13),transparent 72%),
+      radial-gradient(86% 62% at 50% 104%,rgba(127,214,230,.10),transparent 74%)}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  #ending{display:none}
+  .kicker{font-size:11px;letter-spacing:.5em;color:var(--gold);text-transform:uppercase}
+  .hr{display:flex;align-items:center;gap:12px;width:min(520px,80%);margin:2px 0}
+  .hr::before,.hr::after{content:"";flex:1;height:1px;
+    background:linear-gradient(90deg,transparent,var(--line),transparent)}
+  .hr i{width:6px;height:6px;transform:rotate(45deg);background:var(--gold);opacity:.8}
+  #title h1{margin:0;font-family:var(--font-nar);font-size:clamp(38px,5.6vw,76px);font-weight:600;
+    letter-spacing:.18em;text-indent:.18em;line-height:1.05;
+    background:linear-gradient(180deg,#fdf3dc 8%,var(--gold) 58%,#9c7a3c 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 12px 34px rgba(0,0,0,.75))}
+  #title .sub{font-family:var(--font-nar);font-size:clamp(13px,1.2vw,17px);color:var(--dim);
+    letter-spacing:.14em;margin:0}
+  #title-meta{font-size:12px;letter-spacing:.16em;color:var(--faint)}
+  .title-stats{display:flex;gap:26px;flex-wrap:wrap;justify-content:center;margin:6px 0 2px}
+  .title-stats .st{display:flex;flex-direction:column;gap:3px;min-width:74px}
+  .title-stats .st b{font-family:var(--font-nar);font-size:20px;font-weight:600;color:var(--gold-ink);
+    font-variant-numeric:tabular-nums}
+  .title-stats .st span{font-size:11px;letter-spacing:.24em;color:var(--faint)}
+  #title .btns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:6px}
+  .btn{min-height:48px;padding:13px 30px;border-radius:10px;cursor:pointer;font-size:15px;
+    letter-spacing:.16em;color:var(--ink);border:1px solid var(--line);
+    background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+    transition:transform .16s var(--ease),box-shadow .18s,border-color .18s,color .18s}
+  .btn:hover{transform:translateY(-2px);border-color:var(--gold);color:var(--gold-ink);
+    box-shadow:0 16px 34px rgba(0,0,0,.5)}
+  .btn.primary{color:#1a1305;border-color:#efd8a4;
+    background:linear-gradient(180deg,#f2dda9,#cda65f)}
+  .btn.primary:hover{color:#1a1305;filter:brightness(1.06)}
+  .btn:disabled{opacity:.42;cursor:not-allowed;transform:none;box-shadow:none}
+  #title .foot{margin-top:10px;font-size:12px;line-height:2;color:var(--faint);letter-spacing:.06em;
+    max-width:46em}
+  #title .foot kbd{font-family:var(--font-ui);font-size:11px;color:var(--dim);
+    border:1px solid var(--line-soft);border-radius:5px;padding:1px 6px;margin:0 2px}
+
+  #ending .card{width:min(760px,94%);padding:34px 34px 28px;border-radius:var(--r);
+    background:linear-gradient(180deg,rgba(13,16,26,.94),rgba(6,8,14,.97));
+    border:1px solid var(--line);box-shadow:var(--shadow);
+    display:flex;flex-direction:column;align-items:center;gap:16px}
+  #ending h2{margin:0;font-family:var(--font-nar);font-size:clamp(26px,3.2vw,42px);font-weight:600;
+    letter-spacing:.1em;color:var(--gold-ink);text-shadow:0 10px 30px rgba(0,0,0,.7)}
+  #ending .body{font-family:var(--font-nar);font-size:clamp(14px,1.25vw,18px);line-height:2;
+    color:#dbe2ee;white-space:pre-wrap;max-width:60ch}
+  #ending-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px 18px;
+    width:100%;margin-top:4px;text-align:left}
+  #ending-meta .kv{display:flex;justify-content:space-between;gap:10px;font-size:13px;
+    padding:7px 0;border-bottom:1px dashed rgba(255,255,255,.09)}
+  #ending-meta .kv .k{color:var(--faint);letter-spacing:.1em}
+  #ending-meta .kv .v{color:var(--ink);font-variant-numeric:tabular-nums}
+
+  /* ============ 调试面板（F1）============ */
+  #dev{position:absolute;left:14px;bottom:14px;z-index:15;max-height:76%;overflow:auto;display:none;
+    background:rgba(3,5,10,.94);border:1px solid var(--line);border-radius:12px;
+    padding:14px 16px;font-family:Consolas,Menlo,monospace;font-size:12.5px;line-height:1.75;
+    color:#cfe3ff;max-width:52%;box-shadow:var(--shadow)}
+  #dev h4{margin:0 0 8px;font-size:12px;color:var(--gold);letter-spacing:.24em}
+  #dev .row{color:#9db0c6}
+  #dev .row b{color:#eaf2ff;font-weight:600}
+  #dev .chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;max-height:34vh;overflow:auto}
+  #dev a{display:inline-block;color:#9fd0ff;text-decoration:none;padding:1px 5px;border-radius:5px;
+    border:1px solid rgba(159,208,255,.18)}
+  #dev a:hover{background:rgba(159,208,255,.14)}
+
+  /* ============ 提示条 ============ */
+  #toast{position:absolute;top:76px;left:50%;transform:translateX(-50%) translateY(-8px);z-index:16;
+    padding:10px 20px;font-size:13px;letter-spacing:.1em;color:var(--gold-ink);
+    background:var(--panel-solid);border:1px solid var(--line);border-radius:99px;
+    box-shadow:var(--shadow);opacity:0;transition:opacity .25s,transform .25s;pointer-events:none}
+  #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  .shake{animation:shake .52s linear}
+  @keyframes shake{0%,100%{transform:translate(0,0)}20%{transform:translate(-14px,6px)}
+    40%{transform:translate(12px,-8px)}60%{transform:translate(-9px,-5px)}80%{transform:translate(8px,7px)}}
+
+  /* ============ 窄窗 / 矮窗适配 ============ */
+  @media (max-width:900px){
+    #hud{padding:10px 12px 20px}
+    #hud-title{max-width:20ch}
+    #hud-time{display:none}
+    .meter .bar{width:64px}
+    #hud-progress .pbar{width:48px}
+    #dialog{left:3%;right:3%;bottom:3.4%;padding:24px 18px 18px}
+    #dialog::before{left:18px;right:18px}
+    #speaker{left:18px;font-size:15px;padding:6px 14px}
+    .choice{width:92%}
+    #slot-grid{grid-template-columns:1fr}
+    #title .foot{font-size:11px}
+  }
+  @media (max-height:560px){
+    #dialog{min-height:30%;padding-top:24px}
+    #title h1{font-size:clamp(30px,4.4vw,54px)}
+    .title-stats{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.001s !important;animation-iteration-count:1 !important;
+      transition-duration:.001s !important}
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="stage-wrap"><div id="stage">
+    <div class="layer" id="bg"></div>
+    <div class="layer" id="cglayer"></div>
+    <div class="layer" id="portrait"></div>
+    <div class="layer" id="scrim"></div>
+    <div class="layer" id="tint"></div>
+    <div class="layer" id="grain"></div>
+    <div class="layer" id="vignette"></div>
+    <div class="layer" id="flash"></div>
+
+    <div id="hud">
+      <div class="hud-left">
+        <span id="hud-chapter"></span>
+        <span id="hud-title"></span>
+      </div>
+      <div class="hud-right">
+        <div class="meter" id="insomnia-meter" data-tier="0" title="失眠值">
+          <span class="lbl">失眠</span>
+          <div class="bar"><i id="insomnia-fill"></i></div>
+          <b id="insomnia-val">0</b>
+          <span id="insomnia-tier">平稳</span>
+        </div>
+        <div id="hud-progress"></div>
+        <span id="hud-time">00:00</span>
+        <div class="hud-btns">
+          <button class="ibtn no-advance" id="btn-backlog" type="button" title="回想 (H)">回想</button>
+          <button class="ibtn no-advance" id="btn-slots" type="button" title="存档 / 读档 (S / L)">存档</button>
+          <button class="ibtn no-advance" id="btn-title" type="button" title="回到标题">标题</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dialog" aria-live="polite">
+      <div id="speaker" class="empty"></div>
+      <div id="dialog-text"><span id="body"></span><span id="caret">▍</span></div>
+      <div class="dialog-foot">
+        <div id="next-hint"><span class="chev">›</span><span>点击 / 空格 继续</span></div>
+      </div>
+    </div>
+
+    <div id="choices">
+      <div id="choice-prompt"></div>
+      <div id="choice-list"></div>
+    </div>
+
+    <!-- 回想 -->
+    <div class="overlay no-advance" id="backlog">
+      <div class="sheet">
+        <div class="sheet-head">
+          <h3>回想</h3>
+          <button class="xbtn no-advance" id="btn-backlog-close" type="button" title="关闭 (Esc)">✕</button>
+        </div>
+        <div class="sheet-body"><div id="backlog-list"></div></div>
+        <div class="sheet-foot"><span>本次游玩已读过的台词，最新的在最下面</span></div>
+      </div>
+    </div>
+
+    <!-- 存档 / 读档 -->
+    <div class="overlay no-advance" id="slots">
+      <div class="sheet">
+        <div class="sheet-head">
+          <h3>存档 / 读档</h3>
+          <button class="xbtn no-advance" id="btn-slots-close" type="button" title="关闭 (Esc)">✕</button>
+        </div>
+        <div class="sheet-body"><div id="slot-grid"></div></div>
+        <div class="sheet-foot">
+          <span>槽位 0 是自动存档（每进一场自动写入），快捷键 S = 存到槽 1，L = 读槽 1</span>
+          <span id="slot-hint"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast"></div>
+    <div id="dev"></div>
+
+    <div id="title">
+      <div class="kicker">剧本试玩版 · PREVIEW</div>
+      <h1>时光之痕</h1>
+      <div class="hr"><i></i></div>
+      <p class="sub">一部关于失眠、时间，与被借走的记忆的视觉小说</p>
+      <div class="title-stats" id="title-stats"></div>
+      <p id="title-meta"></p>
+      <div class="btns">
+        <button class="btn primary" id="btn-new" type="button">开始新游戏</button>
+        <button class="btn" id="btn-continue" type="button">继续上次</button>
+      </div>
+      <p class="foot">
+        <kbd>空格</kbd><kbd>回车</kbd><kbd>点击</kbd> 继续　<kbd>1</kbd>–<kbd>4</kbd> 选择　<kbd>H</kbd> 回想
+        <kbd>S</kbd> 存档　<kbd>L</kbd> 读档　<kbd>Esc</kbd> 关闭面板　<kbd>F1</kbd> 调试面板<br>
+        网页版立绘/背景为程序生成的占位图，补齐 Assets/Resources/Art 后重新打包即可替换
+      </p>
+      <p id="title-build" class="kicker" style="color:var(--faint)"></p>
+    </div>
+
+    <div id="ending">
+      <div class="card">
+        <div class="kicker">结局</div>
+        <h2 id="ending-title"></h2>
+        <div class="hr"><i></i></div>
+        <div class="body" id="ending-body"></div>
+        <div id="ending-meta"></div>
+        <button class="btn" id="btn-again" type="button">回到标题</button>
+      </div>
+    </div>
+  </div></div>
+</div>
+<script>
+const DATA = /*__DATA__*/null;
+const ART_DATA = /*__ART__*/{};
+const ENDINGS = /*__ENDINGS__*/null;
+const CAST_ORDER = /*__CAST__*/[];
+// parseJump 与 Unity 共用同一份实现（连同它的 LABEL_RE 一起注入，别在这里手写一份副本）
+/*__PARSE_JUMP__*/null
+
+const ART = '../Assets/Resources/Art/';
+const SAVE_KEY = 'shiguang_zhithen_preview_v1';
+const SLOT_NAMES = ['自动存档', '存档 1', '存档 2', '存档 3'];
+const TIER_NAMES = ['平稳', '浅眠', '长夜', '临界'];
+/* 失眠值分档的视觉：色相随分档推进（蓝 → 紫 → 红），mix-blend-mode:screen 叠加在画面上 */
+const TIER_TINT = [
+  { bg: 'transparent', tint: 0, grain: 0 },
+  { bg: 'linear-gradient(180deg,rgba(47,86,178,.22),rgba(30,60,140,.34))', tint: .34, grain: .16 },
+  { bg: 'linear-gradient(180deg,rgba(96,58,150,.26),rgba(60,34,110,.42))', tint: .5, grain: .26 },
+  { bg: 'linear-gradient(180deg,rgba(160,38,70,.3),rgba(96,20,48,.46))', tint: .62, grain: .4 }
+];
+/* 人物姓名板配色：浅 → 深 渐变（暗色模式下都保证深字可读） */
+const SPEAKER_SKIN = {
+  '林晓':   ['#f0d9a8', '#cfa964'],
+  '艾莉丝': ['#f4c3ad', '#d08b6e'],
+  '雷恩':   ['#c3d6f0', '#8fa9cd'],
+  '小雅':   ['#f0cfe0', '#c99ab4'],
+  '老周':   ['#ded7c2', '#a8a08a'],
+  '时间领主': ['#d6c6f4', '#a086cf'],
+  '维拉':   ['#bfe8db', '#84b8a6']
+};
+
+const $ = (id) => document.getElementById(id);
+const el = {
+  stage: $('stage'), bg: $('bg'), cg: $('cglayer'), portrait: $('portrait'),
+  tint: $('tint'), grain: $('grain'), flash: $('flash'),
+  hud: $('hud'),
+  hudChapter: $('hud-chapter'), hudTitle: $('hud-title'), hudProgress: $('hud-progress'),
+  hudTime: $('hud-time'), meter: $('insomnia-meter'), meterFill: $('insomnia-fill'),
+  meterVal: $('insomnia-val'), meterTier: $('insomnia-tier'),
+  dialog: $('dialog'), speaker: $('speaker'), body: $('body'), caret: $('caret'),
+  nextHint: $('next-hint'),
+  choices: $('choices'), choicePrompt: $('choice-prompt'), choiceList: $('choice-list'),
+  backlog: $('backlog'), backlogList: $('backlog-list'),
+  slots: $('slots'), slotGrid: $('slot-grid'), slotHint: $('slot-hint'),
+  title: $('title'), titleStats: $('title-stats'), titleBuild: $('title-build'),
+  ending: $('ending'), endingTitle: $('ending-title'),
+  endingBody: $('ending-body'), endingMeta: $('ending-meta'),
+  toast: $('toast'), dev: $('dev')
+};
+
+const state = {
+  sceneId: '', lineIndex: 0, insomnia: 0, flags: [], affection: {},
+  playSeconds: 0, chapter: '', visited: [], history: [], choices: 0,
+  endingId: '', endingRule: -1, savedAt: 0
+};
+
+let typing = false;        // 正在逐字显示
+let typingDone = false;    // 这一行是否已显示完
+let typeTimer = null;
+let pendingChoice = null;  // 当前 choice 行
+let sceneObj = null;
+let devVisible = false;
+let tickTimer = null;
+let toastTimer = null;
+let titleBgDone = false;
+
+/* ---------- 界面小工具 ---------- */
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"]/g, (c) => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+function toast(msg) {
+  el.toast.textContent = msg;
+  el.toast.className = 'show';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.toast.className = ''; }, 1300);
+}
+function toastErr(msg) {
+  el.toast.textContent = msg;
+  el.toast.className = 'show';
+  el.toast.style.borderColor = '#ff7a7a';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    el.toast.className = '';
+    el.toast.style.borderColor = '';
+  }, 2000);
+}
+function showScreen(node) {
+  node.style.display = 'flex';
+  requestAnimationFrame(() => node.classList.remove('screen-hidden'));
+}
+function hideScreen(node) {
+  node.classList.add('screen-hidden');
+  setTimeout(() => { node.style.display = 'none'; }, 260);
+}
+/** 场景/立绘/CG 的图片层：双层交叉淡入，换景不再硬切。 */
+function setImage(node, src, fallbackText) {
+  let fb = node.__fallback;
+  if (!fb) {
+    fb = document.createElement('div');
+    fb.className = 'art-fallback';
+    node.appendChild(fb);
+    node.__fallback = fb;
+  }
+  fb.textContent = fallbackText || '';
+  if (!src) {
+    if (node.__img && node.__img.parentNode) node.__img.parentNode.removeChild(node.__img);
+    node.__img = null;
+    fb.style.opacity = '1';
+    return;
+  }
+  const img = new Image();
+  img.className = 'art';
+  img.onerror = () => { fb.style.opacity = '1'; };
+  img.src = src;
+  node.appendChild(img);
+  const old = node.__img;
+  node.__img = img;
+  requestAnimationFrame(() => {
+    img.className = 'art in';
+    fb.style.opacity = '0';
+  });
+  if (old && old.parentNode) {
+    setTimeout(() => { if (old.parentNode) old.parentNode.removeChild(old); }, 600);
+  }
+}
+function artUrl(kind, id) { return ART_DATA[kind + '/' + id] || (ART + kind + '/' + id + '.png'); }
+function insomnialTierOf(v) {
+  if (v < 25) return 0;
+  if (v < 55) return 1;
+  if (v < 80) return 2;
+  return 3;
+}
+function insomniaTier() { return insomnialTierOf(state.insomnia); }
+function fmtTime(sec) {
+  const s = Math.max(0, Math.floor(sec));
+  const m = Math.floor(s / 60);
+  return (m < 10 ? '0' : '') + m + ':' + (s % 60 < 10 ? '0' : '') + (s % 60);
+}
+function applyInsomniaVisual() {
+  const t = insomniaTier();
+  const skin = TIER_TINT[t];
+  el.tint.style.background = skin.bg;
+  el.tint.style.opacity = String(skin.tint);
+  el.grain.style.opacity = String(skin.grain);
+  if (el.meter) {
+    el.meter.dataset.tier = String(t);
+    el.meterFill.style.width = state.insomnia + '%';
+    el.meterVal.textContent = String(state.insomnia);
+    el.meterTier.textContent = TIER_NAMES[t];
+  }
+}
+function updateProgress() {
+  const total = DATA.order.length || 1;
+  const seen = state.visited.length;
+  el.hudProgress.innerHTML = '<span class="pbar"><i style="width:' +
+    Math.round(seen / total * 100) + '%"></i></span><span>' + seen + '/' + total + ' 场</span>';
+  el.hudTime.textContent = fmtTime(state.playSeconds);
+}
+/** 标题页不显示 HUD：否则它会从标题遮罩后面透出一层看不清的脏印子。 */
+function setHudVisible(on) { el.hud.style.display = on ? 'flex' : 'none'; }
+function hidden() {
+  return el.title.style.display !== 'none' || el.ending.style.display === 'flex';
+}
+function panelOpen() {
+  return el.backlog.classList.contains('open') || el.slots.classList.contains('open');
+}
+
+/* ---------- 存档 ---------- */
+function save(slot) {
+  state.savedAt = Date.now();
+  try {
+    localStorage.setItem(SAVE_KEY + '_slot' + slot, JSON.stringify(state));
+  } catch (err) { toastErr('存档失败：浏览器本地存储不可用'); return false; }
+  toast(slot === 0 ? '已自动存档' : '已存到' + SLOT_NAMES[slot]);
+  if (el.slots.classList.contains('open')) renderSlots();
+  return true;
+}
+function load(slot) {
+  const raw = localStorage.getItem(SAVE_KEY + '_slot' + slot);
+  if (!raw) return false;
+  try {
+    Object.assign(state, JSON.parse(raw));
+  } catch (err) { toastErr('存档已损坏，无法读取'); return false; }
+  return true;
+}
+function hasAnySave() {
+  for (let i = 0; i <= 3; i++) if (localStorage.getItem(SAVE_KEY + '_slot' + i)) return true;
+  return false;
+}
+/** 只读一眼某个槽位的摘要，用来渲染存档面板 / 标题页的「继续上次」。 */
+function peekSlot(slot) {
+  const raw = localStorage.getItem(SAVE_KEY + '_slot' + slot);
+  if (!raw) return null;
+  try {
+    const s = JSON.parse(raw);
+    return {
+      sceneId: s.sceneId || '?',
+      chapter: s.chapter || '',
+      insomnia: Number(s.insomnia || 0),
+      visited: (s.visited || []).length,
+      seconds: Number(s.playSeconds || 0),
+      savedAt: Number(s.savedAt || 0)
+    };
+  } catch (err) { return { broken: true }; }
+}
+
+/* ---------- v2：label 前向跳 + 结局规则表 ---------- */
+let endingRouteTaken = false; // 顶层 next "@ending" 只解析并跳转一次，规则表自指时不会打转
+
+function labelIndexOf(scene, label) {
+  const lines = (scene && scene.lines) || [];
+  for (let i = 0; i < lines.length; i++) {
+    const ln = lines[i];
+    if (ln && ln.label === label) return i;
+  }
+  return -1;
+}
+/** 跳到某场景的 label 行（#lNN / sceneId#lNN 的落地）。 */
+function gotoSceneLabel(id, label) {
+  const s = DATA.scenes[id];
+  if (!s) { toastErr('场景 ' + id + ' 不存在'); return; }
+  gotoScene(id);
+  const idx = labelIndexOf(s, label);
+  if (idx > 0) { state.lineIndex = idx; playLine(); }
+}
+function flagsHas(f) { return state.flags.indexOf(f) >= 0; }
+/** 好感最高的人物：并列时按 cast.json 的人物顺序取先者（与 Unity/check-endings.js 同一口径）。 */
+function topAffection() {
+  let best = CAST_ORDER[0] || '';
+  let bestV = -Infinity;
+  for (let i = 0; i < CAST_ORDER.length; i++) {
+    const v = Number(state.affection[CAST_ORDER[i]] || 0);
+    if (v > bestV) { bestV = v; best = CAST_ORDER[i]; }
+  }
+  return { who: best, value: bestV === -Infinity ? 0 : bestV };
+}
+/** §8.3 when 判定；数值 0 = 未给出该约束（与 Unity JsonUtility 口径一致）。 */
+function whenSatisfied(w) {
+  if (!w || typeof w !== 'object') return true;
+  if (Array.isArray(w.flags)) { for (const f of w.flags) if (!flagsHas(f)) return false; }
+  if (Array.isArray(w.notFlags)) { for (const f of w.notFlags) if (flagsHas(f)) return false; }
+  if (typeof w.insomniaMin === 'number' && w.insomniaMin !== 0 && state.insomnia < w.insomniaMin) return false;
+  if (typeof w.insomniaMax === 'number' && w.insomniaMax !== 0 && state.insomnia > w.insomniaMax) return false;
+  const shards = Array.isArray(state.memoryShards) ? state.memoryShards.length : 0; // 预览暂无碎片状态
+  if (typeof w.shardsMin === 'number' && w.shardsMin !== 0 && shards < w.shardsMin) return false;
+  if (typeof w.flagCountMin === 'number' && w.flagCountMin !== 0 && state.flags.length < w.flagCountMin) return false;
+  const top = topAffection();
+  if (typeof w.topAffection === 'string' && w.topAffection !== '' && top.who !== w.topAffection) return false;
+  if (typeof w.affectionMin === 'number' && w.affectionMin !== 0 && top.value < w.affectionMin) return false;
+  return true;
+}
+/** 规则表里该结局场景的标题（F1 面板与结局画面都用它）。 */
+function ruleTitleFor(sceneId) {
+  if (!ENDINGS || !Array.isArray(ENDINGS.rules)) return '';
+  for (const r of ENDINGS.rules) {
+    if (r && r.scene === sceneId && typeof r.title === 'string' && r.title) return r.title;
+  }
+  return '';
+}
+/** 自上而下第一条全部满足的规则胜出；都不满足用 fallback。返回 null = 没有规则表（走老路径）。 */
+function resolveEnding() {
+  if (!ENDINGS || !Array.isArray(ENDINGS.rules)) return null;
+  for (let i = 0; i < ENDINGS.rules.length; i++) {
+    const r = ENDINGS.rules[i];
+    if (r && whenSatisfied(r.when)) return { sceneId: r.scene, title: r.title || '', index: i };
+  }
+  const fb = typeof ENDINGS.fallback === 'string' ? ENDINGS.fallback : '';
+  return fb ? { sceneId: fb, title: ruleTitleFor(fb), index: -1 } : null;
+}
+
+/* ---------- 主流程 ---------- */
+function newGame() {
+  endingRouteTaken = false;
+  Object.assign(state, { sceneId: DATA.start, lineIndex: 0, insomnia: 0, flags: [], affection: {},
+    playSeconds: 0, chapter: '', visited: [], history: [], choices: 0,
+    endingId: '', endingRule: -1, savedAt: 0 });
+  hideScreen(el.title);
+  setHudVisible(true);
+  el.ending.style.display = 'none';
+  closePanels();
+  el.cg.style.display = 'none';
+  applyInsomniaVisual();
+  updateProgress();
+  gotoScene(DATA.start);
+}
+function gotoScene(id) {
+  const s = DATA.scenes[id];
+  if (!s) { toastErr('场景 ' + id + ' 不存在'); return; }
+  sceneObj = s;
+  state.sceneId = id;
+  state.lineIndex = 0;
+  state.chapter = s.chapter || '';
+  if (!state.visited.includes(id)) state.visited.push(id);
+  if (s.background) setImage(el.bg, artUrl('Bg', s.background), '背景 ' + s.background);
+  el.hudChapter.textContent = s.chapter || '';
+  el.hudTitle.textContent = '第 ' + id + ' 场 · ' + (s.title || '');
+  el.cg.style.display = 'none';
+  updateProgress();
+  playLine();
+}
+
+function applyLineOverrides(line) {
+  if (line.background) setImage(el.bg, artUrl('Bg', line.background), '背景 ' + line.background);
+  if (line.bgm === 'stop') { /* 预览无音频 */ }
+}
+
+/** 姓名板：按人物上色；旁白时整块收起。 */
+function setSpeaker(name, mode) {
+  const who = name || '';
+  el.speaker.textContent = who;
+  if (!who) {
+    el.speaker.className = 'empty';
+    el.speaker.style.background = '';
+    el.speaker.style.color = '';
+    return;
+  }
+  el.speaker.className = '';
+  const skin = SPEAKER_SKIN[who] || (mode === 'cg' ? ['#e8dcc0', '#bda875'] : ['#e6e9f0', '#aab2c4']);
+  el.speaker.style.background = 'linear-gradient(180deg,' + skin[0] + ',' + skin[1] + ')';
+  el.speaker.style.color = '#140f04';
+}
+
+function playLine() {
+  if (pendingChoice) return;
+  const lines = sceneObj.lines || [];
+  if (state.lineIndex >= lines.length) return endScene();
+  const line = lines[state.lineIndex];
+  applyLineOverrides(line);
+  el.dialog.className = '';
+
+  switch (line.type) {
+    case 'choice': {
+      showChoices(line);
+      break;
+    }
+    case 'fx': {
+      playFx(line.fx);
+      // fx 行不显示文本，短暂停顿后自动前进
+      typing = false; typingDone = true;
+      el.dialog.style.display = 'none';
+      setTimeout(() => { if (pendingChoice) return; state.lineIndex++; playLine(); }, line.fx === 'wait' ? 500 : 380);
+      break;
+    }
+    case 'cg': {
+      el.cg.style.display = 'block';
+      setImage(el.cg, artUrl('Cg', line.background), 'CG ' + line.background);
+      el.portrait.innerHTML = '';
+      el.portrait.__img = null;
+      setSpeaker('', 'cg');
+      el.dialog.className = 'cg-mode';
+      el.dialog.style.display = line.text ? 'block' : 'none';
+      startTyping(line.text || '');
+      break;
+    }
+    case 'dialogue': {
+      el.cg.style.display = 'none';
+      setSpeaker(line.speaker || '', 'dialogue');
+      if (line.sprite) setImage(el.portrait, artUrl('Portrait', line.sprite), '');
+      else if (line.sprite === '') { el.portrait.innerHTML = ''; el.portrait.__img = null; }
+      el.dialog.style.display = 'block';
+      startTyping(line.text || '');
+      break;
+    }
+    default: { // narration
+      el.cg.style.display = 'none';
+      setSpeaker('');
+      el.portrait.innerHTML = '';
+      el.portrait.__img = null;
+      el.dialog.className = 'narration';
+      el.dialog.style.display = 'block';
+      startTyping(line.text || '');
+      break;
+    }
+  }
+  if (line.text) pushHistory(el.speaker.textContent, line.text);
+  renderDev();
+}
+
+/** 回想用的一行记录（只存文本，不存 DOM）。 */
+function pushHistory(who, text) {
+  state.history.push({ who: who || '', text: text, scene: state.sceneId });
+  if (state.history.length > 400) state.history.splice(0, state.history.length - 400);
+}
+
+function startTyping(text) {
+  clearTimeout(typeTimer);
+  el.nextHint.style.opacity = '0';
+  if (!text) {
+    el.body.textContent = ''; typing = false; typingDone = true;
+    el.caret.style.opacity = '0';
+    el.nextHint.style.opacity = '1';
+    updateProgress();
+    return;
+  }
+  typing = true; typingDone = false;
+  el.body.textContent = '';
+  el.caret.style.opacity = '1';
+  let i = 0;
+  const step = () => {
+    if (!typing) return;
+    el.body.textContent = text.slice(0, ++i);
+    if (i >= text.length) {
+      typing = false; typingDone = true;
+      el.caret.style.opacity = '0';
+      el.nextHint.style.opacity = '1';
+      return;
+    }
+    typeTimer = setTimeout(step, 22);
+  };
+  step();
+}
+function completeTyping() {
+  if (!typing) return;
+  typing = false;
+  clearTimeout(typeTimer);
+  const line = (sceneObj.lines || [])[state.lineIndex];
+  el.body.textContent = (line && line.text) || '';
+  typingDone = true;
+  el.caret.style.opacity = '0';
+  el.nextHint.style.opacity = '1';
+}
+
+function endScene() {
+  const nxt = sceneObj.next || '';
+  const jump = parseJump(nxt);
+  if (jump.kind === 'ending') {
+    // 顶层 next "@ending"：按结局规则表解析目标场景；只跳一次，规则表自指时直接收尾
+    const pick = resolveEnding();
+    if (!pick || endingRouteTaken) { showEnding(pick); return; }
+    if (!DATA.scenes[pick.sceneId]) {
+      toastErr('结局场景 ' + pick.sceneId + ' 还没写（剧本缺口）');
+      showGapNotice(pick.sceneId);
+      return;
+    }
+    endingRouteTaken = true;
+    state.endingId = pick.sceneId;
+    state.endingRule = typeof pick.index === 'number' ? pick.index : -1;
+    save(0);
+    gotoScene(pick.sceneId);
+    return;
+  }
+  if (jump.kind === 'label') { gotoSceneLabel(state.sceneId, jump.label); return; }
+  if (jump.kind === 'sceneLabel') { gotoSceneLabel(jump.sceneId, jump.label); return; }
+  if (jump.kind === 'illegal') { toastErr('场景 next(' + nxt + ') 写法非法'); showEnding(null); return; }
+  if (jump.kind === 'scene') {
+    if (!DATA.scenes[jump.sceneId]) { toastErr('下一场景 ' + jump.sceneId + ' 还没写（剧本缺口）'); showGapNotice(jump.sceneId); return; }
+    save(0);
+    gotoScene(jump.sceneId);
+    return;
+  }
+  showEnding(null);
+}
+
+/** 剧本写到一半时，next 指向的场景可能还不存在 —— 明确说出来，不要假装通关。 */
+function showGapNotice(missingId) {
+  el.dialog.className = 'narration';
+  el.dialog.style.display = 'block';
+  setSpeaker('剧本缺口');
+  el.body.textContent = '本场景已结束，下一场 ' + missingId + ' 还没有写。\n\n这是一份边写边试玩的预览，不是成品。';
+  el.nextHint.style.opacity = '0';
+  el.caret.style.opacity = '0';
+  typing = false; typingDone = true;
+  pendingChoice = { gap: true, missingId: missingId };
+}
+
+function playFx(fx) {
+  switch (fx) {
+    case 'shake': {
+      el.stage.className = 'shake';
+      setTimeout(() => { el.stage.className = ''; }, 520);
+      break;
+    }
+    case 'flash':
+      el.flash.style.transition = 'none'; el.flash.style.opacity = '.9';
+      requestAnimationFrame(() => { el.flash.style.transition = 'opacity .45s'; el.flash.style.opacity = '0'; });
+      break;
+    case 'insomnia':
+      if (state.insomnia < 25) state.insomnia = 25;
+      applyInsomniaVisual(); renderDev();
+      break;
+    case 'timeline':
+      el.tint.style.opacity = '.8';
+      setTimeout(() => applyInsomniaVisual(), 420);
+      break;
+    case 'wait': break;
+  }
+}
+
+function showChoices(line) {
+  pendingChoice = line;
+  el.dialog.style.display = 'none';
+  el.choices.style.display = 'flex';
+  el.choicePrompt.textContent = line.prompt || '';
+  el.choiceList.innerHTML = '';
+  (line.options || []).forEach((opt, i) => {
+    const b = document.createElement('button');
+    b.className = 'choice';
+    b.style.animationDelay = (i * 55) + 'ms';
+    const k = document.createElement('span');
+    k.className = 'key';
+    k.textContent = String(i + 1);
+    const t = document.createElement('span');
+    t.className = 'label';
+    t.textContent = opt.text || '';
+    const kb = document.createElement('span');
+    kb.className = 'kbd';
+    kb.textContent = '按 ' + (i + 1);
+    b.appendChild(k); b.appendChild(t); b.appendChild(kb);
+    b.onclick = () => chooseOption(opt);
+    el.choiceList.appendChild(b);
+  });
+}
+
+function chooseOption(opt) {
+  el.choices.style.display = 'none';
+  pendingChoice = null;
+  state.choices += 1;
+  if (opt.affection && opt.affectionWho) {
+    state.affection[opt.affectionWho] = (state.affection[opt.affectionWho] || 0) + opt.affection;
+  }
+  if (opt.insomnia) {
+    state.insomnia = Math.max(0, Math.min(100, state.insomnia + opt.insomnia));
+    applyInsomniaVisual();
+  }
+  if (opt.flag && !state.flags.includes(opt.flag)) state.flags.push(opt.flag);
+  if (opt.next) {
+    const jump = parseJump(opt.next);
+    if (jump.kind === 'label') { save(0); gotoSceneLabel(state.sceneId, jump.label); return; }
+    if (jump.kind === 'sceneLabel') { save(0); gotoSceneLabel(jump.sceneId, jump.label); return; }
+    if (jump.kind === 'ending') { toastErr('选项 next 不能用 @ending（只有场景顶层 next 可以写 @ending）'); return; }
+    if (jump.kind === 'illegal') { toastErr('分支 ' + opt.next + ' 写法非法'); showGapNotice(opt.next); return; }
+    if (!DATA.scenes[jump.sceneId]) { toastErr('分支 ' + jump.sceneId + ' 还没写（剧本缺口）'); showGapNotice(jump.sceneId); return; }
+    save(0);
+    gotoScene(jump.sceneId);
+    return;
+  }
+  state.lineIndex++;
+  playLine();
+}
+
+function advance() {
+  if (hidden() || panelOpen()) return;
+  if (pendingChoice) return;
+  if (typing) { completeTyping(); return; }
+  state.lineIndex++;
+  playLine();
+}
+
+/** 结局画面：优先用规则表标题（现在是真走进结局场景之后就到这里）。 */
+function legacyEnding() {
+  const has = (f) => state.flags.includes(f);
+  if (has('ending_miracle')) return { title: '结局 · 奇迹',
+    body: '所有碎片在同一瞬间安静下来。\n你没有回到过去，也没有抹掉任何一道伤痕——你只是终于愿意带着它们继续往前走。\n时间没有原谅谁，但它停止了继续索要。' };
+  if (state.insomnia >= 80) return { title: '结局 · 失眠',
+    body: '你已经分不清自己是在醒来还是在睡去。\n那条链还在向前延伸，只是再没有人替它念出下一个词。\n窗外的天亮了，而你不知道这是第几个天亮。' };
+  if (has('ending_hero')) return { title: '结局 · 英雄',
+    body: '你把最后一块碎片按回了它该在的位置。\n代价被记在了别人看不见的地方，但这一次，所有人都活着走出了那栋楼。' };
+  if (has('ending_tragic')) return { title: '结局 · 诀别',
+    body: '你救下了能救的一切，除了那个一直站在你身边的人。\n时间合拢的速度比你说出那句话更快。' };
+  if (has('ending_open')) return { title: '结局 · 未完成',
+    body: '链断了。\n没有人知道断口那边是什么，也没有人再提起那个名字。\n故事在这里停了下来，像一句被刻意咽回去的话。' };
+  return { title: '结局 · 归途',
+    body: '碎片的答案不在过去，而在你决定怎么过完接下来的每一天。\n你合上了那本借来的书，把它放回原来的位置。' };
+}
+function showEnding(pick) {
+  const sceneId = (pick && pick.sceneId) || state.endingId || '';
+  const ruleTitle = sceneId ? ruleTitleFor(sceneId) : '';
+  const fallback = legacyEnding();
+  const title = (pick && pick.title) || ruleTitle || fallback.title;
+  // 正文：走进过结局场景就用它最后一句收尾，否则用老的兜底文案
+  const last = state.history.length ? state.history[state.history.length - 1] : null;
+  const body = (ruleTitle && last && last.text) ? '「' + last.text + '」' : fallback.body;
+
+  const aff = Object.entries(state.affection)
+    .filter(([, v]) => v !== 0)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 4)
+    .map(([who, v]) => who + ' ' + (v > 0 ? '+' : '') + v).join('　');
+  const top = topAffection();
+  el.endingTitle.textContent = title;
+  el.endingBody.textContent = body;
+  const kv = (k, v) => '<div class="kv"><span class="k">' + esc(k) + '</span><span class="v">' + esc(v) + '</span></div>';
+  el.endingMeta.innerHTML =
+    kv('结局场景', sceneId || '—') +
+    kv('走过场景', state.visited.length + ' / ' + DATA.order.length) +
+    kv('失眠值', state.insomnia + ' / 100（' + TIER_NAMES[insomniaTier()] + '）') +
+    kv('做出选择', state.choices + ' 次') +
+    kv('标记', state.flags.length + ' 个') +
+    kv('用时', fmtTime(state.playSeconds)) +
+    kv('好感', aff || '—') +
+    kv('最高好感', top.who + '（' + top.value + '）') +
+    kv('匹配规则', state.endingRule >= 0 ? '第 ' + (state.endingRule + 1) + ' 条' : '兜底');
+  el.dialog.style.display = 'none';
+  el.nextHint.style.opacity = '0';
+  closePanels();
+  el.choices.style.display = 'none';
+  setHudVisible(false); // 结局是全屏结算，HUD 不该从结算层后面透出来
+  showScreen(el.ending);
+}
+
+/* ---------- 回想 / 存档面板 ---------- */
+function renderBacklog() {
+  el.backlogList.innerHTML = '';
+  const items = state.history.slice(-80);
+  if (!items.length) {
+    const p = document.createElement('div');
+    p.className = 'log-text';
+    p.textContent = '还没有读过任何台词。';
+    el.backlogList.appendChild(p);
+    return;
+  }
+  items.forEach((h, i) => {
+    const row = document.createElement('div');
+    row.className = 'log-row' + (i === items.length - 1 ? ' current' : '');
+    const who = document.createElement('div');
+    who.className = 'log-who' + (h.who ? '' : ' none');
+    who.textContent = h.who || '旁白';
+    const txt = document.createElement('div');
+    txt.className = 'log-text';
+    txt.textContent = h.text || '';
+    row.appendChild(who); row.appendChild(txt);
+    el.backlogList.appendChild(row);
+  });
+}
+function renderSlots() {
+  el.slotGrid.innerHTML = '';
+  for (let slot = 0; slot <= 3; slot++) {
+    const info = peekSlot(slot);
+    const box = document.createElement('div');
+    box.className = 'slot';
+    const name = document.createElement('div');
+    name.className = 'slot-name';
+    name.textContent = SLOT_NAMES[slot];
+    const meta = document.createElement('div');
+    meta.className = 'slot-meta';
+    if (!info) {
+      meta.textContent = '（空）';
+      meta.className = 'slot-meta empty';
+    } else if (info.broken) {
+      meta.textContent = '存档已损坏';
+    } else {
+      const when = info.savedAt ? new Date(info.savedAt) : null;
+      const stamp = when ? (when.getMonth() + 1) + '月' + when.getDate() + '日 ' +
+        String(when.getHours()).padStart(2, '0') + ':' + String(when.getMinutes()).padStart(2, '0') : '';
+      meta.textContent = '第 ' + info.sceneId + ' 场 · ' + (info.chapter || '—') + '\n' +
+        '已访 ' + info.visited + ' 场 · 失眠 ' + info.insomnia + ' · 用时 ' + fmtTime(info.seconds) +
+        (stamp ? '\n' + stamp : '');
+    }
+    const btns = document.createElement('div');
+    btns.className = 'slot-btns';
+    const bSave = document.createElement('button');
+    bSave.className = 'mini';
+    bSave.type = 'button';
+    bSave.textContent = '存档';
+    bSave.onclick = () => { save(slot); renderSlots(); };
+    const bLoad = document.createElement('button');
+    bLoad.className = 'mini';
+    bLoad.type = 'button';
+    bLoad.textContent = '读档';
+    bLoad.disabled = !info || info.broken;
+    bLoad.onclick = () => {
+      if (!load(slot)) { toastErr('这个槽位还没有存档'); return; }
+      closePanels();
+      hideScreen(el.title);
+      el.ending.style.display = 'none';
+      applyInsomniaVisual();
+      updateProgress();
+      gotoScene(state.sceneId);
+      toast('已读取' + SLOT_NAMES[slot]);
+    };
+    btns.appendChild(bSave); btns.appendChild(bLoad);
+    box.appendChild(name); box.appendChild(meta); box.appendChild(btns);
+    el.slotGrid.appendChild(box);
+  }
+  el.slotHint.textContent = '共 4 个槽位';
+}
+function openBacklog() {
+  renderBacklog();
+  el.backlog.classList.add('open');
+  const body = el.backlogList.parentNode;
+  if (body && body.scrollHeight) body.scrollTop = body.scrollHeight;
+}
+function openSlots() {
+  renderSlots();
+  el.slots.classList.add('open');
+}
+function closePanels() {
+  el.backlog.classList.remove('open');
+  el.slots.classList.remove('open');
+}
+
+function renderDev() {
+  if (!devVisible) return;
+  const aff = Object.entries(state.affection).map(([k, v]) => esc(k) + '=' + v).join(' ') || '—';
+  const flags = state.flags.length
+    ? state.flags.slice(-8).map((f) => esc(f)).join(' ') + (state.flags.length > 8 ? ' …' : '')
+    : '（无）';
+  el.dev.innerHTML = '<h4>调试面板 · F1 关闭</h4>' +
+    '<div class="row">场景 <b>' + esc(state.sceneId) + '</b>　行 ' + (state.lineIndex + 1) + '/' +
+      ((sceneObj && sceneObj.lines) || []).length + '</div>' +
+    '<div class="row">失眠 <b>' + state.insomnia + '</b>（' + TIER_NAMES[insomniaTier()] + '）　标记 <b>' +
+      state.flags.length + '</b> 个　选择 <b>' + state.choices + '</b> 次</div>' +
+    '<div class="row">好感 ' + aff + '</div>' +
+    '<div class="row">已访问 <b>' + state.visited.length + '</b> / ' + DATA.order.length +
+      ' 场　用时 ' + fmtTime(state.playSeconds) + '</div>' +
+    '<div class="row">失眠分档阈值 25 / 55 / 80　结局规则 ' +
+      (ENDINGS && ENDINGS.rules ? ENDINGS.rules.length + ' 条' : '未加载') + '</div>' +
+    '<div class="row" style="margin-top:6px;color:#8fa4bd">标记：' + flags + '</div>' +
+    '<div class="row" style="margin-top:6px;color:#8fa4bd">场景列表（点开跳转）</div>' +
+    '<div class="chips">' + DATA.order.map((id) =>
+      '<a href="#" data-jump="' + esc(id) + '">' + esc(id) + '</a>').join('') + '</div>' +
+    '<div class="row" style="margin-top:6px;color:#8fa4bd">全剧 ' + DATA.totalChars + ' 字　构建 ' +
+      esc(DATA.builtAt) + '</div>';
+  const links = el.dev.querySelectorAll ? el.dev.querySelectorAll('[data-jump]') : [];
+  for (let i = 0; i < links.length; i++) {
+    links[i].onclick = (ev) => {
+      ev.preventDefault();
+      state.lineIndex = 0; save(0); gotoScene(links[i].dataset.jump);
+    };
+  }
+}
+
+/* ---------- 事件 ---------- */
+document.addEventListener('keydown', (ev) => {
+  if (ev.key === 'F1') {
+    devVisible = !devVisible;
+    el.dev.style.display = devVisible ? 'block' : 'none';
+    if (devVisible) renderDev();
+    ev.preventDefault();
+    return;
+  }
+  if (ev.key === 'Escape') { closePanels(); return; }
+  if (ev.key === 'h' || ev.key === 'H') {
+    if (el.backlog.classList.contains('open')) closePanels(); else openBacklog();
+    return;
+  }
+  if (ev.key === 's' || ev.key === 'S') { save(1); return; }
+  if (ev.key === 'l' || ev.key === 'L') {
+    if (load(1)) {
+      hideScreen(el.title); setHudVisible(true); el.ending.style.display = 'none';
+      applyInsomniaVisual(); updateProgress();
+      gotoScene(state.sceneId);
+      toast('已读档');
+    } else toastErr('没有存档');
+    return;
+  }
+  if (pendingChoice && !pendingChoice.gap && /^[1-4]$/.test(ev.key)) {
+    const opt = (pendingChoice.options || [])[Number(ev.key) - 1];
+    if (opt) chooseOption(opt);
+    return;
+  }
+  if (ev.key === ' ' || ev.key === 'Enter') { ev.preventDefault(); advance(); }
+});
+el.stage.addEventListener('click', (ev) => {
+  const t = ev.target;
+  if (t && t.closest && t.closest('.no-advance')) return;
+  if (t && t.classList && t.classList.contains('choice')) return;
+  advance();
+});
+$('btn-new').onclick = newGame;
+$('btn-continue').onclick = () => {
+  if (!load(0)) { toastErr('还没有自动存档'); return; }
+  hideScreen(el.title);
+  setHudVisible(true);
+  el.ending.style.display = 'none';
+  closePanels();
+  applyInsomniaVisual();
+  updateProgress();
+  gotoScene(state.sceneId);
+};
+$('btn-again').onclick = () => {
+  el.ending.style.display = 'none';
+  showScreen(el.title);
+  setHudVisible(false);
+  refreshTitle();
+};
+$('btn-backlog').onclick = () => { openBacklog(); };
+$('btn-backlog-close').onclick = () => { closePanels(); };
+$('btn-slots').onclick = () => { openSlots(); };
+$('btn-slots-close').onclick = () => { closePanels(); };
+$('btn-title').onclick = () => {
+  closePanels();
+  el.ending.style.display = 'none';
+  showScreen(el.title);
+  setHudVisible(false);
+  refreshTitle();
+};
+
+/* ---------- 启动 ---------- */
+function refreshTitle() {
+  const cont = $('btn-continue');
+  const info = peekSlot(0);
+  if (info && !info.broken) {
+    cont.disabled = false;
+    cont.textContent = '继续上次 · 第 ' + info.sceneId + ' 场';
+  } else {
+    cont.disabled = !hasAnySave();
+    cont.textContent = '继续上次';
+  }
+}
+(function boot() {
+  const acts = DATA.order.reduce((m, id) => { const a = id.split('-')[0]; m[a] = (m[a] || 0) + 1; return m; }, {});
+  const artCount = Object.keys(ART_DATA).length;
+  const endingCount = ENDINGS && ENDINGS.rules ? ENDINGS.rules.length : 0;
+  $('title-meta').textContent = '已写 ' + DATA.order.length + ' 场（第一幕 ' + (acts['1'] || 0) +
+    ' / 第二幕 ' + (acts['2'] || 0) + ' / 第三幕 ' + (acts['3'] || 0) + ' 场）· ' +
+    DATA.totalChars + ' 字 / 目标 100000';
+  if (el.titleStats) {
+    // 美术格：打包成单文件时是内嵌张数，轻量版没内嵌美术，就别硬凑数字。
+    const stats = [
+      [DATA.order.length, '场景'],
+      [DATA.totalChars, '字数'],
+      [endingCount || '—', '结局路线'],
+      artCount ? [artCount, '内嵌美术'] : ['本地资源', '美术']
+    ];
+    el.titleStats.innerHTML = stats.map(([v, k]) =>
+      '<div class="st"><b>' + esc(v) + '</b><span>' + esc(k) + '</span></div>').join('');
+  }
+  if (el.titleBuild) el.titleBuild.textContent = '试玩构建 ' + DATA.builtAt;
+  setHudVisible(false);
+  refreshTitle();
+  // 标题页也要有画面：用第一场（或 bg_base）做底，给个缓慢的呼吸位移
+  const firstScene = DATA.scenes[DATA.start] || {};
+  const titleBg = firstScene.background || 'bg_base';
+  setImage(el.bg, artUrl('Bg', titleBg), '背景 ' + titleBg);
+  titleBgDone = true;
+  applyInsomniaVisual();
+  updateProgress();
+  tickTimer = setInterval(() => {
+    state.playSeconds += 1;
+    if (el.hudTime) el.hudTime.textContent = fmtTime(state.playSeconds);
+    if (devVisible) renderDev();
+  }, 1000);
+})();
+</script>
+</body>
+</html>
