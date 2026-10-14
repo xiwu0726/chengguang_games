@@ -1,0 +1,586 @@
+{
+  "sceneId": "3-e05",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·写进页脚的名字",
+  "background": "cg_ending_e05",
+  "bgm": "bgm_ending",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号早上六点二十，我把笔尖放在最后一页最下面那一行上。那一行是页脚，空了很久。"
+    },
+    {
+      "type": "narration",
+      "text": "页脚一般留来写版本号和归档号。我写下去的是两个字：林晓。"
+    },
+    {
+      "type": "narration",
+      "text": "写完最后一笔，井底那枚被压平的钟没有立刻动。它停了一格的时间，像在称这两个字的重量。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "页脚是落款项。你把名字写在那一格，等于让账把你当成付方。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你把这件事说得像一份报销流程。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "它本来就是流程。只有流程才会这么安静地吃掉一个人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "你呼吸的声音变轻了。刚才你说话还带着潮气，现在没有了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "林晓，往后退。退到我这边来。"
+    },
+    {
+      "type": "narration",
+      "text": "我退了半步，又站回去。手还按在那页纸的边上，指头能摸到页脚那两个字的凹痕。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": "井底闪了一下。那一下的光是从纸上出来的，白得没有一点温度。"
+    },
+    {
+      "type": "narration",
+      "text": "闪完以后井里安静下来，安静到我能听见上面有人在收铁梯。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_broken",
+      "text": "你把自己写进了页脚。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_broken",
+      "text": "你知道这一笔落下去以后，剩下的事情由谁收尾。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "不用谁收尾。这笔账从今天起挂在两个字的下面。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_broken",
+      "text": "名字不是盾。名字是账上的一个数，数一样会被用掉。"
+    },
+    {
+      "type": "narration",
+      "text": "他说这句的时候往墙里退。他退得很慢，一边退一边变薄，最后成了一层贴在墙上的印子。"
+    },
+    {
+      "type": "narration",
+      "text": "井底那枚钟开始往回收。它每收一格，井壁就落一层灰，灰底下露出来的是今天的水泥。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "八分四十秒走完了。井口那一圈天已经亮了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "钟在退。它在把刚才走掉的时间还给这条街。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "别看了。上去。铁梯还剩最后一节。"
+    },
+    {
+      "type": "narration",
+      "text": "我把本子合上，塞进外套内袋。内袋里那半张退路图已经软得像一块布。"
+    },
+    {
+      "type": "narration",
+      "text": "我们四个人一个跟着一个往上走。我走在最后，这是这个月里我第一次走在最后。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你走前面。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "最后一个人要把门带上。你们先上去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "这句话不该由你来说。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有再坚持。上梯子的时候她回头看了我一眼，那一眼很短，短到像在核对一个数字。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "铁梯在我脚下响了一声。响完我们四个都站在了上面。"
+    },
+    {
+      "type": "narration",
+      "text": "井口外面是四月十号早上的老城区。路面上有水，扫街的车刚过去，刷子的印子还在。",
+      "background": "bg_dawn_city",
+      "bgm": "bgm_hope"
+    },
+    {
+      "type": "narration",
+      "text": "那栋楼里什么都没有了。墙上那块被撕掉一角的告示板还在，板子上贴的是三个月的排班表。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "出来的时候我数了一遍。我们四个人都在。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "都在。"
+    },
+    {
+      "type": "narration",
+      "text": "我说这两个字的时候心里有一点不对。它听起来不像是我说的话。"
+    },
+    {
+      "type": "narration",
+      "text": "后来我知道哪里不对了。从那天早上起，这条街上「林晓」两个字不再只属于我。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十一号，研究所来了一辆没有标志的车。艾莉丝被叫回去做说明，说明做了六个小时。",
+      "background": "bg_institute_day",
+      "bgm": "bgm_ambient"
+    },
+    {
+      "type": "narration",
+      "text": "她回来的时候把结案文件放在我桌上。七页数据变成了九页，最后多出来的那页只有半页字。"
+    },
+    {
+      "type": "narration",
+      "text": "那半页的最下面有一行页脚，写着归档人，后面跟着两个字的落款：林晓。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "我没有签过这个。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我知道你没有签。这一栏是账按落款落的，不是你按手印。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那它凭什么叫我的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "因为昨晚你把名字写进了那一栏。账只认一笔钱一个出处。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "所以从今天起我这个人归这两个字管。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "比这个难听一点。是你这个人成了这两个字的出处。"
+    },
+    {
+      "type": "narration",
+      "text": "她收文件的时候动作很慢。她收东西从来不慢，这是这个月里第一次。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十二号早上我回咖啡馆。小雅在台子后面给我倒了一杯黑咖啡，没有问我要什么。",
+      "background": "bg_cafe_evening",
+      "bgm": "bgm_warm"
+    },
+    {
+      "type": "narration",
+      "text": "旁边那桌坐着一男一女，男的在手机上看新闻。他念了一句，说本市老城区一处工程隐患已经排除。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你听。他们说的是同一件事，只是换了词。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "他们不会知道那口井里有什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "他们不用知道。他们只要记得一个名字就够了。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候，那个男人抬头看了我一眼，又低头看手机。"
+    },
+    {
+      "type": "narration",
+      "text": "他看我的那一眼我很熟。不是认出一个人，是念到一个词。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十三号我去图书馆还那本硬皮本子。登记台后面是老周，他先问的是我这一个月去了哪。",
+      "background": "bg_library_day",
+      "bgm": "bgm_mystery"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "借出去的书一本没少。你这孩子还算守规矩。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "老周，最近有人来问过我的名字吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_grim",
+      "text": "问的人多了。前天有个穿西装的小伙子在这儿站了半个钟头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "他站在那儿问的是什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "他问这个馆里有没有一个叫林晓的。我说有。他又问那个人做过什么，我说不上来。"
+    },
+    {
+      "type": "narration",
+      "text": "老周说不上来的时候一点也不为难。他把我这件事说成一件馆里的事，说完就去盖章。"
+    },
+    {
+      "type": "narration",
+      "text": "他盖章还是三下，一下比一下重。这个动作我看了二十年，这一刻忽然觉得是别人的。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十五号，艾莉丝给我测了一次失眠。仪器放在地下一层的档案室，她现在的工位在那里。",
+      "background": "bg_institute_night",
+      "bgm": "bgm_ambient"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "比上个月低了三个点。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "三个点算好消息。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "算。但我今天要记的不是这个。"
+    },
+    {
+      "type": "narration",
+      "text": "她把记录本翻到新的一页。那一页上她写了两行抬头，第一行是林晓，第二行也是林晓。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你把同一个名字写了两遍。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "一遍是人的名字，一遍是账上的名字。这两个在记录上必须分开。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你在研究所干了这么多年，第一次要把一个人分开来记。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "是。我不知道该怎么把这两个写在同一格里。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候没有看我。笔尖停在第二行上，停了大概三秒，她最后写了一个逗号。"
+    },
+    {
+      "type": "narration",
+      "text": "那个逗号右边的位置空着。她没有补。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十七号小雅来找我。她说这两天她听见的东西变了。",
+      "background": "bg_cafe_evening",
+      "bgm": "bgm_tension"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "我现在听见两个人说同一句话。声音一样，前后差半秒。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你说的那两个人分别是谁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "一个是你。另一个也是你。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "另一个我到底跟你说了什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "另一个话少一点。他只在你说完以后补一个尾音，像盖章。"
+    },
+    {
+      "type": "narration",
+      "text": "她说盖章这两个字的时候，我想起老周。我说这件事先别告诉艾莉丝。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "我不告诉她。可是你要记着，你这两个声音已经开始分家了。"
+    },
+    {
+      "type": "narration",
+      "text": "四月二十号我在西边的路口碰见雷恩。他手里拿着一张收据，背面写着雷小满三个字。",
+      "background": "bg_street_night",
+      "bgm": "bgm_sad"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "你今天看着比上回瘦。别老不吃东西。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "你还记得三月的时候我长什么样吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "记得。就是记得得慢一点。我得先想起你说过的话，才想起你的脸。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那也算记得。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "不算。我以前记得你，是不用想的。"
+    },
+    {
+      "type": "narration",
+      "text": "他把收据折起来放回口袋。放得很轻，轻到像在放一件借来的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "那天晚上我在宿舍把本子翻了一遍。第一页的苏禾退色了，阿灰那两个字也退了一点。"
+    },
+    {
+      "type": "narration",
+      "text": "我描了两遍。描完发现自己在页脚的位置上多看了几秒。"
+    },
+    {
+      "type": "narration",
+      "text": "那个位置现在写着我的名字。每天晚上我都要看它一眼，像核对一个不属于我的门牌号。"
+    },
+    {
+      "type": "narration",
+      "text": "五月初我回过一次老城区。那口井上面的楼已经拆完了，围档上印着市政的施工公示。",
+      "background": "bg_ruins",
+      "bgm": "bgm_mystery"
+    },
+    {
+      "type": "narration",
+      "text": "公示上的工期是三个月，开工日期写的是一九九八年。我问过工地上的人，他说这块牌子挂了二十年。"
+    },
+    {
+      "type": "narration",
+      "text": "公示牌旁边有一段白色的护栏。护栏的高度正好比我的腰低一点。"
+    },
+    {
+      "type": "narration",
+      "text": "我站在那儿看了十分钟。十分钟里有七个人从我身后走过去，没有人往围档里面看。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "你现在一个人出门，别人叫你名字的时候你会回头吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "会。这两天我回头的次数比前面一个月加起来都多。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "那你回头以后看见的是谁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "看见的是我。可是我总觉得他在等我先动。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅问完就去擦杯子了。她擦杯子的动作还是那样，只是她现在不再听错人。"
+    },
+    {
+      "type": "narration",
+      "text": "六月的最后一天，我回图书馆上晚班。三楼那排书架没人动，四楼的灰薄得快要看不见。",
+      "background": "bg_library_night",
+      "bgm": "bgm_ambient"
+    },
+    {
+      "type": "narration",
+      "text": "我在四楼站了一会儿。那口坏掉的钟还在，钟面上没有指针，只剩两个孔。"
+    },
+    {
+      "type": "narration",
+      "text": "老周上楼来锁窗。他看见我，先愣了一下，然后很客气地问我有没有事。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "你是新来的吧。这个点不该有人上来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "周叔，你记得我叫什么名字吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "林晓。这名字这两天我在纸上见过好几回。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "你认得刚才说的那个人吗。"
+    },
+    {
+      "type": "narration",
+      "text": "我说不认得。说这句话的时候我心里很平静，平静得像在回答一道做熟了的选择题。"
+    },
+    {
+      "type": "narration",
+      "text": "他锁好窗就下楼了。楼道里他的脚步声一下一下往下走，走到三楼就听不见了。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e05",
+      "text": "四楼只剩我一个人。我把本子从口袋里拿出来，翻到最后一页。页脚那两个字很黑，黑得像刚写上去的。"
+    },
+    {
+      "type": "narration",
+      "text": "我伸手在楼梯口的空气里比了一下，什么也没有碰到。"
+    },
+    {
+      "type": "narration",
+      "text": "城市补上了。它补得很干净，干净到所有人都记得有一个叫林晓的人做过一件事。"
+    },
+    {
+      "type": "narration",
+      "text": "只有认识我的那几个人记得的那个林晓，和这条街上流传的那个林晓，不是同一个人。"
+    },
+    {
+      "type": "narration",
+      "text": "这两个人都是现在的我。这件事不需要写进任何一份报告。"
+    }
+  ],
+  "kind": "ending"
+}

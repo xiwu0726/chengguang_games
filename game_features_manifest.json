@@ -1,0 +1,53 @@
+{
+  "gameFeatures": [
+    {
+      "id": "daily_login",
+      "name": "每日登录系统",
+      "version": "1.0.0",
+      "description": "玩家每天登录获得奖励，连续登录有额外奖励",
+      "files": [
+        "Assets/Scripts/GameFeatures/DailyLoginSystem.cs",
+        "Assets/Scripts/GameFeatures/DailyLoginDataManager.cs"
+      ],
+      "status": "completed",
+      "date": "2025-06-20"
+    },
+    {
+      "id": "puzzle_system",
+      "name": "解谜系统",
+      "version": "1.0.0",
+      "description": "时空谜题、历史谜题、逻辑谜题",
+      "files": [
+        "Assets/Scripts/GameFeatures/PuzzleSystem.cs"
+      ],
+      "status": "completed",
+      "date": "2025-06-20"
+    },
+    {
+      "id": "collection_system",
+      "name": "收集系统",
+      "version": "1.0.0",
+      "description": "道具收集、成就收集、收集进度追踪",
+      "files": [
+        "Assets/Scripts/GameFeatures/CollectionSystem.cs"
+      ],
+      "status": "completed",
+      "date": "2025-06-20"
+    },
+    {
+      "id": "social_system",
+      "name": "社交系统",
+      "version": "1.0.0",
+      "description": "成就分享、排行榜、好友系统",
+      "files": [
+        "Assets/Scripts/GameFeatures/SocialSystem.cs"
+      ],
+      "status": "completed",
+      "date": "2025-06-20"
+    }
+  ],
+  "totalFeatures": 4,
+  "totalFiles": 6,
+  "createdDate": "2025-06-20",
+  "version": "1.0.0"
+}

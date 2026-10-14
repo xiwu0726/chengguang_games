@@ -1,0 +1,525 @@
+{
+  "sceneId": "3-e13",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·门留着一条缝",
+  "background": "cg_ending_e13",
+  "bgm": "bgm_mystery",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号凌晨五点，我做了一件在这个月里最像我的事：我没有把那一页交出去。"
+    },
+    {
+      "type": "narration",
+      "text": "我把它折起来，折成一个手掌那么大，塞进外套内袋。内袋里那半张退路图隔着纸碰了碰我的胸口。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你把那一页折起来做什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我在给这本书留一个字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "门要一整页。你少交一个字，它就不算收下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "那就让它差一个字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "差一个字，这道口子就关不上。关不上它会一直留在这儿。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "一直留在这儿，总比一直少一个人好。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "你把纸带走，那十一个名字就还留在这里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "留在这里也好。留在这里就还有人来念。"
+    },
+    {
+      "type": "narration",
+      "text": "我把手从口子边上收回来。那道口子没有合，它收窄了一半，剩下一条竖着的缝。"
+    },
+    {
+      "type": "narration",
+      "text": "缝里出来的是纸背面的颜色，很淡，像阴天里的一层亮。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": "井底亮了一下。那口钟停在最后一格上，指针斜着，像一步没有走完。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "它要的是一整页，你给的是半个答案。它会一直等。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "那就让它等。它四十年都等过，不差这几年。"
+    },
+    {
+      "type": "narration",
+      "text": "我们四个人从铁梯上走出去的时候，天正在亮。那道缝跟在我们背后，一直亮到楼里。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十号的老城区跟平时没有两样：洒水车刚过去，修路的人蹲在井盖边上抽烟。",
+      "background": "bg_dawn_city",
+      "bgm": "bgm_ambient"
+    },
+    {
+      "type": "narration",
+      "text": "他们不知道这栋楼里留着一条缝。这条缝只有我们四个人看得见，就是我们四个也看得不太清。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十一号研究所把这件事结了。结案文件上写的是设备故障引起的区域停电，附了九页数据。",
+      "background": "bg_institute_day",
+      "bgm": "bgm_ambient"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝在数据里把我们四个人的名字删掉了。她做这件事没有跟我商量，事后也没有解释。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你在数据里把我们划掉了。"
+    },
+    {
+      "type": "narration",
+      "text": "那天下午我在走廊上把那九页数据从头看到尾。第九页最后一行是空的，空行下面连页脚都没有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你连页脚都留出来了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "留出来了。以后要是有人想把名字写回去，总得有个地方写。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "删掉的是名字，不是人。这两样东西从三月起就不一样了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "那从今天起，我们四个在纸上是没有的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "在纸上是没有的。在路上是四个。"
+    },
+    {
+      "type": "narration",
+      "text": "从五月开始，这条街上每个月都会有人丢一次东西。",
+      "background": "bg_street_night",
+      "bgm": "bgm_mystery"
+    },
+    {
+      "type": "narration",
+      "text": "五月是图书馆的一本书少了一页。那本书是我经手的，第七十页和第七十一页之间空了一段。"
+    },
+    {
+      "type": "narration",
+      "text": "隔了一天那一段回来了。回来的纸比原来的白一点，白到像刚印出来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你不是第一次丢东西了吧。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "我不是。可这一次丢的不是我的东西，是这本馆里的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "六月是小雅的手套。她把手套搁在冰柜上面，第二天找不到了，第三天在冷冻格里找到，硬得像两块木板。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "我上个月还丢过一次钥匙。钥匙是在面粉袋里找到的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "不过我们这儿丢了东西都会回来。回来的时候一件都不少。"
+    },
+    {
+      "type": "narration",
+      "text": "七月是艾莉丝的键盘。那个键盘少了一个键帽，少了三天，第四天自己回到了原来的位置上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "这不是巧合。这是有人在替这条街补漏洞，补得不太规整。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你是说门里面的东西在往外漏。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "漏出来的不是东西，是顺序。顺序错了，东西就会先不见一下，再回来。"
+    },
+    {
+      "type": "narration",
+      "text": "八月我在车站看见一个中年人。他在自动售票机前面站了半天，然后问旁边的人今天几号。"
+    },
+    {
+      "type": "narration",
+      "text": "旁边的人告诉了他日子。他说了一句自己少了十几分钟，说完就笑了。"
+    },
+    {
+      "type": "narration",
+      "text": "那个笑我很熟。三月十五号那天，咖啡馆里所有人也是那样笑的。"
+    },
+    {
+      "type": "narration",
+      "text": "我在站台边上站了一会儿，把那个人的样子记下来：灰外套，手里拎一个纸袋，袋边有一道折痕。"
+    },
+    {
+      "type": "narration",
+      "text": "我掏出手机想拍一张，屏幕上什么也没有。我收起手机，用手在空气里比了一下他的高度。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "你在记他。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我在记一个少了十几分钟的人。这条街以后会有很多这样的人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "那我们就一个一个记下来。记下来他们就不会全丢。"
+    },
+    {
+      "type": "narration",
+      "text": "那天晚上我在本子上新开了一页，写上八月、车站、十七分钟这几个字。写的时候比别的字慢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "你也看见了。他丢的是时间，不是钱包。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "丢的人自己不当回事，旁边的人也不当回事。这是这条街现在最坏的地方。"
+    },
+    {
+      "type": "narration",
+      "text": "我的失眠没有退。九月再测，比七月又高了一截。",
+      "background": "bg_institute_night",
+      "bgm": "bgm_insomnia"
+    },
+    {
+      "type": "narration",
+      "text": "到了这个数的人不能一个人住。艾莉丝给我在研究所的观察室留了一张床，我一星期去住两晚。"
+    },
+    {
+      "type": "narration",
+      "text": "观察室的天花板是白的，白的上面有几道很浅的裂纹。我躺着的时候会数那些裂纹，数到第九十九就从头数。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "这个数一到，你就会开始把借来的记忆当成自己的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "那我怎么分辨哪一段是我自己的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "分辨不了。你现在确定不了我这句话是不是你自己想出来的。"
+    },
+    {
+      "type": "narration",
+      "text": "她说得很平。她说这种话从来不加安慰，这一个月我习惯了。"
+    },
+    {
+      "type": "narration",
+      "text": "十月的一天夜里，我梦见自己在图书馆数书。醒来的时候手里是空的，可我记得每一本的编号。"
+    },
+    {
+      "type": "narration",
+      "text": "我把那几个编号写下来，第二天去查。那几本书都在架上，只有一本是别人还的，还书日期写着二一一〇年。"
+    },
+    {
+      "type": "narration",
+      "text": "我把那一行圈起来，圈得很轻。圈完在旁边写了三个字：还开着。"
+    },
+    {
+      "type": "narration",
+      "text": "那一夜我没有睡。我把窗帘拉开一点，让路灯的光落在床脚上，然后用手指在被面上数格子。"
+    },
+    {
+      "type": "narration",
+      "text": "数到第五十格的时候我想起艾莉丝说的话：到了这个数的人分不清借来的记忆。"
+    },
+    {
+      "type": "narration",
+      "text": "我坐起来，把本子翻到三月十二号那一页。那一页的字是我写的，墨色比后面几页深。"
+    },
+    {
+      "type": "narration",
+      "text": "我盯着它看了很久，看到自己都说不清那一页是不是我写的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "你昨晚又没睡。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "睡了两个钟头。我数了三百多格，数完就知道自己没睡。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "下一次数不动了就别数。数东西是把清醒摊薄，摊薄了你会更信自己编的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "我把她这句话写在本子的边上。写完发现我写的位置紧挨着三月十三号那条记录。"
+    },
+    {
+      "type": "narration",
+      "text": "老城区那片围档十月拆了，十一月又围起来，十二月再拆一次。市政说这块地的手续有问题。",
+      "background": "bg_ruins",
+      "bgm": "bgm_mystery"
+    },
+    {
+      "type": "narration",
+      "text": "我每个月去一次。那栋楼拆掉以后，那条缝留在一堵新修的水泥墙上，只有一个人肩膀那么宽。"
+    },
+    {
+      "type": "narration",
+      "text": "我站在缝前面的时候，缝里的光会亮一点，像我走近了它就认得我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "你每次去，都在那儿站多久。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "十分钟。超过十分钟我就开始想把手伸进去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "你伸进去过一次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "三月十六号。那天我从一条裂缝里碰过一个人的手。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩听完没有劝我。他这个人从来不劝人，他只是在旁边站着，站到我说走。"
+    },
+    {
+      "type": "narration",
+      "text": "他知道那道缝还在。他是唯一一个从来不问我为什么不去把它关上的人。"
+    },
+    {
+      "type": "narration",
+      "text": "冬天的时候小雅在咖啡馆后面贴了一张日历。她在每个月的那一格上画一个小圈。",
+      "background": "bg_cafe_evening",
+      "bgm": "bgm_warm"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "画圈的是丢东西的月份。你看，一个月都没漏。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "画这样一张日历到底有什么用。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "有用。要是哪个月没画圈，就说明那条缝自己合上了。"
+    },
+    {
+      "type": "narration",
+      "text": "我看了那张日历很久。四月那一格她没有画圈，因为四月丢的东西太多，画不下。"
+    },
+    {
+      "type": "narration",
+      "text": "一月、二月、三月她画得很整齐，一行三个，像登记簿上的借还记录。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "她这张日历比我的记录本准。我的本上只有数据，没有圈。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那你就照她的抄一份。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我抄过了。抄的时候我发现四月那一格怎么都抄不满。"
+    },
+    {
+      "type": "narration",
+      "text": "十二月的最后一天，我一个人去了那堵水泥墙。墙根下积着雪，雪上有两行脚印，不是我的。"
+    },
+    {
+      "type": "narration",
+      "text": "我沿着脚印走到缝前面，看见墙根下压着一张小纸，折成四折，边上被雪水泡软了。"
+    },
+    {
+      "type": "narration",
+      "text": "我把纸捡起来展开。纸上只有一个字，写得很用力，笔尖把纸划破了指甲大的一小块。"
+    },
+    {
+      "type": "narration",
+      "text": "那个字我不认得，可它看起来像一个人的名字被截掉了一半。"
+    },
+    {
+      "type": "narration",
+      "text": "我把纸重新折好，压回原来的地方，用一小块石头压住。我没有把它带走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "你刚才为什么不把那张纸带走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "因为那不是给我的。写这张纸的人还会回来拿。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "你怎么知道他还会回来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "我不知道。我只是不想让这条街上多一样丢的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "我沿着脚印看过去，脚印在缝前面停住，停了大概十分钟的长度，然后原路退了回去。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有等那个人。我在缝前面站了十分钟，站到脚冷，然后原路退回去。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e13",
+      "text": "缝还在。它一直差一个字，我也一直没把那个字补上。"
+    },
+    {
+      "type": "narration",
+      "text": "我今年二十二岁，过了年二十三岁，失眠值还在那个高度，口袋里那一页纸还没有交出去。"
+    },
+    {
+      "type": "narration",
+      "text": "有时候我觉得这样也不坏：城市活着，人少了一点点，门没有关。"
+    },
+    {
+      "type": "narration",
+      "text": "有时候我夜里醒着，会替别人说一句话。那句话是谁的我不管，反正它说得比我准。"
+    }
+  ],
+  "kind": "ending"
+}

@@ -1,0 +1,330 @@
+{
+  "sceneId": "3-e02",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·两个人的研究所",
+  "background": "cg_ending_e02",
+  "bgm": "bgm_warm",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号中午，研究所送来一份结案通知。上面写着设备故障四个字，盖了三个章。"
+    },
+    {
+      "type": "narration",
+      "text": "我把通知翻过来。背面是空的，空得还能再写一整份。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "空的地方留着，就是留给别人写假的。"
+    },
+    {
+      "type": "narration",
+      "text": "他说完把一支笔搁在桌上。那是守望者的旧货，笔帽上有一道刀痕。"
+    },
+    {
+      "type": "narration",
+      "text": "我们俩都清楚，这一夜要是只写成设备故障，下一条裂缝再开的时候，还是会有人在里面被少掉。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "那就别写设备故障。我们写名字。"
+    },
+    {
+      "type": "narration",
+      "text": "被删掉的记录锁在地下三层的机房。守望者的卡刷不开研究所的门，研究所的人也不会替守望者按指纹。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "行政楼有一间旧档案室。钥匙在门框上面，很多年没人动过。"
+    },
+    {
+      "type": "narration",
+      "text": "他说这句话的语气像在报一个班次，不像是在说偷东西。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "sfx": "sfx_door",
+      "text": "四月十二号夜里十一点半，我们进了那间屋子。七排铁柜贴着年份，最里面一排是二十九年前的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "从最里面开始。越靠里的越少人翻。"
+    },
+    {
+      "type": "narration",
+      "text": "第一晚我们只做了一件事：把每个柜子里的夹子按日期排好，抄在一张纸上。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩抄得很慢，一格一格地写。他写字的时候左手压在纸上，手腕内侧那圈细线露在外面。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "我妹的名字我写过很多遍。写别的名字太快，不习惯。"
+    },
+    {
+      "type": "narration",
+      "text": "纸上有一份清单，十一行名字被人一笔一笔划掉了。划痕是同一个人留下的。"
+    },
+    {
+      "type": "narration",
+      "text": "我把十一行抄进自己的本子。抄到第六行的时候笔尖顿了一下，像有人从纸背后按住它。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "雷恩。这不是我记错。这是有人一笔一笔删的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "那就一笔一笔写回来。"
+    },
+    {
+      "type": "narration",
+      "text": "第二天早上，艾莉丝在复印间门口等着我们。她手里那叠纸，纸角对得很齐。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "地下三层昨晚的灯亮了四十分钟。值班记录我改过了，写成设备自检。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你可以不替我们改。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我改是因为那份结案通知是我签的。签错的东西，我自己修。"
+    },
+    {
+      "type": "narration",
+      "text": "她把那叠纸递过来。是档案室的索引，每页右下角都有她标的编号。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "索引我重排过。原件在编号里，复印件也能查。别把原件拿出研究所。"
+    },
+    {
+      "type": "narration",
+      "text": "她转身回档案室。走到楼梯口的时候停了一下，没有回头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你们要做，就做能被人查的那种。锁在柜子里的东西救不了人。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十五号，我们在东楼三层挑了一间空办公室。门牌是零三零七，窗户朝北，一年到头没有太阳。"
+    },
+    {
+      "type": "narration",
+      "text": "我们把铁柜推进去，把十一份复印件按编号装订。装订第一份的时候，雷恩的手在抖。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "干净点。别人翻的时候，别把手弄脏。"
+    },
+    {
+      "type": "narration",
+      "text": "门口那块牌子是我用钢笔写的：公开档案室，任何人可查，登记姓名即可。"
+    },
+    {
+      "type": "narration",
+      "text": "第一天没有人来。第二天来了一个退休的铁路职工，他要查他师傅的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "他师傅在三十年前那场事故里被划掉了，家里连一张合影都没有留下。"
+    },
+    {
+      "type": "narration",
+      "text": "我们在索引里找到那一行。名字后面盖着一个很小的作废章。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把复印件取出来递给他。他看了很久，说这个名字对，就是少了一个点。"
+    },
+    {
+      "type": "narration",
+      "text": "那天下午他坐在椅子上抄了两页纸，抄完把笔还给我，说他师傅的字也这么难看。"
+    },
+    {
+      "type": "narration",
+      "text": "老周是第三天来的。他坐了三站公交，围巾上都是雨。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "上回你说的那张核对表，我回去翻了。柜台底下真有半张。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "半张？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_grim",
+      "text": "半张。上面有字，不是我写的。那些人我一个都不认得，可我的手认得那支笔。"
+    },
+    {
+      "type": "narration",
+      "text": "他把那半张纸压在登记本下面，说放在这里，比放在他自己的抽屉里安心。"
+    },
+    {
+      "type": "narration",
+      "text": "维拉来过一次。她没有进门，站在走廊上看了三分钟，看的是那排铁柜。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "守望者不做档案。我们只做交易。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "那这次算交易。你们出钥匙，我们出名册。"
+    },
+    {
+      "type": "narration",
+      "text": "她看了我一眼，从口袋里摸出一张守望者的通行条，压在牌子下面，转身走了。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅来得最勤。她下班以后坐地铁过来，在窗边坐着，什么也不查。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你们这里安静。安静到能听见有人在小声念名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "念的是哪个名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "念不全。念到一半，后面那一截像被什么东西吃掉了。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这话的时候在抠桌上的胶带印，抠得很慢。她说完也不安慰我们，这是她的习惯。"
+    },
+    {
+      "type": "narration",
+      "text": "我们请她做一件事：每天把听见的名字写在便条上，贴在索引柜侧面。"
+    },
+    {
+      "type": "narration",
+      "text": "半个月下来，便条贴满了半面柜子。十一个名字能对上原件，剩下的那些是空的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "空的先留着。留着就还有人来填。"
+    },
+    {
+      "type": "narration",
+      "text": "研究所没有承认我们，也没有关门。通报里多了一句：东楼三层有一间对外查询室，由研究所与志愿者共同管理。"
+    },
+    {
+      "type": "narration",
+      "text": "志愿者那一栏是雷恩报的名。他在身份那里写了守望者，人事看了两遍，最后还是收了。"
+    },
+    {
+      "type": "narration",
+      "text": "他要把守望者的烙印盖在登记表上当签名。人事说这个不行，他就用笔把自己的名字写了一遍。"
+    },
+    {
+      "type": "narration",
+      "text": "五月，来查的人排到了走廊。我们一天查不完十一份，只能发号。"
+    },
+    {
+      "type": "narration",
+      "text": "发号的本子一开始是新的，写到第七天就卷了角。雷恩在封面上画了一条横线，说这就是我们的表。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "那这张表的表头写什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "写查得到。"
+    },
+    {
+      "type": "narration",
+      "text": "我见过很多张表格。这一张是我第一次不想把它交上去的。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e02",
+      "text": "六月的一个下午，阳光从北窗斜进来一小块，落在两张并排的桌子上。左边是原件，右边是复印件，中间只隔着一支笔。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩坐在左边。他还是慢慢地写，写他妹妹的名字。现在他写一遍就够了，不用再描。"
+    },
+    {
+      "type": "narration",
+      "text": "我坐在右边，登记来查的人。每写下一个名字，就在索引柜上贴一张便条。"
+    },
+    {
+      "type": "narration",
+      "text": "有人问我们这是什么地方。我说，这是研究所的一间办公室，现在谁都能进来。"
+    },
+    {
+      "type": "narration",
+      "text": "问的人多半点点头就走了。他们不知道那十一个名字原来在哪个柜子里，也不需要知道。"
+    },
+    {
+      "type": "narration",
+      "text": "他们只要知道，这里的抽屉是拉得开的。"
+    }
+  ],
+  "kind": "ending"
+}

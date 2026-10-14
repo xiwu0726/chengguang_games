@@ -1,0 +1,118 @@
+# Prometheus alert rules for game server
+groups:
+  - name: game-server-alerts
+    interval: 30s
+    rules:
+      # High error rate alert
+      - alert: HighErrorRate
+        expr: |
+          sum(rate(http_requests_total{status=~"5.."}[5m])) by (job)
+          /
+          sum(rate(http_requests_total[5m])) by (job)
+          > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is {{ $value | humanizePercentage }} (threshold: 5%)"
+
+      # Circuit breaker open alert
+      - alert: CircuitBreakerOpen
+        expr: circuit_breaker_state{job="game-server"} == "OPEN"
+        for: 1m
+        labels:
+          severity: critical
+          component: game-server
+        annotations:
+          summary: "Circuit breaker is OPEN"
+          description: "Circuit breaker for game-service is OPEN, too many failures detected"
+
+      # High latency alert
+      - alert: HighLatency
+        expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) > 1
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "High latency detected"
+          description: "p95 latency is {{ $value }}s (threshold: 1s)"
+
+      # Very high latency alert
+      - alert: VeryHighLatency
+        expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) > 5
+        for: 2m
+        labels:
+          severity: critical
+          component: game-server
+        annotations:
+          summary: "Very high latency detected"
+          description: "p95 latency is {{ $value }}s (threshold: 5s)"
+
+      # Request rate too low
+      - alert: LowRequestRate
+        expr: rate(http_requests_total[5m]) < 0.1
+        for: 10m
+        labels:
+          severity: info
+          component: game-server
+        annotations:
+          summary: "Very low request rate"
+          description: "Request rate is {{ $value }} req/s (threshold: 0.1 req/s)"
+
+      # Degraded mode enabled
+      - alert: DegradedModeEnabled
+        expr: degraded_mode_enabled{job="game-server"} == 1
+        for: 1m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "Degraded mode is enabled"
+          description: "Server is in degraded mode, failure rate is {{ $value }}"
+
+      # Server down
+      - alert: GameServerDown
+        expr: up{job="game-server"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          component: game-server
+        annotations:
+          summary: "Game server is down"
+          description: "Game server has been down for more than 1 minute"
+
+      # Memory usage high
+      - alert: HighMemoryUsage
+        expr: node_memory_MemUsed_bytes / node_memory_MemTotal_bytes > 0.9
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is {{ $value | humanizePercentage }} (threshold: 90%)"
+
+      # CPU usage high
+      - alert: HighCPUUsage
+        expr: rate(node_cpu_seconds_total{mode!="idle"}[5m]) * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "High CPU usage"
+          description: "CPU usage is {{ $value | humanizePercentage }} (threshold: 80%)"
+
+      # Retries too many
+      - alert: TooManyRetries
+        expr: rate(http_retry_total[5m]) > 10
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "Too many retries detected"
+          description: "Retry rate is {{ $value }} retries/s (threshold: 10 retries/s)"

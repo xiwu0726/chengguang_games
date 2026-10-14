@@ -1,0 +1,277 @@
+{
+  "sceneId": "3-e17",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·十一个名字都清了",
+  "background": "cg_ending_e17",
+  "bgm": "bgm_warm",
+  "next": "",
+  "kind": "ending",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十一号早上，闹钟还没响我就醒了。醒来的第一件事是听，屋里没有人在念名字。"
+    },
+    {
+      "type": "narration",
+      "text": "窗外有早点摊的声音，油锅在响，有人喊多加糖。这些声音昨天还不归我管。"
+    },
+    {
+      "type": "narration",
+      "text": "我躺到闹钟响，又赖了五分钟。这五分钟没有任何代价，我睡得很平。"
+    },
+    {
+      "type": "narration",
+      "text": "下楼的时候我在楼道里数脚步，数到一半忘了自己数到几，索性不数了。"
+    },
+    {
+      "type": "narration",
+      "text": "街还是那条街。裂缝的事没有人提，报上没有，广播里没有，连一句多余的话都没有。"
+    },
+    {
+      "type": "narration",
+      "text": "我在早点摊前站了一会儿。摊主问我吃什么，我说豆浆油条，他说今天油条细，我说细的也行。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "细的也行。这句话我一个月都说不出来。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_library_day",
+      "text": "到图书馆是八点四十。老周在登记台后面，台面上摊着那张在职与在册人员动态核对表。"
+    },
+    {
+      "type": "narration",
+      "text": "表上十一个格子，每个格子里都有名字。字是他写的，一笔一笔，写得很慢，也很稳。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "你来啦。正好，帮我数一遍。我数了四十年，怕自己数花眼。"
+    },
+    {
+      "type": "narration",
+      "text": "我从头数。苏禾，阿灰，阮宁，第七排和第八排之间那一位。十一个，一个不多，一个不少。"
+    },
+    {
+      "type": "narration",
+      "text": "数到最后一个的时候，老周把笔搁下，念了两个字。"
+    },
+    {
+      "type": "narration",
+      "text": "他念得很顺。那两个字他四十年念不顺，去年还不行，今天早上顺了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "周叔，你把他的名字说出来了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "嗯。原来就这么两个字。我绕了四十年，绕到昨天才绕直。"
+    },
+    {
+      "type": "narration",
+      "text": "他摆摆手，没让我往下问。他把印泥盒推过来，在十一个格子上各盖了一个章，核。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "章落下去的声音一下一下，像有人在很远的地方收东西。"
+    },
+    {
+      "type": "narration",
+      "text": "盖完，他把纸角抚平，从抽屉里又抽出一张新表。新表上十二个格子。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "第十二行给你留着。研究所那边要名单，说这次总得有个人记进去。"
+    },
+    {
+      "type": "narration",
+      "text": "我知道那一行是给谁的。井底那道门要收一个人才能合，收的名字该写哪儿，谁都明白。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "周叔，那一行空着吧。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "空着？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "空着。我的名字在我自己身上，不用填进纸里。"
+    },
+    {
+      "type": "narration",
+      "text": "老周看了我一会儿，用铅笔在第十二行轻轻划了一道，划完说了半截话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "行。空着……空着比填上好看。"
+    },
+    {
+      "type": "narration",
+      "text": "上午十点艾莉丝来了。她穿着研究所的灰外套，抱着平板，进门先找的是我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我来交账。八块碎片，编号我念给你听，你帮我看看有没有念错。"
+    },
+    {
+      "type": "narration",
+      "text": "她念编号念得很快，念完把平板转过来对着我。八行记录，每行后面都标着去向：封存。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "碎片不是我们的东西，是从时间里借的。借了八块，还了八块，账上清零。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "这个也要记账啊。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "都要记。不记的账早晚回来收人。这条规矩今天作废，我亲手划的。"
+    },
+    {
+      "type": "narration",
+      "text": "她划掉最后一行的时候笔停了一下，像是舍不得那个作废的动作，划完才松手。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅下午来的。录音机抱在怀里，进门先按了播放。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "你听。我在井口录的那盘，本来想留个证据，回来一听，里面全是街道。"
+    },
+    {
+      "type": "narration",
+      "text": "磁带里没有墙里那个声音了。有的是洒水车，有排风扇，有人喊谁家孩子回来吃饭。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "我以前录到的都是别人丢掉的。现在录到的都是活人的，这盘值钱多了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "值钱就拿去卖，换两顿肉。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩扛着两箱归档的卷宗从我们身边过去，箱子落地的时候他补了半句。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "四楼那口钟……我上午看了一眼。还是那两个孔。"
+    },
+    {
+      "type": "narration",
+      "text": "钟体还在，指针没有回来。它不响也不走，安安静静挂着，像一件终于退了休的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "我没觉得遗憾。有些东西回来是好消息，有些东西不回来也是。"
+    },
+    {
+      "type": "narration",
+      "text": "中午我们四个人在馆里吃饭。老周多摆了一副碗筷，摆完又自己收走，说人都在，不用多。"
+    },
+    {
+      "type": "narration",
+      "text": "下午我在四楼还书车旁边站了一会儿。第七排和第八排之间那条缝，现在就是两排书架。"
+    },
+    {
+      "type": "narration",
+      "text": "光从窗户斜着进去，照见的是书脊，不是空隙。站过人的地方，现在停着一辆还书车。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你下午在这儿站了十一次，我数了。你要是没事，帮我核对这批归还记录。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "有事。我在确认这里不需要我了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "确认完了？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "确认完了。"
+    },
+    {
+      "type": "narration",
+      "text": "她多解释了一句：晚上基地开会，讨论的是以后谁来看着这些表，不是看着裂缝。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_dorm_night",
+      "text": "傍晚我回宿舍。楼道还是暗的，我走到一半停下来，听了一会儿。"
+    },
+    {
+      "type": "narration",
+      "text": "没有钟表声。胸口那块地方很安静，安静得像我欠了它一场觉，它今天还给我了。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e17",
+      "text": "桌上摊开今天的记录，日期一栏我写：四月十一号，晴，无事。"
+    },
+    {
+      "type": "narration",
+      "text": "无事这两个字，从三月十二号起我就没资格写。今天我写了，写完还盖了个章。"
+    },
+    {
+      "type": "narration",
+      "text": "十一个名字都清了。第十二行空着，我的名字在我自己胸口，哪儿也不用去。"
+    },
+    {
+      "type": "narration",
+      "text": "明天早上七点的闹钟我已经定好。第一个普通早晨过完了，明天还有下一个。"
+    }
+  ]
+}

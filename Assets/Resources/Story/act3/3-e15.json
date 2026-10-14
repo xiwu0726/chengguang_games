@@ -1,0 +1,552 @@
+{
+  "sceneId": "3-e15",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·每个月丢一件东西",
+  "background": "cg_ending_e15",
+  "bgm": "bgm_insomnia",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "门留了一条缝。缝里塞着一张四折的纸，一半在里面，一半在外面。"
+    },
+    {
+      "type": "narration",
+      "text": "我把它塞进去的那天，手指在里面停了半秒。纸没有往里走，也没有往外走。"
+    },
+    {
+      "type": "narration",
+      "text": "从那天起，缝就是这个宽度。它合不上，也开不到能让人过去的程度。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "结论：门没有关。理由：它缺的那一页在缝里，不在里面。"
+    },
+    {
+      "type": "narration",
+      "text": "她先说结论，停两秒才给理由。那两秒是留给别人接话的，我接了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那我就不用再带着它了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你要带着别的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "她说的是这座城。说这话时她没有看我，看的是记录本上那一行空着的行号。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_dorm_night",
+      "bgm": "bgm_insomnia",
+      "text": "从那天开始，我睡得很短。短到什么程度我不写数字，我只写我看见了什么。"
+    },
+    {
+      "type": "narration",
+      "text": "凌晨三点以后闭眼，就会看见别人的记忆。第一次我以为是自己的。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": "一个女人在登记组窗口前填表，笔尖抖，把姓写成两笔。我闻到她桌上的墨水味。"
+    },
+    {
+      "type": "narration",
+      "text": "我睁开眼。天花板是观察室的天花板，裂纹在左边第二条。"
+    },
+    {
+      "type": "narration",
+      "text": "我把这件事写下来。写的时候我发现，我把「我闻到了」写成了「她闻到了」。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "串味了。"
+    },
+    {
+      "type": "narration",
+      "text": "串味是这个月第三次。句子还是句子，主语不是我的主语。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_base_room",
+      "bgm": "bgm_ambient",
+      "text": "艾莉丝给我一张表，只有两栏。左边写「看见的」，右边写「发生的」。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "分不清就都写。写满一栏再补。"
+    },
+    {
+      "type": "narration",
+      "text": "表贴在床头。第一周左边九条，右边两条。第二周左边十七条，右边三条。"
+    },
+    {
+      "type": "narration",
+      "text": "右边那三条是：面馆开门、图书馆停电、小雅把日历挂上墙。"
+    },
+    {
+      "type": "narration",
+      "text": "走廊的灯有十四盏，第十五盏坏了三个月。我数到十四就翻身，数到十五说明我又坐起来了。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_corridor",
+      "bgm": "bgm_ambient",
+      "text": "雷恩把观察室的床搬到有窗的位置。搬完他没有说话，把窗钩扣上，扣的是能推开的那一档。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你把它挪开了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "是我挪的。它放在你手边碍事。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_library_day",
+      "bgm": "bgm_warm",
+      "text": "小雅在图书馆门口贴了一张日历。日历上每个月画一个圈，圈里写这个月丢了什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "一月，天桥少一根栏杆。"
+    },
+    {
+      "type": "narration",
+      "text": "第二天栏杆回来了。回来的是两根。多出来的那根没人认领，老周给它编了号。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "两根都留着吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "留着。丢过东西的地方不该只缺一根。"
+    },
+    {
+      "type": "narration",
+      "text": "他说这话时正在给一张卡片补数字。他的馆员编号是 A-三一七，那天下班前变成了 A-三一。"
+    },
+    {
+      "type": "narration",
+      "text": "他没有发现。发现的是小雅。她把那张卡片翻过来又翻回去，翻了三次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "周先生，你的七呢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "七在我这儿。我记着就行。"
+    },
+    {
+      "type": "narration",
+      "text": "他把那张卡片放进抽屉最里面，压在过塑的核对表下面，抽屉就没有再开过。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_street_night",
+      "bgm": "bgm_ambient",
+      "text": "二月，面馆招牌少了一个字。少的是「回」。"
+    },
+    {
+      "type": "narration",
+      "text": "招牌变成「面馆」两个字。老板骂了一句，第二天「回」自己回来了，位置偏了半厘米。"
+    },
+    {
+      "type": "narration",
+      "text": "那半厘米我一直记着。它比原来好看。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": "那几天我几乎没睡。眼睛已经变色了。小雅给我排了班。"
+    },
+    {
+      "type": "narration",
+      "text": "班表写在她的小本子上：上午十点睡两小时，下午六点睡一小时，其余不许闭眼超过二十分钟。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "我喊你。我喊你就醒。"
+    },
+    {
+      "type": "narration",
+      "text": "她喊的方式是敲三下，停一下，再敲两下。她说这个节奏我认得。"
+    },
+    {
+      "type": "narration",
+      "text": "我认得。那是盖章的节奏。她只听我说过一次，就记了一年。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_institute_day",
+      "bgm": "bgm_mystery",
+      "text": "三月，图书馆门口那棵树的影子少了一半。"
+    },
+    {
+      "type": "narration",
+      "text": "影子少的那一半正好盖在台阶上。台阶那天晒得比平时烫。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "影子也能丢。丢的是光的角度。"
+    },
+    {
+      "type": "narration",
+      "text": "她把这件事写在右边那一栏。那一栏第一次写满。"
+    },
+    {
+      "type": "narration",
+      "text": "四月，艾莉丝的记录本少了一行。行号还在，字没了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "那一行是我自己写的。我不记得我写过。"
+    },
+    {
+      "type": "narration",
+      "text": "她先说结论，说完停了两秒才补后半句。那两秒比前半句长。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "补一行。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "补了就不是那一行。"
+    },
+    {
+      "type": "narration",
+      "text": "她把本子合上，压在显示器下面，让那一页摊着。她说摊着它自己会回来。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_cafe_evening",
+      "bgm": "bgm_sad",
+      "text": "五月，小雅丢了笑的声音。"
+    },
+    {
+      "type": "narration",
+      "text": "她还会笑。嘴角先压一下，然后抬起来。抬起来的时候没有声音。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "没事。我记得它长什么样。"
+    },
+    {
+      "type": "narration",
+      "text": "她把这件事写进日历的圈里，字很小，写在「手套」那一格下面。"
+    },
+    {
+      "type": "narration",
+      "text": "六月，城里的雨少了一场。天气预报说那天有雨，地上是干的。"
+    },
+    {
+      "type": "narration",
+      "text": "干的那天我去了井边。缝里那张纸的一角被人摸过，毛边朝外。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有把它抽出来，也不敢把它按进去。我只把毛边朝内折了一下。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "折完我在井沿坐了一会儿。坐到我能确定，自己不是坐在别人的记忆里。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_ruins",
+      "bgm": "bgm_ambient",
+      "text": "七月，末班车少了半站。车还是那辆车，报站少了一个名字。"
+    },
+    {
+      "type": "narration",
+      "text": "少了的那个站台上还立着牌子。牌子底下坐着一个人，每天坐到没有车来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "上车。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把他拉起来了。拉起后他没有解释，把车门关上，自己站在门口一路。"
+    },
+    {
+      "type": "narration",
+      "text": "八月，雷恩手上的烙印少了一道。"
+    },
+    {
+      "type": "narration",
+      "text": "少的那道在虎口。他用拇指去摸，摸了三次，第四次把手放下来，去看窗外。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "还剩三道。够。"
+    },
+    {
+      "type": "narration",
+      "text": "他说够的时候没有回头。他把袖子放下来，扣好，把小满那半张纸压进工具箱。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_library_night",
+      "bgm": "bgm_silence",
+      "text": "九月，老周的编号少了一个数字。这一条我写在左边那一栏。"
+    },
+    {
+      "type": "narration",
+      "text": "因为我不确定我看见的是编号，还是我看见的是他自己在数自己。"
+    },
+    {
+      "type": "narration",
+      "text": "那天夜里我在观察室醒过来，嘴里有一个名字，不是我的，也不是这里任何人的。"
+    },
+    {
+      "type": "narration",
+      "text": "我把它写在纸角上。第二天早上那个名字不见了，纸角是干净的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你写过的纸不要折。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我折了。折四折。"
+    },
+    {
+      "type": "narration",
+      "text": "她看了我很久。她看的是我的口袋。我的口袋是空的。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_dawn_city",
+      "bgm": "bgm_ambient",
+      "text": "十月，那口钟的钟体少了一圈刻度。"
+    },
+    {
+      "type": "narration",
+      "text": "钟体还在，指针早没了。刻度少了一圈，剩下的那些排得比原来密。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "它是不是在往里收。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "它在往里收。收完就没了。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完这两句，回去把一张空白表贴在钟柜上，每天记一格。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_dorm_night",
+      "bgm": "bgm_insomnia",
+      "text": "十一月，我丢了一个梦。"
+    },
+    {
+      "type": "narration",
+      "text": "我记得它的形状：一条楼梯，楼梯下面有水声，水声里有人叫我。"
+    },
+    {
+      "type": "narration",
+      "text": "我不记得他叫我什么。我把形状画下来，画到第三遍，连楼梯也不见了。"
+    },
+    {
+      "type": "fx",
+      "fx": "timeline",
+      "text": "那晚句子又串了。我把「我叫林晓」写成「我叫」，中间空了两格。"
+    },
+    {
+      "type": "narration",
+      "text": "空的两格我用指甲划了一道。划完把它贴在表下面，让左边那一栏压着它。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "你眼睛的颜色不对。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "嗯。我今天看见了三条不是我的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "那就三条都写。写完我念给你听。"
+    },
+    {
+      "type": "narration",
+      "text": "她真的念。她把本子举得很高，声音是哑的，笑没有声音。"
+    },
+    {
+      "type": "narration",
+      "text": "她每月替我在圈里写一个字。写到第十二个圈，她开始写两件。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "两件也记得住。我念，你听着。"
+    },
+    {
+      "type": "narration",
+      "text": "我把班表贴在她那张日历旁边。两张纸的边对齐，用同一条胶带。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_base",
+      "bgm": "bgm_ambient",
+      "text": "十二月，城市丢的东西没有人登记。"
+    },
+    {
+      "type": "narration",
+      "text": "不是丢了什么。是抬头看门缝的人少了一个。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩去了登记组，小雅留在图书馆，艾莉丝回了研究所。看缝的人变成我一个。"
+    },
+    {
+      "type": "narration",
+      "text": "我每个月去一次。去的时候只做一件事：把毛边朝内折一下。"
+    },
+    {
+      "type": "narration",
+      "text": "折完我就走。走之前我不往里看。往里看要低头，低头就像要下去。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e15",
+      "text": "缝里那张纸的一角朝外。纸上有十个名字，页脚有一小块空白。空白里没有字。"
+    },
+    {
+      "type": "narration",
+      "text": "这座城每个月丢一件东西，有时原样回来，有时回得比原来多一根。"
+    },
+    {
+      "type": "narration",
+      "text": "我睡很少。醒着的时间被我切成格子，格子里放能放的东西：班表、两栏的表、日历上的圈。"
+    },
+    {
+      "type": "narration",
+      "text": "凌晨四点四十，我坐在观察室床沿，等这一天的第一件失物。"
+    },
+    {
+      "type": "narration",
+      "text": "它有时是一根栏杆，有时是一个字，有时是我自己的一个梦。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你等的那个东西，明天会少一半。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "那就等它回来那一半。"
+    },
+    {
+      "type": "narration",
+      "text": "他没有再说。他贴在井壁上，声音从缝里出来，比风还薄。"
+    },
+    {
+      "type": "narration",
+      "text": "我不怕丢。我怕的是它回来的时候，我不认得它。"
+    },
+    {
+      "type": "narration",
+      "text": "有一回我在别人的记忆里看见这座城没有丢的那件东西：一条巷子，巷口有人喊我。"
+    },
+    {
+      "type": "narration",
+      "text": "我把它写在左边那一栏，写完划掉，划掉以后在旁边补一句：这条不是我的。"
+    },
+    {
+      "type": "narration",
+      "text": "补完我睡了两小时。醒来的时候天是灰的，缝里那张纸的毛边又朝外了。"
+    },
+    {
+      "type": "narration",
+      "text": "所以我每天写两栏。写满一栏再补。"
+    },
+    {
+      "type": "narration",
+      "text": "门留一条缝。缝里那张纸，我每个月折一次。"
+    },
+    {
+      "type": "narration",
+      "text": "折到第二年，纸的折痕起毛了。毛边朝外，我把它朝内折回去。"
+    },
+    {
+      "type": "narration",
+      "text": "这个月城市又丢了一件东西。这次丢的是我数错的一格。"
+    },
+    {
+      "type": "narration",
+      "text": "我把它写在右边那一栏：发生的。然后我去睡那两小时。"
+    }
+  ],
+  "kind": "ending"
+}

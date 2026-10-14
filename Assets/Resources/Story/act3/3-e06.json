@@ -1,0 +1,262 @@
+{
+  "sceneId": "3-e06",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·被纪念的陌生人",
+  "background": "cg_ending_e06",
+  "bgm": "bgm_ending",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号凌晨三点，井底只剩下我们四个，和一本账。"
+    },
+    {
+      "type": "narration",
+      "text": "那几天我一天睡两个钟头，人是清楚的。最坏的那一段已经过去了，我没有变成它的一部分。"
+    },
+    {
+      "type": "narration",
+      "text": "账上还有十一行名字。每一行后面都盖着作废章，章是旧的，红色已经发黑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "账要平，就得有一个人的名字进去抵。程序我看了三遍，只有这一条路。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "填我的。我这条命本来就是捡回来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "填我的行不行。我什么都不会，就耳朵好。"
+    },
+    {
+      "type": "narration",
+      "text": "他们三个人说的话我都听见了。我听的时候在看账页最下面那一行，那一行是空的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "别争了。这一个月是你们把我从井里弄上来的。这回我自己填。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝把手按在账上，压了大概十秒。她的手很凉，纸被压出一道折痕。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "你会被删掉。不是死，是从来没有过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "那就当我是个错字。错字就该划掉。"
+    },
+    {
+      "type": "narration",
+      "text": "我把笔拿过来，在最后一行写自己的名字。写的时候笔尖没有抖，这让我有点意外。"
+    },
+    {
+      "type": "narration",
+      "text": "两个字写完，账页上那十一个作废章开始一个一个退掉。退得很慢，像潮水往下退。"
+    },
+    {
+      "type": "narration",
+      "sfx": "sfx_breath",
+      "text": "退到最后一个的时候，我听见有人在很远的地方应了一声。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "然后所有人都从我这一段里退了出去。跟我想的不一样，不是黑，是变轻。"
+    },
+    {
+      "type": "narration",
+      "text": "剩下的是灰。图书馆那排书架上的灰，旧街区花坛上的灰，还有我自己书房里的灰。"
+    },
+    {
+      "type": "narration",
+      "text": "我以为删掉就是什么都没有。不是。删掉的人是一句被念到一半的话。"
+    },
+    {
+      "type": "narration",
+      "text": "碑是十月立起来的，立在旧街区那个花坛旁边。碑身是深灰的石头，正面刻了十一行名字。"
+    },
+    {
+      "type": "narration",
+      "text": "那十一行都是账上的名字。我从头到尾看过一遍，每一个字都对着我写的那一页。"
+    },
+    {
+      "type": "narration",
+      "text": "第十二行在碑的右下角，刻得比别的都小。石匠说那一行是照着账上的最后一行刻的。"
+    },
+    {
+      "type": "narration",
+      "text": "他刻的时候问过经办的人这是谁。经办的人翻了两天名册，回了一句：查不到。"
+    },
+    {
+      "type": "narration",
+      "text": "查不到也刻上去了，因为账上写着。那一行两个字：林晓。"
+    },
+    {
+      "type": "narration",
+      "text": "碑落成那天来了不少人。工作人员把十一行名字念了一遍，没有念第十二行。"
+    },
+    {
+      "type": "narration",
+      "text": "老周来了三次。他站在碑前把每一行都念出声，念到第十二行的时候停住了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "这个字我好像在哪里见过。"
+    },
+    {
+      "type": "narration",
+      "text": "他说完就走了，走到公交站又折回来，把碑座上的落叶扫干净了。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝只来过一次。她带着那块表，也带着她那个硬皮本子。"
+    },
+    {
+      "type": "narration",
+      "text": "她把本子翻到第二页。那一页上有一个名字，是她自己的笔迹，人她却认不出来。"
+    },
+    {
+      "type": "narration",
+      "text": "她在碑前站了二十分钟，最后把手腕上的表拨快了一分钟。"
+    },
+    {
+      "type": "narration",
+      "text": "从那以后她每年四月都拨快一分钟。这件事成了她的习惯，她自己也不知道为什么。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩每个礼拜都来。他不念名字，他擦碑。"
+    },
+    {
+      "type": "narration",
+      "text": "他擦得很慢，擦到右下角第十二行的时候会多擦两遍。"
+    },
+    {
+      "type": "narration",
+      "text": "他手腕内侧那圈细线还在。他说擦碑的时候那圈线会发热，像有人在很远的地方拍他的肩。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅来得最多。她每次都坐在碑座上，一坐就是一整个下午。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "有人在念自己的名字。念得很小声，像怕吵到人。"
+    },
+    {
+      "type": "narration",
+      "text": "有一次她是对着碑说这句话的，那时候碑前只有她一个人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "你念吧。我听着呢。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句话，碑上没有声音。可她说她听见了后半截。"
+    },
+    {
+      "type": "narration",
+      "text": "她后来把这件事讲给艾莉丝听。她说那半句话的后面是一个日期，四月十号。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "四月十号那天研究所报过一次设备故障。档案里有，签字的人是我。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候在翻档案。她翻得很仔细，翻到最后一页也没有找到第二个签字的人。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十号，全城的灯在凌晨四点同时亮了一下，又稳住了。"
+    },
+    {
+      "type": "narration",
+      "text": "新闻里说那是一次电压波动。市政为这件事立了一块碑，碑文是志愿者的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "那十一个人后来怎么样，档案上没有写。账面上他们是清的，清得干净。"
+    },
+    {
+      "type": "narration",
+      "text": "雷小满这个名字在第十一行。雷恩每个月摸一遍，摸的时候不用再隔着纸了，石头比纸硬。"
+    },
+    {
+      "type": "narration",
+      "text": "我这一段写在这里。写它的是灰，是名字被念到一半时的那半口气。"
+    },
+    {
+      "type": "narration",
+      "text": "没有人认得碑上第十二行是谁。这是对的。"
+    },
+    {
+      "type": "narration",
+      "text": "他们记得的是那十一个名字。他们记得这座城少过一次东西，后来补回来了。"
+    },
+    {
+      "type": "narration",
+      "text": "只有名字记得名字。所以那一行留在石头上，谁也擦不掉。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e06",
+      "text": "碑立在花坛旁边，朝向旧街区的巷口。石面上十一行名字被摸得发亮，右下角那一行还是新的。"
+    },
+    {
+      "type": "narration",
+      "text": "每天傍晚有放学的孩子从碑前跑过去。他们念得出前面十一个，念到最后一个就跳过去了。"
+    },
+    {
+      "type": "narration",
+      "text": "跳过去的那两个字，是我。"
+    },
+    {
+      "type": "narration",
+      "text": "石头很凉的时候，我会想起四月十号凌晨那支笔，笔帽上有一道刀痕。"
+    },
+    {
+      "type": "narration",
+      "text": "那支笔现在在雷恩的口袋里。他擦碑的时候会把它放在碑座上，走的时候再收回去。"
+    },
+    {
+      "type": "narration",
+      "text": "他不知道为什么要带一支笔来擦碑。他只是每次都带。"
+    },
+    {
+      "type": "narration",
+      "text": "这就够了。"
+    }
+  ],
+  "kind": "ending"
+}

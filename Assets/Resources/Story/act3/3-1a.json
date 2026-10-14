@@ -1,0 +1,1065 @@
+{
+  "sceneId": "3-1a",
+  "chapter": "第三幕·最终决战",
+  "title": "深夜的两个人",
+  "background": "bg_base",
+  "bgm": "bgm_ambient",
+  "next": "3-2",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "第二十六天，四月六号，深夜十一点五十七分。基地里的人走空了以后，我才发现这地方其实很吵。"
+    },
+    {
+      "type": "narration",
+      "text": "不是人吵。是管道。基地是拿旧地铁的检修层改的，头顶每隔几分钟就有一班空车碾过去，碾过去的时候整间屋子的灯会跟着抖一下。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "空车一班接一班。这几天的觉，你打算怎么熬？",
+      "options": [
+        {
+          "text": "把每班车的时间记在图纸边上",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "logged_the_empty_train_times",
+          "next": ""
+        },
+        {
+          "text": "不记。图要紧",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "skipped_logging_the_trains",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "档案间在走廊最里面，一扇铁门，门锁坏了很久，只能用一根铁丝别着。我在这里铺了三条路线图，把第四张画在它们的边上。"
+    },
+    {
+      "type": "narration",
+      "text": "第四张画的是退出路线。画到一半我发现，四条路有三条要经过同一段楼梯。这意味着一旦那一段被堵住，进去的人不是任务失败，是出不来。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "那一段楼梯一堵，进去的人就出不来。这个发现怎么处理？",
+      "options": [
+        {
+          "text": "单独抄一份，贴身带着",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "kept_the_stair_note_alone",
+          "next": "#l01"
+        },
+        {
+          "text": "写进明天的方案里",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_the_stair_risk_into_plan",
+          "next": ""
+        },
+        {
+          "text": "也许是我多虑了",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "doubted_the_stair_risk",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把笔尖在那段楼梯上点了点，没有写字。写上去是个说法，不写，它至少还是个秘密。"
+    },
+    {
+      "type": "narration",
+      "text": "我把这个发现圈了三遍，圈完看了一眼表：十一点五十七分。然后我听见走廊里有脚步。",
+      "label": "l01"
+    },
+    {
+      "type": "narration",
+      "text": "那脚步很轻。走两步停一下，像是不确定要不要走到头，又像是怕吵醒什么。基地的走廊尽头只有这一间屋子还亮着灯。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "门外的人走两步停一下。要不要先出声？",
+      "options": [
+        {
+          "text": "出声，省得她在门口站着",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "called_out_before_the_door",
+          "next": ""
+        },
+        {
+          "text": "不出。让她自己决定",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "let_the_visitor_choose",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "脚步声在我门口停住了。停了三秒。然后门上的铁丝被人从外面拨开，拨得很有耐心，一下一下，没有发出多余的响。"
+    },
+    {
+      "type": "narration",
+      "text": "门开进来一条缝，走廊的冷气先挤进来。接着有个人侧着身子进来，进来的时候一只手扶着门框，另一只手里端着一个杯子。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她端着热的进来，一手扶着门框。你先接哪样？",
+      "options": [
+        {
+          "text": "先接杯子",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "took_the_cup_first",
+          "next": ""
+        },
+        {
+          "text": "先问她怎么还没睡",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_why_she_was_up",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那杯东西冒着白气。杯壁上有一层水汽，手指按上去会留下印子。她把杯子放在我图纸的角上，压住了正上方那条线。"
+    },
+    {
+      "type": "narration",
+      "text": "然后她坐下来。不是坐在对面，是坐在我旁边，椅子拉过来的时候花了点力气，那声铁腿刮地板的响在夜里特别刺耳。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她把椅子拉到你旁边。桌这边要不要让？",
+      "options": [
+        {
+          "text": "把图纸往她那边推一推",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "slid_the_blueprint_toward_her",
+          "next": ""
+        },
+        {
+          "text": "不动。让她看我这边的乱",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_the_table_as_it_was",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我看见她肩上的外套有一片深色的水迹。今晚雨不小，她进来的时候没把水擦掉。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你画了三个小时了。炉子上的水烧干了两回。"
+    },
+    {
+      "type": "narration",
+      "text": "我抬头看她。她没有看我，她在看那张图，看得很认真，眉头那里的褶子和白天开会时一模一样。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她不看你也知道你在画什么。要不要解释？",
+      "options": [
+        {
+          "text": "解释：退路总得有人画",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "explained_the_exit_route",
+          "next": ""
+        },
+        {
+          "text": "不解释，她看得懂",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "let_the_drawing_speak",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你们不是都睡了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "睡了一会儿。醒了以后发现你的门缝还亮着。"
+    },
+    {
+      "type": "narration",
+      "text": "她伸手把我画歪的那条线往正了一点。指尖碰到纸的时候我才发现，她的手也是凉的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你在画退出来的路，是不是。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她一眼看穿了退出路线。承认吗？",
+      "options": [
+        {
+          "text": "承认，瞒她没意思",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "admitted_the_exit_plan",
+          "next": ""
+        },
+        {
+          "text": "先反问她在看哪条线",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_which_line_she_saw",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你怎么看出来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你在入口那条线上画了两个箭头。进去一个，出来一个。今天下午的方案里没有出来那一段。"
+    },
+    {
+      "type": "narration",
+      "text": "我愣了一下。白天铺图的时候，她一直在桌子末端，我没想到她把图看得这么细。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "三条路里有三条走同一段楼梯。我不想把这件事写在明天的方案上，写上去会有人不肯去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "所以你先自己记住了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "总得有人记住。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "这段楼梯只你一个人记着。要不要多拉一个人记？",
+      "options": [
+        {
+          "text": "拉她一起记，两个人不容易丢",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -3,
+          "flag": "shared_the_stair_memory",
+          "next": ""
+        },
+        {
+          "text": "不拉，这是我该自己背的",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "carried_the_stair_note_alone",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她把杯子往我这边推了一点，推到我的手边。我没喝，但杯子贴着我的小指，那一小块地方很快就热了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你知道你今天下午答应的时候，我在想什么吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "想我是不是又在逞能。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我在想，四月九号那天要是门只能开一次，我们四个人里最先没的会不会是你。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她把最狠的那句说出口了。你怎么接？",
+      "options": [
+        {
+          "text": "先接住这句再说话",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "caught_her_worst_question",
+          "next": "#l02"
+        },
+        {
+          "text": "岔开，先说图纸",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "dodged_into_the_blueprint",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我想先把这句接住，又怕一开口就把它说小了。"
+    },
+    {
+      "type": "narration",
+      "text": "她这句话说得很轻，轻到我差点没接住。我听懂了她的意思：她下午点过头的那份方案里，第一个要念名字的人是我，第一个可能出事的人也是我。",
+      "label": "l02"
+    },
+    {
+      "type": "narration",
+      "text": "她没有再往下说。她低头把自己摊在桌上的左手看了一眼。她这只手白天一直握着那台仪器，握出了两道浅浅的印子。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她低头看手，不说话了。要不要先开口？",
+      "options": [
+        {
+          "text": "先说她手上的印子",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "spoke_about_her_hands",
+          "next": ""
+        },
+        {
+          "text": "等她先抬头",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "waited_for_her_to_look_up",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "你手上的印子，是仪器压出来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "握久了就这样，明天早上会消。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候终于抬头。屋里的灯管抖了一下，她的脸在那一抖里暗了半秒。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "灯抖的那半秒，你在看她还是在看图？",
+      "options": [
+        {
+          "text": "在看她",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "watched_her_in_the_flicker",
+          "next": ""
+        },
+        {
+          "text": "在看图",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "watched_the_map_in_the_flicker",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你在想什么。今天下午四点以后你就没正眼看过我。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她问你在想什么。说实话还是打折？",
+      "options": [
+        {
+          "text": "说实话",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "said_what_he_was_thinking",
+          "next": ""
+        },
+        {
+          "text": "说一半，留一半",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_half_the_thought",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "我在想你说的那句话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我在想你有没有在想我。"
+    },
+    {
+      "type": "narration",
+      "text": "我想了一个很没出息的回答，说了一句比它更没出息的话。"
+    },
+    {
+      "type": "narration",
+      "text": "我张了张嘴，本来想说我这两年一直在等一件值得等的事，话到嘴边觉得太像遗言，就把它咽回去了。咽回去以后我从嘴里出来的是一句很没出息的话。我说我不太会怕东西，我只是有点舍不得。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "「舍不得」三个字出了口。要不要补一句？",
+      "options": [
+        {
+          "text": "补一句：舍不得的里面有她",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "named_what_he_missed",
+          "next": ""
+        },
+        {
+          "text": "不补，话出去就出去了",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "left_the_words_as_said",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你别这么说。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你说得像在提前给自己写结尾。我最听不下去的就是这种话。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句自己停了。她大概也听出来自己这句话说得不太像平时的她。"
+    },
+    {
+      "type": "narration",
+      "text": "她把杯子拿起来晃了晃，水面转了半圈。她看水面的时候比看我久，像是在那儿想措辞。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她难得词穷，看着水面想措辞。等不等？",
+      "options": [
+        {
+          "text": "等，把杯子替她扶正",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "steadied_the_cup_and_waited",
+          "next": ""
+        },
+        {
+          "text": "不等，自己先开口",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "spoke_before_she_did",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我十五岁那年学会了一件事：凡是重要的话都留到第二天说。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "我留到第二天的那句话，最后没人听到。所以我现在不留了。"
+    },
+    {
+      "type": "narration",
+      "text": "屋子里安静了一会儿。头顶过去一班空车，声音从远到近，再从近到远。等那声音彻底没了，她才开口。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我今天来，不是为了劝你。方案定都定了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我是来问一件事。这件事我三个月前就想问了，一直没找着机会。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她三个月没问的那件事现在要问了。先应一声吗？",
+      "options": [
+        {
+          "text": "应一声：你问，我在听",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "told_her_he_was_listening",
+          "next": ""
+        },
+        {
+          "text": "不答声，点头",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "nodded_before_the_question",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她把手从图纸上拿开，放在膝盖上。她的手指在膝盖上敲了两下，敲得没有节奏。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "四月九号那天，如果我们真的把那些人提出来了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你有没有想过，提出来以后，你自己会剩下什么。"
+    },
+    {
+      "type": "narration",
+      "text": "我没想过。这个问题一出来，我第一个反应是去看我的本子。本子摊在图纸底下，露出一角，上面有十几个名字。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "提出来以后你自己会剩下什么——这题怎么答？",
+      "options": [
+        {
+          "text": "看着本子上的名字答",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "answered_while_reading_names",
+          "next": ""
+        },
+        {
+          "text": "不绕弯，直接答",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "answered_without_hesitation",
+          "next": "#l03"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "炉子上的水响了一声。我把本子往她那边推了推，让她看见那一角。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我想过了。我会少一些东西。",
+      "label": "l03"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我认了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你不能认。"
+    },
+    {
+      "type": "narration",
+      "text": "她这次没有停。她往前坐了一点，椅子腿在地板上划出很短的一下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你认了以后，谁来记得我们。你把别人的名字抱在身上，那你自己的呢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你要是真的少到只剩半个人，我到时候找谁去要你。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她说「找谁去要你」。这句你听出几层？",
+      "options": [
+        {
+          "text": "听出两层，都接住",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "heard_both_layers_of_it",
+          "next": ""
+        },
+        {
+          "text": "只听表层，打个岔",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "heard_only_the_surface",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "这句话说完，我听见自己心里那根一直绷着的弦响了一下。这三个月里我怕过很多东西，怕失眠，怕删掉的人，怕三号那天的黄带子。"
+    },
+    {
+      "type": "narration",
+      "text": "但我从来没怕过「别人会找不着我」这件事。因为在这之前，我一直以为只有我会找别人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "那我答应你一件小事。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "四月九号以后，不管剩下多少，我都先回来一次。回到这间屋子里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "哪怕我不记得为什么回来。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "你答应「先回来一次」。要不要立个凭证？",
+      "options": [
+        {
+          "text": "立：回来先念那三个数字",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -3,
+          "flag": "sealed_the_promise_with_numbers",
+          "next": ""
+        },
+        {
+          "text": "不立，话说了就算",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "trusted_the_words_alone",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她没有马上答。她伸手把杯子拿起来，试了一下温度，觉得凉了，又放回去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "那我也说一件。有一句话我本来想留到以后再说。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "现在我不想留了。你也别问我现在为什么说。"
+    },
+    {
+      "type": "narration",
+      "text": "我等着。我能听见自己的心跳，很慢，一下一下。外走廊那台旧除湿机在墙里一下一下地排水，节奏居然和我的心跳对上了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "除湿机的节奏和你的心跳对上了。催她吗？",
+      "options": [
+        {
+          "text": "催一句：你说吧",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "hurried_her_gently",
+          "next": ""
+        },
+        {
+          "text": "不催，等她自己坐稳",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "waited_for_her_to_sit_down",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "你说吧。"
+    },
+    {
+      "type": "narration",
+      "text": "她在我对面站了一会儿，又坐回去。她坐下的时候把图纸往里推了推，给我那边留出半张桌子的地方。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "三月十二号那天晚上，值班的人把一段记录报上来。我看了三遍。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "照规定我应该在第二天早上把那段记录归档。我没有。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她承认违反了归档规定。这事守不守？",
+      "options": [
+        {
+          "text": "守，出不了这间屋",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "kept_her_breach_secret",
+          "next": ""
+        },
+        {
+          "text": "不守，明天当众问一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "planned_to_ask_it_publicly",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你把它留下了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我留了。留下来的东西放在我抽屉最底下，压着一本别人的实验手册。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "我做了七年这行，第一次做这种往回藏东西的事。我到现在也没想清楚为什么。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她七年来的第一次往回藏。你怎么回？",
+      "options": [
+        {
+          "text": "告诉她：藏得对",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "told_her_she_was_right_to_hide",
+          "next": ""
+        },
+        {
+          "text": "不说话，把她按住的纸角抚平",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "smoothed_the_blueprint_corner",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我想说点什么，但我知道她还没说完。她的手指又去找图纸的边角，找到以后就按在那儿。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "从三月十二号那天起，我做的每一件事都跟你有关系。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "这件事我从来没跟别人说过。现在我说完了。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句就站起来。她站起来的动作太快，膝盖碰到了桌沿，桌上那张纸滑出一寸。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有去看纸，也没有看我。她去拎门口墙上挂着的那件干外套，穿上的时候有一边袖子翻了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她拎包就走，袖子都没翻好。叫不叫？",
+      "options": [
+        {
+          "text": "叫，把「等等」说出口",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "called_her_to_wait",
+          "next": ""
+        },
+        {
+          "text": "先站起来再开口",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "stood_before_speaking",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "等等。"
+    },
+    {
+      "type": "narration",
+      "text": "我在那张退出路线图上撕了一角下来，撕成很小的两块，一块塞进她的外套口袋，一块我自己留着。那角上面有我在栏杆线旁边写的三个数字，是那段楼梯到出口的步数。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "拿着这个。九号那天你要是走到那段楼梯上，就数着步子走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你留着另一半干什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "对个号。你要是把它丢了，我就知道你那天没听见我说话。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "半角纸对个号，这约定算不算数？",
+      "options": [
+        {
+          "text": "算数，复述一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "restated_the_deal",
+          "next": ""
+        },
+        {
+          "text": "不说出口，记在心里",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_the_deal_silent",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她低头把口袋按了一下，按了两次。然后她把手放在门框上，回头看了我一眼，那一眼很短，短到像是有意控制过的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "图收起来。睡两个小时。明天你把那三个数字念给我们听。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "这一句，你要接住还是往后放？",
+      "options": [
+        {
+          "text": "接住：告诉她你也一样，从三月十二号开始就一样",
+          "affectionWho": "艾莉丝",
+          "affection": 10,
+          "insomnia": -8,
+          "flag": "said_it_back_tonight",
+          "next": "3-2"
+        },
+        {
+          "text": "往后放：把这句留到四月九号以后再答",
+          "affectionWho": "艾莉丝",
+          "affection": 4,
+          "insomnia": 6,
+          "flag": "kept_it_for_after",
+          "next": "3-2"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把那句话说出口以后，她伸手按住我的肩膀，按得很实在，像是要把我按回地面。"
+    },
+    {
+      "type": "narration",
+      "text": "那口气松下来的时候，我耳朵里响了一整晚的蝉鸣第一次低了一层。原来有些话不是用来换东西的。"
+    },
+    {
+      "type": "narration",
+      "text": "门关上以后，我没有立刻去收图。我先把她放下的那只杯子拿起来，喝了一口。水已经不烫了，但还温。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她走了，杯子还温。这杯水怎么处理？",
+      "options": [
+        {
+          "text": "喝完，倒掉可惜",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "drank_the_warm_cup",
+          "next": ""
+        },
+        {
+          "text": "留着，明早再喝",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "saved_the_cup_till_morning",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把那半角纸夹进本子的最后一页，夹在写满名字的那一页后面。这样它不会掉，也不容易被别人看到。"
+    },
+    {
+      "type": "narration",
+      "text": "桌上那张纸被她碰歪的那一寸我没有推回去。我留着它歪着，留到明天早上。"
+    },
+    {
+      "type": "narration",
+      "text": "我躺下的时候是十二点四十。我闭上眼睛，脑子里只有一个念头：九号那天，我要先回到这间屋子里。"
+    }
+  ],
+  "dense": true
+}

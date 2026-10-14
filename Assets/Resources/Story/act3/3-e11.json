@@ -1,0 +1,259 @@
+{
+  "sceneId": "3-e11",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·雷小满",
+  "background": "cg_ending_e11",
+  "bgm": "bgm_sad",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号凌晨四点，那枚钟走完了最后一格。我抱着本子站在门口。"
+    },
+    {
+      "type": "narration",
+      "text": "门已经开在井壁上，是一道竖着的口子。按规矩，这一页送进去，我就跟着进去。"
+    },
+    {
+      "type": "narration",
+      "text": "我往前迈了半步。雷恩从后面把我拽住了，拽的是衣领。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "等等。让我换。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "换什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "门收一个人。我进去，你出来。这一条我试过，这次能成。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你进去就没了。不是死，是从来没有过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "我知道。我还有一样东西没换回来。你记着我就行。"
+    },
+    {
+      "type": "narration",
+      "text": "他从口袋里掏出一支笔。笔帽上有一道刀痕，他在守望者那边用了很多年。"
+    },
+    {
+      "type": "narration",
+      "text": "账上十一个名字。第九行是雷小满。他在那三个字旁边写下自己的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你要拿你换她。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "我不是换。她本来就在上头。是有人把她划掉的，现在划回来。"
+    },
+    {
+      "type": "narration",
+      "text": "他写字的时候左手压在纸上。手腕内侧那圈细线露在外面，露在灯底下。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有拦他。拦这件事我做不了，因为我也想让那三个字回到册子上。"
+    },
+    {
+      "type": "narration",
+      "text": "这就是我们说好的交易：他把自己交出去，我把他妹妹接回来。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "纸上的字亮了一下，又暗下去。第九行雷小满那三个字慢慢变实。"
+    },
+    {
+      "type": "narration",
+      "text": "我看见了雷恩的一段记忆，只有半秒：一个姑娘坐在台阶上，手里捏着一根化了一半的冰棍。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩的手从我衣领上松开。他往门里走，走得一点声音都没有。"
+    },
+    {
+      "type": "narration",
+      "text": "门合上的时候，井底所有的灰一起往下落了一层。"
+    },
+    {
+      "type": "narration",
+      "text": "灰落完，开关前面没有人了。铁柄上还留着一只手的印子，印子慢慢淡掉。"
+    },
+    {
+      "type": "narration",
+      "text": "我手腕内侧那圈细线是那天早上出来的。细得像用针划的，一圈，接得很齐。"
+    },
+    {
+      "type": "narration",
+      "text": "我用袖子挡了两天。挡不住，就让它在那儿。"
+    },
+    {
+      "type": "narration",
+      "text": "井封了。工程队灌的是水泥，水泥干透要三个月，他们等了三个月才拆围挡。"
+    },
+    {
+      "type": "narration",
+      "text": "城里人过得快。四月底街上换了新灯箱，五月初咖啡馆把桌椅摆到了路边。"
+    },
+    {
+      "type": "narration",
+      "text": "我手里的本子空了。最后那一页被门收走，剩下的都是空白纸，纸边发毛。"
+    },
+    {
+      "type": "narration",
+      "text": "我在电车上坐了一整天。坐到终点站，再坐回来。我不知道该去找谁。"
+    },
+    {
+      "type": "narration",
+      "text": "线索是艾莉丝给的。她在档案里翻到一页，上头有一个地址，和一个姓。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "这个地址我去过。开门的是一个姑娘，姓雷，十几岁。她不认得我。"
+    },
+    {
+      "type": "narration",
+      "text": "我按着地址过去了几次，前两次门都锁着。"
+    },
+    {
+      "type": "narration",
+      "text": "第三次去，我坐在门口的台阶上，从中午坐到日头偏西。门开了。"
+    },
+    {
+      "type": "narration",
+      "text": "出来的是个十几岁的姑娘。头发比她哥浅，个子比他矮一头。"
+    },
+    {
+      "type": "narration",
+      "text": "她看见我，没有躲，也没有问我找谁。她只是看着我。"
+    },
+    {
+      "type": "narration",
+      "text": "我说了一个名字。她听完摇头，摇头的时候手在裤子上擦了一下。"
+    },
+    {
+      "type": "narration",
+      "text": "我再说一遍。她还是摇头。她不是听不懂，是真的没有这一段。"
+    },
+    {
+      "type": "narration",
+      "text": "我从口袋里掏出笔和纸，写了几个字递过去：你认得吗。"
+    },
+    {
+      "type": "narration",
+      "text": "她低头看了很久。然后用笔在下面写：这个我认得。别的我不记得了。"
+    },
+    {
+      "type": "narration",
+      "text": "我又写：你哥呢。"
+    },
+    {
+      "type": "narration",
+      "text": "这一次她写得很快，划得纸响：我没有哥。"
+    },
+    {
+      "type": "narration",
+      "text": "我的胳膊一直垂在身侧。写到这一句的时候，我把左手抬起来，袖口往上一推。"
+    },
+    {
+      "type": "narration",
+      "text": "那圈细线露出来了。天还没黑透，线在手腕上很淡，看得清是整整齐齐的一圈。"
+    },
+    {
+      "type": "narration",
+      "text": "她盯着那圈线。盯着的时候，她的眼睛慢慢亮起来。"
+    },
+    {
+      "type": "narration",
+      "text": "她伸手比了一下，隔着半拳的距离，没有碰到我的手腕。"
+    },
+    {
+      "type": "narration",
+      "text": "她在纸上写：这个我认得。"
+    },
+    {
+      "type": "narration",
+      "text": "写完她停了一会儿，笔尖悬在纸上，又加了一句：我不记得了。"
+    },
+    {
+      "type": "narration",
+      "text": "我拿过笔，在纸上写了两个字，推给她。那两个字是雷恩。"
+    },
+    {
+      "type": "narration",
+      "text": "她看着那两个字，看了很久，没有念出来。"
+    },
+    {
+      "type": "narration",
+      "text": "她把纸对折，再对折，折成很小的一块，收进上衣里面那个口袋。"
+    },
+    {
+      "type": "narration",
+      "text": "收好之后她就站着不动了。她眼睛看着街口，像在等人。"
+    },
+    {
+      "type": "narration",
+      "text": "我往回走。走了十几步又回头，她还在台阶上。"
+    },
+    {
+      "type": "narration",
+      "text": "我把那圈细线的事跟艾莉丝讲了。她听完没有记在本子上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "这一段我不归档。整座城只有这一份，放在我抽屉里。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅后来跟我讲，那几天她听到的读书声变了。她说多了一个念得慢的。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e11",
+      "text": "五月的旧街区，台阶上放着一张折过很多次的纸，纸角被捏得起了毛。窗子里没有点灯。"
+    },
+    {
+      "type": "narration",
+      "text": "妹妹从册子上回来了，哥哥没了。"
+    },
+    {
+      "type": "narration",
+      "text": "她手腕上还差那一圈线。那件事她没有别人可以问。"
+    },
+    {
+      "type": "narration",
+      "text": "门收了一个人。这一笔，谁也划不掉。"
+    }
+  ],
+  "kind": "ending"
+}

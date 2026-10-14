@@ -1,0 +1,187 @@
+name: Game Server CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  release:
+    types: [ created ]
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: game-server/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./game-server
+        run: npm ci
+
+      - name: Run tests
+        working-directory: ./game-server
+        run: npm test
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: game-server/test-results
+          retention-days: 7
+
+  build:
+    name: Build
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: game-server/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./game-server
+        run: npm ci
+
+      - name: Build Docker image
+        working-directory: ./game-server
+        run: |
+          docker build -t game-server:${{ github.sha }} .
+          docker build -t game-server:latest .
+
+      - name: Save Docker image
+        run: |
+          docker save game-server:${{ github.sha }} | gzip > game-server-${{ github.sha }}.tar.gz
+          docker save game-server:latest | gzip > game-server-latest.tar.gz
+
+      - name: Upload Docker images
+        uses: actions/upload-artifact@v4
+        with:
+          name: docker-images
+          path: |
+            game-server-${{ github.sha }}.tar.gz
+            game-server-latest.tar.gz
+          retention-days: 30
+
+  deploy-staging:
+    name: Deploy to Staging
+    needs: build
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: https://staging.game-server.example.com
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download Docker images
+        uses: actions/download-artifact@v4
+        with:
+          name: docker-images
+          path: ./images
+
+      - name: Load Docker images
+        run: |
+          docker load < ./images/game-server-${{ github.sha }}.tar.gz
+          docker load < ./images/game-server-latest.tar.gz
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Tag and push images to ECR
+        run: |
+          IMAGE_TAG=${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:staging-${{ github.sha }}
+          docker tag game-server:${{ github.sha }} $IMAGE_TAG
+          docker push $IMAGE_TAG
+
+      - name: Update k8s deployment
+        run: |
+          kubectl set image deployment/game-server \
+            game-server=$IMAGE_TAG \
+            -n staging
+
+      - name: Verify deployment
+        run: |
+          kubectl rollout status deployment/game-server -n staging --timeout=5m
+
+  deploy-production:
+    name: Deploy to Production
+    needs: build
+    if: github.event_name == 'release' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://game-server.example.com
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download Docker images
+        uses: actions/download-artifact@v4
+        with:
+          name: docker-images
+          path: ./images
+
+      - name: Load Docker images
+        run: |
+          docker load < ./images/game-server-${{ github.sha }}.tar.gz
+          docker load < ./images/game-server-latest.tar.gz
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Tag and push images to ECR
+        run: |
+          IMAGE_TAG=${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:production-${{ github.sha }}
+          docker tag game-server:${{ github.sha }} $IMAGE_TAG
+          docker push $IMAGE_TAG
+
+      - name: Update k8s deployment
+        run: |
+          kubectl set image deployment/game-server \
+            game-server=$IMAGE_TAG \
+            -n production
+
+      - name: Verify deployment
+        run: |
+          kubectl rollout status deployment/game-server -n production --timeout=5m
+
+      - name: Notify on deployment
+        run: |
+          echo "Deployment successful to production!"
+          # Add Slack/Teams notification here

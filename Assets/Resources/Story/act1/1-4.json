@@ -1,0 +1,995 @@
+{
+  "sceneId": "1-4",
+  "chapter": "第一幕·异变初现",
+  "title": "四个人",
+  "background": "bg_cafe_evening",
+  "dense": true,
+  "next": "1-5",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "第四天，下午五点二十。我坐在街角咖啡馆靠窗的位置，面前那杯黑咖啡已经彻底凉了，凉到表面浮着一层薄薄的光。"
+    },
+    {
+      "type": "narration",
+      "text": "我从早上九点就在这儿。中间起身三次，一次是去洗手间，另外两次我不记得自己去了哪里，只记得回来的时候鞋底是湿的，而外面没有下雨。"
+    },
+    {
+      "type": "narration",
+      "text": "三月十五日。我不停地提醒自己今天是几号，像一个怕走丢的小孩攥着大人给的纸条。三天没合眼之后，日期已经不是背景，是扶手。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "凉咖啡撑了三个小时。还要继续坐下去吗？",
+      "options": [
+        {
+          "text": "再坐十分钟。今天不和时间对着干",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "stayed_with_the_cold_coffee",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "结账走人，趁我还没丢掉下一段时间",
+          "affection": 0,
+          "insomnia": 3,
+          "flag": "tried_to_leave_the_cafe",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "这间店在旧街区的一个转角，招牌上的字掉了一半，剩下的一半也没人补。店里有七张桌子，三张有人，收音机一直开着，从没有人换台。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "先生，你的咖啡它自己不想被喝了。"
+    },
+    {
+      "type": "narration",
+      "text": "我抬头。店员站在桌边，围裙上别着一张手写的名牌：小雅。字写得很用力，笔尖把纸压出了坑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "……抱歉。我在想事情。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你想了三个小时零七分钟。我数过，因为我今天实在没什么客人。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "那杯热的递过来了。你接不接？",
+      "options": [
+        {
+          "text": "接过来，再问她刚才看见的蓝是什么样",
+          "affection": 4,
+          "insomnia": 2,
+          "flag": "asked_xya_about_the_blue",
+          "next": "#l01",
+          "affectionWho": "小雅"
+        },
+        {
+          "text": "不接。别让一个陌生人记住我的眼睛",
+          "affection": -2,
+          "insomnia": -2,
+          "flag": "hid_the_blue_eyes",
+          "next": "",
+          "affectionWho": "小雅"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "label": "l01",
+      "text": "她端着杯子愣了一下，说那种蓝她只见过一次，是在一个睡着的人脸上。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这话的时候一点都不像抱怨，倒像在报告一个有趣的天气。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "我给你换一杯热的吧。算我请。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "你为什么请我？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "因为你刚才看窗外的时候，眼睛里有蓝色的东西闪了一下。我以为是灯泡。"
+    },
+    {
+      "type": "narration",
+      "text": "她说得非常轻松，轻松到我差点错过这句话。"
+    },
+    {
+      "type": "narration",
+      "text": "我下意识地摸了摸自己的眼睛，指尖是干的，什么也没有。可我确实记得自己昨天晚上照过镜子，看见瞳孔边缘有一圈很淡的冷色，像冬天结了霜的水。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她说你眼里有蓝色的东西。你认不认？",
+      "options": [
+        {
+          "text": "承认：我照过镜子，瞳孔边上确实有一圈冷色",
+          "affection": 0,
+          "insomnia": 3,
+          "flag": "admitted_the_blue_ring",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "否认。是灯，是玻璃，是这家店的光",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "blamed_the_cafe_light",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你看得很清楚。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "我眼睛好。我妈说这是坏事，看得太清楚的人不容易高兴。"
+    },
+    {
+      "type": "narration",
+      "text": "她把凉咖啡端走了，杯子在托盘上磕了一下，声音很脆。收音机里正好报时，五点二十一。"
+    },
+    {
+      "type": "narration",
+      "text": "我不信这个报时。我昨天做过一件事：在手机里存了五次时间截图，早上九点、中午十二点、下午两点、三点、四点，然后一个一个删掉。每次删掉以后，我都觉得刚才那段时间从来没有发生过，连删的动作都被一起删了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "报时说是五点二十一。你信收音机吗？",
+      "options": [
+        {
+          "text": "不信。我手机里的截图比它诚实",
+          "affection": 0,
+          "insomnia": 2,
+          "flag": "distrusted_the_radio_clock",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "信一次。至少它每天都在响",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "trusted_the_radio_clock",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我不再删截图了。我开始怕自己的手。"
+    },
+    {
+      "type": "narration",
+      "text": "窗外的天开始变暗。旧街区的霓虹牌子一盏一盏亮起来，颜色很旧，像被人从别处捡回来的。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我看见了那句话。"
+    },
+    {
+      "type": "narration",
+      "text": "它贴在我正对着的那根玻璃上，从里面贴的，字是白的。上一秒它不在，我很确定，因为我一直在看那块玻璃。"
+    },
+    {
+      "type": "narration",
+      "text": "上面写着：下午五点四十，你会少掉十七分钟。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": ""
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "……什么。"
+    },
+    {
+      "type": "narration",
+      "text": "我站起来，椅子腿在地上刮出一道刺耳的声音。整间店的人都抬头看我，只有那个坐在角落的男人没有动。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "外面的霓虹一盏一盏亮了起来。你看哪边？",
+      "options": [
+        {
+          "text": "看窗外。街上比店里安静",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "watched_the_street_outside",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "看玻璃上的自己。我要确认倒影还在",
+          "affection": 0,
+          "insomnia": 2,
+          "flag": "checked_own_reflection",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他坐在最里面的位子，背对着墙，面前什么都没有，连水杯都没有。黑色外套，袖口磨得发白。他一直没有看我，但我知道他在数我。"
+    },
+    {
+      "type": "narration",
+      "text": "玻璃上的字还在。我伸手去擦，指尖隔着玻璃摸到自己的倒影。"
+    },
+    {
+      "type": "narration",
+      "text": "字在我指尖下面散开了，变成几片很淡的白灰，落回玻璃内侧。像有人在那边轻轻吹了一口气。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "你怎么了？玻璃上有东西吗？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "……你看不到？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "看到你在吓我。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "整间店的人都在看你。你先看谁？",
+      "options": [
+        {
+          "text": "看那块玻璃。字还在上面",
+          "affection": 0,
+          "insomnia": 2,
+          "flag": "stared_at_the_words",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "看墙角那个没动的男人。他在数我",
+          "affection": 1,
+          "insomnia": 3,
+          "flag": "noticed_the_man_in_the_corner",
+          "next": "",
+          "affectionWho": "雷恩"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她笑了一下，但她的笑没有到眼睛。她也回头看了那块玻璃一眼，看了很久，久到收音机里的报时又响了一次。"
+    },
+    {
+      "type": "narration",
+      "text": "我坐下来。我告诉自己这是幻觉，是第六十个不眠小时的标准症状，医生早就说过了。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我把手机翻过来，屏幕是黑的，我按下电源键。"
+    },
+    {
+      "type": "narration",
+      "text": "五点四十。"
+    },
+    {
+      "type": "narration",
+      "text": "我看了一眼窗外，又看了一眼屏幕，再看一眼收音机。收音机上的小液晶屏也是五点四十。可刚才报时的时候，它明明还是五点二十一。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "玻璃上的字散成了白灰。你要不要动它？",
+      "options": [
+        {
+          "text": "伸手擦干净，就当它从来没出现过",
+          "affection": 0,
+          "insomnia": 3,
+          "flag": "wiped_the_warning_off_the_glass",
+          "next": "#l02",
+          "affectionWho": ""
+        },
+        {
+          "text": "手停住。让它再待一会儿，我要记住是谁写的",
+          "affection": 0,
+          "insomnia": 2,
+          "flag": "memorized_the_warning",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "label": "l02",
+      "text": "我擦了三下，玻璃内侧留下一道很浅的指痕，像有人从那边回过手。"
+    },
+    {
+      "type": "narration",
+      "text": "中间那十七分钟不见了。咖啡是热的，小雅刚端来的那杯，正冒着气。热气是真的，杯子是热的，我手指被烫了一下，也是真的。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "然后整间店开始错位。"
+    },
+    {
+      "type": "narration",
+      "text": "第一个错位的是桌子。靠门那张桌子上的客人还在，可他面前的蛋糕切面变了——我记得他切的是角，现在是一道平的横切。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "十七分钟没了。你要不要再对一次时间？",
+      "options": [
+        {
+          "text": "再看一次。我要亲眼盯着它走",
+          "affection": 0,
+          "insomnia": 3,
+          "flag": "watched_the_clock_tick",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "不看了。看多了它就知道我在数它",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "stopped_checking_the_clock",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "第二个错位的是墙上的钟。这家店根本没有钟。我进来的时候确认过，因为那时候我在找时间。现在它挂在那儿，指针停在五点四十，秒针在原地抖，走不动也停不下。"
+    },
+    {
+      "type": "narration",
+      "text": "第三个错位的是小雅。"
+    },
+    {
+      "type": "narration",
+      "text": "她站在吧台后面，正在擦杯子，动作跟我记忆里完全一样。可她的手比我记忆里白一点，袖子长一点，声音低一点。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "这杯还是别喝了。我给你换热的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅被重新铺过一遍。你要不要喊她？",
+      "options": [
+        {
+          "text": "喊她的名字，看她会不会接上",
+          "affection": 3,
+          "insomnia": 3,
+          "flag": "called_xya_by_name",
+          "next": "",
+          "affectionWho": "小雅"
+        },
+        {
+          "text": "不喊。重播里的人听不见",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "stayed_quiet_for_the_replay",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "同一句话。我在心里把它和第一次听的那句叠起来，一个字都没有挪位置，连尾音落下去的那个气口都一样。"
+    },
+    {
+      "type": "fx",
+      "fx": "shake",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "她甚至用了同样的语气，同样的停顿，名牌上同样的那道坑。她不知道自己在重播，她眼里的时间是连贯的。"
+    },
+    {
+      "type": "narration",
+      "text": "我盯着她。我第一次感觉到一种比恐惧更冷的东西——不是她变了，是这个世界把她重新铺了一遍，铺得比原件粗糙一点点。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她是重播的，她自己不知道。你恨得起来吗？",
+      "options": [
+        {
+          "text": "恨这个世界，不恨她",
+          "affection": 0,
+          "insomnia": 2,
+          "flag": "blamed_the_world_not_xya",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "什么都不想。脑子里的声音已经够多了",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "let_the_mind_go_blank",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "角落里的男人站了起来。"
+    },
+    {
+      "type": "narration",
+      "text": "他走得不快，但每一步都正好踩在我心跳的间隔上。走到我桌边的时候，他伸手把我的椅子按住了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "别动。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你是谁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "数三下之后你会想站起来。不用起来。"
+    },
+    {
+      "type": "narration",
+      "text": "他没回答我的问题。他的手很重，压得我肩胛骨发麻。"
+    },
+    {
+      "type": "narration",
+      "text": "一。"
+    },
+    {
+      "type": "narration",
+      "text": "我听见自己的膝盖在发抖。墙上的钟往后退了一格，玻璃上的白灰又浮起来一层。"
+    },
+    {
+      "type": "narration",
+      "text": "二。"
+    },
+    {
+      "type": "narration",
+      "text": "吧台后面的小雅停下了。她不是在停手，是整个动作被切掉了中间的一段，抹布悬在半空，她的手指还在用力，可布没有动。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他已经数到二了。你打算站起来吗？",
+      "options": [
+        {
+          "text": "不起来。就按他说的做",
+          "affection": 4,
+          "insomnia": -2,
+          "flag": "obeyed_raine_and_stayed",
+          "next": "",
+          "affectionWho": "雷恩"
+        },
+        {
+          "text": "偏要起来。我不喜欢被人按着",
+          "affection": -2,
+          "insomnia": 4,
+          "flag": "tried_to_stand_anyway",
+          "next": "",
+          "affectionWho": "雷恩"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "三。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有站起来。我想站起来，我的腿已经准备好了，可我没有。他按着我的那只手在那一瞬间变凉了，凉得像刚从水里捞出来。"
+    },
+    {
+      "type": "narration",
+      "text": "然后他从外套里拿出一样东西，放在我面前的桌上。"
+    },
+    {
+      "type": "narration",
+      "text": "很小的一块，透明的，边缘不整齐，像谁把一块冰摔碎了挑出来的那一角。它在桌面上没有影子。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_raine_rescue",
+      "text": "他用两根手指把它按在桌面上，压得指节发白。整间店的光暗了半秒——不是灯坏了，是光被挪走了一点点，像有人从屋子里舀走一勺水。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "桌上那块东西没有影子。你敢碰吗？",
+      "options": [
+        {
+          "text": "伸手碰一下。我要知道它冷不冷",
+          "affection": 0,
+          "insomnia": 3,
+          "flag": "touched_the_shard",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "收回手。不该碰的东西不碰",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "kept_hands_off_the_shard",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我听见一声很轻的裂响，像结了霜的窗玻璃终于撑不住。"
+    },
+    {
+      "type": "narration",
+      "text": "那声音不是从那块东西里出来的，是从他身上出来的。"
+    },
+    {
+      "type": "narration",
+      "text": "他的手腕内侧纹着一圈很细的线，像被划开过又长好了。那圈线在暗光里亮了一下，然后顺着小臂往上跑，跑到袖口里就看不见了。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "钟不见了。蛋糕的切面回到角。小雅的手腕上多了一道橡皮筋的勒痕，她自己低头看了一眼，很困惑，然后把袖子拉下来盖住了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "墙上的钟回到了原样。你要不要找位置？",
+      "options": [
+        {
+          "text": "找。刚才挂钟的地方应该有钉眼",
+          "affection": 0,
+          "insomnia": 3,
+          "flag": "looked_for_the_nail_hole",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "不找。它已经不在了",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "accepted_the_clock_was_gone",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "……刚才是不是停电了？"
+    },
+    {
+      "type": "narration",
+      "text": "没有人回答她。收音机重新开始播歌，是一首很老的曲子，唱到一半。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "……你刚才应该站起来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你说不用起来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "我骗你的。"
+    },
+    {
+      "type": "narration",
+      "text": "他松开手。我看见他的右手在抖，抖得很细很密，像一台快没电的机器。他把那块东西收进口袋，口袋一沉，他那条手臂整个往下坠了一下。"
+    },
+    {
+      "type": "narration",
+      "text": "他终于抬眼看我。他的眼睛是褐色的，很干，一点都不像刚经历过什么的人。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他说他在骗你。这句你信不信？",
+      "options": [
+        {
+          "text": "信。他骗我是为了让我别站起来",
+          "affection": 5,
+          "insomnia": 1,
+          "flag": "believed_the_lie_was_kind",
+          "next": "",
+          "affectionWho": "雷恩"
+        },
+        {
+          "text": "不信。他不知道骗我要付什么代价",
+          "affection": -3,
+          "insomnia": 3,
+          "flag": "distrusted_raine",
+          "next": "",
+          "affectionWho": "雷恩"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "它本来是冲你来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "什么冲我来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "抹除。少掉一段，少掉一个人，少掉一次呼吸。看它心情。"
+    },
+    {
+      "type": "narration",
+      "text": "他说得太平了，平静到像在念一份检修单。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你为什么替我挡。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "……你已经少过一次了。"
+    },
+    {
+      "type": "narration",
+      "text": "这句话我没有听懂，但我身上某个地方懂了。我的手自己攥紧了，攥得指甲扎进掌心。"
+    },
+    {
+      "type": "narration",
+      "text": "外面开始下雨。雨来得很快，从旧街区的楼顶一路砸下来，砸在遮阳布上，砸出一片很吵的白声。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "外面已经下起雨了。你要跟他出去吗？",
+      "options": [
+        {
+          "text": "跟上去。他替我挡的东西我还没还",
+          "affection": 4,
+          "insomnia": 3,
+          "flag": "followed_raine_into_the_rain",
+          "next": "#l03",
+          "affectionWho": "雷恩"
+        },
+        {
+          "text": "先回头看一眼小雅，再跟出去",
+          "affection": 3,
+          "insomnia": 1,
+          "flag": "looked_back_at_xya_first",
+          "next": "",
+          "affectionWho": "小雅"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "label": "l03",
+      "text": "我先把他按过的那把椅子推回原位，椅腿在地上拖出一声很短的响。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "走。雨里它不敢跟。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "等一下，你手上的东西——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "碎片。能借一点时间。借多了要还。"
+    },
+    {
+      "type": "narration",
+      "text": "他先走出去。雨直接浇在他肩上，他连领子都没有拉，走得像一件本来就该被淋的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅追到门口，手里还拿着那块抹布。她看了我一眼，又看了雨里的他，忽然说了一句很清醒的话。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅说你们身上像烧过的纸。你回她什么？",
+      "options": [
+        {
+          "text": "说实话：我今天闻不到任何味道",
+          "affection": 3,
+          "insomnia": 2,
+          "flag": "told_xya_the_truth_about_smell",
+          "next": "",
+          "affectionWho": "小雅"
+        },
+        {
+          "text": "什么都不说，把外套拉起来走进雨里",
+          "affection": -2,
+          "insomnia": -1,
+          "flag": "left_xya_without_an_answer",
+          "next": "",
+          "affectionWho": "小雅"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "你们两个人身上的味道是一样的。像烧过的纸。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "……你也闻得到？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "今天才闻得到。前天这条街上还没有这个味道。"
+    },
+    {
+      "type": "narration",
+      "text": "我把外套拉起来，跟着他走进雨里。雨点打在手背上，很疼，疼得非常正常。我第一次觉得疼是件好事。"
+    },
+    {
+      "type": "narration",
+      "text": "街道湿了之后反而清楚。霓虹的反光在水面上摊开，一层一层，像有人把这座城市复制了很多份，摆在不同的水深里。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雨把这座城市复制了很多份。你信哪一份？",
+      "options": [
+        {
+          "text": "信脚下这一份，因为它是湿的",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "trusted_the_wet_street",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "哪一份都不信，包括我自己站的这份",
+          "affection": 0,
+          "insomnia": 3,
+          "flag": "trusted_no_copy_of_the_city",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我回头看了一眼咖啡馆。玻璃上什么也没有。小雅还在门口，把抹布捏成一团。"
+    },
+    {
+      "type": "narration",
+      "text": "我记住了她那张名牌上被压出的坑。这是我今天唯一能确定没有被人重新铺过一遍的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我数了一下自己的心跳。没用，心跳和我一样，已经不太清楚它站在哪一段时间里了。"
+    },
+    {
+      "type": "narration",
+      "text": "我该拿这件事怎么办。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雨里的那个人只肯走，不肯解释。你要怎么开口？",
+      "options": [
+        {
+          "text": "追上去，问清楚他到底是谁、为什么替我挡",
+          "affectionWho": "雷恩",
+          "affection": 6,
+          "insomnia": 3,
+          "flag": "asked_raine_who",
+          "next": ""
+        },
+        {
+          "text": "先不问，把他刚才按在桌上的那块东西重新看一遍",
+          "affectionWho": "雷恩",
+          "affection": 3,
+          "insomnia": 6,
+          "flag": "studied_shard_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我在雨里快走两步，跟他并排，雨声太大，我只能提高声音。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "你刚才说我已经少过一次了。少掉的是什么？"
+    },
+    {
+      "type": "narration",
+      "text": "他没有马上回答。我们走了大半条街，走到一盏坏掉的路灯下面，他才停下来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "我不知道。我只看得见缺口，看不见缺的那个人。"
+    },
+    {
+      "type": "narration",
+      "text": "他伸出右手，把袖口往上卷了一寸。那圈细线在湿透的皮肤上看起来像一道没长平的旧伤。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "缺口会咬人。谁靠近就先咬谁。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她说那是今天唯一没被重铺过的东西。留吗？",
+      "options": [
+        {
+          "text": "记住那道坑。今晚我要靠它认路",
+          "affection": 0,
+          "insomnia": 2,
+          "flag": "held_onto_the_nameplate_dent",
+          "next": "",
+          "affectionWho": ""
+        },
+        {
+          "text": "别记了。记得越多，丢的时候越疼",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "refused_to_keep_more_details",
+          "next": "",
+          "affectionWho": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我低头看自己摊开的手掌。掌心里还留着刚才攥出来的四个月牙，红得很清楚。清楚，就是还在这儿，还没有被谁替我铺过一遍。"
+    },
+    {
+      "type": "narration",
+      "text": "雨还在下。我想起咖啡馆玻璃上那行字：五点四十，你会少掉十七分钟——它写对了。有人提前知道，有人提前来挡。"
+    },
+    {
+      "type": "narration",
+      "text": "那么写那行字的人，和站在雨里替我挡住的人，是不是同一伙的。这个问题我没敢问出口。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他卷起袖子给你看那道旧伤。还问下去吗？",
+      "options": [
+        {
+          "text": "问下去：那道线是谁划的",
+          "affection": 4,
+          "insomnia": 3,
+          "flag": "asked_about_the_scar_line",
+          "next": "",
+          "affectionWho": "雷恩"
+        },
+        {
+          "text": "不问。有些缺口不该被手指碰",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "left_the_scar_alone",
+          "next": "",
+          "affectionWho": "雷恩"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把手插进口袋，跟着他往街的尽头走。街尽头的天很脏，像一块被人反复擦过又擦不干净的玻璃。"
+    },
+    {
+      "type": "narration",
+      "text": "第四天的雨落在新东京的旧街区上。我数不清这十七分钟里我到底少了什么，但我知道从今晚起，我会开始数人。"
+    }
+  ],
+  "bgm": "bgm_warm"
+}

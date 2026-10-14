@@ -1,0 +1,82 @@
+{
+  "sceneId": "1-fxlabel",
+  "chapter": "夹具·第一幕",
+  "title": "夹具·label 错误",
+  "background": "",
+  "bgm": "",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "夜里的图书馆只剩钟摆还在往里走，小雅把两杯咖啡端过来一杯凉了，谁都没有说破这件事的代价（第401条）",
+      "label": "l01"
+    },
+    {
+      "type": "narration",
+      "text": "账本摊开在桌上第十一行的名字都空着，台阶上留下一串没人认领的脚印，窗外那栋楼有一扇窗永远亮着（第402条）"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩靠着墙数外面经过的车灯，那道裂缝比昨天宽了整整一指，夜里的图书馆只剩钟摆还在往里走（第403条）"
+    },
+    {
+      "type": "narration",
+      "text": "旧书页上的字在夜里泛出铜色，他想起母亲说过的话却没记全，账本摊开在桌上第十一行的名字都空着（第404条）",
+      "label": "l01"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "重复的 label 与回跳。",
+      "options": [
+        {
+          "text": "回到开头",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "",
+          "next": "#l01"
+        },
+        {
+          "text": "用非法的 @ 写法",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "",
+          "next": "@@ending"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他把手伸进光里又缩了回来，名字被念出来的时候屋里静了下来，雷恩靠着墙数外面经过的车灯（第405条）"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "找不到的 label 与不存在的场景。",
+      "options": [
+        {
+          "text": "跳到一个没有的 label",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "",
+          "next": "#l99"
+        },
+        {
+          "text": "跳到一个没有的场景",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "",
+          "next": "9-99#l01"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "时间在这里慢了一拍又补上，井口的铁栏上结着一层薄薄的霜，旧书页上的字在夜里泛出铜色，他想起母亲说过的话却没记全（第406条）"
+    }
+  ]
+}

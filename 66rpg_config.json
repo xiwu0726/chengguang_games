@@ -1,0 +1,54 @@
+{
+  "rate_limiter": {
+    "min_delay": 0.5,
+    "max_delay": 5.0,
+    "base_requests_per_minute": 10,
+    "max_requests_per_minute": 100
+  },
+  "monitoring": {
+    "check_interval_minutes": 1,
+    "duration_minutes": 600,
+    "log_level": "INFO",
+    "enable_dashboard": true
+  },
+  "features": {
+    "feature_categories": [
+      "剧情扩展",
+      "角色系统",
+      "战斗机制",
+      "美术升级",
+      "音频增强",
+      "社交功能",
+      "成就系统",
+      "活动系统",
+      "经济系统",
+      "多人模式"
+    ],
+    "feature_priority": [
+      "高优先级",
+      "中优先级",
+      "低优先级"
+    ]
+  },
+  "target_games": {
+    "min_id": 1000000,
+    "max_id": 9999999,
+    "check_pages_per_ranking": 3
+  },
+  "rate_limit_bypass": {
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15"
+    ],
+    "rotation_frequency": 10,
+    "exponential_backoff_enabled": true
+  },
+  "output": {
+    "log_file": "66rpg_analyzer.log",
+    "json_output": "66rpg_features.json",
+    "html_report": "66rpg_report.html"
+  }
+}

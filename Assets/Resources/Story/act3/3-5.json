@@ -1,0 +1,576 @@
+{
+  "sceneId": "3-5",
+  "chapter": "第三幕·最终决战",
+  "title": "终极对抗",
+  "background": "bg_lord_hall",
+  "bgm": "bgm_lord",
+  "next": "3-6",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "出了那道门，时间没有按我以为的方式往前走。"
+    },
+    {
+      "type": "narration",
+      "text": "一分钟里我数了三次自己的心跳。三次都对不上脚步，中间有一次多跳了一下。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩走在最前面，脚步很轻。他这一个月走路的姿势没变过：脚跟着地，脚掌先落，从来不拖。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "我们刚才明明是从那道门出去的。这道门后面应该是大厅，不是走廊。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我们出去的时候没有人回头看。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "没有回头看过的地方，本来就不算走出去过。"
+    },
+    {
+      "type": "narration",
+      "text": "我们四个人在一条走廊里走了一分钟，走廊两头的灯就跟进来的时候不一样了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我们没出去。刚才那扇门只是让我们从大厅的一头走到另一头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "……我数着步子。三百四十一步，正常的楼里没有这么长的走廊。"
+    },
+    {
+      "type": "narration",
+      "text": "走廊尽头是那面挂满签的墙。这一次它离得近，我能看清每一张签的边。"
+    },
+    {
+      "type": "narration",
+      "text": "我抬头找那个空格子。它还在，钉子还在，只是钉子旁边多了一行铅笔写的小字。"
+    },
+    {
+      "type": "narration",
+      "text": "那行字的写法我认得——笔画到最后一笔会往下拖，拖得很长，像写到一半就不想写了。那是我自己在图书馆登记簿上的写法。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你又回来了。这说明你把那一页补完了，也说明那笔账没有真的平。"
+    },
+    {
+      "type": "narration",
+      "text": "他坐在原地，和刚才一样。可我这次看着他，看见的东西不一样了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你一直在看我这张脸。你看不清，是因为你一直在找一张脸。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "我没有脸。你们每一张脸都是我借来的，用完就还。"
+    },
+    {
+      "type": "narration",
+      "text": "他说这话的时候，那张脸开始慢慢地、一层一层地换：先是一个中年女人的下颌，然后是灰外套老人提菜时微微前倾的姿势，接着是老周把手按在推车上的那半秒。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": "我眨了两次眼。第二次数出来的东西多了一层，像同一句话被念了两遍。"
+    },
+    {
+      "type": "narration",
+      "text": "换到最后，那张脸停在某个我不认识的样子上。五官都很淡，像铅笔被橡皮擦过好几遍的纸。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你不是神。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "我不是。我从来没有说过我是。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你们研究所把我写进事故类别第三级，守望者把我写进需要清除的名单。两边都写着，两边都没写清我是什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "……我们所长说你是人。三年前他带队进来过，回去以后他就再没提过这件事。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "他提过。他回去的那天晚上一个人说了四个小时，旁边没有人听。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "没有人听的话不算说过。他现在死了，所以他说的东西也一起被收走了。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩没有回嘴。他把手从腰上放下来，放得很慢，像是先把一件很重的东西放在地上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "我不是。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "我是这栋城市补不上的一块。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "二百七十天以前，是有人先删掉了名单上的第一个人。那个人被删得很干净，干净到他连自己都不记得自己有过名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "剩下的东西没有地方去，就堆在一起，堆成了我。"
+    },
+    {
+      "type": "narration",
+      "text": "他把手放在那本账的第一页上。我这才看清，那一格空出来的名字栏里，其实不是空的。"
+    },
+    {
+      "type": "narration",
+      "text": "那儿有一道很浅的印子，是被橡皮擦过的痕迹。印子的形状能看出来，那里原来写过两个字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你们一个名字一个名字地记，我就一个名字一个名字地长。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "所以这一个月我做得越多，你就越清楚。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你做得越准。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你们四个人里，你最能听见被删掉的东西。这不是天赋，这是补偿：你身上的空缺比谁都多。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "我身上哪来的空缺，我父母都活着，我没什么可丢的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你今年二十二。你记得自己七岁那年的事吗。"
+    },
+    {
+      "type": "narration",
+      "text": "我张开嘴要答，答不出来。我记得七岁的夏天，记得那年的雨，可那一年在我记忆里只有六百多天那么长。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你自己去数。数完再来问我。"
+    },
+    {
+      "type": "narration",
+      "text": "账页上那一格我看了很久。格子里没有照片，没有年龄，只有一个被划掉的名字栏和一行很小的说明。"
+    },
+    {
+      "type": "narration",
+      "text": "那行说明是印刷体，只有六个字：余项，不退不补。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "这行字是谁写的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "制度。你们研究所归档的时候也这么写，只是你们换了一个听起来更干净的说法。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "研究所没有这种说法。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "那种编号只发给现场。我经手过二十六份。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "第二十份你写过批注。你在批注栏里写了三个字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "我写的是「有人在」。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "对。那三个字后来被你自己划掉了。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝没有否认。她把仪表攥得紧了一点，指节上那两道印子又浮出来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "有的。你们的版本叫作无法定性的时间异常，后面跟一串编号。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我写过二十六份这样的报告。每一份最后都归档，每一份都没有结论。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你不是没有结论。你是把结论写在了别人不会读的那一页上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "每多一个人记得，我就多一张脸可以借。你记得越多，我越像我。"
+    },
+    {
+      "type": "narration",
+      "text": "这句话让我手心发凉。原来这一个月里我做的每一件事，都是在他身上添笔画。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "你们看墙上那些签。它们在往中间挤。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "每一张签都在说同一句话：我不是第一个，别看我。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝走到那面墙前面，把仪表贴在墙上。指针先是往上跳，跳到某个位置后死在那儿不动了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "这些签上的时间是同一个时刻。所有名字被删掉的时间是同一秒。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "那不可能。除非删除这件事本身只有一次，剩下都是重复。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你们的研究所给了它一个名字，叫时间裂缝。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "它真正的名字是纸。这张城市是一张写满字的纸，我只是替它把错的字擦掉。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "错的字是谁写的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "写的人已经不在了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "所以没人能改这张纸，只能一页一页地擦。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩往前走了两步，站在我和领主中间。他的右手背朝外翻着，那道烙印的颜色比上午更深了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "……我妹妹的名字，是你在哪一年擦的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你自己心里有数。那天你挡了一下，被换走的就是她。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你一直以为你在找她。你其实是在找我。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩没有动。他这个人从来不会在听懂之前动手。可这次他听懂了，他还是没有动。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "我妹妹的名字叫雷小满。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "……我写在本子上写过三百多遍。今天第一次说给别人听。"
+    },
+    {
+      "type": "narration",
+      "text": "他说这句话的时候在看我。我翻开记录本，找到那一页，把「雷小满」三个字写在最下面。"
+    },
+    {
+      "type": "narration",
+      "text": "写的时候我发现一件事：这一页上别的名字都还是黑的，她的名字写下去就是灰的，像墨被纸吃掉了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "她的名字在这张纸上占不住。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "雷恩，你写的这三百多遍，都是写在一张会往外渗的纸上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "……我知道。所以我才写了三百多遍。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "……我等这句话等了三年。"
+    },
+    {
+      "type": "narration",
+      "text": "我忽然想起一件事。下午在基地里翻老周留下的那本旧借阅记录时，我看到过一行夹在中间的登记：一张借书卡，借期是四十年前，卡上的持卡人写着两个字，姓周，名字被人用铅笔涂掉了。"
+    },
+    {
+      "type": "narration",
+      "text": "我当时以为那是老周自己。现在我知道不是。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "老周找的那个人，也是在这张账上被划掉的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "他在自己的柜子里留了一张借书卡。卡上的名字被铅笔涂掉，涂得很干净。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我一直以为那是他自己涂的。现在我知道不是。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "是他涂的。涂完他就把卡插回原位，插了四十年。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "他不是在找那个人。他是在给自己留一条以后能查回去的路。"
+    },
+    {
+      "type": "narration",
+      "text": "我把本子翻回那一页，在那行登记下面加了一行小字：老周把卡插回去的那一年，是他四十一岁。"
+    },
+    {
+      "type": "narration",
+      "text": "我忽然想起一件事。老周从来不借书。他在图书馆待了三十五年，一次都没在登记簿上写过自己的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "我小时候问过他为什么。他说，一个人要是老在一本书上写自己的名字，那本书就会认得他。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "他是在躲。他躲了三十五年。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "躲得掉的东西不叫名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "他找了四十年，找到的是一层又一层的空白。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "所以你现在的选择不是救谁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你要选的是这张纸以后由谁来写。"
+    },
+    {
+      "type": "narration",
+      "text": "他把账推开一点，露出底下压着的东西：一支笔，笔杆上有三道磨平的指痕，正好对着我的三根手指。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你拿笔的姿势和他一样。你们和写字的人，用的是同一只手。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_lord_face",
+      "text": "我抬起头。那张一直不肯停下来的脸，第一次停住了。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": "屋里所有的灯同时暗下去又亮起来，亮起来的时候，他的脸离我只有一臂的距离。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "看清楚了。看清楚以后，你再决定要不要接这支笔。"
+    },
+    {
+      "type": "narration",
+      "text": "我看见了一张脸。那是一张很普通的、四十岁上下的男人的脸，眼下有很深的青，像是很多年没有睡过整觉。"
+    },
+    {
+      "type": "narration",
+      "text": "隔着那张脸，我听见自己在心里说了一句很没出息的话：这张脸我在镜子里见过。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他等着我伸手。",
+      "options": [
+        {
+          "text": "接过那支笔",
+          "affectionWho": "时间领主",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "took_the_pen",
+          "next": "3-6"
+        },
+        {
+          "text": "退后一步，先问他把艾莉丝的名字放在账上第几行",
+          "affectionWho": "艾莉丝",
+          "affection": 7,
+          "insomnia": 1,
+          "flag": "asked_for_alice_line",
+          "next": "3-6"
+        },
+        {
+          "text": "不退也不接，问他苏禾这个名字是被谁划掉的",
+          "affectionWho": "小雅",
+          "affection": 5,
+          "insomnia": 2,
+          "flag": "asked_suhe_line",
+          "next": "3-6"
+        }
+      ]
+    }
+  ]
+}

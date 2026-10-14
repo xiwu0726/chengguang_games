@@ -1,0 +1,1516 @@
+{
+  "sceneId": "2-3",
+  "chapter": "第二幕·深入探索",
+  "title": "雷恩的秘密",
+  "background": "bg_base_room",
+  "bgm": "bgm_tension",
+  "dense": true,
+  "next": "2-4",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "第十三天，三月二十四号，早上七点。我醒着，已经醒了十三个白天。"
+    },
+    {
+      "type": "narration",
+      "text": "地下作战室的灯是那种老式的长条灯管，开久了会有一点嗡嗡的底噪。我坐在桌子这头，把昨天带回来的照片和站台收据并排摆着。"
+    },
+    {
+      "type": "narration",
+      "text": "两个人，一张收据，两件都跟同一个人有关。而那个人在我这边只出现过七秒，在另一边活到了二十七岁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "照片上根本没有她。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "照片里没有她，可昨天你看见的是她。信哪一边？",
+      "options": [
+        {
+          "text": "信眼睛：我确实看见她在楼前站着",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "trusted_what_i_saw",
+          "next": ""
+        },
+        {
+          "text": "信照片：纸上的东西不会陪我演",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "trusted_the_photo",
+          "next": ""
+        },
+        {
+          "text": "把两者并排放着，先不裁决",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_both_unjudged",
+          "next": "#l01"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "照片上是一个灰背心的男人和半个后脑。可昨天在那边，我明明看见的是艾莉丝的背影，是她在楼前站了很久，是她咬着嘴唇说「只是看一看」。",
+      "label": "l01"
+    },
+    {
+      "type": "narration",
+      "text": "我推门进来的时候，作战室里只有小雅。她趴在桌上，面前摊着一叠便利贴，每张上面都写着时间、地点和一句话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你昨天回来以后一直在看那张照片吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "看了四个小时。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "我也没睡。我把这些东西写下来了，你要不要听。"
+    },
+    {
+      "type": "narration",
+      "text": "她开始念她的便利贴。她念得很慢，每一条都像在数她自己身上的东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她要念她的便利贴了。你先做什么？",
+      "options": [
+        {
+          "text": "坐直，一条一条听完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "listened_to_every_note",
+          "next": ""
+        },
+        {
+          "text": "先给她倒杯水，让她慢点说",
+          "affectionWho": "小雅",
+          "affection": 5,
+          "insomnia": -2,
+          "flag": "poured_xya_water",
+          "next": ""
+        },
+        {
+          "text": "打开本子，准备逐条对",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "prepared_to_crosscheck",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "第一条。三月十六号，我在车站站台上没听见周围所有的声音，只听见一个数数的声音。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "第二条。昨天在那边，我靠近那家咖啡店，我能听见我师父在厨房里翻动锅铲。这不可能，她在另一座城。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "第三条。前天你睡觉的时候，我在外面坐着。我听见楼下的水管，听见楼顶的鸟，听见三条街以外有人在吵架。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "我不是猜的。我是真的听见了。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这话的时候很平静。平静得让人后怕，因为她自己已经接受了这件事，只是还没找到词来形容它。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三条「听见」摆在一起。这算病，还是算能力？",
+      "options": [
+        {
+          "text": "不敢定性，先记成事实",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "recorded_as_fact",
+          "next": ""
+        },
+        {
+          "text": "心里偏向「能力」，但没说出口",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "leaned_toward_ability",
+          "next": ""
+        },
+        {
+          "text": "想到她一个人扛着这些没睡",
+          "affectionWho": "小雅",
+          "affection": 6,
+          "insomnia": 0,
+          "flag": "worried_for_xya_alone",
+          "next": "#l02"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我装睡的那两个晚上，一直在数呼吸。我数自己，也数别人。原来她数得比我还多。",
+      "label": "l02"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "这件事先别告诉艾莉丝。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "为什么。她不是我们这边的人吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "她会先写一份报告，再决定要不要让你进现场。"
+    },
+    {
+      "type": "narration",
+      "text": "话音刚落，门就从外面被推开了。雷恩站在门口，手里提着一个旅行袋，外套肩膀是湿的。外面在下雨。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "今天不要去裂缝区。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "我们昨天才定好路线。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "路线我改了。改到今天下午，地点也换。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩单方面改了路线。你跟不跟？",
+      "options": [
+        {
+          "text": "跟。他很少用这种语气说话",
+          "affectionWho": "雷恩",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "followed_raines_change",
+          "next": ""
+        },
+        {
+          "text": "先问一句：改成这样，是谁受益",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "questioned_route_change",
+          "next": ""
+        },
+        {
+          "text": "不表态，先看袋子里是什么",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "watched_the_bag_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他把旅行袋放在桌上，拉开拉链。里面不是衣服，是一沓用塑料膜封着的纸，还有六瓶编号不同的碎片样本。"
+    },
+    {
+      "type": "narration",
+      "text": "其中一瓶的标签上用黑笔写着一行字。字很小，很工整，写着「三月二十八日，市内西区」。这个日期在四天以后。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "这是什么时候的东西。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "我前天从北线带回来的。你不用问它怎么来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "你只要知道一件事：四天以后，西区会出一次大的。规模比车站那次大三倍。"
+    },
+    {
+      "type": "narration",
+      "text": "我看着他手里那瓶样本。它现在很暗，里面几乎不亮。可我知道它只是被提前封住了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "四天后的西区、提前封住的样本。这句话你问不问？",
+      "options": [
+        {
+          "text": "问。把「早就知道」四个字问出口",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_if_raine_knew",
+          "next": ""
+        },
+        {
+          "text": "不问，先记下瓶子上的日期",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "noted_the_bottle_date",
+          "next": ""
+        },
+        {
+          "text": "问他：这次要不要我们分头行动",
+          "affectionWho": "雷恩",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "asked_about_split",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你早就知道车站那天会发生什么吗。"
+    },
+    {
+      "type": "narration",
+      "text": "他停了两秒。这两秒里他的手一直按在旅行袋的拉链上，没有松开。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "知道一半。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "剩下的今天下午补上。废墟东侧有一段被压住的路，上周开始有反应。"
+    },
+    {
+      "type": "narration",
+      "text": "他改了今天的计划。原本我们该去北线复查，现在改去废墟东侧。这不合逻辑，因为北线的那段是唯一一块我们还有数据的地方。"
+    },
+    {
+      "type": "narration",
+      "text": "但雷恩说改就改，语气不像在商量，也不像在下命令。他有事要去东侧，而且他不想让人知道是什么事。"
+    },
+    {
+      "type": "narration",
+      "text": "下午两点，雨小了一点。我们到了东侧。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "下午两点，东侧到了。下车前你想确认什么？",
+      "options": [
+        {
+          "text": "确认撤退路线，塌方区不能只进不出",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "checked_escape_route",
+          "next": ""
+        },
+        {
+          "text": "确认谁拿设备，别再出岔子",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "confirmed_gear_duty",
+          "next": ""
+        },
+        {
+          "text": "看一眼雷恩，他比谁都急着到这儿",
+          "affectionWho": "雷恩",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "noticed_raines_urgency",
+          "next": "#l03"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那段路塌得很彻底。整条车道陷下去一层，陷口边缘露着白的路基，路基下面是一段被压扁的黑色管道。",
+      "label": "l03"
+    },
+    {
+      "type": "narration",
+      "text": "塌方的中间嵌着一块碎片。那块碎片至少有两个拳头大，黑得发亮，边缘被雨冲得很干净。"
+    },
+    {
+      "type": "narration",
+      "text": "我看到它的时候先注意到一件不对的事：那块碎片的位置太正了。塌方、管道、路面都歪着，只有它摆得端端正正，像有人把它放下来的时候仔细对过中心。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "这块不是自然生成的。它被人挪过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "所以要快点收。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "「被人挪过」的碎片，收它之前你担心什么？",
+      "options": [
+        {
+          "text": "担心挪它的人还会回来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "feared_the_mover_returns",
+          "next": ""
+        },
+        {
+          "text": "担心雷恩太急，会一个人扛",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": 0,
+          "flag": "worried_raine_overexerts",
+          "next": ""
+        },
+        {
+          "text": "什么都不担心，先搭手",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "helped_without_worry",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他把配重钢锭从车上搬下来，一个人抬的。第一次抬的时候他的右手没有完全使上劲，钢锭歪了一下，磕在车框上，声音很闷。"
+    },
+    {
+      "type": "narration",
+      "text": "他把右手往袖子里缩了一下才接着抬。我看清了那个动作，也看清了他袖口下面有什么。"
+    },
+    {
+      "type": "narration",
+      "text": "但那一刻我没出声，因为我以为我看错了——那下面是一截不平的皮肤，像烙过什么东西。"
+    },
+    {
+      "type": "narration",
+      "text": "设备布置好以后，艾莉丝让我们分成两组。她和小雅在外围，负责读数与回收；我和雷恩靠近那块碎片。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "分成两组，你被分到雷恩身边。这一组你盯什么？",
+      "options": [
+        {
+          "text": "盯雷恩的手，他袖口下面有东西",
+          "affectionWho": "雷恩",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "watched_raines_hand",
+          "next": ""
+        },
+        {
+          "text": "盯碎片，探针数据出来就报",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "watched_the_probe_data",
+          "next": ""
+        },
+        {
+          "text": "盯外围的艾莉丝和小雅，离塌口太远反而慌",
+          "affectionWho": "小雅",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "watched_the_perimeter",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "九十分钟的窗口，分两次。第一次三分钟，看结构。第二次再决定要不要取样。"
+    },
+    {
+      "type": "narration",
+      "text": "第一次窗口很干净。我们没进去，只让探针贴着它转了一圈。回来的数据很怪：那块碎片里裹着一小段完整的时间，长度约五个小时，来自三年前的这条街。"
+    },
+    {
+      "type": "narration",
+      "text": "第二次架设的时候，我们犯了一个错。设备要挪两米，绕到塌口的另一边。这两米里，艾莉丝把碎片样本盒递给了小雅拿着。"
+    },
+    {
+      "type": "narration",
+      "text": "样本盒是金属的，密封的，看上去很安全。可它里面装的不是样本，是前天从那块黑碎片上敲下来的一小片。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "样本盒转给了小雅拿。你要不要换人？",
+      "options": [
+        {
+          "text": "要换，盒子该由拿过的人抱着",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "tried_to_take_box_back",
+          "next": ""
+        },
+        {
+          "text": "不换，金属盒密封得很，出不了事",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "trusted_the_sealed_box",
+          "next": ""
+        },
+        {
+          "text": "只提醒她退离塌口三步",
+          "affectionWho": "小雅",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "asked_xya_to_step_back",
+          "next": "#l04"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "小雅把它们抱在胸前，站得离塌口很近。我回头喊她退远一点，她点头往后退。",
+      "label": "l04"
+    },
+    {
+      "type": "narration",
+      "text": "她退第三步的时候，脚边的水坑里浮起一层白光。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "白光没有声音，但它把整条街的声音都吸走了。"
+    },
+    {
+      "type": "narration",
+      "text": "我看见小雅站在那儿，两只眼睛睁得很大，瞳孔里有一点很淡的白。盒子从她手里掉在地上，盖子摔开了。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有尖叫。她只是站着，嘴唇在动，像是在跟谁对账。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "这里……死过很多人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "我听见了。三年前的这条路上，有人喊了一整夜。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅说「这里死过很多人」。你先做什么？",
+      "options": [
+        {
+          "text": "先去看她的眼睛，那层白还没退",
+          "affectionWho": "小雅",
+          "affection": 6,
+          "insomnia": 0,
+          "flag": "checked_xyas_eyes",
+          "next": ""
+        },
+        {
+          "text": "先捡地上摔开的盒子",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "grabbed_the_dropped_box",
+          "next": ""
+        },
+        {
+          "text": "朝艾莉丝喊我们没事",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "signalled_all_right",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝的仪器在三十米外开始报警。她往这边跑，一边跑一边喊让我退开。可我已经往小雅那边去了。"
+    },
+    {
+      "type": "narration",
+      "text": "我伸手去抓她的时候，那只手穿过了一层很奇怪的东西——像穿过一层冷水，又像穿过一段被压缩的风。"
+    },
+    {
+      "type": "narration",
+      "text": "然后整段塌方区开始动。"
+    },
+    {
+      "type": "fx",
+      "fx": "shake",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "不是地动，是「时间在动」。路边的树开始往一个方向倒，倒了又立起来；倒在地上的那块压缩管道像被倒带一样卷起来，再砸下去。"
+    },
+    {
+      "type": "narration",
+      "text": "白光的边缘在往前推，推过的地方，雨滴停在半空，然后倒着往上飞。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "时间在倒带，白光往前推。你往哪边退？",
+      "options": [
+        {
+          "text": "往艾莉丝那边退，把小雅先递出去",
+          "affectionWho": "小雅",
+          "affection": 5,
+          "insomnia": 0,
+          "flag": "pushed_xya_to_safety",
+          "next": ""
+        },
+        {
+          "text": "退到一半，回头去看那块碎片",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "looked_back_at_shard",
+          "next": ""
+        },
+        {
+          "text": "不退。先数那个声音数到几",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "counted_the_voice",
+          "next": "#l05"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把小雅往艾莉丝那边推。她被我推出去一步，踩在实地上，然后回头看我——我看见她的眼睛已经恢复了。",
+      "label": "l05"
+    },
+    {
+      "type": "narration",
+      "text": "我自己没有退出去。因为我离那块碎片只剩两米，而白光的边缘就在我脚前。"
+    },
+    {
+      "type": "narration",
+      "text": "我听见一个声音。那个数数的声音，这次不快，很慢。它数到三，然后停在那儿等。"
+    },
+    {
+      "type": "narration",
+      "text": "我在等它数到四。我知道数到四以后，我脚下这个东西会连着我一起收进去。"
+    },
+    {
+      "type": "narration",
+      "text": "一只手从我左侧伸过来，抓住我的后领。"
+    },
+    {
+      "type": "narration",
+      "text": "那一下的力很大，大得不讲道理。我整个人被甩出去三米，摔在艾莉丝脚边的泥水里。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "被甩出去三米，抬头第一眼看谁？",
+      "options": [
+        {
+          "text": "看雷恩——他站的位置不对",
+          "affectionWho": "雷恩",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "saw_raine_step_in",
+          "next": ""
+        },
+        {
+          "text": "看小雅——她还在不在原地",
+          "affectionWho": "小雅",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "looked_for_xya",
+          "next": ""
+        },
+        {
+          "text": "看自己的手，刚才穿过的那层东西还黏在掌心",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "stared_at_his_hand",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我抬头的时候，雷恩已经站到那块碎片正前面了。"
+    },
+    {
+      "type": "narration",
+      "text": "他把外套脱了，扔在一边。雨落在他身上，他伸出右手，手掌对着那块碎片。"
+    },
+    {
+      "type": "narration",
+      "text": "他的右手完完整整地露在外面。手背到手腕之间，有一个印子。"
+    },
+    {
+      "type": "narration",
+      "text": "那个印子不是纹身。它像被烧进去的，边缘不平，颜色比周围的皮肤深一层。形状是一个圈，圈里有一道断掉的线。"
+    },
+    {
+      "type": "narration",
+      "text": "白光撞在他手心上，停住了。像水撞在一面看不见的墙上，从中间往两边分。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "白光撞在雷恩手心上停住了。这时候你喊什么？",
+      "options": [
+        {
+          "text": "喊艾莉丝关机，别管他在不在场",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "shouted_to_shut_down",
+          "next": ""
+        },
+        {
+          "text": "喊雷恩回来，印子不是他的盾牌",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": 0,
+          "flag": "shouted_raine_back",
+          "next": "#l06"
+        },
+        {
+          "text": "喊不出声，腿先往那边跑了半步",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "froze_half_a_step",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他整个人被往后推了小半步。血从他袖口下面渗出来，一滴一滴落在泥水里，把水都染成褐色。",
+      "label": "l06"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "艾莉丝！关机！"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝没有立刻关。她盯着他的手，盯着那个印子，脸上的表情变了三次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "……守望者的烙印。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "关机！"
+    },
+    {
+      "type": "narration",
+      "text": "她关了机器。白光的边缘在离雷恩半步的地方散开，向四周滑走，最后落在塌口里，熄了。"
+    },
+    {
+      "type": "narration",
+      "text": "雨又开始正常地下。整条街恢复了声音，恢复得很突然，突然到耳朵会疼。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩跪下去。他不是慢慢跪的，是腿直接不听话。他的右手撑着地，那个印子在雨里显得更清楚。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩跪在泥水里。你先过去扶谁？",
+      "options": [
+        {
+          "text": "过去扶雷恩，他嘴上说不严重",
+          "affectionWho": "雷恩",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "went_to_help_raine",
+          "next": ""
+        },
+        {
+          "text": "先按住小雅，别让她再靠近塌口",
+          "affectionWho": "小雅",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "held_xya_back",
+          "next": ""
+        },
+        {
+          "text": "先看艾莉丝关没关机器",
+          "affectionWho": "艾莉丝",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "checked_machine_off",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "你手在流血！"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "不严重。"
+    },
+    {
+      "type": "narration",
+      "text": "我爬起来，想去扶他。他抬手挡了我一下，挡得很用力，像在推开一个要抢他东西的人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "为什么不早说。"
+    },
+    {
+      "type": "narration",
+      "text": "他坐在地上，背靠着翻掉的车框，喘了半分钟才抬头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "这个印子不是功劳。它是个记号。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "守望者给愿意替别人挨的人盖一个。盖了以后你能挡一次，挡完以后那一次就记在你身上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "记在身上是什么意思。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "意思是那一段本来该你消失的时间，现在归我背。它不会消失，它会跟着我。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "「该你消失的时间，现在归我背。」这话你接不接？",
+      "options": [
+        {
+          "text": "接不住。先问他背了多少次",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_how_often_he_bore",
+          "next": ""
+        },
+        {
+          "text": "接住，把这句话原样记进本子",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_the_burden_rule",
+          "next": ""
+        },
+        {
+          "text": "想伸手碰那个圈，又缩回来",
+          "affectionWho": "雷恩",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "almost_touched_the_mark",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他抬起手，看着手背上那个圈。雨从圈里流过去，冲得那条断线在皮肤上闪了一下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "我背过一次。三年前。"
+    },
+    {
+      "type": "narration",
+      "text": "他说完这句就停了。停得很久，久到雨打在钢锭上的声音都显得吵。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "我有个妹妹。比我小四岁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "三年前西区出事。那天我什么都没做，我只是从路口走过去，我看见有人被吸进去，我过去推了一把。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "被推出来的那个人活了。我妹妹那天也在那条路上。她被换走了。"
+    },
+    {
+      "type": "narration",
+      "text": "我脑子里的一根线一下子绷紧了。因为后面那句话我几乎能猜出来，而我一点都不想听。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩说到妹妹被换走。这句猜测你说出口吗？",
+      "options": [
+        {
+          "text": "说。这个词总得有人先说出来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "voiced_the_forgetting",
+          "next": ""
+        },
+        {
+          "text": "不说，等他亲口讲",
+          "affectionWho": "雷恩",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "waited_for_his_words",
+          "next": ""
+        },
+        {
+          "text": "说出声才发现，这词我自己也用过",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "recognized_own_words",
+          "next": "#l07"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "她……没有人记得。",
+      "label": "l07"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "户籍上没有她。学校没有她的档案。我妈不承认生过第二个孩子。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "只有我记得。我从三年前开始找。找了三年，找到的东西全都在这个袋子里。"
+    },
+    {
+      "type": "narration",
+      "text": "他说着要去拉那个旅行袋。手抬到一半停住了，因为他的手在抖，抖得拉不开拉链。"
+    },
+    {
+      "type": "narration",
+      "text": "这一刻我忽然明白了他为什么要改今天的路线。东侧这块碎片，是他三年前那条路上的东西。他不是来救我们的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "你今天来是为了看她。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "嗯。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "那你把我们四个都带进来了。你有没有想过，如果刚才收的是小雅。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "你问他「如果刚才收的是小雅」。要听到什么答案？",
+      "options": [
+        {
+          "text": "要他承认他赌过",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "demanded_his_admission",
+          "next": ""
+        },
+        {
+          "text": "不要答案，只要他记住这次",
+          "affectionWho": "雷恩",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "let_the_question_stand",
+          "next": ""
+        },
+        {
+          "text": "问完就后悔了，想收回来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "regretted_the_accusation",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他没有回答。他看着我，眼睛里第一次有了一点不平整的东西——不是愧疚，是那种被人说中了以后无处可退的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "我站了起来。我不知道我要干什么，我只知道我的胸口很堵，堵得我手都在发力。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "你让我别松开手。可你自己一直在松开。"
+    },
+    {
+      "type": "narration",
+      "text": "他没有反驳我。他只是低下头，把脸埋在湿透的袖子里，肩膀一动不动。"
+    },
+    {
+      "type": "narration",
+      "text": "雨很大，小雅在哭，艾莉丝的仪器还在响。整个东侧只剩这些东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雨里没人说话。医疗包到位之前你做什么？",
+      "options": [
+        {
+          "text": "把伞撑到雷恩头上",
+          "affectionWho": "雷恩",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "shaded_raine_from_rain",
+          "next": ""
+        },
+        {
+          "text": "把小雅的哭声先安抚下来",
+          "affectionWho": "小雅",
+          "affection": 4,
+          "insomnia": -1,
+          "flag": "calmed_xya_down",
+          "next": ""
+        },
+        {
+          "text": "站着不动，看艾莉丝怎么处理",
+          "affectionWho": "艾莉丝",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "watched_alice_work",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "然后艾莉丝走过来了。她提着医疗包，蹲在雷恩旁边，一句话都没问，把他的右手拉过来架在自己膝盖上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "伤口要处理。现在。不然你会失去这只手的握力。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "不用去医院。他们看见这个印子会问。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我不送你去医院。"
+    },
+    {
+      "type": "narration",
+      "text": "她把医药包打开，取出针线和消毒棉。她的动作非常熟，熟得像做过很多次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "袖子拉高一点。会疼，忍着。"
+    },
+    {
+      "type": "narration",
+      "text": "她开始缝。雨帮她冲洗伤口，她的针在皮肉之间一下一下地穿。雷恩一开始没出声，缝到第三针的时候，他咬住了自己的手背。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "缝到第三针，雷恩咬住了手背。你递什么过去？",
+      "options": [
+        {
+          "text": "把自己的袖子递过去让他咬",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": 0,
+          "flag": "offered_his_sleeve",
+          "next": ""
+        },
+        {
+          "text": "替艾莉丝按住绷带卷",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "helped_hold_bandage",
+          "next": ""
+        },
+        {
+          "text": "什么都递不了，只能陪着数针",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "counted_the_stitches",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "小雅蹲在旁边，把外套脱下来垫在他胳膊下面。她一直在小声数数，数到五就重头数，我猜她是在替他把疼分开。"
+    },
+    {
+      "type": "narration",
+      "text": "缝完以后，艾莉丝用绷带把那只手包好，包得很紧，紧到雷恩的手指只能微微动。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "烙印的时候你去挡，挡完会脱力三天。这三天里你抬不动重的，也跑不快。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "我扛过一次，知道有多重。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "你不知道。"
+    },
+    {
+      "type": "narration",
+      "text": "她停了一下。她停的那一下里，我的目光落在她的侧脸上。她的眼睛是红的，红得很快，快到她自己在眨眼的时候都没反应过来。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "艾莉丝的眼睛红了。她要开口说破例的事，你听不听？",
+      "options": [
+        {
+          "text": "听。这种话她大概只说一次",
+          "affectionWho": "艾莉丝",
+          "affection": 5,
+          "insomnia": 0,
+          "flag": "listened_to_alice_confess",
+          "next": ""
+        },
+        {
+          "text": "替她把话挡回去，别让她当众拆自己",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 1,
+          "flag": "shielded_alice",
+          "next": ""
+        },
+        {
+          "text": "低头记东西，把空间留给她",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "gave_her_the_room",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cry",
+      "text": "我做过三年观测。我的规则是不进现场、不动手、不为任何一个人破例。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cry",
+      "text": "你刚才差点被收走的时候，我第一个动作不是关机。是去抢你。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这话的时候声音很小，小到只有我、雷恩和小雅听得见。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "所以我今天破了一条。就这一条。回去我会把它写进报告。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩看着她。他很久没有说话，最后把那只包着绷带的手往膝盖上按了按，像在试它还能不能算自己的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "谢谢。还有，今天是我错了。"
+    },
+    {
+      "type": "narration",
+      "text": "我听见他说「我错了」。这三个字从他嘴里出来的时候，比他刚才挡那一下还费力。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩说了「我错了」。这三个字你怎么接？",
+      "options": [
+        {
+          "text": "接一句「回去再说」，先收队",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "deferred_the_talk",
+          "next": ""
+        },
+        {
+          "text": "点点头，让他知道这句被听见了",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": 0,
+          "flag": "acknowledged_his_apology",
+          "next": ""
+        },
+        {
+          "text": "心里那股堵还没散，先记着",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "kept_the_lump",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我们收拾东西的时候，天已经暗了。那块碎片最后还是没取成，它被雷恩挡过一次以后就黯了，往外溢的东西也停了。"
+    },
+    {
+      "type": "narration",
+      "text": "上车之前，小雅忽然拉住我。她的手指很凉，抓着我袖口不放。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "在那边我听见的东西，还有一件我没说。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "我听见有一个老头在站台上说话，声音很清楚。他说：把票拿好，别落下东西。"
+    },
+    {
+      "type": "narration",
+      "text": "我的胃往下沉。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "我听见的站台，是明天早上的。我数过声音，是早班。"
+    },
+    {
+      "type": "narration",
+      "text": "回城的路上，雷恩一直看着窗外。他那只包着绷带的手放在膝盖上，像一件他不认识的东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅听见的是明天的站台。上车前你安排什么？",
+      "options": [
+        {
+          "text": "明早先去车站，把那个早班盯住",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "planned_station_watch",
+          "next": ""
+        },
+        {
+          "text": "先问雷恩：四天后的西区怎么办",
+          "affectionWho": "雷恩",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "asked_raine_about_west",
+          "next": ""
+        },
+        {
+          "text": "把小雅听见的话原样记下来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_xyas_heard_words",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我翻开笔记本，把那张照片夹回去，又在旁边写了一行。"
+    },
+    {
+      "type": "narration",
+      "text": "我写的是：「守望者的烙印就是被记住的代价。雷恩替人挡了一次，他的妹妹就被换走了。这条规则不是关于力量的，是关于谁来付账的。」"
+    },
+    {
+      "type": "narration",
+      "text": "写到这里我又停下来，加了一句。"
+    },
+    {
+      "type": "narration",
+      "text": "「所以我如果继续往里走，最后被换走的会是谁。」"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "接下来怎么安排？",
+      "options": [
+        {
+          "text": "先按雷恩的线索查西区，把四天后的那场大事压下去",
+          "affectionWho": "雷恩",
+          "affection": 8,
+          "insomnia": 1,
+          "flag": "followed_raine_westward",
+          "next": ""
+        },
+        {
+          "text": "先把小雅的能力和自己记得的那个人告诉艾莉丝",
+          "affectionWho": "艾莉丝",
+          "affection": 8,
+          "insomnia": 1,
+          "flag": "told_alice_about_xya",
+          "next": ""
+        },
+        {
+          "text": "谁都不说，明早一个人去车站看看那个早班站台",
+          "affectionWho": "小雅",
+          "affection": 3,
+          "insomnia": 1,
+          "flag": "went_station_alone",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "当晚我把那张照片从本子里抽出来，放在灯下看。"
+    },
+    {
+      "type": "narration",
+      "text": "正面还是那个笑得很随意的男人和半个后脑。背面那行字还在：别让他变成没有人记得的那种人。"
+    },
+    {
+      "type": "narration",
+      "text": "我把照片翻过来对着灯。灯从背面照过去的时候，我看见纸里还有东西——不是字，是一层很淡的压痕，像有人在上面又写过一遍，然后被擦掉了。"
+    },
+    {
+      "type": "narration",
+      "text": "我把灯挪近，把那层压痕看清楚了。上面是两个字，笔画很重，是「哥哥」。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "压痕里是「哥哥」两个字。这个发现你今晚告诉谁？",
+      "options": [
+        {
+          "text": "谁都不告诉，明天当面问艾莉丝",
+          "affectionWho": "艾莉丝",
+          "affection": 4,
+          "insomnia": 1,
+          "flag": "kept_brother_secret_till_morning",
+          "next": ""
+        },
+        {
+          "text": "先告诉小雅，让她别在饭桌上说漏",
+          "affectionWho": "小雅",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "told_xya_first",
+          "next": ""
+        },
+        {
+          "text": "写进本子，写完就后悔写了",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "wrote_the_brother_line",
+          "next": "#l08"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我坐回椅子上，心里那根线终于连上了。照片上站着的那个人，是艾莉丝的哥哥。而艾莉丝在那一边说过一句话，她说那个男人「活到了二十七岁」。",
+      "label": "l08"
+    },
+    {
+      "type": "narration",
+      "text": "活到二十七岁。她说这句话的时候用的不是「在」，是「活到」。"
+    },
+    {
+      "type": "narration",
+      "text": "我把本子合上，闭上眼。窗外的雨还在下，地下室那台机器散热的细响一直持续到天亮。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "天快亮了。明天那一问，你想清楚了吗？",
+      "options": [
+        {
+          "text": "想清楚了：问「怎么被抹掉」，不问「是谁」",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "fixed_the_question",
+          "next": ""
+        },
+        {
+          "text": "没想清，可手已经把本子合上了",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "closed_book_unsure",
+          "next": ""
+        },
+        {
+          "text": "想清楚了，顺便把雷恩的份也一起问",
+          "affectionWho": "雷恩",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "bundled_raines_question",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我在天亮之前想清楚了一件事：明天要问艾莉丝的问题，不是那张照片是谁的，而是她失去的人是怎么被抹掉的。这个问题必须我问，因为只有我记得的那个人，和她失去的那个人，是被同一种东西拿走的。"
+    }
+  ]
+}

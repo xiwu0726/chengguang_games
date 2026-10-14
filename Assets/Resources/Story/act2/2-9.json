@@ -1,0 +1,1385 @@
+{
+  "sceneId": "2-9",
+  "chapter": "第二幕·深入探索",
+  "title": "最终选择前夜",
+  "background": "bg_base_room",
+  "bgm": "bgm_sad",
+  "dense": true,
+  "next": "3-1",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "第二十五天，四月五号，晚上九点。基地二楼那间屋子，窗玻璃上有一道很旧的划痕，是三月十九号我们钉桌子的时候留下的。"
+    },
+    {
+      "type": "narration",
+      "text": "桌子边有四把椅子。三把坐着东西，第四把空着。谁都没有把空椅子挪开，也没有人把腿伸到那把椅子下面去。"
+    },
+    {
+      "type": "narration",
+      "text": "楼下坐着剩下的那个人。从下午三点开始就坐在楼梯口那一级上，没上来，也没说话。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他上来过一回又下去了。要下去叫他么？",
+      "options": [
+        {
+          "text": "下去，把他带上来。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "went_down_to_fetch_him",
+          "next": ""
+        },
+        {
+          "text": "不叫。把他的椅子留在桌边。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "left_his_chair_in_place",
+          "next": ""
+        },
+        {
+          "text": "问艾莉丝他是不是一下午都在。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_if_he_sat_all_day",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "楼梯口那级台阶是凉的。这个我知道。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝把一台很旧的录音机放在桌中间。它的外壳裂了一道，用黑胶带粘着，胶带边上起了毛。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "播放键按下去之前，先问什么？",
+      "options": [
+        {
+          "text": "问这带子里都有谁的声音。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_whose_voice_was_on_the_tape",
+          "next": ""
+        },
+        {
+          "text": "问她为什么留着这台机器。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_why_she_kept_the_recorder",
+          "next": ""
+        },
+        {
+          "text": "什么都不问。等她按。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "waited_for_the_play_key",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "灯管在桌子正上方响了一声。屋子里比刚才更静。"
+    },
+    {
+      "type": "narration",
+      "text": "我把两只手平放在桌上，准备好听一件我不想听的事。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "四月三号早上，我让每个人录了一段。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我说，如果今天有人回不来，剩下的录音就是那个人自己要说的话。"
+    },
+    {
+      "type": "narration",
+      "text": "她按了播放键。磁带转动的第一秒有一声摩擦，像有人隔着纸咳了一下。"
+    },
+    {
+      "type": "narration",
+      "text": "第一段是她自己的。录音里的她比平时慢，句子之间都留着半秒的空。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "第一段是她自己的声音。你怎么听？",
+      "options": [
+        {
+          "text": "听她把话说完，不打断。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "listened_without_interrupting",
+          "next": ""
+        },
+        {
+          "text": "一边听一边数她停了几次。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "counted_the_pauses_in_her_voice",
+          "next": ""
+        },
+        {
+          "text": "问这段录于什么时候。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_when_this_was_recorded",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "磁带一格一格地转。转过去的每一格，都是她没当面说过的日子。"
+    },
+    {
+      "type": "narration",
+      "text": "第一句是：我哥的名字叫叶嘉。编号 A-三一七。三年前他报名参加研究所第一期受试项目，项目测的是人能不能带着记忆穿过裂缝。"
+    },
+    {
+      "type": "narration",
+      "text": "第二句是：第一期伤了两个人，项目停掉。第三个月，他的档案就没了。户籍里销了，研究所回答我四个字，查无此人。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "名单上少了一个人。要问是谁么？",
+      "options": [
+        {
+          "text": "问被划掉的是谁。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_who_was_cut_first",
+          "next": ""
+        },
+        {
+          "text": "不问。让她把第三句说完。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_her_finish_the_third_sentence",
+          "next": ""
+        },
+        {
+          "text": "在本子上记下：少了一个。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_the_missing_one_in_the_book",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我没有问。口袋里的笔挨着腿，有点热。"
+    },
+    {
+      "type": "narration",
+      "text": "第三句是：我妈现在记得她有两个孩子。一个是我，另一个她说不出名字。她每次说到那里就停住，停的时间一年比一年长。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三句话，三件她没当面说过的事。先接哪一句？",
+      "options": [
+        {
+          "text": "把三个停顿都记住。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "memorized_the_three_pauses",
+          "next": ""
+        },
+        {
+          "text": "不问。让录音自己站在那儿。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_the_recording_stand",
+          "next": "#l01"
+        },
+        {
+          "text": "先在本子上记下编号。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_the_number_in_the_book",
+          "next": "#l01"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "三句话，三个停顿。她是背过的，或者她是练过的。"
+    },
+    {
+      "type": "narration",
+      "text": "我听得出来，那是念一张单子用的语气。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "这些你三月二十六号就知道了。",
+      "label": "l01"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "我知道。我没有一次把全部告诉你。"
+    },
+    {
+      "type": "narration",
+      "text": "她把手放在录音机上，没有按停止。录音里的她继续说下去。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "录音里的她还在往下说。要拦住么？",
+      "options": [
+        {
+          "text": "拦住她，让她歇半分钟。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "tried_to_stop_the_recording",
+          "next": ""
+        },
+        {
+          "text": "不拦。让她把话说完。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_her_finish_the_recording",
+          "next": ""
+        },
+        {
+          "text": "问后面还有几段。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_how_many_tapes_were_left",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "放在机器上的那只手没有动，机器里的那个她也没有停。"
+    },
+    {
+      "type": "narration",
+      "text": "她说：三月十九号，我收到一条不是研究所编号的消息。它没有署名，只有一个字母 A。它说，它可以把一个名字还回户籍。"
+    },
+    {
+      "type": "narration",
+      "text": "她说：它要我做的事很简单，在每次行动前把落点和时间报给它。它不要我动任何人，也不要我打开任何一扇门。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "报落点和时间，换一次名字。这买卖怎么接？",
+      "options": [
+        {
+          "text": "问那个字母A是什么的开头。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_what_the_letter_a_meant",
+          "next": ""
+        },
+        {
+          "text": "问她是怎么决定要报的。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_how_she_chose_to_report",
+          "next": ""
+        },
+        {
+          "text": "不说话。看她放在机器上的手。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_quiet_about_the_report",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "字母A。我在嘴里过了一遍，没有把它念出声。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我报了四次。第一次三月十九号，最后一次四月一号。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "四次以后它回了我一张纸。"
+    },
+    {
+      "type": "narration",
+      "text": "她把那张纸从口袋里拿出来，放在桌上，推到桌子中间。纸很新，只折过一次，折痕是竖的。"
+    },
+    {
+      "type": "narration",
+      "text": "上面是手写的三个字。字迹很齐，每一笔都收在同一高度，像照着什么东西描过。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三个字，笔画齐得不像人手写的。敢碰么？",
+      "options": [
+        {
+          "text": "拿起来，翻到背面看。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "turned_alices_paper_over",
+          "next": ""
+        },
+        {
+          "text": "不碰。凑近了照着读。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "read_the_paper_from_where_it_lay",
+          "next": ""
+        },
+        {
+          "text": "请她把那三个字念出来。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_her_to_read_the_characters",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那三个字躺在灯底下。笔画很齐，齐得有了边。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你验过么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "我拿去户籍窗口问过一次。窗口的人查了二十分钟，出来跟我说，系统里没有这个人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "然后他从抽屉里抽出一张手写的登记表，说，如果是老案子，要看纸的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "窗口说查无此人，抽屉里却有这张表。信哪边？",
+      "options": [
+        {
+          "text": "信那张手写的表。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "believed_the_paper_form",
+          "next": ""
+        },
+        {
+          "text": "信窗口的系统。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "believed_the_registry_window",
+          "next": ""
+        },
+        {
+          "text": "都不信。问她填进去的是什么。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_what_she_filled_in",
+          "next": "#l02"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "系统和纸在抢一个人。抢来抢去，那个人本人不在场。"
+    },
+    {
+      "type": "narration",
+      "text": "她说到这儿我才把两件事连上。对方给她的不是一份证明，是一个位置。",
+      "label": "l02"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "一个空着的位置。往里填什么名字，由我来决定。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你填了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "我填了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "两个填了，一个出自你一个出自她。往下问么？",
+      "options": [
+        {
+          "text": "问她是什么时候填的。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_when_the_name_was_filled",
+          "next": ""
+        },
+        {
+          "text": "承认自己早该问这一句。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "admitted_the_question_was_late",
+          "next": ""
+        },
+        {
+          "text": "不问。等她自己把名字说出来。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "waited_for_the_name_to_be_said",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "灯管又响了一下，像是替我们把这句话说完了。"
+    },
+    {
+      "type": "narration",
+      "text": "灯管响了一下。我看着她，忽然发现她已经不是三月十三号在实验舱里跟我说话的那个人了。"
+    },
+    {
+      "type": "narration",
+      "text": "那天她说自己只有三块碎片，说她的工作是记录。今天我知道她还做另外一份工作：她给一个人递时间，那个人替她填一个名字。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她已经不是三月十三号那个人了。这话说不说？",
+      "options": [
+        {
+          "text": "说出来：你变了。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "told_her_she_had_changed",
+          "next": ""
+        },
+        {
+          "text": "不说。把这个念头收好。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "filed_the_thought_away",
+          "next": ""
+        },
+        {
+          "text": "问她知不知道自己变了。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_if_she_knew_it_herself",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "这句话我翻来覆去过了两遍。第二遍，它已经不是疑问句了。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_truth_reveal",
+      "text": "桌上三样东西摆在一起：我的手心里那块碎片，那张手写的登记表，还有我摊开的记录本。灯从上面照下来，三样东西的影子落在同一块桌面上，长短一样，像三份同一件事的抄本。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "她按了快进。磁带咔哒咔哒地走，走到第二段。"
+    },
+    {
+      "type": "narration",
+      "text": "第二段一开始是人的声音，很平常的调子，说的是自己的事。说到第三句的时候，声音突然空了一下。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "声音在第三句上突然空了。要不要按停？",
+      "options": [
+        {
+          "text": "按停，等它自己回来。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "stopped_before_the_silence",
+          "next": ""
+        },
+        {
+          "text": "不按。把空白听完。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "listened_through_the_blank",
+          "next": ""
+        },
+        {
+          "text": "倒回去，重听前两句。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "replayed_the_first_two_sentences",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "空白不是杂音。空白是一个洞，洞有边，边上还挂着东西。"
+    },
+    {
+      "type": "narration",
+      "text": "不是机器坏了。是那一段带子本身没有内容：十一秒的空白，连电流声都被抹掉了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "十一秒。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "里面有名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "有两个。一个是他自己的，一个是他想告诉我们的人的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "两个名字被吃掉了。问不问他是谁？",
+      "options": [
+        {
+          "text": "问他想告诉我们的那个人是谁。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_who_he_meant_to_tell",
+          "next": ""
+        },
+        {
+          "text": "不问。把空白再听一遍。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "listened_to_the_blank_again",
+          "next": "#l03"
+        },
+        {
+          "text": "在本子上写下：两个名字。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "noted_two_names_lost",
+          "next": "#l03"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "他想告诉我们的那一个，他说成了么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "没有。空白吃掉了后半句。"
+    },
+    {
+      "type": "narration",
+      "text": "我把那十一秒从头听到尾。听的时候手心里那块碎片在转。空白里不是没有东西，是东西被拿走以后剩下的那个形状。",
+      "label": "l03"
+    },
+    {
+      "type": "narration",
+      "text": "我在那个形状里看见一点画面：一个车站，早班车，站台上有一个人在等另一个人。等的是谁，被等的是谁，我都看不出来。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "空白里你看见一个站台。这件事说么？",
+      "options": [
+        {
+          "text": "不说。把它压回自己这里。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_the_station_vision",
+          "next": ""
+        },
+        {
+          "text": "问艾莉丝听出别的没有。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_if_she_heard_it",
+          "next": ""
+        },
+        {
+          "text": "摸一下口袋里的碎片，不说话。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "held_the_fragment_while_lying",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "话到嘴边，排成一排，又一支一支退回去了。"
+    },
+    {
+      "type": "narration",
+      "text": "这些我没有说出口。我说出口的是另外一句，句子通顺，和我想说的一点关系都没有。"
+    },
+    {
+      "type": "narration",
+      "text": "第三段是剩下那个人的。艾莉丝把录音机推到桌子中间，让我自己按。"
+    },
+    {
+      "type": "narration",
+      "text": "我按了。第三段很长，四分钟，说的都是自己的事，说的都是那种藏了很久、藏到自己都快忘了的小事。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "四分钟的小事。要记多少？",
+      "options": [
+        {
+          "text": "记住声音，不记内容。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "remembered_the_voice_only",
+          "next": ""
+        },
+        {
+          "text": "什么都不记，让它过去。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_the_words_pass",
+          "next": ""
+        },
+        {
+          "text": "决定完事以后当面问他。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "planned_to_ask_him_afterwards",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我记住了那个屋顶。屋顶是谁家的我不知道，我只记住了颜色。"
+    },
+    {
+      "type": "narration",
+      "text": "这四分钟我没有把它写下来，也没有转述给任何人。有些话说出来就变成证据了，这句话是四月一号学的。"
+    },
+    {
+      "type": "narration",
+      "text": "录音放完，磁带自己停住。屋子里只剩下灯管的声音，还有楼下那扇门被风吹得轻轻碰了一下的声音。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": ""
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "今天我要把你量一遍。"
+    },
+    {
+      "type": "narration",
+      "text": "她拿出一本很厚的本子。写我的那一页夹着一张折了很多次的纸，边角已经软了。她念的时候不看我。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她要量你。怎么配合？",
+      "options": [
+        {
+          "text": "袖子挽起来，让她量。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "offered_the_arm_for_measuring",
+          "next": ""
+        },
+        {
+          "text": "先问她量的是哪几样。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_what_the_measuring_meant",
+          "next": ""
+        },
+        {
+          "text": "把本子推过去，让她从纸上量。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_the_book_be_measured",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "本子比我想的厚。夹页的折痕，比我的记录本还多。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "三月十二号。第一天你在图书馆碰了碎片。那天晚上你睡了六个小时，是这二十五天里最后一个整觉。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "三月十四号到三月十八号，五天，你合起来睡了四个小时。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "三月二十号封缝以后到今天，十六天。你睡了两个小时四十分钟，是二十号回来那辆车里睡的，我掐了表。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她连你睡了几小时都计时。认不认？",
+      "options": [
+        {
+          "text": "认。让她把数字写下去。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "accepted_the_timed_sleep",
+          "next": ""
+        },
+        {
+          "text": "问她这些数是谁让她记的。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_who_asked_her_to_time",
+          "next": ""
+        },
+        {
+          "text": "纠正她：那不是睡，是昏过去。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "corrected_it_was_fainting",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "数字摊在桌上。它比我们谁都老实。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "二十五天里你丢掉的整段时长一共是三十小时零十四分钟。三十小时是第一次，剩下的十四分钟是每次过裂缝时被拿走的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "你记得的被抹掉的人，三个。你写在记录本上的名字，三个。第四个你写了，读不出来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你的瞳孔从三月十四号早上就是这个颜色。这二十五天里我没有见过第二个人撑这么久。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "第四个名字读不出来。现在翻开看么？",
+      "options": [
+        {
+          "text": "翻开，当场再读一次。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "opened_the_fourth_name",
+          "next": ""
+        },
+        {
+          "text": "不翻。让它盖着。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "closed_over_the_fourth_name",
+          "next": ""
+        },
+        {
+          "text": "把本子推给艾莉丝，请她读。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "handed_the_book_for_reading",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "封皮的角磨白了。写着我名字的那一页不用翻开，我也知道上面有什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "失眠曲线上的数字是七十四。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "八十是崩解。你还有六格。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完把笔合上。手指在笔杆上停了一秒，那一秒里她想说的不是这些数字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "六格够做多少事。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "够做完一件事。做完之后你会变成什么，我不知道。没有人回来告诉过我。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "没有人回来告诉过她。这句接不接？",
+      "options": [
+        {
+          "text": "接：我会回来告诉你。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "promised_to_come_back_telling",
+          "next": ""
+        },
+        {
+          "text": "不接。让这句话躺在桌上。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "left_the_promise_unmade",
+          "next": ""
+        },
+        {
+          "text": "问她要是没人回来呢。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_what_if_no_one_returned",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "这句话在空气里停了一会儿。没有人伸手去拿它。"
+    },
+    {
+      "type": "narration",
+      "text": "她说的没有人里包括她哥。说这句话的时候她没有低头，可我看见她放下笔的动作被放得很慢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "所以明天那套方案要做到一件事：让你用手的次数降到最少。"
+    },
+    {
+      "type": "narration",
+      "text": "明天是四月六号。我们要在这间屋子里定下一套方案，把下一步怎么走写死在纸上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我需要两样东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "两样东西。要一口气说完么？",
+      "options": [
+        {
+          "text": "一口气说完。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "named_both_things_at_once",
+          "next": ""
+        },
+        {
+          "text": "先说一样，看她脸色再说第二样。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "held_one_thing_back_to_watch",
+          "next": ""
+        },
+        {
+          "text": "请她先猜一样。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_her_to_guess_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "这两样东西我在喉咙里排练了一下午。说出来的时候，比排练的平静。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "第一样是这张登记表。我要用它填一个名字，填成真的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "第二样。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "第二样是把那把空椅子留在桌子边。明天开会的时候，谁也不许把它挪走。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "空椅子的事，要给她一个理由么？",
+      "options": [
+        {
+          "text": "给：那把椅子是给谁的。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "explained_the_empty_chair",
+          "next": ""
+        },
+        {
+          "text": "不给。让她自己推。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_the_chair_be_pushed",
+          "next": ""
+        },
+        {
+          "text": "改口说椅子谁也不给。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "said_the_chair_was_for_no_one",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "有些问题一开口就要答案。我们俩今晚的库存都不够。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有问为什么。她只是把那把空椅子往桌子边推了半寸，推到和另外三把一样齐。"
+    },
+    {
+      "type": "narration",
+      "text": "九点四十分，她起身去关窗。关之前往外看了一眼，停了两秒。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "楼下那位在楼梯口坐了一整天。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他在楼梯口坐了一整天。这句怎么答？",
+      "options": [
+        {
+          "text": "说散会以后我下去。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "promised_to_go_down_later",
+          "next": ""
+        },
+        {
+          "text": "不答。低头在本子上写日期。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "answered_with_the_pen",
+          "next": ""
+        },
+        {
+          "text": "问他坐的是哪一级台阶。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_which_step_he_sat",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "楼下那级台阶没有灯。我知道那一级的形状，我坐过一次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我知道。他不用上来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你去吗。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有回答。我把记录本翻到最后一页，那一页上还什么都没写。"
+    },
+    {
+      "type": "narration",
+      "text": "我在最上面写了一行日期：四月五号。日期下面留出一格空白。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "留出的那一格，先放什么进去？",
+      "options": [
+        {
+          "text": "先写明天。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_tomorrow_in_the_gap",
+          "next": ""
+        },
+        {
+          "text": "先画一道线，什么都不写。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "drew_a_line_instead",
+          "next": ""
+        },
+        {
+          "text": "空着。把本子合上再说。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "left_the_gap_empty",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "笔尖悬在格子上方。格子很小，能放进去的东西比格子大。"
+    },
+    {
+      "type": "narration",
+      "text": "这一格本来该留给名字。三个名字已经写满了，第四个名字写在本子上，可我已经读不出来。"
+    },
+    {
+      "type": "narration",
+      "text": "我把笔尖放进那一格里，停了很久。最后我写下的不是名字，是两个字：明天。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "两个字，一格。要翻回第一页么？",
+      "options": [
+        {
+          "text": "翻回去，把三个名字再读一遍。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "reread_the_three_names",
+          "next": ""
+        },
+        {
+          "text": "不翻。把笔帽按上。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "capped_the_pen_instead",
+          "next": ""
+        },
+        {
+          "text": "把碎片压在合上的本子上。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "pressed_the_fragment_on_the_book",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "写过的字在封皮底下发着一点热。那一页没有合严，它等着下一页。"
+    },
+    {
+      "type": "narration",
+      "text": "写完我合上本子。手心里那块碎片是凉的，凉得像三月十二号那天我第一次在三楼摸到它。"
+    },
+    {
+      "type": "narration",
+      "text": "楼下有脚步声响起来。那个人上楼了，走到门口，没有进来。影子从门缝下面伸进来一小截，停在三秒那么长的地方。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "进来坐。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "门没有开。要追出去么？",
+      "options": [
+        {
+          "text": "追出去，在楼梯口拦住他。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "went_to_the_stairwell",
+          "next": ""
+        },
+        {
+          "text": "不追。对着门缝说：回头。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "said_later_to_the_shadow",
+          "next": ""
+        },
+        {
+          "text": "把刚才那两个字，隔着门说一遍。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "spoke_tomorrow_to_the_door",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "门保持着关着。屋子里比刚才又冷了一点。"
+    },
+    {
+      "type": "narration",
+      "text": "门没有开。影子又停了三秒，然后顺着走廊往那头去了。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "十一点，屋子里只剩我一个人。灯还亮着。我把眼睛闭上试了一下，蓝色从眼睑后面透出来。"
+    },
+    {
+      "type": "narration",
+      "text": "二十五天以前我以为失眠只是睡不着。现在我知道失眠是把醒着的时间一段一段交出去，交到某一天你连自己交了什么都说不出。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "它不叫你的脑子停。你让它停在哪？",
+      "options": [
+        {
+          "text": "停在明天的路线上。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "made_it_stop_on_the_route",
+          "next": ""
+        },
+        {
+          "text": "停在三个名字上。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "made_it_stop_on_the_names",
+          "next": ""
+        },
+        {
+          "text": "不管它。让它自己跑。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "let_the_mind_run_free",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我从桌上的东西开始数。数到第七样，屋子还在转，但转得慢了一点。"
+    },
+    {
+      "type": "narration",
+      "text": "我交出去的是三十二个小时和三个名字。第四个名字在我的本子上，我已经读不出那三个字拼起来是谁。"
+    },
+    {
+      "type": "narration",
+      "text": "我把手放在记录本上，没有翻开。窗外的城市亮着灯，七分钟里没有一辆车经过。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "今晚怎么过？",
+      "options": [
+        {
+          "text": "关灯躺两个小时，把数字压到七十以下",
+          "affectionWho": "艾莉丝",
+          "affection": 5,
+          "insomnia": -6,
+          "flag": "slept_before_final_battle",
+          "next": ""
+        },
+        {
+          "text": "一夜不睡，把能读出来的名字背到天亮",
+          "affectionWho": "艾莉丝",
+          "affection": -2,
+          "insomnia": 5,
+          "flag": "kept_awake_for_names",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把灯关了。院子里有一盏路灯，光从窗帘的缝里进来，在地上落成一条细线。"
+    },
+    {
+      "type": "narration",
+      "text": "躺下之前我把记录本放在枕头边。这个动作二十五天里做过很多次，只有今天放的时候手没有抖。"
+    },
+    {
+      "type": "narration",
+      "text": "明天早上八点，我们三个人要坐在那张桌子前面。桌子边有四把椅子，那把空椅子会和另外三把排齐，等着看明天谁先坐下。"
+    },
+    {
+      "type": "narration",
+      "text": "我在心里数了一遍椅子。四把。这一次我数得很慢，慢到每一个数字都落得住。"
+    }
+  ]
+}

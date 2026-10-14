@@ -1,0 +1,586 @@
+{
+  "sceneId": "3-e16",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·一个都没少",
+  "background": "cg_ending_e16",
+  "bgm": "bgm_hope",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号早上五点五十，井底那枚钟只剩最后一格。我在那一格里站着，本子摊开在手上。"
+    },
+    {
+      "type": "narration",
+      "text": "十一个名字我念了三十天，从三月十二号念到今天。最后一个名字念完的时候，钟没有立刻动。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "念完了。十一个，一个都没漏。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "漏了一个。墙上那一位还没有名字。"
+    },
+    {
+      "type": "narration",
+      "text": "墙里那个人站在阴影里。他等了四十年，等的就是有人肯把这一圈数完。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "他刚才说，他不是要那个出口。他是想有人把他的名字念对一次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "他的名字被擦过一次，剩下一个擦不掉的部分。那部分也得有人念出来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "那就念。念一遍不够我就念第二遍。"
+    },
+    {
+      "type": "narration",
+      "text": "我翻开本子的第一页。硬皮上第一行是苏禾，第二行是阿灰；老周和阮宁写在后面的页上。"
+    },
+    {
+      "type": "narration",
+      "text": "我一行一行念。念到第七个名字的时候，井壁上的灰开始往下掉，掉得比刚才密。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "上面守住了。铁梯还剩两节，我不用再退。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "他在听。你每念一个名字，他就往亮的地方走一步。"
+    },
+    {
+      "type": "narration",
+      "text": "我把十一个名字念完，最后一行还是空的。那一行本来就该是这个人的位置。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "你是被人从名字那一格上抠走的。抠走的地方留下了一个坑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "坑也算一个字。我现在念你。"
+    },
+    {
+      "type": "narration",
+      "text": "我念了一个音。那个音很短，短到像是从很远的一张纸上落下来的。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": "我念完那一下，井底所有的灰同时落下去，落得干干净净。"
+    },
+    {
+      "type": "narration",
+      "text": "墙上那层印子动了。它不是往后退，它是站起来，站到光能够照到的地方。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "他笑了。他说他被人从头到尾数完了一次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "他还说，别把他记成另一个你。他有他自己的那一格。"
+    },
+    {
+      "type": "narration",
+      "text": "我点头。这一下点得很轻，轻到只有我自己知道我是在答应谁。"
+    },
+    {
+      "type": "narration",
+      "text": "他往亮的地方走。走的时候没有留下一句话，也没有留下影子，只是那层灰没有了。"
+    },
+    {
+      "type": "narration",
+      "text": "井底那枚钟在那时候动起来。它往回收，收得很慢，一格一格，把走掉的时间还回来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "它在退。它在往今天退。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "退到今天的日期它就会停。它停下来的那一刻，门就要关。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "门要收一个人才能关。这一次由谁来收。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "先上去。三个人上去，留一个人在门口看着。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "不用留。我们四个一起上去。"
+    },
+    {
+      "type": "narration",
+      "text": "我们四个一起往铁梯走。我走在最后，走到一半的时候听见后面有合页的声音。"
+    },
+    {
+      "type": "narration",
+      "text": "那道口子在自己合。它合得很慢，像有人在里面把一扇很重的门往里推。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "门合到最后的时候，缝里透出一条光。光落到我背上，然后就没有了。"
+    },
+    {
+      "type": "narration",
+      "text": "门关上了。没有谁留在里面，也没有谁被它收走。"
+    },
+    {
+      "type": "narration",
+      "text": "往上走之前，我把口袋里那只停着的表掏出来，塞回艾莉丝手腕上。她没说话，只把袖口拉了下来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "它自己关的。没有人替它按。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "不是自己关的。是有人数完了。这本书写完，门就不需要人看着。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十号早上六点四十，我们四个人从那栋楼的正门走出来。洒水车刚从街对面过去。",
+      "background": "bg_dawn_city",
+      "bgm": "bgm_hope"
+    },
+    {
+      "type": "narration",
+      "text": "洒水车的水打到路沿上，溅起来的水花里有半道很淡的彩虹。"
+    },
+    {
+      "type": "narration",
+      "text": "楼下的井盖边上蹲着一个修路的人。他说这一段昨晚又断了一次电，说得像在说天气。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "他们还是什么都不知道。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "知道的人越少越好。这条规矩我今天第一次不想再用。"
+    },
+    {
+      "type": "narration",
+      "text": "我们四个人在路口站着，谁都没有急着走。三个人都在，我数了两遍。"
+    },
+    {
+      "type": "narration",
+      "text": "我们去了街角那家面馆，四个人挤在一张刚好坐得下四个人的桌子上。"
+    },
+    {
+      "type": "narration",
+      "text": "老板问我们几个人，小雅说四个。她说四的时候声音很稳，比三月里任何时候都稳。"
+    },
+    {
+      "type": "narration",
+      "text": "面上来的时候她多要了一只空碗，放在桌子最中间。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "这一只给还没回来的人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那今天要不要给它也倒点东西。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "倒一勺汤。汤凉了不算丢，倒掉也不算。"
+    },
+    {
+      "type": "narration",
+      "text": "她倒了两勺汤进那只碗里。四个人低头吃面，谁都没有再提昨晚的事。"
+    },
+    {
+      "type": "narration",
+      "text": "吃完的时候那只碗是空的。老板收碗的时候说了一句话，说你们这一桌汤喝得挺干净。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "干净好。干净就不用收拾。"
+    },
+    {
+      "type": "narration",
+      "text": "我把那半张退路图从内袋里摸出来。纸上的字淡了一点，还认得出。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有把它扔掉，也没有交给研究所。我把它夹回了那本书的最后一页。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "那张纸你留下来了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "留下来了。以后有人要找，得有个东西指路。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "指路的东西不能什么都写。写多了会有人照着走。"
+    },
+    {
+      "type": "narration",
+      "text": "出门的时候小雅走在最前面。她把录音机挂在肩上，走得比谁都快。"
+    },
+    {
+      "type": "narration",
+      "text": "上午九点我回图书馆上班。老周在登记台后面，他先问的是我这一个月去了哪。",
+      "background": "bg_library_day",
+      "bgm": "bgm_warm"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "这个月你没来几回。书倒是都还了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "周叔，四楼那口钟你上去看过吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "上个月看了一眼。没指针，看也看不出什么。"
+    },
+    {
+      "type": "narration",
+      "text": "我上楼的时候在四楼的楼梯口停了一下。那口钟还在，钟面上没有指针，只剩两个孔。"
+    },
+    {
+      "type": "narration",
+      "text": "我把手放在钟面上。钟面是凉的，凉得比这一层楼的空气还要低一点。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我听见了一个声音，很短，像一根很细的针落在木头上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "艾莉丝，你上来一下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你叫我上来，是这口钟出了什么事。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "这口钟在走。"
+    },
+    {
+      "type": "narration",
+      "text": "我们两个人站在楼梯口听了一会儿。钟面底下有很轻的动静，一格一格，跟正常的钟一样。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "它没有指针，也没有齿轮。它不该走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "除非它走的不是它自己的时间，是这条街的时间。"
+    },
+    {
+      "type": "narration",
+      "text": "她把表摘下来，放在钟边上。她这块表停在一点四十，从四月九号夜里起就没有动过。"
+    },
+    {
+      "type": "narration",
+      "text": "表针在钟边上停了三秒，然后秒针动了一下，往前跳了一格。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cry",
+      "text": "一点四十一。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "它开始走了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "它走得很慢。它要把我停掉的那一个月一格一格补回来。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句就把表戴上。她戴表的时候手很稳，这是这个月里我第一次看见她手不抖。"
+    },
+    {
+      "type": "narration",
+      "text": "下午我们在基地那张长桌前面坐下来。四个人，四把椅子，桌上这次真的有四杯热水。",
+      "background": "bg_base_room",
+      "bgm": "bgm_warm"
+    },
+    {
+      "type": "narration",
+      "text": "小雅从包里拿出她那个录音机，放在桌子正中间。她说里面的东西她现在听着不一样了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "以前我听见的都是别人说话。今天我听见的是我自己。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "那是好事。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把手背上的烙印露出来给我们看。那块褐色的疤比上个月浅，浅到像一层旧墨。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "天冷还是会疼。疼的时候我认得它，不疼的时候我认得慢一点。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你今天还剩几次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "零。我今天一次都没有借。够用了。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝顺手给我测了一次失眠。她把仪器贴在我腕上，读数出来的时候她自己先看了一眼。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "比昨晚低了一截。昨晚那一觉你睡了六个小时。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "降了这么多。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "降这么多是因为有人替你数完了那一遍。你少背了一个人的份量。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "那还能不能接着往下降。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "能。慢慢降。这件事我打算记到我的本子上，记三十年。"
+    },
+    {
+      "type": "narration",
+      "text": "我把本子拿出来，翻到最后一页。那一页原本记着十一个名字，现在上面一个字都没有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "那一页上的字都去哪儿了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "名字回到它们该在的地方去了。这本书不用再替它们记着。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那十一个人现在都在吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "在。他们本来就在，只是没有人念他们。现在有人念过了。"
+    },
+    {
+      "type": "narration",
+      "text": "我把笔从口袋里摸出来，在最后一页上写了几个字，写完就把本子合上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你在最后一页上写了什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "写了今天。四月十号。"
+    },
+    {
+      "type": "narration",
+      "text": "傍晚我一个人回老城区看了一眼。那栋楼还在，墙上那块告示板还在，板子上贴着排班表。",
+      "background": "bg_street_night",
+      "bgm": "bgm_ambient"
+    },
+    {
+      "type": "narration",
+      "text": "楼后面那片空地现在是一个很小的院子，院墙新刷过，墙根下摆着两盆没人打理的花。"
+    },
+    {
+      "type": "narration",
+      "text": "我找了很久，没有找到那道口子。墙上没有缝，地上没有坑，连一处颜色不一样的地方都没有。"
+    },
+    {
+      "type": "narration",
+      "text": "门走了。它做完它该做的事就走了，走得很干净，干净得像从来没有来过。"
+    },
+    {
+      "type": "narration",
+      "text": "回图书馆的时候天已经黑了。四楼那口钟还在走，声音很轻，轻到站在楼梯口才听得见。",
+      "background": "bg_library_night",
+      "bgm": "bgm_hope"
+    },
+    {
+      "type": "narration",
+      "text": "我在那儿站了一会儿，数了十二下。第十二下走完，钟声停了，又从头开始。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "你又上来啦。这钟我年轻的时候响过，后来就不响了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "周叔，它今天回来了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "回来就好。东西回来了就是好事。"
+    },
+    {
+      "type": "narration",
+      "text": "他说完下楼去了。走到三楼的时候他停了半步，像是想起了什么，然后又往下走。"
+    },
+    {
+      "type": "narration",
+      "text": "他没有想起什么。他这辈子记住的东西太多，不多这一件也不缺这一件。"
+    },
+    {
+      "type": "narration",
+      "text": "我下楼的时候把四楼的灯关掉。关灯之前我看了一眼钟面，两个孔里什么也没有。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e16",
+      "text": "可它在走。它一格一格走过今天，走到明天，走回我正在过的这个日子。"
+    },
+    {
+      "type": "narration",
+      "text": "我们四个人一个都没有留在里面。十一个名字由我念完，墙里那个人等了四十年，等到的就是这一遍。"
+    },
+    {
+      "type": "narration",
+      "text": "这一次没有人被带走。门第一次不用谁留下也能合上，合上以后连一道缝都没有留下。"
+    }
+  ],
+  "kind": "ending"
+}

@@ -1,0 +1,862 @@
+{
+  "sceneId": "1-2",
+  "chapter": "第一幕·异变初现",
+  "title": "时空研究所",
+  "background": "bg_institute_day",
+  "bgm": "bgm_tension",
+  "dense": true,
+  "next": "1-3",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "三月十三日，上午八点四十。楼下停着一辆没有标志的车，和昨晚从我面前开走的那一辆是同一种灰。"
+    },
+    {
+      "type": "narration",
+      "text": "车里下来两个人，穿深色制服，袖子上印着一个三角形套着一道裂缝。他们没有按门铃，只站在楼下抬头看我的窗户。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我自己下去。你们不用上楼。"
+    },
+    {
+      "type": "narration",
+      "text": "我在楼道里把兜里那点重量确认了一遍。它们还在，硬的一小块，和一张塑封的卡片，隔着一层布各跳各的。"
+    },
+    {
+      "type": "narration",
+      "text": "研究所的楼比我想象的矮，也比我想象的宽。整面墙是玻璃，玻璃里嵌着很细的金属线，远看像一张被拉平的网。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "车还在楼下等着。你要自己下去，还是让他们上楼？",
+      "options": [
+        {
+          "text": "自己下去。别让他们看见我的房间",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "went_down_alone",
+          "next": ""
+        },
+        {
+          "text": "先把兜里那两样东西换到内侧口袋",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "stashed_shard_inside",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "门口的闸机测了我的体温、脉搏、瞳孔。第三项的时候机器响了一声，负责登记的人抬头看了我一眼，然后又低头补了一句备注。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "上面写了什么？"
+    },
+    {
+      "type": "narration",
+      "text": "他没有回答，把平板扣过去，递给我一张临时通行卡。卡面是白的，只有编号和一行小字：限时四小时。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "平板被扣了过去。你要追问那句备注吗？",
+      "options": [
+        {
+          "text": "追问那句备注到底写了什么",
+          "affectionWho": "艾莉丝",
+          "affection": -2,
+          "insomnia": 0,
+          "flag": "asked_gate_note",
+          "next": "#l01"
+        },
+        {
+          "text": "不问。先把通行卡接过来收好",
+          "affectionWho": "艾莉丝",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "took_pass_quietly",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他最后还是把平板翻开了一角。备注那一行只有四个字：瞳孔待复核。",
+      "label": "l01"
+    },
+    {
+      "type": "narration",
+      "text": "复核两个字写得很轻，像是随手补上去的。可这一栏本来不该有。"
+    },
+    {
+      "type": "narration",
+      "text": "走廊比外面安静得多。地毯很厚，鞋底踩上去的声音被吃掉一半，剩下的那一半在耳朵里反弹，像谁在很远的地方敲门。"
+    },
+    {
+      "type": "narration",
+      "text": "我被带进一间实验舱。墙是三面白、一面玻璃，玻璃后面是设备。房间里只有一把椅子，椅子上放着一份已经摊开的文件。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "屋里只有一把椅子。你要先坐下，还是先站着看文件？",
+      "options": [
+        {
+          "text": "先站着，把那份折线图看完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "read_chart_standing",
+          "next": ""
+        },
+        {
+          "text": "坐下来，把文件翻到最后一页",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "flipped_to_last_page",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "文件第一页是我的名字、年龄、职业，第二页是一张折线图，横轴是时间，纵轴是睡眠时长。"
+    },
+    {
+      "type": "narration",
+      "text": "折线从四个星期前开始往下掉，掉到零以后就没有再起来。最后一段是虚线，标注写着：待确认。"
+    },
+    {
+      "type": "narration",
+      "text": "然后门开了。进来的人没有看我，先看了我的文件，然后才抬头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "林晓。从三月九日到今天，你一共少掉三十个小时。这个数字是我算的，不是你说的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你们怎么算得出来？我自己都记不清丢了几天。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她进来先看文件，再看我。你要不要先开口？",
+      "options": [
+        {
+          "text": "先开口，把话头抢在自己手里",
+          "affectionWho": "艾莉丝",
+          "affection": -2,
+          "insomnia": 0,
+          "flag": "spoke_before_alice",
+          "next": ""
+        },
+        {
+          "text": "等她先把那三十个小时说完",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "let_alice_speak_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你不用记得。你的手机记得，闸机记得，便利店的支付记录记得。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "一个人丢掉的不是记忆，是记录。记录比人诚实。"
+    },
+    {
+      "type": "narration",
+      "text": "她说到这儿才坐下，把笔帽拔开，动作很熟，像是这套动作她已经做过几千次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "现在描述你昨天晚上在三楼书架上摸到的东西。光是什么颜色，跳的频率快还是慢，碰到手的时候先凉还是先烫。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她不问我怕不怕，只要颜色和频率。我怎么答？",
+      "options": [
+        {
+          "text": "照实描述：偏白，边缘发青，先凉后烫",
+          "affectionWho": "艾莉丝",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "described_light_honestly",
+          "next": ""
+        },
+        {
+          "text": "只冲她想知道的部位说：掌纹最深那条",
+          "affectionWho": "艾莉丝",
+          "affection": -1,
+          "insomnia": 0,
+          "flag": "gave_only_frequencies",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她记的时候没有抬头。我看见她把先凉后烫那四个字圈了一下，圈得很重。",
+      "label": "l02"
+    },
+    {
+      "type": "narration",
+      "text": "圈完她又在旁边补了两个字：掌纹。她连烫的位置都记住了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "你不问我是不是害怕。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "害怕测不出来。颜色可以。"
+    },
+    {
+      "type": "narration",
+      "text": "我被这句话刺了一下。不是被冒犯，是被那种毫不绕路的准确刺了一下——她知道自己在做什么，也不打算假装在意别的。"
+    },
+    {
+      "type": "narration",
+      "text": "我把光描述了一遍。偏白，边缘发青，跳得比心跳慢半拍，先凉，凉过之后才烫，烫的部位是掌纹里最深的那一条。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她翻回前一页又翻回来，抽出一张打印纸。你要凑近看吗？",
+      "options": [
+        {
+          "text": "凑过去，看那两组数字并排的样子",
+          "affectionWho": "艾莉丝",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "leaned_over_numbers",
+          "next": ""
+        },
+        {
+          "text": "坐着不动，等她先说出结论",
+          "affectionWho": "艾莉丝",
+          "affection": -1,
+          "insomnia": 0,
+          "flag": "waited_for_verdict",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她一直在写。写到一半停下，翻回前一页，又翻回来，然后从桌角抽出一张打印纸，把两组数字并排放在一起。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "二点七秒一次。我们三年前在城区边缘收过一块一样的，频率是二点七零。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "一样？同一块？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "不是同一块。是同一个缺口上掉下来的碎片，形状不一样，频率一样。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "频率一样这件事还没有说完。我要不要打断她？",
+      "options": [
+        {
+          "text": "打断她：另外那两块认的是谁",
+          "affectionWho": "艾莉丝",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "pressed_about_third_shard",
+          "next": ""
+        },
+        {
+          "text": "不打断，先把二点七零这个数记下",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "memorized_270",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她抬眼看我，这一次看得比刚才久。眼神很直，没有敌意，也没有温度，像一间刚打扫过、什么都没有的房间。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "但频率一样这件事，不该发生在一个普通市民手里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "它出现在你手里，说明它认了你。我们收过一百四十多块，只有三块会认人。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完又低下头写，笔尖压得比刚才重一点。我注意到她换了握笔的位置——这大概是她唯一一次没控制住的小动作。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三块碎片认人，其中一块认的是她自己。我怎么看？",
+      "options": [
+        {
+          "text": "把她刚才那句停顿记在心里",
+          "affectionWho": "艾莉丝",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "noticed_alice_pause",
+          "next": ""
+        },
+        {
+          "text": "追问：那块认了你的，是什么感觉",
+          "affectionWho": "艾莉丝",
+          "affection": 2,
+          "insomnia": 1,
+          "flag": "asked_how_it_felt",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "另外两块呢？认了谁？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "一块认了一个已经不在名单上的人。另一块认了研究员，就是我。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候没有任何起伏，像是在报一个实验编号。可她说完之后停了两秒才继续写，那两秒里她什么也没做。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "所以你现在的情况是：身上带着一块会认人的东西，并且已经四个星期没有真正睡过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "你还能站在这里跟我说话，已经算是运气。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她起身走向玻璃墙按了一个键。我要跟过去吗？",
+      "options": [
+        {
+          "text": "跟到玻璃墙前面，看清那些盒子",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "went_to_the_shelf",
+          "next": ""
+        },
+        {
+          "text": "留在椅子上，先数盒子的数量",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "counted_boxes_from_chair",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她起身走到玻璃墙前面，按了一个键。玻璃另一侧的灯亮起来，照着一排架子的透明盒。每个盒子里都是一小块偏白的结晶。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_alice_lab",
+      "text": "她站在那排盒子前面回头看我的时候，我忽然发现她站的姿势和老周在地下书库里的姿势是同一个：肩膀往前，重心压低，像是随时准备把盖子合上。"
+    },
+    {
+      "type": "narration",
+      "text": "玻璃里的光很薄。薄得像一层纸，我甚至能看见她侧脸边上那道很淡的轮廓线。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "玻璃后面的结晶一块比一块白。我要问那是什么吗？",
+      "options": [
+        {
+          "text": "问：这些是从谁身上拿下来的",
+          "affectionWho": "艾莉丝",
+          "affection": -2,
+          "insomnia": 1,
+          "flag": "asked_whose_crystals",
+          "next": ""
+        },
+        {
+          "text": "不问。先把研究所的立场听完",
+          "affectionWho": "艾莉丝",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "heard_institute_position",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "研究所的立场很简单：把裂缝量清楚，封起来，让名单不要再变短。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "名单？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我们登记每一例异常。编号按顺序发，没有跳号，也没有退回。"
+    },
+    {
+      "type": "narration",
+      "text": "我口袋里那张复印件上的编号在我脑子里亮了一下。A-三一七。去年冬至的章。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "编号是按顺序发的。我要不要把 A-三一七 报出来？",
+      "options": [
+        {
+          "text": "报出 A-三一七，看她的反应",
+          "affectionWho": "艾莉丝",
+          "affection": 4,
+          "insomnia": 1,
+          "flag": "quoted_a317",
+          "next": ""
+        },
+        {
+          "text": "先不提编号，问名单现在有多长",
+          "affectionWho": "艾莉丝",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "asked_list_length",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "A-三一七，这条记录里是谁？"
+    },
+    {
+      "type": "narration",
+      "text": "她的手停了。这一次停得比刚才久，笔尖悬在纸上，没有落下去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "你怎么知道这个编号。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "有人给了复印件。他说你们每次有人少掉，都会来一趟。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "这个人现在还在吗。"
+    },
+    {
+      "type": "narration",
+      "text": "这个问题问得很平，可我听出来她是在核对一件事：给复印件的人有没有被擦掉。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她问给复印件的人还在不在。我怎么回答？",
+      "options": [
+        {
+          "text": "把老周的名字说得一字不漏",
+          "affectionWho": "老周",
+          "affection": 6,
+          "insomnia": 0,
+          "flag": "staked_zhou_full_name",
+          "next": "#l03"
+        },
+        {
+          "text": "只说他在，其余的先留一手",
+          "affectionWho": "老周",
+          "affection": 2,
+          "insomnia": 1,
+          "flag": "kept_zhou_details_back",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她听完在纸上写了一个字：桩。然后她画了一道竖线，把老周的名字钉在那道线上。",
+      "label": "l03"
+    },
+    {
+      "type": "narration",
+      "text": "她说，有人会被擦掉，是因为从来没有人替他打过桩。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "在。他叫老周，历史图书馆管理员，六十一岁，在那栋楼里待了四十年。"
+    },
+    {
+      "type": "narration",
+      "text": "我在心里把老周的名字说得很完整。我不知道为什么，我就是觉得说出来要说得一丝不漏，像是给他打一个桩。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "记下了。现在换你回答我一个问题。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "你在那栋楼里，除了那块碎片，还看见了什么不该在的东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她问我除了碎片还看见什么。我先说哪一件？",
+      "options": [
+        {
+          "text": "先说那本没有名字的书",
+          "affectionWho": "艾莉丝",
+          "affection": -2,
+          "insomnia": 1,
+          "flag": "mentioned_the_nameless_book",
+          "next": ""
+        },
+        {
+          "text": "先说那张描了两遍名字的读者卡",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "mentioned_the_reader_card",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我看着她。她等着，笔尖已经回到纸面上，姿势很标准，标准到没有任何余地。"
+    },
+    {
+      "type": "narration",
+      "text": "我在心里过了一遍：一本没有名字的书，一个把名字描了两遍的读者卡，一个穿校服的背影，一页写着缺一待补的纸。"
+    },
+    {
+      "type": "narration",
+      "text": "还有那两个字。苏禾。那两个字太熟了，熟得不像是我刚认识的，倒像是我一直揣着的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你的瞳孔在放大。这不是害怕的放大，是想隐瞒的时候血液往内脏走造成的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我不是审讯官，我只是不想在我写记录的时候被人喂假数据。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她说她不想被喂假数据。你要把苏禾说出来吗？",
+      "options": [
+        {
+          "text": "把苏禾这个名字，还有登记簿上的三页字都告诉她",
+          "affectionWho": "艾莉丝",
+          "affection": 8,
+          "insomnia": 0,
+          "flag": "told_alice_truth",
+          "next": ""
+        },
+        {
+          "text": "只承认碎片，把苏禾留在自己这里",
+          "affectionWho": "艾莉丝",
+          "affection": -4,
+          "insomnia": 1,
+          "flag": "hid_suhe_from_alice",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我做出选择之后，她安静了三秒。三秒在这样一间房里很长，长到我能数清头顶灯管的闪烁次数。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "好。我按你说的记。这一段我不会写进系统。"
+    },
+    {
+      "type": "narration",
+      "text": "她把笔搁下。这是她进这间房以来第一次把笔放下，也是第一次有一件事不在她的表格里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "今天到这里。你的通行卡四小时后失效，出去的时候会有人收走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "就这样？你们请我来一趟，问几个问题，然后放我回去？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "放你回去是因为你没有可观察的价值——不，你很有价值，但你没有可控制的必要。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她把笔搁下了，这是她第一次放下笔。我要问吗？",
+      "options": [
+        {
+          "text": "问她：不写进系统的那一段，是给谁的",
+          "affectionWho": "艾莉丝",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "asked_who_the_gap_is_for",
+          "next": ""
+        },
+        {
+          "text": "不问。先把她放笔这个动作记下来",
+          "affectionWho": "艾莉丝",
+          "affection": 1,
+          "insomnia": 0,
+          "flag": "noted_pen_down",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她说完就把手放在文件上，手指压着那行红笔圈。压的位置正好是「预计」两个字。",
+      "label": "l04"
+    },
+    {
+      "type": "narration",
+      "text": "我把这个动作记住了：她不信预测，可她在按着它。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "还有一件。今晚不要吃药。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "为什么？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "因为你已经四个星期没睡了。药只会让你躺在床上睁着眼。今晚你会经历第一次真正的失眠，我想知道它会给你看什么。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候，语气还是没有温度。可我注意到，她多解释了一句，而不是像前面那样只给结论。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "今晚不要吃药。她说这话时多解释了一句。",
+      "options": [
+        {
+          "text": "问她：不吃药的话，我会看见什么",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 1,
+          "flag": "asked_what_he_will_see",
+          "next": ""
+        },
+        {
+          "text": "不问。把她多说的那半句记牢",
+          "affectionWho": "艾莉丝",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "kept_the_extra_half",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "如果看到画面，记住三样东西：是谁的视角，是什么时候，还有画面里有没有你。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "为什么要有我？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "因为在别人的记忆里出现你自己的时候，那段记忆就已经不是别人的了。"
+    },
+    {
+      "type": "narration",
+      "text": "我把这句话记住了。我记住的方式是把整句话连着她说这话时的样子一起存起来，包括她袖口上那颗掉了一半漆的袖扣。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她要我记住三样东西。我要不要问最后一句？",
+      "options": [
+        {
+          "text": "问最后一个问题：为什么画面里要有我",
+          "affectionWho": "艾莉丝",
+          "affection": 2,
+          "insomnia": 1,
+          "flag": "asked_why_me_in_frame",
+          "next": ""
+        },
+        {
+          "text": "把三样东西在心里排好顺序",
+          "affectionWho": "艾莉丝",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "ordered_the_three_things",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "离开实验舱的时候，走廊还是那么安静。我回头看了一次，她已经在写下一份文件了，头也没抬。"
+    },
+    {
+      "type": "narration",
+      "text": "走到闸机口，那个负责登记的人把通行卡收走，顺手递给我一张打印单。上面是我的睡眠记录，最后一行用红笔圈了一道。"
+    },
+    {
+      "type": "narration",
+      "text": "圈里的字是：预计今晚进入首次完全失眠。旁边是手写的小注，字很小：观测对象自愿，无需召回。"
+    },
+    {
+      "type": "narration",
+      "text": "我把打印单对折，塞进外套内袋。纸很薄，折起来的时候能感觉到兜里那块碎片隔着布料顶了一下，像有人在里面轻轻应了一声。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "打印单上写着观测对象自愿。我要怎么处置这四个字？",
+      "options": [
+        {
+          "text": "把「自愿」两个字折进最里面",
+          "affectionWho": "艾莉丝",
+          "affection": -2,
+          "insomnia": 1,
+          "flag": "folded_the_word_voluntary",
+          "next": ""
+        },
+        {
+          "text": "对着那行小注问一句：谁问过我",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 1,
+          "flag": "asked_who_consented",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "自愿。我确实没有拒绝，因为我根本不知道自己被问过同意。"
+    },
+    {
+      "type": "narration",
+      "text": "上车的时候是正午。玻璃幕墙上的反光扫过我的脸，我在车窗里看见自己的眼睛，颜色比早上深了一点，深得不太像蓝。"
+    },
+    {
+      "type": "narration",
+      "text": "车开出去两百米，我从兜里摸出那张读者卡看了一眼。塑封上的裂纹比昨晚长了一点，像是被谁在夜里轻轻推着往前爬。"
+    },
+    {
+      "type": "narration",
+      "text": "我把卡按回兜里，没有再拿出来。车窗外的街一栋一栋往后退，每一栋楼的外墙都干净得像是刚刚被人重新誊写过一遍。"
+    }
+  ]
+}

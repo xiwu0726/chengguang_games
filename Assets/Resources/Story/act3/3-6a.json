@@ -1,0 +1,672 @@
+{
+  "sceneId": "3-6a",
+  "chapter": "第三幕·最终决战",
+  "title": "谁留下来",
+  "background": "bg_time_core",
+  "bgm": "bgm_battle",
+  "next": "3-7",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "钟还剩最后一格。最后一格走得很慢，慢到我能数清它经过的每一道齿。"
+    },
+    {
+      "type": "narration",
+      "text": "铁梯断了一节，断口朝上翘着，像被谁从下面咬断的。"
+    },
+    {
+      "type": "narration",
+      "text": "上面有三个人在往下走。雷恩把这三级楼梯守成了一堵墙。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "一分四十秒。这个数字现在是我脑子唯一还算准的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "本子在谁手里，这时候已经不重要了。重要的是上面还剩十一个名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "他又在说话了。他每次开口，名字就掉一个字。"
+    },
+    {
+      "type": "narration",
+      "text": "墙里那个人没有走近。他站在阴影里，抬起手，先指了指井底那枚钟，又指了指我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "他说，钟转完这一圈要收一个人。收进去的那个才是出口。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "门认从第一页念起的人。本子可以往下传，按开关的只认念第一页的那个。这不是选择，是规则。"
+    },
+    {
+      "type": "narration",
+      "text": "我翻开最后一页。十一个名字，我写了三十天，从三月十二号写到今天。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你念不完。你念到第三十一个就会开始念错，念错三遍，你就成了另一页。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那你就等着看。这本书上现在只有十一个名字，不是三十一个。"
+    },
+    {
+      "type": "narration",
+      "text": "我说的这句话我自己也不确定。可说完之后，我握笔的手不抖了。"
+    },
+    {
+      "type": "narration",
+      "text": "墙里那个人又抬了一次手。这一次他没有指钟，只指着自己。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "他说他等了四十年，等的就是有人肯把这一圈数完。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "他还说，如果没有人替他数，他就永远是一个没数完的人。"
+    },
+    {
+      "type": "narration",
+      "text": "我这才听懂。他连一个完整的名字都没有。他说话时掉的不是字，是他剩下的那部分。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "他要是占掉那个出口，账上就多出一个人。账上的东西越少，他越轻。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_broken",
+      "text": "这一条，账上从来没写过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_broken",
+      "text": "一个没有名字的人当不了出口。他没有被人记得过，他进不去。"
+    },
+    {
+      "type": "narration",
+      "text": "他说这句话的时候，声音里少了一层东西。墙上的签在往两边退，露出后面空白的墙。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "那就不让他一个人进。他有人记得。"
+    },
+    {
+      "type": "narration",
+      "text": "我翻开本子第一页。硬皮上第一行是苏禾，第二行是阿灰——这两个名字都是我从别人嘴里捡回来的。"
+    },
+    {
+      "type": "narration",
+      "text": "老周和阮宁写在后面的页上。再往后是陈，是雷小满，是别的还没念出口的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你写了这么多。你都是什么时候写的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "每天晚上写一个。我怕我忘了，就写得慢一点。"
+    },
+    {
+      "type": "narration",
+      "text": "我把本子举起来，对着井底那枚钟。"
+    },
+    {
+      "type": "narration",
+      "text": "钟没有停。它转得更慢了，慢到每一格都像在称一本本子的重量。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "林晓，上面守不住了。铁梯还剩四节。"
+    },
+    {
+      "type": "narration",
+      "text": "他的声音从井口滚下来，中间断了一次。这是他在这个月里第二次把话说断。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "我算过很多次。八分四十秒减去七分钟，只剩一分四十秒。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我们这一个月所有的余地，都在这一个数字里。现在的问题是，这一分四十秒给谁。"
+    },
+    {
+      "type": "narration",
+      "text": "井底安静了一秒。这一秒里我听见四个人的呼吸，还有一个不属于我们四个人的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "他说他不想要出口。他说他只想有人把他的名字念对一次。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句，看向我手里的本子。我懂了她的意思。"
+    },
+    {
+      "type": "narration",
+      "text": "她要我在那十一个名字里，找出墙里那个人的位置。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "他不是没有名字。他是名字被擦过一次，剩下一个擦不掉的部分。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "擦不掉的部分也得有人念出来。念出来，它才算一个名字。"
+    },
+    {
+      "type": "narration",
+      "text": "钟又走了一格。井壁上的灰开始往下掉，比刚才密。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_broken",
+      "text": "你们四个人的名字我都借过。你们里谁从第一页念起，谁就留下来替我把这一页看住。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_angry",
+      "text": "这不是惩罚，这是位置。这个位置总要有人站。"
+    },
+    {
+      "type": "narration",
+      "text": "我看着他。他脸上的东西在往下滑，像一层没有干透的字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "位置会有人站。但站谁，不是你说了算的那个。"
+    },
+    {
+      "type": "narration",
+      "text": "我往前走一步，站到钟和井口之间。"
+    },
+    {
+      "type": "narration",
+      "text": "这一步之后，我脚边多出半条影子。这半条影子比我的短，比我的浅。"
+    },
+    {
+      "type": "fx",
+      "fx": "timeline",
+      "text": "我眼前的时间散开。井壁、钟、雷恩手背上的光，全都在同一张纸上排开。"
+    },
+    {
+      "type": "narration",
+      "text": "纸上有一格是空的，写着出口两个字。它现在没有名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "我听见了。它在等一个字。"
+    },
+    {
+      "type": "narration",
+      "text": "我把笔从本子边上抽下来。笔杆上三道磨平的指痕贴着我的手指。"
+    },
+    {
+      "type": "narration",
+      "text": "这一个月我用这支笔写了很多名字。今天这一笔，我要写得比所有名字都慢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "林晓，你不管是站着还是上来，都别再耽误。上面还剩三节。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_crack_open",
+      "text": "井壁上裂开一条竖着的口子。口子里没有光，只有一层像纸背面的灰白。那枚被压平的钟停在最后一格上，等一个名字落进去。"
+    },
+    {
+      "type": "narration",
+      "text": "我抬头看了一眼井口。天还没亮，井口那一圈天是深蓝色。"
+    },
+    {
+      "type": "narration",
+      "text": "我想到的第一件事很没出息：我还没跟老周说一句谢谢。"
+    },
+    {
+      "type": "narration",
+      "text": "我想到的第二件事是：本子上还有十一个名字，等着有人把它们念完。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你的手又在抖。抖得更厉害了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "这次不是因为账。这次是因为我在算一件很亏的事。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "算给我听。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "一个人站这个位置，能出去三个。如果这个位置不给我们四个人，它就能给所有名字。"
+    },
+    {
+      "type": "narration",
+      "text": "我说这句话的时候，艾莉丝没有反驳。她只是把仪表从手腕上取下来，放进我外套的口袋里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "表停了。它记时间记到最后，停在这一格上。你带着它。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完就退回到小雅身边。她的动作很快，快到像怕自己改主意。"
+    },
+    {
+      "type": "narration",
+      "text": "井口那边，铁梯又断了一节。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "还剩两节。你们快点决定。"
+    },
+    {
+      "type": "narration",
+      "text": "我翻开最后一页，把笔尖放在第一个名字前面。"
+    },
+    {
+      "type": "narration",
+      "text": "第一个名字是陈。我把它念出来的时候，井壁上的灰顿了一下。"
+    },
+    {
+      "type": "narration",
+      "text": "第二个名字是阮宁。念出来的时候，我胸口那块借来的记忆响了一声，像有人在我身体里翻页。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "她的名字回来了。我听见她说冷。"
+    },
+    {
+      "type": "narration",
+      "text": "我继续念。念到第四个的时候，我发现我念得比写下来的快。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_broken",
+      "text": "你在着急。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我在赶时间。你让我们慢慢忘，我今天要让所有人一起想起来。"
+    },
+    {
+      "type": "narration",
+      "text": "我念到第七个。井底那枚钟的齿开始往回收，像在把刚才走掉的格子还回来。"
+    },
+    {
+      "type": "narration",
+      "text": "第八个。第九个。念到第十个的时候，我手里的本子轻了一页。"
+    },
+    {
+      "type": "narration",
+      "text": "薄下去的是老周那一页。那两个字还在，是我今晚刚描过的那两个字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "还差一个。"
+    },
+    {
+      "type": "narration",
+      "text": "最后一个名字很陌生。它不是人名，是一句很短的话。"
+    },
+    {
+      "type": "narration",
+      "text": "那句话写的是：别把我记成你。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": "我的耳朵里开始有第二层声音。很多人同时说话，说的都是同一句：别把我记成你。"
+    },
+    {
+      "type": "narration",
+      "text": "我按住太阳穴，把眼睛睁到最大。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "林晓，你的耳朵在流血。"
+    },
+    {
+      "type": "narration",
+      "text": "我看了一眼本子。那最后一行字在退色，退得很慢。"
+    },
+    {
+      "type": "narration",
+      "text": "我把笔尖按住那一行，一笔一笔地把它描回去。"
+    },
+    {
+      "type": "narration",
+      "text": "描完最后一笔，井底没有声音了。连那枚钟都不响了。"
+    },
+    {
+      "type": "narration",
+      "text": "钟开始走最后一格。它走得比前面任何一格都慢，慢到我能数清每一道齿。"
+    },
+    {
+      "type": "narration",
+      "text": "墙里那个人往前走了一步。他走出阴影的时候，我第一次看清他的脸。"
+    },
+    {
+      "type": "narration",
+      "text": "他的脸没有缺什么，他只是很累。"
+    },
+    {
+      "type": "narration",
+      "text": "他抬起手，把手掌按在那道口子边上，然后看着我手里的本子。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "他在念自己的名字。念得很慢，一个字一个字，念到最后一个字就没了。"
+    },
+    {
+      "type": "narration",
+      "text": "我问小雅，他念的是哪几个字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "她说她听得见音，抓不住字。他每念到最后一个字，那个字就从她耳朵里掉出去。"
+    },
+    {
+      "type": "narration",
+      "text": "我低头看本子。最后一页上多出一行字，不是我写的，是这本账自己长出来的。"
+    },
+    {
+      "type": "narration",
+      "text": "那行字只有七个字：没数完的人不算。"
+    },
+    {
+      "type": "narration",
+      "text": "我把这七个字念了三遍，一遍比一遍慢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "他在等有人把他数完。他等了四十年。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "可门只认一个出口。它认从第一页念起的那个人，也只能认一个。"
+    },
+    {
+      "type": "narration",
+      "text": "我把表从口袋里掏出来。表停在我没有见过的刻度上，指针不抖。"
+    },
+    {
+      "type": "narration",
+      "text": "我抬头看井口。天快亮了，井口那一圈天已经从深蓝变成灰。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "我听见外面有人在扫街。扫把一下一下的，很有规律。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "那是环卫的早班。这个点出门的人，一辈子不会知道昨晚这里发生过什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那正好。他们知道了也帮不上忙。"
+    },
+    {
+      "type": "narration",
+      "text": "我低头看了一眼本子。十一个名字挤在最后一页上，字迹一半是我的，一半是别人的。"
+    },
+    {
+      "type": "narration",
+      "text": "这本硬皮本子是我三月十二号从图书馆地下室拿出来的，第一页第一行是我从别人嘴里捡回来的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "这三十天里它记过被删掉的人，记过借来的记忆，也记过我三个同伴的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "林晓，你要是决定不了，就先把本子给我。我替你拿着，你空着手上去。"
+    },
+    {
+      "type": "narration",
+      "text": "我把本子抱紧了一点，没有说话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "上面还剩两节。我不催你，但我在数。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "钟的声音变了。它不是在走，它是在等人。"
+    },
+    {
+      "type": "narration",
+      "text": "我握紧笔。笔杆上三道磨平的指痕贴着我的手指。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝手腕上那只表还停在一点四十。从三月十九号起，它没有再替谁数过那一分四十秒。"
+    },
+    {
+      "type": "narration",
+      "speaker": "",
+      "sprite": "",
+      "text": "她把表摘下来，托在掌心里递到我面前，像递一句不好当面问的话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "这只表从三月十九号起就没走过。你说，它现在该在谁的手腕上。"
+    },
+    {
+      "type": "narration",
+      "speaker": "",
+      "sprite": "",
+      "text": "表归谁，这本子上最后一格该填谁的名字，两件事在这一刻是同一件。"
+    },
+    {
+      "type": "choice",
+      "text": "这只停在一点四十的表，怎么办？",
+      "options": [
+        {
+          "text": "让她重新戴上。走不走是它的事，戴不戴是她的事，我不再替这只表保管谁的最后一分钟。",
+          "affectionWho": "艾莉丝",
+          "affection": 5,
+          "insomnia": 0,
+          "flag": "returned_watch",
+          "next": ""
+        },
+        {
+          "text": "我接过来揣回口袋。它停着的那一格还没走完，等它自己走完了，再还给她。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "keep_the_watch",
+          "next": ""
+        }
+      ],
+      "prompt": "这只停在一点四十的表，怎么办？"
+    },
+    {
+      "type": "narration",
+      "text": "这一格走完之前，我得先定一件事：这一分四十秒，是留给我们四个人的，还是留给像他这样的名字的。"
+    },
+    {
+      "type": "narration",
+      "speaker": "",
+      "sprite": "",
+      "text": "雷恩的手停在梯口，等我把话说完。本子摊在井底的石板上，十一行名字被水渍泡开了一角。"
+    },
+    {
+      "type": "narration",
+      "speaker": "",
+      "sprite": "",
+      "text": "我这一路往里填过名字，也划掉过名字。哪一格该留白，哪一格该收口，只有数得清的人才说了算。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "你要念就一次念完。半途停下来的账，比不念还难收拾。"
+    },
+    {
+      "type": "narration",
+      "speaker": "",
+      "sprite": "",
+      "text": "我把笔尖落到最后一页的最后一行，先定了这一笔，再定谁上去按开关。"
+    },
+    {
+      "type": "choice",
+      "text": "这一本账，念不念得平？",
+      "options": [
+        {
+          "text": "十一个名字，一笔一笔核到底：谁被删、谁借过、谁还欠着，全部对上，不留一格空白。",
+          "affectionWho": "雷恩",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "ledger_balanced",
+          "next": ""
+        },
+        {
+          "text": "留最后一格空着。有些账对不上，硬凑平的账，回头还要再欠一次。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "ledger_left_open",
+          "next": ""
+        }
+      ],
+      "prompt": "这一本账，念不念得平？"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "最后一格正在走完。出口只有一个位置，我给谁。",
+      "options": [
+        {
+          "text": "把最后十一个名字念完，连墙里那位一起数进去：账归零，门就不再要人留下，我们四个一个都不留",
+          "affectionWho": "小雅",
+          "affection": 8,
+          "insomnia": 1,
+          "flag": "ending_miracle",
+          "next": "3-6w"
+        },
+        {
+          "text": "我抢着留下按开关，让他们三个先上去：最后一格没数完，钟不认这笔账",
+          "affectionWho": "艾莉丝",
+          "affection": 8,
+          "insomnia": 1,
+          "flag": "stayed_at_switch",
+          "next": "3-7"
+        },
+        {
+          "text": "上去把雷恩换下来，让他按开关：他把我推回井底，谁也没换成功",
+          "affectionWho": "雷恩",
+          "affection": 8,
+          "insomnia": 1,
+          "flag": "traded_with_raine_at_core",
+          "next": "3-7"
+        },
+        {
+          "text": "把小雅按在出口那一格，本子跟着她：开关不吃她手里那本子，她也没出去",
+          "affectionWho": "小雅",
+          "affection": 9,
+          "insomnia": 2,
+          "flag": "gave_book_to_xya_at_core",
+          "next": "3-7"
+        }
+      ]
+    }
+  ]
+}

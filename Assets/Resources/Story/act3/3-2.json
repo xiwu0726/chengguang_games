@@ -1,0 +1,1160 @@
+{
+  "sceneId": "3-2",
+  "chapter": "第三幕·最终决战",
+  "title": "最后的训练",
+  "background": "bg_base_room",
+  "bgm": "bgm_insomnia",
+  "next": "3-3",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "第二十八天，四月八号，晚上九点。距离开门还有二十五个小时。今天我们没有开会，也没有再看图纸。今天只做一件事。"
+    },
+    {
+      "type": "narration",
+      "text": "我们把作战室中间清空了。地上用胶带贴出三条并排的线，每条线前面放一只铁皮箱。铁皮箱里是六十根木签，签子上写的都是名字。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "六十根签，全是别人抄的名字。先检查哪一样？",
+      "options": [
+        {
+          "text": "先数一遍签，确认六十根",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "counted_the_slips_before_starting",
+          "next": ""
+        },
+        {
+          "text": "先看三条胶带线贴得正不正",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "checked_the_tape_lines_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那些名字不是在场的任何一个人写的。它们是这一年里从报废的记录、注销的档案、被剪掉姓名的封面上抄下来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "规则我再说一遍。你抽一根签，把名字念出来，停三十秒，再放回去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "中间出现任何反应，你只有一件事要做：按我给你的呼吸节拍，四拍吸，八拍呼。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "四拍吸八拍呼。这节拍你熟不熟？",
+      "options": [
+        {
+          "text": "当场跟她对两拍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "synced_the_breath_beat",
+          "next": ""
+        },
+        {
+          "text": "不说话，心里过一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "rehearsed_the_beat_silently",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "我计时。二十秒的时候我叫一次，三十秒我叫一次。你听见我叫，就说明你还挂在这儿。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "我干什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "你不抽签，也不念。你负责听。他要是念错一个字，你告诉我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "记住了。我听得出来。真名和错的名字在我这儿不一样。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅负责听错字。要不要再叮嘱她一句？",
+      "options": [
+        {
+          "text": "叮嘱她：听出不对就喊停",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "told_xya_to_call_stop",
+          "next": ""
+        },
+        {
+          "text": "不叮嘱，她本来就懂",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "trusted_xya_without_words",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我脱了外套。这个动作是艾莉丝要求做的，她说要看着我身上有没有乱的地方。她拿着一台仪器的传感头贴在我手腕上，数据线拖到桌边那台笔记录仪。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "基线先走五分钟。你什么都别想，想墙，想天花板。"
+    },
+    {
+      "type": "narration",
+      "text": "前五分钟我盯着天花板看。天花板上有一块水渍，形状像一只踩扁的鞋。我看着那只鞋，心率一点一点落下来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "基线稳。开始。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "基线稳了。第一根签，怎么抽？",
+      "options": [
+        {
+          "text": "随手就抽",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "drew_the_first_slip_blind",
+          "next": ""
+        },
+        {
+          "text": "先闭眼三十秒",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "steadied_before_the_draw",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "第一根签是随手抽的。签子是竹的，边上有一道旧裂，摸起来比其他的轻。签面上是一行钢笔字，写得很端正，末尾还带一个句点。"
+    },
+    {
+      "type": "narration",
+      "text": "我把那个名字念了出来。念的时候我听见自己的声音比平时低，像从胸腔里出来的。"
+    },
+    {
+      "type": "narration",
+      "text": "仪器没有响。笔记录仪上的针只是抖了一下，抖完就回去了。艾莉丝在纸上写了一笔，那一笔很短。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "反应窗口比预估窄。要不要先叫停？",
+      "options": [
+        {
+          "text": "叫停，重定窗口",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "paused_to_reset_the_window",
+          "next": ""
+        },
+        {
+          "text": "不停，继续下一根",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_reading_after_the_gap",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "反应窗口七秒。比我们预估的窄。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "七秒是什么意思。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "意思是你有七秒钟会不舒服。七秒以后如果撑住了，那个名字就算被读出来，删除会松一下，但不会破。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "七秒不舒服。这七秒你怎么熬？",
+      "options": [
+        {
+          "text": "一秒一秒数呼吸",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "counted_breaths_in_the_window",
+          "next": ""
+        },
+        {
+          "text": "盯住胶带线不放",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "fixed_on_the_tape_line",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "第二根签我抽得慢一点。这根签上只有两个字。念出来的时候我的太阳穴跳了一下，眼前有一段很细的亮线从左边扫到右边。"
+    },
+    {
+      "type": "narration",
+      "text": "我照她说的呼吸。四拍吸，八拍呼。吸进去的时候喉咙里有一股铁锈味，呼出去的时候那股味淡了一半。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "铁锈味淡了一半。要不要歇一口再抽？",
+      "options": [
+        {
+          "text": "歇十秒",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -3,
+          "flag": "rested_ten_seconds_between_slips",
+          "next": ""
+        },
+        {
+          "text": "不歇，趁状态还在",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "rode_the_momentum",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "二十秒。"
+    },
+    {
+      "type": "narration",
+      "text": "他的声音很平。这三天里他对着秒表练过太多次，练到能把「二十秒」这三个字念得跟报站名一样。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "三十秒过了。这个我没问题。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你刚才念的时候手在抖。是那种很小的抖，杯子放在桌上会响的那种。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "那你就当我在给这屋子打拍子。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅听见你手在抖。承认还是打岔？",
+      "options": [
+        {
+          "text": "打岔糊过去",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "joked_the_trembling_away",
+          "next": ""
+        },
+        {
+          "text": "承认手确实在抖",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "admitted_the_trembling",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "第三根签我摸到的时候就知道不对。它比别的签厚，边缘毛糙，像是从木板上硬掰下来的，而且它是唯一一根反面有字的。"
+    },
+    {
+      "type": "narration",
+      "text": "我把签翻过来。反面是两个字，写得很急，笔压大得把木纹都压白了。那两个字我一个都不认识。"
+    },
+    {
+      "type": "narration",
+      "text": "可我的拇指在那个位置上停了两秒，像是有过肌肉记忆。我认得这两个字的写法，只是不认得它们念什么。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "拇指认得这两个字的写法。要不要说出来？",
+      "options": [
+        {
+          "text": "说出来：我认得这个写法",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "said_he_knew_the_script",
+          "next": "#l01"
+        },
+        {
+          "text": "不说，先翻回正面",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "said_nothing_about_the_script",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把签按在桌上，指腹压着那两个字，没吭声。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "这根不是我们抄的。",
+      "label": "l01"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "放回去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "明天晚上我要念的，本来就不是我们抄得出来的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "林晓。那根签你想清楚再念。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她让你想清楚再念。想清楚了吗？",
+      "options": [
+        {
+          "text": "想清楚了，念",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "read_the_slip_after_thinking",
+          "next": ""
+        },
+        {
+          "text": "没想清楚，也念",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "read_it_without_being_sure",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我没有放回去。我把那根签举到嘴边，照着上面那两个字念了出来。念第一个字的时候，屋子里的灯闪了一次。"
+    },
+    {
+      "type": "narration",
+      "text": "念第二个字的时候，我听见的不是自己的声音。我听见的是很多人在很远的地方一起把一个音收住，收得像有人同时把几十扇门关上。"
+    },
+    {
+      "type": "fx",
+      "fx": "shake",
+      "text": "整间屋子晃了一下。铁皮箱倒了，六十根木签散在地上，撒得到处都是。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": "我的太阳穴像被人从里面顶了一下。眼前的亮线不是一条了，是一整片，从中间往两边烧。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "亮线从中间往两边烧。现在喊不喊停？",
+      "options": [
+        {
+          "text": "喊停，把签扔了",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "called_stop_in_the_burn",
+          "next": ""
+        },
+        {
+          "text": "不喊，撑到三十秒",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "held_on_through_the_burn",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "艾莉丝！读数！"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "超了。超了三倍。我正在拉。"
+    },
+    {
+      "type": "narration",
+      "text": "我想说一句「我没事」，但那句话卡在胸口。我的鼻子一热，血先出来了，滴在胶带上，把那条黄线染成了深色。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": "有很短的一瞬间，作战室不见了。我看见一间教室，黑板上写着日期，日期是四月八号，可那间教室里坐着的人我一个都不认识。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "教室日期是今天，人你一个不认识。先看黑板还是先退出？",
+      "options": [
+        {
+          "text": "把日期记住再说",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "memorized_the_classroom_date",
+          "next": ""
+        },
+        {
+          "text": "闭眼，把自己拽回来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "pulled_his_eyes_shut",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "再睁开眼的时候，我是躺着的。天花板还是那盏灯，灯管上有一只飞蛾在撞。"
+    },
+    {
+      "type": "narration",
+      "text": "第一个回到身上的感觉是手腕被按住了。有人把我的手压在地板上，压得很紧，紧到指节发麻。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "别动。你刚才抽了两次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "我抽了几分钟。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "十分钟四十秒。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "十分钟四十秒。这个数敢不敢再听一遍？",
+      "options": [
+        {
+          "text": "再听一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "heard_the_lost_minutes_twice",
+          "next": ""
+        },
+        {
+          "text": "不听了，先问身体",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_about_his_body_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她说话是贴在我耳朵边说的，可我听的时候像隔着一层水。我看着她的嘴一张一合，延迟了半拍才听懂。"
+    },
+    {
+      "type": "narration",
+      "text": "我的左耳什么都听不见。右耳只有一层高频的蝉鸣。我抬手想揉一下，被她按了回去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "耳朵是暂时的，两天内会回来。额头撞在桌角上，缝了两针。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那算是失败了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "是失败。而且是我算错的那种失败。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她承认是她算错。要不要替她找补？",
+      "options": [
+        {
+          "text": "找补：谁都没料到",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "covered_for_alices_miscalculation",
+          "next": ""
+        },
+        {
+          "text": "不找补，让她说完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "let_her_own_the_mistake",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句就站起来。她走到桌边，把笔记录仪上那一段纸撕下来，折了三折，塞进自己的口袋，没有给我看。"
+    },
+    {
+      "type": "narration",
+      "text": "三个人把我抬到墙角，让我靠着墙坐。小雅拿了湿毛巾按在我鼻子上，按得比需要的更用力。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "湿毛巾按得过重。要不要躲？",
+      "options": [
+        {
+          "text": "不躲，让她按完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_xya_finish_pressing",
+          "next": ""
+        },
+        {
+          "text": "躲一下，缓过来再说",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "dodged_the_towel_once",
+          "next": "#l02"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "湿毛巾的凉意从鼻梁漫到眼眶，屋里的声音等我缓过来才回来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "刚才你念那两个字的时候，屋子里的声音全停了一秒。",
+      "label": "l02"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "然后有一百多个人一起开口。我从来没听过这么多人同时说话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "他们说什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "他们在念同一个名字。就是你手里那两个字。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "一百多个人在念你手里那两个字。要不要把签摸出来？",
+      "options": [
+        {
+          "text": "摸出来，攥在手里",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "brought_the_slip_into_his_hand",
+          "next": ""
+        },
+        {
+          "text": "不摸，先问小雅细节",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_xya_for_the_details",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把手伸进外套口袋，摸到那根厚签。它还在。边缘有一小块被血浸过，木纹变成了暗红色。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝回来的时候手里多了一张纸。那不是记录纸，是我们明天要带进门的名单。她用铅笔在最上面写了一行字，写完把它推到我面前。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "明天晚上的规则改两条。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "第一，念名字的人不查签面，只念我点到的。第二，我点到谁念，谁就得把右手空出来。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "右手空出来给她拉着。这规则你答应吗？",
+      "options": [
+        {
+          "text": "答应，把手空出来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "agreed_to_the_handhold_rule",
+          "next": ""
+        },
+        {
+          "text": "答应，但要求她也念几个",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_her_to_read_too",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "空出来干什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "让我拉着。你一乱我就拉一下，你只要记住那一下的力度，就知道自己该停。"
+    },
+    {
+      "type": "narration",
+      "text": "我看着那张纸。名单上第一个名字前面画了一个很小的小点，那是今天下午定下来的顺序。我们能背下来的名字一共有三十七个。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三十七个名字，能念的只有三个。先核顺序吗？",
+      "options": [
+        {
+          "text": "核一遍顺序",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "checked_the_reading_order",
+          "next": ""
+        },
+        {
+          "text": "不核，信她定的",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "trusted_the_order_she_set",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "三十七个名字，一个四十秒，加上反应窗口。时间够吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "不够。所以不是三十七个。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "进去以后，你只念三个。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "那剩下的三十四个呢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "剩下的三十四个，是我和小雅在外面念的。我们没有你那种反应，念一百遍也没用，但至少能让它们在纸上活着。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她在外面念那三十四个。你能替她做什么？",
+      "options": [
+        {
+          "text": "把她的份也抄进本子",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "copied_her_share_into_the_book",
+          "next": ""
+        },
+        {
+          "text": "不说话，记下分工",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "noted_the_split_in_silence",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我这才明白今天她为什么不肯让我多念。她不是怕我受伤，她是怕我把三分钟里唯一能用的那点力气花在没用的名字上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "剩下三个是哪个。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "明天在门口决定。顺序第一的那个还没定。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把秒表放到桌上。他从四点起没吸过一支烟，今天破例了。他抽的时候背对着我们，肩膀塌下去，像一堵被拆了一半的墙。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩破例抽烟，背对着你们。要不要收走？",
+      "options": [
+        {
+          "text": "收走，替他拿着",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "took_raines_cigarette",
+          "next": ""
+        },
+        {
+          "text": "不收，让他抽完这根",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "let_him_finish_the_cigarette",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "守望者那边最后一次联系是今天中午。维拉说她不再回话了，名单她收了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "维拉不回话了。这条线还留不留？",
+      "options": [
+        {
+          "text": "留，把频道记下来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_the_vera_channel",
+          "next": ""
+        },
+        {
+          "text": "不留，收了名单就算答应",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "took_veras_silence_as_yes",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "三月十二号那天，队伍里要是有个人能念出我记得的人，我也不用自己一个人跑三年。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "那明天你把自己的名字也算进去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "什么意思。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "如果你出不来，我就在纸上写你。这算我提前收的一份债。"
+    },
+    {
+      "type": "narration",
+      "text": "他看了我三秒，然后笑了一下。那一下不出声，只是嘴角动了动，比我见过的任何一次都难看，也比任何一次都真。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩那一下笑得太真。这份债你怎么记？",
+      "options": [
+        {
+          "text": "记到最贵的一页",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": -1,
+          "flag": "booked_raines_debt_on_the_last_page",
+          "next": ""
+        },
+        {
+          "text": "当面说不用还",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "told_raine_no_debt",
+          "next": "#l03"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把他这一下笑记在本子最后一页，压得很实。"
+    },
+    {
+      "type": "narration",
+      "text": "九点四十的时候，我们把散在地上的签一根一根捡起来。六十根，捡完点了两遍，还是六十根。那根厚签单独收进了我的外套内袋。",
+      "label": "l03"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "今晚的记录我改了。训练结果写「部分失败，方案已调整」，不写你抽了两次。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "记录改了，不写你抽了两次。厚签要不要交出去登记？",
+      "options": [
+        {
+          "text": "交出去登记",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "handed_the_thick_slip_in",
+          "next": ""
+        },
+        {
+          "text": "自己收着",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_the_thick_slip_himself",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那他为什么要躲着我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "因为明天进去的人是你，他们需要你认为自己能行。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "至于我这边记的是真的。真的那一份我给你留着，等回来再看。"
+    },
+    {
+      "type": "narration",
+      "text": "十点，小雅煮了一锅面。她煮面的时候一直在小声数数，数到七就重来。我没有告诉她这个习惯是从哪儿来的，她大概也不需要知道。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅数到七就重来。要不要告诉她为什么？",
+      "options": [
+        {
+          "text": "告诉她：那是在数名字",
+          "affectionWho": "小雅",
+          "affection": 4,
+          "insomnia": -1,
+          "flag": "told_her_why_she_counts",
+          "next": ""
+        },
+        {
+          "text": "不问也不说，吃面",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "ate_the_noodles_in_silence",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "面里我放了两个蛋。你们谁不吃谁就是看不起我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "这次没人敢。"
+    },
+    {
+      "type": "narration",
+      "text": "我们四个人围着那张长桌吃面。桌上的图纸收起来了，仪器盖上了布，六十根签装回铁皮箱。这一夜屋子里没有一件在提醒我们明天要做什么。"
+    },
+    {
+      "type": "narration",
+      "text": "吃完面，艾莉丝把笔记录仪重新校准了一次。她把零点当成新的起点，然后在纸上写了一个很长的时间轴，时间轴的末端画了一个圈。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "时间轴末端画了一个圈。要不要问圈里是什么？",
+      "options": [
+        {
+          "text": "问：圈里写的是谁",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_what_the_circle_held",
+          "next": ""
+        },
+        {
+          "text": "不问，让她自己说",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_her_close_the_circle",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "明天早上七点集合，八点出发，下午到外围。晚上十点，门开。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "在那之前，每个人都睡六个小时。这是命令，不是建议。"
+    },
+    {
+      "type": "narration",
+      "text": "我躺在行军床上的时候，左耳还是只有那层蝉鸣。我按了按耳朵，能听见一点自己的呼吸，很闷。这大概是今天唯一变好的消息。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "今晚仅剩的六个小时，怎么用？",
+      "options": [
+        {
+          "text": "把那根厚签拿出来，一个人把它看明白",
+          "affectionWho": "艾莉丝",
+          "affection": 4,
+          "insomnia": 8,
+          "flag": "studied_the_thick_slip",
+          "next": "3-3"
+        },
+        {
+          "text": "照着练习的呼吸节拍睡，真正睡满一整段",
+          "affectionWho": "艾莉丝",
+          "affection": 7,
+          "insomnia": -14,
+          "flag": "rested_before_final",
+          "next": "3-3"
+        },
+        {
+          "text": "去找小雅，请她再听一遍那两个字",
+          "affectionWho": "小雅",
+          "affection": 7,
+          "insomnia": 6,
+          "flag": "asked_xya_to_listen",
+          "next": "3-3"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把白天练的那套节拍又做了一遍：四拍进，七拍停，八拍出。数到第三轮的时候，左耳那层蝉鸣退到了很远的地方。"
+    },
+    {
+      "type": "narration",
+      "text": "那一夜我睡了一整段，从熄灯睡到集合，中间没有醒过，也没有看见别人的记忆。这是三月十四号以来的第一次。"
+    },
+    {
+      "type": "narration",
+      "text": "熄灯之前我最后看了一眼那根厚签。我把它放在枕头底下，不是藏，是压。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "厚签压在枕头底下。睡前最后一件事做什么？",
+      "options": [
+        {
+          "text": "再走一遍呼吸节拍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -3,
+          "flag": "ran_the_breath_beat_once_more",
+          "next": ""
+        },
+        {
+          "text": "把那三个数字默念一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "mouthed_the_three_numbers",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我告诉自己，明天要是真的轮到我念这两个字，我要睁着眼睛念完。今天那十分钟太黑了，黑得我什么都没看见。"
+    },
+    {
+      "type": "narration",
+      "text": "灯灭以后，屋子里的三个人都没有说话。我能听见雷恩翻身，能听见艾莉丝在本子上写字，能听见小雅把湿毛巾晾在椅背上。"
+    },
+    {
+      "type": "narration",
+      "text": "这些声音我一个都不想忘。它们是我这一年里唯一没被删掉的东西。"
+    }
+  ],
+  "dense": true
+}

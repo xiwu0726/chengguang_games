@@ -1,0 +1,543 @@
+{
+  "sceneId": "3-e12",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·账没有平",
+  "background": "cg_ending_e12",
+  "bgm": "bgm_sad",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "门从里面合上的时候没有响声。像有人把一页纸对折，压在另一页上。"
+    },
+    {
+      "type": "narration",
+      "text": "折过来那一下，我最后看见的是井口的灰、断掉的铁梯，还有小雅伸出来的手。"
+    },
+    {
+      "type": "narration",
+      "text": "她手后面那一格没有亮。我按过它一次。它不认我，也不认她。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "十一个名字。我只念到第十个。"
+    },
+    {
+      "type": "narration",
+      "text": "怀里那一页压着我的肋骨。它跟着我进来了，没有跟着她出去。"
+    },
+    {
+      "type": "fx",
+      "fx": "shake",
+      "text": "黑里没有回音。我用指节敲门壁，等三秒，再敲一下。第二下只等到我自己的呼吸。"
+    },
+    {
+      "type": "narration",
+      "text": "还有另一道呼吸。它离我很近，近得像贴着我的后颈。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_broken",
+      "text": "你手里那一页，缺一个名字。"
+    },
+    {
+      "type": "narration",
+      "text": "他的声音不来自任何一个方向。他原来贴在井壁上，现在贴在我进来的这一面。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你替我数过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "我数过所有人。你念错的那一个，我替你记着。"
+    },
+    {
+      "type": "narration",
+      "text": "他没有说错在哪个字上。我等了一会儿，等他把话说完。他没有说完的习惯。"
+    },
+    {
+      "type": "narration",
+      "text": "我把那一页摸出来。纸边被汗泡软了，摸上去像一块凉下来的布。"
+    },
+    {
+      "type": "narration",
+      "text": "我从第一个念起。苏禾。阿灰。后面六个我念得很快。"
+    },
+    {
+      "type": "narration",
+      "text": "阮宁的字最工整。陈只有半个字，剩下那半页被人裁掉了。"
+    },
+    {
+      "type": "narration",
+      "text": "念到第十个，纸上还剩最后一行，七个字。没数完的人不算。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "十一个。这里只有十个。"
+    },
+    {
+      "type": "narration",
+      "text": "第十一个不在纸上。第十一个在墙里等了四十年，只想有人把他的名字念对一次。"
+    },
+    {
+      "type": "narration",
+      "text": "我不知道他的名字。本子在我手里的时候，那一行就是空的。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "我在黑里坐下来，把纸摊在膝盖上。膝盖是这里唯一的一张桌子。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "那我先记着，你是第十一个。"
+    },
+    {
+      "type": "narration",
+      "text": "墙里那道呼吸停了一下。停得很短，像一个人把到嘴边的话咽回去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "编号不是名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "那就欠着。欠着总比抹掉好。"
+    },
+    {
+      "type": "narration",
+      "text": "我用指甲在页脚刻那七个字。纸不认指甲，只留下一道白痕，一擦就平。"
+    },
+    {
+      "type": "narration",
+      "text": "这一下我才明白，门里面没有笔。它连笔也收走了。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_black",
+      "bgm": "bgm_sad",
+      "text": "上面这些是我这边的。下面的这些我没有看见，它们是后来一点一点到我手边来的。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_dawn_city",
+      "bgm": "bgm_ambient",
+      "text": "那天早上井口上面，小雅手里是那本被撕掉最后一页的旧本子，艾莉丝手里是登记组的抄件，雷恩手里是半张退路图。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "第一页是苏禾。第二页是阿灰。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "最后一页在他手里。"
+    },
+    {
+      "type": "narration",
+      "text": "她把本子合上，抱在胸前，像端平一碗水。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "是我没出去。开关不吃我手里这一本。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "不是你。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把半张图钉在基地的墙上，用铅笔在边上刻了一道。他没有解释那一道是什么意思。"
+    },
+    {
+      "type": "narration",
+      "text": "他后来每天刻一道。刻到第七道，他把铅笔削了一次，刀口朝外放在桌上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "账不平。差一页，差一个名字，差一行字。"
+    },
+    {
+      "type": "narration",
+      "text": "她把抄件按顺序排好，最下面空出一格，纸边对齐桌角。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "结案报告这一栏要填结果。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "填未平。"
+    },
+    {
+      "type": "narration",
+      "text": "维拉的笔尖停了一下，还是写了。她写得很正，横平竖直，像抄一份不属于她的判决。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_library_day",
+      "bgm": "bgm_warm",
+      "text": "历史图书馆那口钟还在。钟体在，指针早没了。小雅跟馆里要了一张空白时间条，贴在钟摆停住的位置。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "我姓周。你要查哪一年。"
+    },
+    {
+      "type": "narration",
+      "text": "他抽屉里那张核对表还是原来的，馆员编号 A-三一七。卡片上是他的名字，字是他自己的字。"
+    },
+    {
+      "type": "narration",
+      "text": "他的名字在林晓那一页上，第七个。他不知道自己在那张纸上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "周先生，你昨天记过一笔吗。"
+    },
+    {
+      "type": "narration",
+      "text": "他翻了翻抽屉，说记过，把昨天那张过塑的表推给她。表上的日期是前天的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "那就记今天。今天我在。"
+    },
+    {
+      "type": "narration",
+      "text": "她是唯一一个还会主动笑的人。她笑之前先把嘴角压一下，像怕声音惊动谁。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_library_night",
+      "bgm": "bgm_sad",
+      "text": "从五月起，小雅每个月把两半并排放在图书馆长桌上。左边是前面十页，右边是一块空白。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "页码对不上。前面十页，最后一页缺。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "对不上也对。我看着它，它就不算丢。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝手腕上那只表还停在四月九号夜里一点四十。钟体一直在，指针早没了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你不修它吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "不修。修了就等于把这一笔销掉。"
+    },
+    {
+      "type": "narration",
+      "text": "她先说结论，隔两秒才把理由补上。那两秒是留给别人接话的。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅把本子放在柜台最里面的抽屉，不上锁。她说上了锁就像把它藏起来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "我每天早上翻一页，翻到最后一页前面就停。"
+    },
+    {
+      "type": "narration",
+      "text": "她翻得很慢。前面十页上有苏禾的字、阿灰的字、老周的编号，一页比一页新。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_base_room",
+      "bgm": "bgm_ambient",
+      "text": "雷恩回了一趟登记组，把雷小满三个字写在恢复名单第一栏，写完扣上笔帽，没有签自己的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "半张图不够走到门口。"
+    },
+    {
+      "type": "narration",
+      "text": "他把那半张退路图从墙上取下来，折成四折，塞进林晓留在基地的那只外套口袋。"
+    },
+    {
+      "type": "narration",
+      "text": "口袋朝外翻着放。这样谁进来都看得见，那半张纸在等一个能把它补全的人。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅把图书馆的借阅记录也打印出来，夹在抄件后面。她说借出去的书要还。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_black",
+      "bgm": "bgm_silence",
+      "text": "门里面没有白天。我把十一个名字按本子上的顺序排，排完再数一遍，数到第十就停。"
+    },
+    {
+      "type": "narration",
+      "text": "我念过倒序。倒着念的时候，第七个和第八个我记不清谁在前。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "账不平。差一个名字，差一行字。"
+    },
+    {
+      "type": "narration",
+      "text": "墙里那道呼吸替我数。它数到十就换一口气，正好接上我停下的地方。"
+    },
+    {
+      "type": "narration",
+      "text": "我们两个在黑暗里对着一页纸，一个念，一个喘。这本账就这样一天一天记下去。"
+    },
+    {
+      "type": "narration",
+      "text": "我是学历史的。我做过的事是给旧书编目：册数、页码、缺损，一行一行填进卡片。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "黑里也有东西可编。一道呼吸，一口门，一页纸。"
+    },
+    {
+      "type": "narration",
+      "text": "我给它们编号。第一号是门，第二号是纸，第三号是那道呼吸。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_amused",
+      "text": "你在把名字换成数字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我在给没有名字的东西留位置。"
+    },
+    {
+      "type": "narration",
+      "text": "我给自己也编了一号。第四号是我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你不在编号里。你在账上。"
+    },
+    {
+      "type": "narration",
+      "text": "二十二年里我抄过的书目，比这一页上的名字多。现在我只背得出十行。"
+    },
+    {
+      "type": "narration",
+      "text": "这一次他没有回我。井壁上那一层薄的东西贴着我的后背，凉得像一页没干的纸。"
+    },
+    {
+      "type": "narration",
+      "text": "第二号纸上的字，我摸得比自己的脸还熟。可我一想到第十一个，指尖就停在页脚那块空白上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "页脚够写一个名字。不够写两个。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "我把纸折起来，塞回怀里。折的时候我数了一下，还是那一页，没有多出一张。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_institute_night",
+      "bgm": "bgm_insomnia",
+      "text": "秋天，艾莉丝把研究所的名单重打一遍。打到第十一行，她把键盘放开，让那一行空着。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "缺的那一行不能由我补。"
+    },
+    {
+      "type": "narration",
+      "text": "她补过太多次。补一次，门里就少一样东西。这条是她自己写在便签上的。"
+    },
+    {
+      "type": "narration",
+      "text": "便签贴在显示器下沿，字很小：不要替他写。"
+    },
+    {
+      "type": "narration",
+      "text": "维拉把结案报告的副本寄回研究所。收件人一栏写着十一个名字，第十一行空着。"
+    },
+    {
+      "type": "narration",
+      "text": "老周开始在核对表背面写名字。他写的是别人的名字，一张写满就压进抽屉。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_grim",
+      "text": "馆里的规矩。丢了人的地方，表要多留一行。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅给那本旧本子做了一张借书卡。借阅人一栏她写：等林晓还。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝把抄件编了号，第十一格用铅笔写待补。她每月看一次，看完把铅笔头削尖。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_corridor",
+      "bgm": "bgm_ambient",
+      "text": "雷恩把断掉的铁梯修了一节。修到井口那一格他停手了，因为那一格不亮。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "不亮就不修。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你多久没睡了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "不数这个。数了也记不进账。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_rooftop",
+      "bgm": "bgm_ambient",
+      "text": "冬天，小雅上了天台，把两半的页码写在纸上压平，对着城里的灯一格一格比。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "林晓，我数到十了。第十一个我先替你留着。"
+    },
+    {
+      "type": "narration",
+      "text": "风把纸吹走一角。她按住，按了很久，直到手指发白。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有喊。喊是嚎哭的事。她只是把纸折好，放回口袋，下楼。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e12",
+      "text": "四月九号夜里一点四十，那口没有指针的钟响了一下。外面三个人同时抬头。钟体没有动。"
+    },
+    {
+      "type": "narration",
+      "text": "它没有响。是他们三个都听见了。"
+    },
+    {
+      "type": "narration",
+      "text": "这本账后来没有人平掉它。前面十页在图书馆，最后一页在门里，两边都在数，两边都数不完。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你带进来的那一页，我读过。它不平。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我知道。所以我进来了。"
+    },
+    {
+      "type": "narration",
+      "text": "钝的地方不流血。它只是每天在同一处，被同一页纸压一下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "第十一个。等我念到你的时候，你别学他们，把自己缩成七个字。"
+    },
+    {
+      "type": "narration",
+      "text": "墙里那道呼吸应了我一下。它没有名字，但它认得有人在等它。"
+    },
+    {
+      "type": "narration",
+      "text": "我把那一页摊在膝盖上，从第一个念起。苏禾。阿灰。"
+    },
+    {
+      "type": "narration",
+      "text": "念到第十个，我停住。停住的那一秒，外面那座城市正好走完一格。"
+    },
+    {
+      "type": "narration",
+      "text": "账没有平。我把纸压在胸口，等第十一个自己走进来。"
+    }
+  ],
+  "kind": "ending"
+}

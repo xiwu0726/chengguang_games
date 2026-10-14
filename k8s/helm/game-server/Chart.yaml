@@ -1,0 +1,6 @@
+apiVersion: v2
+name: game-server
+description: Helm chart for Game Server deployment
+type: application
+version: 1.0.0
+appVersion: "1.0.0"

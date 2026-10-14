@@ -1,0 +1,891 @@
+{
+  "sceneId": "1-3",
+  "chapter": "第一幕·异变初现",
+  "title": "第一次失眠",
+  "background": "bg_dorm_night",
+  "bgm": "bgm_insomnia",
+  "dense": true,
+  "next": "1-4",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "第三天，三月十四日。白天我什么都没做。"
+    },
+    {
+      "type": "narration",
+      "text": "老周便条上写的是别来上班。我真的没去。我在宿舍里坐了一整天，把地板上的灰推成一条线，又从中间划开。"
+    },
+    {
+      "type": "narration",
+      "text": "研究生宿舍是单人间，四平米多一点，一张床，一张桌子，一扇朝北的窗。没有室友，这是我当初选它的理由。"
+    },
+    {
+      "type": "narration",
+      "text": "今天这个理由变成了另一种东西。没有人可以问我现在是几点，也没有人可以替我说一句你今天看起来不太对。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "便条上写着别来上班。白天我打算怎么过？",
+      "options": [
+        {
+          "text": "把屋子收拾一遍，让手别停下来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "cleaned_the_room",
+          "next": ""
+        },
+        {
+          "text": "坐在窗边等天黑，什么也不做",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "waited_for_night",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "研究所那张打印单我贴在墙上。最后一行被红笔圈着，预测今晚进入首次完全失眠。"
+    },
+    {
+      "type": "narration",
+      "text": "下午三点我试着睡。躺了四十分钟，闭上眼也能看见天花板的裂缝，连眼睛闭没闭都不确定了。"
+    },
+    {
+      "type": "narration",
+      "text": "傍晚下了一场雨。雨停之后，宿舍楼下的路灯亮起来，光是橙的，从窗帘缝里切进来一道，落在我的被子上，像一条很窄的河。"
+    },
+    {
+      "type": "narration",
+      "text": "十一点熄灯。我躺下，把手放在胸口，开始数心跳。"
+    },
+    {
+      "type": "narration",
+      "text": "一二三，一二三。数到两百多的时候我停了，因为那个节奏变了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "心跳的节奏变了。我要不要停下来听清楚？",
+      "options": [
+        {
+          "text": "停下来数那个节奏，数到它能对上表",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "counted_the_new_rhythm",
+          "next": "#l01"
+        },
+        {
+          "text": "不管它，继续躺着等天亮",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "ignored_the_rhythm",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我数到两百下的时候，它停了半秒。那半秒里我听见了别的东西。",
+      "label": "l01"
+    },
+    {
+      "type": "narration",
+      "text": "是很浅的呼吸。它不在房间里，在我耳朵后面，和心跳用同一个位置。"
+    },
+    {
+      "type": "narration",
+      "text": "心跳从一二三变成了二点七秒一次。我不用看表就知道，这个数字已经在我身上待了两天。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "房间开始不正常地亮。不是灯亮，是每一样东西的边缘亮起来，桌角、门缝、杯子口，全都在微微发白。"
+    },
+    {
+      "type": "narration",
+      "text": "我睁开眼。天花板上的裂缝有七条，我数过很多次。今晚有九条。"
+    },
+    {
+      "type": "narration",
+      "text": "多出来的两条很细，从灯座往两边分，分出去的方向正好对着窗户和门。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "……我在数天花板。天花板也在数我。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "天花板多出两条裂缝，方向对着窗和门。我要起来看吗？",
+      "options": [
+        {
+          "text": "起来，顺着裂缝的方向看一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "followed_the_cracks",
+          "next": ""
+        },
+        {
+          "text": "躺着不动，把它当成眼花",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "called_it_an_illusion",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "楼道里有脚步声。很轻，一步一顿，从走廊那头过来，走到我门口的时候慢了一下，然后又继续往前。"
+    },
+    {
+      "type": "narration",
+      "text": "第二遍的时候，我听见那个脚步在我门口完全停住了。停了大概十秒，接着走了。"
+    },
+    {
+      "type": "narration",
+      "text": "第三遍它没有来。换成了一种更近的声音——钟表走针的声音，就在我的房间里。"
+    },
+    {
+      "type": "narration",
+      "text": "这间房里没有钟。我看过，桌子底下、床板背面、柜子顶上都看过。可针走的声音很清楚，一秒一下，一点都不马虎。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "钟表声在屋里，可这间房没有钟。我要不要找它？",
+      "options": [
+        {
+          "text": "起来找，把每一个角落都翻一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "searched_for_the_clock",
+          "next": ""
+        },
+        {
+          "text": "先躺回去，等那个声音自己停",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "waited_for_the_clock_to_stop",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我坐起来去摸手机。屏幕上四点十七分，可显示屏的光是冷的，冷得偏蓝。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我第一次注意到，手机上的时间在走，但走得不匀速。有时一秒跳两下，有时三秒跳一下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "手机坏了吗。"
+    },
+    {
+      "type": "narration",
+      "text": "我说完这句话，才听见自己说话的时候声音绕了一点弯，像有半句话是从别人嘴里出来的。"
+    },
+    {
+      "type": "narration",
+      "text": "味道先来的。粉笔灰，食堂炸东西的油，还有一点点洗衣粉。这三样东西不可能出现在我的宿舍里。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "屋里有三种不属于这里的味道。我先追哪一样？",
+      "options": [
+        {
+          "text": "先追粉笔灰，它最不像宿舍的东西",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "followed_chalk_dust",
+          "next": ""
+        },
+        {
+          "text": "先追洗衣粉，那说明有人动过我的衣服",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "followed_soap_smell",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我掀开被子下床，摸到桌边的杯子。杯子里的水是温的，可我一整天没有烧过水。"
+    },
+    {
+      "type": "narration",
+      "text": "第一个片段是这时候出现的。很干净，不到两秒：一间教室，下午，窗户开着，黑板右下角写着值日生的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有上过那间教室。桌子是浅木色的，边缘有掉漆，我们学校的桌子是深灰的。"
+    },
+    {
+      "type": "narration",
+      "text": "第二个片段长一点。有人的手在翻一本书，翻得很快，翻到某一页停下来，用铅笔在旁边画了一道。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "第一个片段是间陌生教室。我要不要先看桌子？",
+      "options": [
+        {
+          "text": "低头看桌沿的掉漆，认一认是哪一年",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "checked_desk_edge",
+          "next": ""
+        },
+        {
+          "text": "只看黑板上的名字，别的地方不碰",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "read_only_the_names",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那本书的封面是墨绿的，画着一堆管线的走向。我看清了几个字：新东京地下管网图。"
+    },
+    {
+      "type": "fx",
+      "fx": "shake",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "我心里咯噔了一下。那种咯噔不在脑子里，在胃里，往下一沉，然后整个人清醒了半度。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "苏禾借过这本书。二一一〇年十一月三日。"
+    },
+    {
+      "type": "narration",
+      "text": "我说出这个日期的时候，舌头一点也不绕。可这个日期我从来没有背过，我只在前天晚上看过一眼卡片背面。"
+    },
+    {
+      "type": "narration",
+      "text": "第三个片段最清楚。有人站在一栋楼的外面，抬头看。楼很高，玻璃幕墙上嵌着很细的金属线。天是灰的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "第二个片段里有人翻那本管网图。我要跟上去吗？",
+      "options": [
+        {
+          "text": "跟着那双手，看它翻到第几页",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "followed_the_hands",
+          "next": "#l02"
+        },
+        {
+          "text": "退开半步，先记住封面那几个字",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_the_cover_title",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那双手翻到第三区那一页就停了。停的地方有一个铅笔画的圈，圈里写着两个字：别进。",
+      "label": "l02"
+    },
+    {
+      "type": "narration",
+      "text": "写字的人和借书的人不是同一个。这一点我从笔画的力气上看得出来。"
+    },
+    {
+      "type": "narration",
+      "text": "那是研究所。角度是从马路对面看过去的，比我今天站的位置远一些，也低一些，像是有人蹲在路边仰着头看。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "第三个片段拍的是研究所。画面里那个人是谁？",
+      "options": [
+        {
+          "text": "先记下那个人在朝哪一边看",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "noted_the_girl_gaze",
+          "next": ""
+        },
+        {
+          "text": "明天问艾莉丝：十年前谁站在研究所门口",
+          "affectionWho": "艾莉丝",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "asked_alice_about_the_girl",
+          "next": ""
+        },
+        {
+          "text": "先不追人，把校服的年份记牢",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "held_the_uniform_year",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "然后那个人转过头。不是转过来看我，是转过去看别的方向。可我看见了她的侧脸：眉骨高，嘴角往下压着。"
+    },
+    {
+      "type": "narration",
+      "text": "她穿的校服领子，是十年前的那一款。袖口有墨点。"
+    },
+    {
+      "type": "narration",
+      "text": "画面到这里断了。不是黑掉，是被叠上一层我自己的房间，两种画面同时存在，谁都没有把谁盖住。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "第三个片段里她转过头。我要不要记住那张脸？",
+      "options": [
+        {
+          "text": "记住她的侧脸，眉骨和嘴角都记",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "memorized_her_profile",
+          "next": ""
+        },
+        {
+          "text": "只记校服款式，脸留着以后再看",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "kept_only_the_uniform",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我看见我的桌子和那间教室叠在一起，我的椅子下面是一块浅木色的地板。"
+    },
+    {
+      "type": "narration",
+      "text": "我伸手去按桌边，手穿过去，摸到的是很凉的木头，凉得不像我这张桌子的温度。"
+    },
+    {
+      "type": "narration",
+      "text": "我把手抽回来，摊开。掌纹里最深那一条正在发烫，和前天晚上那块碎片烫的位置一模一样。"
+    },
+    {
+      "type": "narration",
+      "text": "记忆里的细节比我自己的记忆清楚。我记得不清今天中午吃了什么，却知道那间教室黑板右下角写的值日生叫阮宁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "阮宁。我不认识叫阮宁的人。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "值日生的名字叫阮宁。我为什么要说出它？",
+      "options": [
+        {
+          "text": "再说一遍这个名字，说给自己听",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "said_ruanning_twice",
+          "next": ""
+        },
+        {
+          "text": "闭上嘴，把这个名字先压下去",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "swallowed_the_name",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "可我说出这个名字的时候，胸口轻轻动了一下，像是有人在我的肋骨上敲了一记。"
+    },
+    {
+      "type": "narration",
+      "text": "我站起来，走到窗边。窗帘缝里那道橙光还在，位置没有变。我盯着它看了很久，才意识到一件事。"
+    },
+    {
+      "type": "narration",
+      "text": "路灯不会一直停在同一个位置。它会随着时间移动，因为地球在转，光在变。这道光没动，说明时间没有在动。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "四点十七分。还是四点十七分。"
+    },
+    {
+      "type": "narration",
+      "text": "我看手机，屏幕上仍然是四点十七分。秒数在走，分针没有动。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "四点十七分不动了。我要不要跟自己确认一次？",
+      "options": [
+        {
+          "text": "对着表念一遍：四点十七分，没走",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "confirmed_the_stopped_time",
+          "next": ""
+        },
+        {
+          "text": "把手机扣在桌上，不去看它",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "turned_the_phone_over",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我坐在床边，开始怀疑自己是不是已经睡着过一段时间，只是这间房不肯让我出来。"
+    },
+    {
+      "type": "narration",
+      "text": "第四个片段来了。这一次有声音，很低，像是从水里传上来的。"
+    },
+    {
+      "type": "narration",
+      "text": "有人在叫一个名字。我听不清，但我知道那两个字不是阮宁，也不是苏禾。是一个我从来没有见过的人的名字，可我听的时候，眼眶热了一下。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "有人在叫一个我不认识的名字。我要不要应声？",
+      "options": [
+        {
+          "text": "在心里应一声，看会有什么反应",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "answered_the_calling",
+          "next": ""
+        },
+        {
+          "text": "把耳朵堵上，等那个声音过去",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "blocked_the_calling",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "为什么会热。这个问题比所有画面都让我害怕——身体认得的东西，脑子却不认得。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "不是我在做梦。是有人借着我的眼睛看东西。"
+    },
+    {
+      "type": "narration",
+      "text": "我把这两句话说出来的时候，房间里的钟表声停了一拍，然后接着走。"
+    },
+    {
+      "type": "narration",
+      "text": "我把水杯里的温水喝了。水还是有洗衣粉的味道。杯子放下的时候，我看见玻璃柜门上自己的脸。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "话一出口，柜门上起了一小片雾。我承认吗？",
+      "options": [
+        {
+          "text": "承认，并且把这句话再说一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "admitted_the_borrowed_eyes",
+          "next": "#l03"
+        },
+        {
+          "text": "咽回去，先喝口水把心安下来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "swallowed_the_admission",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那句话出口的时候，柜门的玻璃上起了一小片雾，像有人对着它呼吸。",
+      "label": "l03"
+    },
+    {
+      "type": "narration",
+      "text": "雾散得比我呼出的任何一次都慢。它等了两秒才退，像在等我先说完。"
+    },
+    {
+      "type": "narration",
+      "text": "柜门的玻璃很旧，反光一向很糊。可这一次它把我的眼睛照得很清楚。"
+    },
+    {
+      "type": "narration",
+      "text": "瞳孔是蓝的。不是那种灯光映出来的蓝，是从瞳孔内部往外透的，像有人把一小块很薄的东西嵌在里面。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": ""
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "瞳孔是蓝的。我要不要凑近看清楚？",
+      "options": [
+        {
+          "text": "凑近玻璃，看清那块蓝的形状",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "looked_close_at_the_blue",
+          "next": ""
+        },
+        {
+          "text": "后退一步，先把柜门关上",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "closed_the_cabinet_door",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "cg",
+      "background": "cg_awaken_eye",
+      "text": "我凑近去看。凑得越近，那块蓝越清楚，它的形状和前天晚上我手心里那块碎片是同一种——边缘不整齐，中间有一点更亮的地方在慢慢转。"
+    },
+    {
+      "type": "narration",
+      "text": "我后退一步。玻璃里的我也后退一步，但慢了一点点，慢的时间不长，大概就是半口气的长度。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "镜子里的你，慢半拍。"
+    },
+    {
+      "type": "narration",
+      "text": "我一直以为那半拍是心跳在数。现在我看见它在镜子里出现了，出现在另一个人身上。"
+    },
+    {
+      "type": "narration",
+      "text": "我把柜门关上，关上的一刻听见对面的声音停了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "镜子里的我慢半拍。我要不要再看一次？",
+      "options": [
+        {
+          "text": "再后退一次，看那半拍会不会变大",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "tested_the_half_beat",
+          "next": ""
+        },
+        {
+          "text": "不看第二遍，把这件事先记下来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_down_the_half_beat",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "房间里安静下来，只剩下钟表走针的声音。它还在，一秒一下，很稳。"
+    },
+    {
+      "type": "narration",
+      "text": "我搬开桌子找它。桌子底下没有。我掀开床板，床板下面只有一层薄灰和一根干掉的鞋带。"
+    },
+    {
+      "type": "narration",
+      "text": "最后我找到了。声音是从我自己的胸口出来的。"
+    },
+    {
+      "type": "narration",
+      "text": "那个节奏和我心跳不一样。心跳在耳朵里，钟表声在胸口正中，两个节奏并排跑，互不干扰，像两个人各走各的路。"
+    },
+    {
+      "type": "narration",
+      "text": "我坐回床上，把被子拉到腿上。窗外天还没有要亮的意思，那道橙光钉在那里，一动不动。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "钟表声在我胸口。我要不要按住它？",
+      "options": [
+        {
+          "text": "把手按在胸口正中，压住那个节奏",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "pressed_the_chest_beat",
+          "next": ""
+        },
+        {
+          "text": "松开手，让两个节奏自己跑",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "let_both_rhythms_run",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我开始串词。想说的话到嘴边就换了别的词，比如我想说我睡不着，出口的是我数不着；我想说我害怕，出口的是我不认识我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我数不着。我不认识我。"
+    },
+    {
+      "type": "narration",
+      "text": "这两句话说出来，我居然觉得比原来那两句准确。我在心里给自己打了个分：语言正在失守，可是意思到了。"
+    },
+    {
+      "type": "narration",
+      "text": "那间教室又浮上来一次。这一次我看见自己坐在最后一排的角落里，手里拿着一张借阅条。"
+    },
+    {
+      "type": "narration",
+      "text": "借阅条上的字是我写的。写的是苏禾的名字，借的是那本管网图。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "借阅条上的字是我写的。我要不要认这笔账？",
+      "options": [
+        {
+          "text": "认下这笔账，把条子上的字念一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "owned_the_borrow_slip",
+          "next": ""
+        },
+        {
+          "text": "不认。那不是我活过的年份",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "denied_the_borrow_slip",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我不在那个年代。二一一〇年的时候我还没有出生。可我的手在写那张条子，写得比现在这双手还稳。"
+    },
+    {
+      "type": "narration",
+      "text": "画面沉下去的时候，我发现自己在流汗。后背全湿了，被子粘在皮肤上，很难受。"
+    },
+    {
+      "type": "narration",
+      "text": "我拧开台灯。灯是暖白的，照在手上的时候，我发现手指尖有一点点透明的光，很薄，像涂了一层水。"
+    },
+    {
+      "type": "narration",
+      "text": "那层光往上一小段就没了。我举手对着灯看，光就停在我指节的位置，像一条无形的水位线。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "指尖到指节那一段在发光。我要不要量一量？",
+      "options": [
+        {
+          "text": "用指甲在光停住的地方掐一道印",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "marked_the_glowing_span",
+          "next": "#l04"
+        },
+        {
+          "text": "放下手，把台灯关掉再说",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "turned_off_the_desk_lamp",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "掐下去的时候没有痛，只有一点凉。那道印留在指节上，比画上去的还直。",
+      "label": "l04"
+    },
+    {
+      "type": "narration",
+      "text": "我把手举到灯下再看，光已经退了，印还在。它比记忆耐放。"
+    },
+    {
+      "type": "narration",
+      "text": "也就是说，正在被时间动过的地方，是我从指尖到指节的这一段。"
+    },
+    {
+      "type": "narration",
+      "text": "我不知道这意味着什么。我只知道我该做点什么，而不是坐在床上等那间教室自己再浮上来。"
+    },
+    {
+      "type": "narration",
+      "text": "窗帘外面，天边有一点非常淡的灰。虽然那道橙光还没有动，但最远的云已经换了一层颜色。"
+    },
+    {
+      "type": "narration",
+      "text": "我看了看那个不肯往前走的四点十七分，又看了看镜子里那双变蓝的眼睛。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "指尖在发光，教室的画面又浮上来了。你要不要跟着它走完？",
+      "options": [
+        {
+          "text": "闭眼，跟着那段记忆走到底",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "followed_borrowed_memory",
+          "next": "1-3a"
+        },
+        {
+          "text": "站起来，把灯全部打开，撑到天亮",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": -2,
+          "flag": "resisted_memory",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我照着选的那条路做了。结果差别很明显：房间里的钟表声要么停了，要么变得更响，中间没有第三种可能。"
+    },
+    {
+      "type": "narration",
+      "text": "撑到最后的时候，四点半终于来了。手机上的分钟跳了一下，那道橙光跟着往被子上挪了半寸。"
+    },
+    {
+      "type": "narration",
+      "text": "时间一恢复，我就开始发抖。不是冷的抖，是整夜绷着的东西忽然松开，身体不知道该把力气放在哪里。"
+    },
+    {
+      "type": "narration",
+      "text": "天亮以后，我洗了脸，把镜子上的一层雾擦掉。眼睛是正常的深褐色，什么都不像。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "天亮了，眼睛又变回深褐色。我要不要照第二遍？",
+      "options": [
+        {
+          "text": "照第二遍，确认那点蓝是不是藏起来了",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "checked_eyes_twice",
+          "next": ""
+        },
+        {
+          "text": "不照了。先把墙上那张单子补完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "finished_the_wall_note",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我盯着镜子里的自己看了很久，直到确认那两只眼睛里有我认识的那个林晓，才把毛巾挂回去。"
+    },
+    {
+      "type": "narration",
+      "text": "墙上那张打印单还在。我在红笔圈底下的空白处，用铅笔补了一行字：三月十四日，未睡，看见三个片段，其中一个是别人的。"
+    },
+    {
+      "type": "narration",
+      "text": "写完我把铅笔放下。桌上有一张便签，是我自己昨晚写的：白天别睡，晚上会有人来找。"
+    },
+    {
+      "type": "narration",
+      "text": "我不记得自己写过这张便签。可字迹是我的，和借阅簿上那三页、和借阅条上那一行，一模一样。"
+    }
+  ]
+}

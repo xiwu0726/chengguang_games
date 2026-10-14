@@ -1,0 +1,507 @@
+{
+  "sceneId": "3-e14",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·那页纸还在口袋里",
+  "background": "cg_ending_e14",
+  "bgm": "bgm_ambient",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "门留了一条缝。缝的宽度我用一根火柴试过，第一次是火柴头的厚度，第三次还是。"
+    },
+    {
+      "type": "narration",
+      "text": "那天我把没有写完的一页折起来，塞进外套左边的内袋。折的时候我数了折痕，四折。"
+    },
+    {
+      "type": "narration",
+      "text": "四折以后，纸正好卡在内袋的角上，走路的时候它顶我的肋骨。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "你带走了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "我带走了。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有说别的。她把那本旧本子往怀里抱了抱，先我一步上了铁梯。"
+    },
+    {
+      "type": "narration",
+      "text": "上面这些是当天。后面这些是之后的一个月，还有再之后的那些月。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_dorm_night",
+      "bgm": "bgm_insomnia",
+      "text": "第一个星期，我换了三次衣服。换衣服的时候右手先伸进口袋，摸到纸角才敢走。"
+    },
+    {
+      "type": "narration",
+      "text": "第二次我忘摸，走到楼梯口又回来。第三次不是忘，是我故意不摸，想看会不会出事。"
+    },
+    {
+      "type": "narration",
+      "text": "没有出事。城市照常亮灯，照常有人迟到。出事的是我，我一整天把手插在那个角上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "它在你口袋里，不在你手上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "先说结论：不要扔。理由在后面，很长。"
+    },
+    {
+      "type": "narration",
+      "text": "她真的给了理由。她说门差一个字，纸就少一张；纸少一张，缝就宽一分。这两样她都量过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我没打算扔。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你打算读它。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有回答。回答这个要先承认，我每天晚上把它摊在桌上，摊平了，又不敢翻开读。"
+    },
+    {
+      "type": "narration",
+      "text": "折起来的时候朝内的是页脚。页脚那一小块空白，够写一个名字。"
+    },
+    {
+      "type": "narration",
+      "text": "我背得出纸上的字。十一个名字，我念到第十个。最后一行七个字，没数完的人不算。"
+    },
+    {
+      "type": "narration",
+      "text": "背得出和读是两件事。读要把它打开。打开它，我就得看那块空白。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "我把纸折好，压回内袋。压回去的那一下，纸角顶在原来的位置上。"
+    },
+    {
+      "type": "narration",
+      "text": "第二个星期，我开始穿没有口袋的衣服。"
+    },
+    {
+      "type": "narration",
+      "text": "我把外套内袋的口子缝死了。缝得很丑，针脚一半在里面一半在外面。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你缝它干嘛。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "省得它掉出来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "它掉不出来。你昨天掏了四次。"
+    },
+    {
+      "type": "narration",
+      "text": "她笑之前先压一下嘴角。她是我们里面唯一还会主动笑的人，她笑的时候眼睛不看人，看我的手。"
+    },
+    {
+      "type": "narration",
+      "text": "她说得对。我掏了四次。四次都是同一个动作：手指进去，碰到纸角，出来。"
+    },
+    {
+      "type": "narration",
+      "text": "第三次我把它带出来了。带出来以后我放在桌上，用一本旧书压住，去洗了脸。"
+    },
+    {
+      "type": "narration",
+      "text": "回来的时候书还压着它。我坐在椅子上看了那本书的书脊很久，没有翻开。"
+    },
+    {
+      "type": "narration",
+      "text": "我离读它最近的一次，是把它摊到一半。"
+    },
+    {
+      "type": "narration",
+      "text": "镇纸压住左边，我用右手把右边抬起两厘米，看了三秒，放回去，折好。"
+    },
+    {
+      "type": "narration",
+      "text": "那三秒里我只看清一件事：页脚那块空白，比我在井底时以为的小。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我不问里面写了什么。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句才补理由。她说问了就等于替我读，替我读就要替我负责那块空白。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "给你。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩递给我一个信封，牛皮纸，没有贴邮票。他只在桌上把它推到我手边，然后走了。"
+    },
+    {
+      "type": "narration",
+      "text": "信封是空的。他把空信封推给我，意思是：你可以装，装完可以寄。寄到哪里他没说。"
+    },
+    {
+      "type": "narration",
+      "text": "我把纸放进去过。放进去以后我又倒出来。倒出来以后我把它放回内袋。"
+    },
+    {
+      "type": "narration",
+      "text": "那个空信封我留在桌上，开口朝上，放了三个月。"
+    },
+    {
+      "type": "narration",
+      "text": "我试过把它放在别处。放在抽屉里，我一晚上起来三次。锁进柜子里，第二天一早就取回来。"
+    },
+    {
+      "type": "narration",
+      "text": "取回来的路上我把它摊在膝盖上，手掌压着，像压一只不肯睡的鸟。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你口袋里的东西比你的伞还重要。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "伞丢了可以再买。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有接这句。她把伞挂在我门后的钩子上，挂得很正，伞尖朝下。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_street_night",
+      "bgm": "bgm_ambient",
+      "text": "第三个星期，我试过一次把它交给别人。"
+    },
+    {
+      "type": "narration",
+      "text": "我在面馆把纸掏出来，摊在桌上，对面坐着雷恩。他抬头看了一眼，低下头继续吃。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "我的那半张在你基地的口袋里。"
+    },
+    {
+      "type": "narration",
+      "text": "他那半张退路图给过我。给的方式是压在我的杯子底下，压完把碗推开，走了。"
+    },
+    {
+      "type": "narration",
+      "text": "我那天没有把我的纸给他。我只是把它折回四折，压回内袋。"
+    },
+    {
+      "type": "narration",
+      "text": "折到第四折的时候，纸的折痕起毛了。起毛的地方正好在第七个名字上。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": "起毛的那一秒，我指腹下面凹进去一点，像有人在那三个字上写过，又擦掉。"
+    },
+    {
+      "type": "narration",
+      "text": "我把手指抬起来。毛边还在，字还在，第七个名字下面多了一道我认不出的笔迹。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "这是谁写的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "不是我。"
+    },
+    {
+      "type": "narration",
+      "text": "他把账结了，出门，在门口站了一会儿等我。他等的时候背对着街。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_library_day",
+      "bgm": "bgm_warm",
+      "text": "第四个星期，我把它扔过一次。"
+    },
+    {
+      "type": "narration",
+      "text": "我把它塞进图书馆门口的过期报刊筐。放进去以后我上了二楼，从栏杆往下看。"
+    },
+    {
+      "type": "narration",
+      "text": "筐里有一叠旧报纸、两个破纸袋，和一张四折的纸。我看了它十分钟。"
+    },
+    {
+      "type": "narration",
+      "text": "十分钟以后我下去，把它从筐里拿出来，抖了抖灰，放回内袋。"
+    },
+    {
+      "type": "narration",
+      "text": "这不是奇迹。是我自己走下去拿的。我把这件事记成它回来了，这样我好过一点。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "你回来了，纸也回来了。两件事是同一个人做的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我知道。纸和我，是同一天回来的。"
+    },
+    {
+      "type": "narration",
+      "text": "她知道我知道。她把这句话写进便签，贴在记录本封皮内侧，没有给我看。"
+    },
+    {
+      "type": "narration",
+      "text": "第五个星期起，我每月去一次井边。"
+    },
+    {
+      "type": "narration",
+      "text": "缝还是那么宽。我蹲下来，把火柴伸进去，火柴头过去一半，卡住。"
+    },
+    {
+      "type": "narration",
+      "text": "我不敢往里看。往里看要低头，低头要把手撑在井沿上，撑在井沿上就像要下去。"
+    },
+    {
+      "type": "narration",
+      "text": "我每次只做一件事：把火柴收回来，放进口袋，站起来，走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "下次我跟你去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "你去数格子。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "好。我数到十，你数到十一。"
+    },
+    {
+      "type": "narration",
+      "text": "她答应得很快。快得像怕我改口。"
+    },
+    {
+      "type": "narration",
+      "text": "那页纸上的第十一个名字，我们两个都没有写。页脚那块空白，我们两个都看过。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_institute_night",
+      "bgm": "bgm_mystery",
+      "text": "后来我学会了一些事。"
+    },
+    {
+      "type": "narration",
+      "text": "我知道纸在左边内袋的时候，我走路会稍微往右偏。偏得很小，只有我自己觉出来。"
+    },
+    {
+      "type": "narration",
+      "text": "我知道不敢读它的理由不是怕它。是我一读，就得决定写谁。"
+    },
+    {
+      "type": "narration",
+      "text": "写谁都不对。写苏禾，阿灰在后面排队。写雷小满，雷恩会把它拿走。写我自己，小雅那句话就成立了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "你的名字一落到那一页上，就没人再从外面叫你。"
+    },
+    {
+      "type": "narration",
+      "text": "她把这句话说过一次，说完就去扶铁梯。她没有看我。"
+    },
+    {
+      "type": "narration",
+      "text": "我把纸折起来带走的那天，她站在最外面，背对着井。她一直背对着井。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": "那一个月我睡得很少。醒着的时候，口袋那个角顶我的地方一直是热的。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_rooftop",
+      "bgm": "bgm_ambient",
+      "text": "半年后，我买了一件新外套。新外套没有内袋。"
+    },
+    {
+      "type": "narration",
+      "text": "我穿着它走了三天。第三天我把它挂回柜子，把旧外套的内袋剪下来，缝在新外套里面。"
+    },
+    {
+      "type": "narration",
+      "text": "缝完我穿上，走了两步，纸角顶在肋骨原来的位置。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_smile",
+      "text": "你把它做成了身体的一部分。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "它是我没写完的那部分。"
+    },
+    {
+      "type": "narration",
+      "text": "她先点了头，才说下一句。她说她不再劝我扔，也不再劝我读。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "结论：留着。理由：门差一个字，你差一页。两边都差，才叫没关。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_dawn_city",
+      "bgm": "bgm_hope",
+      "text": "现在。此刻。"
+    },
+    {
+      "type": "narration",
+      "text": "城市照常亮灯。图书馆那口钟还在，钟体在，指针早没了。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝手腕上那只表停在四月九号夜里一点四十。她没有修。她说修了就等于替谁把账平了。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩的半张退路图钉在基地墙上，边上刻着一排正字。他不解释那些道。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅每天早上翻本子，翻到最后一页前面停住。她说停住的那一页是留给我的。"
+    },
+    {
+      "type": "narration",
+      "text": "我梦见自己把它读完了。醒过来第一件事是摸口袋。口袋在，纸在，梦里的字一个也想不起。"
+    },
+    {
+      "type": "narration",
+      "text": "枕头是湿的。不是哭湿的。是我把脸压在上面的时间太长了。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e14",
+      "text": "我站在图书馆门口，右手插在内袋的角上。口袋里有四折的纸，纸上有十个名字和一块空白。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有把它拿出来。今天也没有。"
+    },
+    {
+      "type": "narration",
+      "text": "门留一条缝。缝的形状，和一张四折的纸一样大。"
+    },
+    {
+      "type": "narration",
+      "text": "我知道把它塞进去，缝就合了。我也知道合了以后，那块空白就永远空在里面。"
+    },
+    {
+      "type": "narration",
+      "text": "所以我口袋里有一页纸，门那里有一条缝。它们两个是同一件事的两半。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我不读你。你也别想出去。"
+    },
+    {
+      "type": "narration",
+      "text": "我说的是口袋里的纸。也可能是门。那天晚上我分不清。"
+    },
+    {
+      "type": "narration",
+      "text": "那十个名字没有走。它们在我口袋里排着队，一个也没有走出去，一个也没有进来。"
+    },
+    {
+      "type": "narration",
+      "text": "那页纸还在口袋里。折痕起毛了，第七个名字那一道最毛。"
+    },
+    {
+      "type": "narration",
+      "text": "我每天晚上把它压平，早上把它折好。一天一次，做了两年。"
+    },
+    {
+      "type": "narration",
+      "text": "它没有变薄，也没有变厚。它只是在我的口袋里，占着一个位置。"
+    },
+    {
+      "type": "narration",
+      "text": "门那里还有一条缝。缝里什么都没有，风从里面出来，是凉的。"
+    },
+    {
+      "type": "narration",
+      "text": "我不敢读它。我也扔不掉它。这两句是同一句。"
+    }
+  ],
+  "kind": "ending"
+}

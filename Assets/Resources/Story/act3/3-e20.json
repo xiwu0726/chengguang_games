@@ -1,0 +1,276 @@
+{
+  "sceneId": "3-e20",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·把借来的记忆当成自己的",
+  "background": "cg_ending_e20",
+  "bgm": "bgm_insomnia",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十三号，我在别人的清晨里醒来。江上雾很大，喊船的是我，等船的也是我。"
+    },
+    {
+      "type": "narration",
+      "text": "船老大撑篙用的是右手，食指缺了半根。这个细节我知道得清清楚楚，可我从来没去过任何渡口。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "昨晚又梦见渡河。票价是两个包子，要热的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你梦里哪来的江。这座城市里你连河都没见过。"
+    },
+    {
+      "type": "narration",
+      "text": "我说不上来。醒来的时候手心是潮的，凑近了闻，有一股鱼腥气。"
+    },
+    {
+      "type": "narration",
+      "text": "早点摊上我拿了两个包子，递出去的是一张船票。老板娘捏着那张票看了很久，什么也没说，把蒸笼往我这边推了推。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "白天我进城还东西。要还的一共六样：渡口，棉袄，阳台，黑板，柳树，绿皮火车。"
+    },
+    {
+      "type": "narration",
+      "text": "每一样都有一个地方对应着。我到门口站一站，看别人过那一天，看着看着就跟过自己的一样。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "林晓哥，你今天没来店里？周叔说你一早就出去了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "出门还点东西。晚上回来。"
+    },
+    {
+      "type": "narration",
+      "text": "傍晚我回图书馆接班。老周在登记台后面等我，把一张借书卡推到台面上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_grim",
+      "text": "借阅人写的是阮宁。日期是昨天。这笔迹是你的，我认了你三年了。"
+    },
+    {
+      "type": "narration",
+      "text": "我说是我签的，阮宁也是我。老周张了张嘴，最后把自己的老花镜摘下来擦了擦，没再问。"
+    },
+    {
+      "type": "fx",
+      "fx": "timeline",
+      "text": "出馆的时候天黑了。路灯底下我挨个跟过去的人打招呼，用的都是别人的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "名字出口比自己的名字顺。有人应我，有人绕开我走，有人回头看了两次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "晓。跟我来，我给你念点东西。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把那本硬皮账摊在台阶上，就着路灯念十一个名字。苏禾。阿灰。老周。阮宁。陈。他念得很慢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "陈是在渡口走的。那天我在。"
+    },
+    {
+      "type": "narration",
+      "text": "话说出口，我觉得这张嘴不是我的。雷恩没抬头，接着往下念。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "行，能接话就好。你听着，听到你自己的名字，人就回来了。"
+    },
+    {
+      "type": "narration",
+      "text": "可我的名字是林晓。这两个字最近听见了，我也要先想一想，才知道叫的是谁。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅找来了。她先去了宿舍，又去图书馆，又去研究所，最后在楼梯间找到我们三个。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "你在楼下站了十几分钟。你在等谁？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "等阮宁下晚自习。她学得晚。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅没接这句话。她跟着我走到阮宁住的那条巷子。三号楼底下，我冲着一扇窗户喊了一个小名。"
+    },
+    {
+      "type": "narration",
+      "text": "那个小名我不知道自己是从哪儿学来的。窗户里亮了灯，一位老太太扶着门框想了想。"
+    },
+    {
+      "type": "narration",
+      "text": "她说，小伙子，我家没有这个人。她说得很客气，然后把门关上了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "林晓。阮宁走了很久了。你把她还给别人吧。"
+    },
+    {
+      "type": "narration",
+      "text": "我反过来安慰她。安慰的话是别人从前用来安慰我的，我用得很熟。"
+    },
+    {
+      "type": "fx",
+      "fx": "shake",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "研究所来人评估过一次。结论写在三行字里：长期睡眠剥夺，记忆来源混淆，无痛感，无攻击性。"
+    },
+    {
+      "type": "narration",
+      "text": "最后一行是：暂不建议强制干预，当事人状态平静。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "报告是我签的。签字的时候手很稳。签完我在走廊里站了很久，久到护士来劝我回去。"
+    },
+    {
+      "type": "narration",
+      "text": "维拉来收走了那本硬皮账，给我换了一个空白的新本子。新本子封面上贴着归档标签：一个人的集体回忆。"
+    },
+    {
+      "type": "narration",
+      "text": "旧账已经写满了。几百个名字，每个名字后面都跟着同一个后缀：我在。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_sleep",
+      "text": "那本账是我的。每一个我在场，都是我。"
+    },
+    {
+      "type": "narration",
+      "text": "维拉把账本装进箱子里，箱子放进柜子，柜子上锁。她做得很快，快得像怕慢一点就得多看我们一眼。"
+    },
+    {
+      "type": "narration",
+      "text": "七月里艾莉丝给我做了最后一次检查。瞳孔没有再变色，只是里面盛着的人太多，盛不下她。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "别再照镜子了。这不是医嘱，是我个人的请求。"
+    },
+    {
+      "type": "narration",
+      "text": "我照了。镜子里那张脸熟，可不亲，像多年没联系的老同学，还得先想想叫什么名字。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把账本从维拉那儿要了回来。他说别人替他念，这些名分不算落定，得他自己念给我听。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "我念到陈就卡。你替我记着这个卡，卡也是活人留下的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "八月，小雅在店里给我留了靠窗的座位。她说我每回从渡口回来都坐这儿，说这儿亮堂，看得清路。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e20",
+      "text": "有天傍晚我们四个一起下楼。路灯把影子铺在地上，三道影子里叠着许多淡淡的、不属于我们的轮廓。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "明天你就算变成谁，我也给你留门。门不锁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "今天的记录写完了。今天，你是林晓。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "下礼拜我还来念。本子你拿好，丢了我就再抄一份。"
+    },
+    {
+      "type": "narration",
+      "text": "九月里我空过一夜。那一夜没有别人的日子进来，只有我自己的黑。"
+    },
+    {
+      "type": "narration",
+      "text": "第二天我把那一夜忘得干干净净。它是我唯一的一页，我连它也没保住。"
+    },
+    {
+      "type": "narration",
+      "text": "属于我自己的二十二年，薄得像一张纸，夹在几百个厚厚的白天中间。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "后来的事，是小雅讲给我听的。她说那天她们三个没上楼。"
+    },
+    {
+      "type": "narration",
+      "text": "她们站在路口，看着我自己走回宿舍，一路上跟熟人打招呼，用别人的名字，笑得比谁都安稳。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅说，她没忍住，问了一句：他现在，算林晓吗。没有人答她。"
+    },
+    {
+      "type": "narration",
+      "text": "他不再需要分清哪一段记忆是自己的。这是最疼的地方，也是最后留给他的那点宽厚。"
+    },
+    {
+      "type": "narration",
+      "text": "那天夜里他十一点躺下，照旧在别人的清晨里闭眼。他把借来的记忆当成自己的，从这天起，他夜夜好睡。"
+    }
+  ],
+  "kind": "ending"
+}

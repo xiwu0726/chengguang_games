@@ -1,0 +1,253 @@
+{
+  "sceneId": "3-e07",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·图书馆的新管理员",
+  "background": "cg_ending_e07",
+  "bgm": "bgm_warm",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月底，历史图书馆换了管理员。老周办退休，手续只用了三天。"
+    },
+    {
+      "type": "narration",
+      "text": "他走的时候把登记台的抽屉清空，清出来一沓装订好的纸，厚得像一本小字典。"
+    },
+    {
+      "type": "narration",
+      "text": "那沓纸是他四十年填的核对表。他一张都不认得，可他把它们扎得很齐。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "这个你收着吧。我看着它有些年头了，眼熟，又说不出是干什么用的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "我收下。我看着也眼熟。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅那天穿着咖啡馆的围裙就来了。她把围裙解开，叠成四方的一块，放进包里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "我跟店长讲好了，早上还在咖啡馆，下午到这儿来。两头都跑得动。"
+    },
+    {
+      "type": "narration",
+      "text": "她抱着那沓纸往地下书库走。我跟在后面，走了两段楼梯，一段比一段凉。"
+    },
+    {
+      "type": "narration",
+      "text": "地下书库的灯是绿罩子的，只亮一半，另一半还在黑里。最里面那张桌子空着。"
+    },
+    {
+      "type": "narration",
+      "text": "桌上摊着一本核对表。最后一行停在三月底，笔还压在纸上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "这张表不好填。按天、按架号、按缺页数，一格一格对下去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "那你教我。你教一遍，我记性比你好。"
+    },
+    {
+      "type": "narration",
+      "text": "我教了她一个下午。她学得快，快到我在旁边坐着像个多余的人。"
+    },
+    {
+      "type": "narration",
+      "text": "她填第一格的时候字是歪的。填到第十格，字就正过来了。"
+    },
+    {
+      "type": "narration",
+      "text": "她比我认真。每天填完，她把那一页折一个角，第二天从头对一遍。"
+    },
+    {
+      "type": "narration",
+      "text": "咖啡馆那边她也没辞。早上七点在柜台，下午到书库，两边用同一支笔。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "你别盯着我。你一盯，我手就抖。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句的时候在笑。我退到书架那边去，背靠在书脊上。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "那几天我一天睡不到两个钟头。醒着的时候，别人的记忆会从纸页里浮上来。"
+    },
+    {
+      "type": "narration",
+      "text": "有一格她把架号填错了。我伸手要改，她按住了我的笔。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "错了就划掉。划掉不算改，划掉是记着它错过一次。"
+    },
+    {
+      "type": "narration",
+      "text": "我看了她一会儿。这是核对表的规矩，也是老周填了四十年的规矩。"
+    },
+    {
+      "type": "narration",
+      "text": "她还记得雷恩。她说雷恩上周来过一趟，在书库里翻了一整天。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "他在找一张借书卡。他说那姑娘姓雷。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "书库里没有她的卡。她的名字不在任何一本登记册上。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅把笔搁下，抬头看灯。绿罩子的光把她半张脸照得很清楚。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "我知道。可她来过的。我听见她还书的时候，书脊磕在桌角上。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句很轻。她听得到被抹掉的人的声音，这件事她一直没跟别人讲过。"
+    },
+    {
+      "type": "narration",
+      "text": "表填到第五十页的时候，她问我，最下面那一行是写什么的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "页脚。归档号，签字，落款。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "那落款写谁。"
+    },
+    {
+      "type": "narration",
+      "text": "我说不知道。她把笔尖移到页脚，写下两个字，比上面所有的格都工整。"
+    },
+    {
+      "type": "narration",
+      "text": "那是我的名字。城市把这两个字补进了所有人的记忆里，她只是照着记忆写下来。"
+    },
+    {
+      "type": "narration",
+      "text": "写完她把笔递过来，让我自己描一遍。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "为什么写我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "因为这张表是你教我的。教的人在页脚，收的人在开头。"
+    },
+    {
+      "type": "narration",
+      "text": "我描了。描完那两个字，书库里落下一层很薄的灰，落在我的手背上。"
+    },
+    {
+      "type": "narration",
+      "text": "同一个月里，我把表还给了艾莉丝。那是一块停在一分四十秒的女表。"
+    },
+    {
+      "type": "narration",
+      "text": "她接过去的时候手指抖了一下，然后把表扣回自己手腕上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "还回来了。你就是想让它有个地方待着。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "它本来就该待在你手上。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有把表拨回去。她说停着挺好，停着的表不用对时间。"
+    },
+    {
+      "type": "narration",
+      "text": "五月，图书馆门口挂了一块新的牌子。铜牌上写着管理员，后面跟着小雅的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "我站在牌子底下看了一会儿。牌面上的字是铸的，摸上去有一点毛边。"
+    },
+    {
+      "type": "narration",
+      "text": "有个学生从我旁边走过去。他念得出牌子上的名字，念不出我的。"
+    },
+    {
+      "type": "narration",
+      "text": "城市补上了这件事。所有人都记得有一个名字在账上落过款。"
+    },
+    {
+      "type": "narration",
+      "text": "他们记得那个名字，不记得那个人。这两件事在这里是分开的。"
+    },
+    {
+      "type": "narration",
+      "text": "我把手插在口袋里。口袋里没有本子了，本子在书库那张桌上，归小雅管。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e07",
+      "text": "地下书库的灯亮到最里面一排。核对表摊在桌上，页脚那一格写着两个字，笔压在旁边，等着第二天接着往下填。"
+    },
+    {
+      "type": "narration",
+      "text": "每天晚上十点，她关灯，锁门，把钥匙挂在腰上，走去赶末班车。"
+    },
+    {
+      "type": "narration",
+      "text": "我在街对面看着那一层灯灭下去。灯灭了，那本书还摊在桌上，一个字都没有少。"
+    }
+  ],
+  "kind": "ending"
+}

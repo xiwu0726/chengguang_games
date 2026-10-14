@@ -1,0 +1,289 @@
+{
+  "sceneId": "3-e18",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·钟重新走起来",
+  "background": "cg_ending_e18",
+  "bgm": "bgm_warm",
+  "next": "",
+  "kind": "ending",
+  "lines": [
+    {
+      "type": "narration",
+      "background": "bg_library_day",
+      "text": "四月十三号上午，我在图书馆四楼等艾莉丝。说好九点，她八点五十就到了，比我还早十分钟。"
+    },
+    {
+      "type": "narration",
+      "text": "她现在管图书馆这条线的回访核对，批文贴在一楼公告栏，期限写着长期。这两个字她特意跟我强调过一遍。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你来这么早。是不是又睡不着。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "睡得着。我就是想早点来。"
+    },
+    {
+      "type": "narration",
+      "text": "她手腕上那块表还在。还给她那天是在井口，她低头看了一眼，戴回去，之后它一直没动。"
+    },
+    {
+      "type": "narration",
+      "text": "一点四十，四月九号夜里停的，停到今天一格没走。她也不提，我也没问。"
+    },
+    {
+      "type": "narration",
+      "text": "上午她核对归还记录，我在旁边递单子。两个人隔一张桌子，谁也没说话，但不吵。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "三楼的架子归位了。地下书库那批卷宗要重排编号，我下午做。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "你安排得挺满。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "满了好。空出来的地方容易进风。"
+    },
+    {
+      "type": "narration",
+      "text": "中午小雅来了，录音机往桌上一放，说要录四楼的声。她管这叫留档。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "这口钟以前一点声音都没有。我现在把它录下来，以后它要是变了，我好对比。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "变不了。它坏了四年，摆都锈死了。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩是来修书架的。他扛着工具箱在门口站住，回头补了这半句，说完自己先上楼了。"
+    },
+    {
+      "type": "narration",
+      "text": "四楼那口钟挂在老位置。钟面上还是两个孔，指针三月里就没了。钟体底下垂着那根摆，四年没动过。"
+    },
+    {
+      "type": "narration",
+      "text": "下午三点，屋里只剩我和她。她在我对面写报告，笔尖很轻。"
+    },
+    {
+      "type": "narration",
+      "text": "先听见声音的不是我，是她。她的笔停了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你听。"
+    },
+    {
+      "type": "narration",
+      "text": "很轻的一声，像有人在钟体里面用指头弹了一下挂摆的销子。"
+    },
+    {
+      "type": "narration",
+      "text": "然后那根摆动了。不是风吹的，风吹不动它。它自己往前送出去半寸，又荡回来。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "我们两个人都没动，谁也没敢出声，怕把它吓回去。"
+    },
+    {
+      "type": "narration",
+      "text": "摆越荡越顺。它的节奏不快，一送一回，一送一回，像照着谁呼吸的节拍在走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "这个节奏……三月里有人让我照着呼吸的节拍睡。就是它。"
+    },
+    {
+      "type": "narration",
+      "text": "她没接这句，她在听。她听东西的时候下巴会微微偏一点，这一个月我学会了看这个。"
+    },
+    {
+      "type": "narration",
+      "text": "然后她抬起左手腕。那块停着的表，秒针动了。"
+    },
+    {
+      "type": "narration",
+      "text": "它没有跳一格就停。它越过一点四十那一格，往前，又往前，跟着摆的节奏一格一格走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cry",
+      "text": "它过了。它过了那一格。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "它没停。"
+    },
+    {
+      "type": "narration",
+      "text": "她把表贴在耳朵上听了很久。她听表的样子，像听一个病人的心跳。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "走得不准。比标准时间慢，慢很多。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_smile",
+      "text": "但它是自己走的。没上弦，没修，没人碰它，它自己走的。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句，多解释了一句：这四年她把它修过三次，三次都走不住，这一次没人动它。"
+    },
+    {
+      "type": "narration",
+      "text": "四楼的钟在走，她腕上的表在走，两个节奏对在一起，屋里像多了一颗很大很大的心。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e18",
+      "text": "西窗的光照在钟体上，铜面反出来的亮斑落在她手腕上，跟着摆一晃一晃。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "艾莉丝。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你讲。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "这块表，从今往后归谁管。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "归我。它在我手腕上，就归我管。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "那走不准这件事呢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "就让它走不准。我不赶时间了，它也不用替我赶。"
+    },
+    {
+      "type": "narration",
+      "text": "她这句说完没有停，又往下说了一句，说的是晚上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_smile",
+      "text": "驻点批下来了，办公室在四楼，靠窗那张桌归我。白天在这儿，晚上回基地。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "白天在这儿，那我白天也在。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "你本来就在。这句话不用批文。"
+    },
+    {
+      "type": "narration",
+      "text": "我不太会接这种话。我低头把还书车推过来，假装在理单子。"
+    },
+    {
+      "type": "narration",
+      "text": "她把她的本子放到我本子旁边。两本一样厚，摞在一起刚好对齐。谁也没说这一下是什么意思。"
+    },
+    {
+      "type": "narration",
+      "text": "傍晚老周上楼来，站在楼梯口听了半分钟。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "它响了。四年……不，比四年久。我年轻那会儿，它就是这动静。"
+    },
+    {
+      "type": "narration",
+      "text": "他没下来，也没上去，就在楼梯口站着，听够了才走。走的时候背比平时直。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅把下午那段录进了磁带，雷恩给它编了号。他们说这叫留档，我说这叫过日子。"
+    },
+    {
+      "type": "narration",
+      "background": "bg_library_night",
+      "text": "锁门前我们又上了一趟四楼。钟还在走，摆还在晃，表还在她手腕上走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "明天九点我在这儿。你不用等我，你到了就是我在。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "行。那我明天八点五十到。"
+    },
+    {
+      "type": "narration",
+      "text": "下楼的时候她在前面，我在后面。两层楼梯，谁也没牵谁的手，脚步声并得很齐。"
+    },
+    {
+      "type": "narration",
+      "text": "钟重新走起来。它走的不是四月九号，也不是三月十二号，是四月十三号，是我们俩往后要过的那种日子。"
+    },
+    {
+      "type": "narration",
+      "text": "那种日子没有名字要念，没有账要平。它一格一格，跟着呼吸，慢慢走。"
+    }
+  ]
+}

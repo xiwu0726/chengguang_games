@@ -1,0 +1,61 @@
+{
+  "_comment": "人物白名单。count-story.js 用它校验 speaker / affectionWho；SCHEMA.md §3.2 要求人名精确匹配。pinyin 用于立绘 id 前缀。",
+  "characters": [
+    {
+      "name": "林晓",
+      "pinyin": "linxiao",
+      "role": "主角",
+      "age": 22,
+      "note": "历史系研究生。时间碎片感知者。叙述用第一人称口语。",
+      "portraits": ["linxiao_normal", "linxiao_tired", "linxiao_shock", "linxiao_resolve", "linxiao_sleep", "linxiao_smile"]
+    },
+    {
+      "name": "艾莉丝",
+      "pinyin": "alice",
+      "role": "女主",
+      "age": 25,
+      "note": "时空异常研究所研究员。简洁、专业、不擅长表达感情。",
+      "portraits": ["alice_calm", "alice_cold", "alice_worried", "alice_smile", "alice_cry", "alice_tired"]
+    },
+    {
+      "name": "雷恩",
+      "pinyin": "raine",
+      "role": "主要配角",
+      "age": 28,
+      "note": "守望者成员。短句、少解释、行动优先。",
+      "portraits": ["raine_alert", "raine_grin", "raine_serious", "raine_hurt", "raine_tired"]
+    },
+    {
+      "name": "小雅",
+      "pinyin": "xya",
+      "role": "主要配角",
+      "age": 19,
+      "note": "咖啡馆店员，后觉醒记忆实体的感知力。口语活泼。",
+      "portraits": ["xya_smile", "xya_curious", "xya_scared", "xya_determined", "xya_cry"]
+    },
+    {
+      "name": "时间领主",
+      "pinyin": "lord",
+      "role": "反派/最终对手",
+      "age": 0,
+      "note": "自称时间的执行者。说话完整、缓慢、像在念判词。不用感叹号。",
+      "portraits": ["lord_calm", "lord_amused", "lord_angry", "lord_broken"]
+    },
+    {
+      "name": "老周",
+      "pinyin": "zhou",
+      "role": "配角",
+      "age": 61,
+      "note": "历史图书馆管理员。知道的多，说得少。",
+      "portraits": ["zhou_kind", "zhou_grim", "zhou_worried"]
+    },
+    {
+      "name": "维拉",
+      "pinyin": "vera",
+      "role": "配角",
+      "age": 40,
+      "note": "守望者负责人。台词像命令与交易。",
+      "portraits": ["vera_cold", "vera_smile", "vera_angry"]
+    }
+  ]
+}

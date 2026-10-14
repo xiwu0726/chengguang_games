@@ -1,0 +1,1147 @@
+{
+  "sceneId": "2-6",
+  "chapter": "第二幕·深入探索",
+  "title": "时间的真相",
+  "background": "bg_institute_night",
+  "bgm": "bgm_tension",
+  "dense": true,
+  "next": "2-7",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "第十九天，三月三十号，深夜十一点。我们在研究所那间小实验室里坐了整整十六个小时，桌上摊着三样东西：艾莉丝的名单，小雅的本子，还有从旧东线带回来的那三张照片。"
+    },
+    {
+      "type": "narration",
+      "text": "白板上打了一张城市底图，图钉压着四角。图上的红点是这四年里所有能定位的裂缝，蓝点是小雅听见过人声的地方，黑点是我们四个亲自走过的地方。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三样东西摊在桌上。先从那一份下手？",
+      "options": [
+        {
+          "text": "先核小雅的本子，把蓝点一个一个对上",
+          "affectionWho": "小雅",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "cross_checked_xyas_notebook_first",
+          "next": ""
+        },
+        {
+          "text": "先核艾莉丝的名单，从日期排到位置",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "cross_checked_the_roster_first",
+          "next": "#l01"
+        },
+        {
+          "text": "先看那三张照片，别的等会儿再说",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "looked_at_the_three_photos_first",
+          "next": "#l01"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把本子按页码摊开，她在旁边报地名，我报日期，两列数字第一次对上。"
+    },
+    {
+      "type": "narration",
+      "text": "对到第七页的时候，她的手指开始发抖，不是冷。"
+    },
+    {
+      "type": "narration",
+      "label": "l01",
+      "text": "白天我们把红点一个一个敲进坐标系，敲到第一百个的时候，艾莉丝停下了手。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "它不是一条线。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那是什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "是一圈一圈往外走的螺旋。每转一圈，半径大一点，间隔短一点。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "它不是线，是螺旋。要不要把图层全打开？",
+      "options": [
+        {
+          "text": "要求把所有能定位的裂缝叠进同一张图",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_for_every_rift_on_one_map",
+          "next": ""
+        },
+        {
+          "text": "只保留最近三个月的点，先看形状",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_only_the_last_three_months",
+          "next": ""
+        },
+        {
+          "text": "关掉图层，先听小雅说",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "turned_the_layers_off_to_listen",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她把图层打开，把一百个红点从最早连到最近。连完以后，白板上出现的不是一条街、不是一条轨道，是一张很薄的、往外扩张的螺纹。"
+    },
+    {
+      "type": "narration",
+      "text": "第一圈出现在三个半月前，半径很小，集中在城北；第二圈落到西区，第三圈扫过车站与东线，第四圈已经开始逼近市中心。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "第一圈在哪儿。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩问第一圈在哪儿。敢不敢让他先知道？",
+      "options": [
+        {
+          "text": "让他一起看，不瞒他",
+          "affectionWho": "雷恩",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "let_raine_see_the_center_first",
+          "next": ""
+        },
+        {
+          "text": "先不说，等图画完再讲",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "waited_until_the_map_was_done",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝用红笔把螺纹的最里面那一小圈圈出来。那一圈里只有一个点。点被标在一个很旧的位置上，位置的名字是历史图书馆。"
+    },
+    {
+      "type": "narration",
+      "text": "屋里安静了几秒。我没有出声，因为我第一次走进那栋楼的时候，只是去查一本借出去的书。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "第一起在图书馆。我是从我上班的地方开始的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "中心是你上班的地方。这一句你怎么接？",
+      "options": [
+        {
+          "text": "承认我第一天就是从那儿开始的",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "admitted_i_started_at_my_workplace",
+          "next": ""
+        },
+        {
+          "text": "闭嘴，让艾莉丝把话说完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_alice_finish_the_sentence",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "不是从你开始。螺旋的中心在那栋楼，你只是最后走到那里的人。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅坐在角落里，把那三本笔记本摊开在膝盖上。她的拇指一直停在某一行的位置，没有动过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "我把蓝点和红点对了一遍。有十一个地方两个点重合。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "十一个地方都是我听见过人声的地方。也都是图上出过裂缝的地方。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "十一个重合点。要不要当场把名单念一遍？",
+      "options": [
+        {
+          "text": "念出来，一个点一个点对名字",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "read_the_eleven_points_aloud",
+          "next": ""
+        },
+        {
+          "text": "不念，先把重合点抄进自己的本子",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "copied_the_overlapping_points_silently",
+          "next": ""
+        },
+        {
+          "text": "只念我认得的那几个",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "read_only_the_names_i_knew",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "那就不是巧合了。"
+    },
+    {
+      "type": "narration",
+      "text": "她把白板擦掉一半，重新画了一张更简单的图：左边写「人」，右边写「裂缝」，中间画了一个箭头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我一直在按顺序算：先有裂缝，然后有人不见了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "今天这张图告诉我，顺序反了。先有人被删掉，然后他消失的那个位置才裂开。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "顺序反了。这个结论敢写在白板上吗？",
+      "options": [
+        {
+          "text": "写上去，字写大一点",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_the_reversed_order_on_the_board",
+          "next": ""
+        },
+        {
+          "text": "不写，只在纸上记一笔",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_the_reversed_order_on_paper",
+          "next": ""
+        },
+        {
+          "text": "先问雷恩同不同意再写",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_raine_before_writing_it",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我盯着那个箭头看了很久。它很小，很普通，可它把这一年我信过的所有东西翻了个面。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "裂缝不是灾难。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "裂缝是删除留下的伤口。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把椅子往后推了一下。他站起来走到白板前面，用那只没受伤的手指着螺旋最外那几圈。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩站起来走到白板前面。要不要让他接手讲？",
+      "options": [
+        {
+          "text": "让他讲，外圈他走得最多",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "handed_the_explanation_to_raine",
+          "next": ""
+        },
+        {
+          "text": "不让，这一晚必须把图做完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_the_explanation_for_alice",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "这些圈在往市中心收。照这个速度，多久到中间。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "我从第一圈到现在算了三遍。七十天、二十三天、八天、三天、一天。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "每一次间隔都是上一次的三分之一。下一次间隔已经不到一天。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "间隔已经不到一天。要不要把倒计时写上白板？",
+      "options": [
+        {
+          "text": "写：下一次不到一天",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_the_countdown_on_the_board",
+          "next": ""
+        },
+        {
+          "text": "不写，这个数字只在艾莉丝手里",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "left_the_countdown_in_alices_hands",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "最外那圈什么时候到市中心。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "四月三号。我算的是最外那圈到市中心的距离。"
+    },
+    {
+      "type": "narration",
+      "text": "房间里没有人接这句。四月三号这个日期很干净，干净到我不知道该拿它怎么办。"
+    },
+    {
+      "type": "narration",
+      "text": "我拿尺子量了一下最后一圈到圆心的距离，量了两遍。前四圈的直径都不到三公里，最后一圈的直径是这个数的六倍还多。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "四月三号，可能覆盖整座城。先确认哪一件？",
+      "options": [
+        {
+          "text": "确认这一圈是不是真的覆盖全城",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "verified_the_ring_covers_the_city",
+          "next": ""
+        },
+        {
+          "text": "确认我们四个人三天里布不布得完点",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "checked_whether_we_could_place_the_grid",
+          "next": ""
+        },
+        {
+          "text": "先确认四月三号之前还有没有更早的删除",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "looked_for_an_earlier_deletion",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "前面四次都是在自己那一小片地方发作。这一圈不一样。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "不一样在尺度。前面几次是定点删除，四月三号那一圈如果按图上画的走，覆盖的是整座城。"
+    },
+    {
+      "type": "narration",
+      "text": "我把自己的那本记录本翻开，从第一页往下数。第一页是苏禾，第二页是阿灰；老周、阮宁写在后面的页上。这一年里我记下名字的人有五个，还有两个我只会写一半的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "五个名字，两个只会写一半。要不要当场补全？",
+      "options": [
+        {
+          "text": "把两个半名写全，哪怕写错",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "finished_the_two_half_names",
+          "next": ""
+        },
+        {
+          "text": "不补，写错比不写更糟",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "refused_to_guess_the_half_names",
+          "next": "#l02"
+        },
+        {
+          "text": "让小雅替我念，她记得那些声音",
+          "affectionWho": "小雅",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "asked_xya_to_read_the_names_back",
+          "next": "#l02"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我合上本子，把那两个只写过一半的名字在心里默念了一遍，还是想不起最后一笔。"
+    },
+    {
+      "type": "dialogue",
+      "label": "l02",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "名单上被划掉的人，全是我记得的人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "我是被删过的人。删掉的人会留在我身上，因为他们只能留在还记得他们的人身上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "这句话是这一晚最重要的结论。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "仪器测不到删除，测得到的只有残留的裂缝。我们能看见删除，是因为队伍里有两个人不带仪器。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "一个听得见，一个记得住。这是能力还是伤口？",
+      "options": [
+        {
+          "text": "说破：这是伤口，不是本事",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "called_it_a_wound_not_a_gift",
+          "next": ""
+        },
+        {
+          "text": "不说，把监测仪推到一边",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "pushed_the_instrument_aside",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句话，看了小雅一眼，又看了我一眼。她的意思很清楚：一个听得见，一个记得住，这两样东西不是能力，是伤口。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅把这个意思接了下去。她说的时候语气很淡，像在替我们两个人念一份病历。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "被删掉的人如果还有人在找，他就不会彻底没。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "我一个人都还没找回来过。我听见了他们的名字，可我不知道该往哪儿去捞。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅说她一个人都没捞回来。你怎么接？",
+      "options": [
+        {
+          "text": "告诉她抄下来的每一页都算数",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "told_her_every_page_counts",
+          "next": ""
+        },
+        {
+          "text": "不接话，把她的本子推回她手里",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "handed_the_notebook_back_to_her",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "我来找的这三年里，唯一一次差一点捞到的，是东侧那块碎片。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "那块碎片里有五个小时。我妹妹最后那五个小时。"
+    },
+    {
+      "type": "narration",
+      "text": "他说这话的时候没有看我们。他把那只包着绷带的手在身侧握了握，握完松开，又握。"
+    },
+    {
+      "type": "narration",
+      "text": "我忽然想到一件事，这件事一想出来我的手就凉了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "裂缝如果是伤口，那里面装着东西就不是意外。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "裂缝里装着东西。要不要当场提出进去取？",
+      "options": [
+        {
+          "text": "提出进去取，哪怕只取一个小时",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "proposed_to_retrieve_from_the_rift",
+          "next": ""
+        },
+        {
+          "text": "不提，今晚只把图做完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_the_night_to_the_map",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "有人在删人的时候，把删掉的那一段留在裂缝里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "留着的目的是什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我不知道。但我想不出还有别的理由，要让人费劲把东西留着又锁起来。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝把这句话写在白板最下面，写完在旁边画了一个方框，框里打了一个问号。这个方框是今晚唯一没有答案的东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "白板上多了一个没有答案的方框。留着还是擦掉？",
+      "options": [
+        {
+          "text": "留着，明天带着这个框去查",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "left_the_box_for_tomorrow",
+          "next": ""
+        },
+        {
+          "text": "擦掉，不想让谁先看见它",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "wiped_the_unanswered_box",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "十一点半的时候，她把那沓旧档翻到了最后一页。最后一页是一份会议记录，页脚有一个时间，是四年前。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "上面写了一句：删除是必要的，因为它会自己长出替代品。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "替代品是什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "记录里说，被删的人会留下一小段。那一小段在别处会长成新的东西——一个人、一份档案，或者一栋楼。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "被删的人会留下一小段，长成别的东西。你想到谁？",
+      "options": [
+        {
+          "text": "说出那本不该存在的书",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "named_the_book_that_should_not_exist",
+          "next": ""
+        },
+        {
+          "text": "说出登记簿上写了三遍的名字",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "named_the_entry_written_three_times",
+          "next": ""
+        },
+        {
+          "text": "什么都不说，把这一页拍下来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "photographed_the_page_in_silence",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我们在查的那些「本来不该存在」的东西，可能都是从被人身上掉下来的。"
+    },
+    {
+      "type": "narration",
+      "text": "这句话让我想起了一本不该存在的书，一本登记簿上写了三遍的名字，和一间我只走过一次的旧校舍。我坐直了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "图书馆第三层。那里的东西不是本来就有的，是有人掉在那儿的。"
+    },
+    {
+      "type": "narration",
+      "text": "屋里第二次安静。这一次安静得比第一次久，久到我能听见实验室里那台除湿机在一下一下地排水。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "你说出了第三层。要不要现在就补充出处？",
+      "options": [
+        {
+          "text": "补充：那本书和那间旧校舍都在那儿",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "gave_the_source_of_the_third_floor",
+          "next": ""
+        },
+        {
+          "text": "不补充，先看看谁的脸色变了",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "watched_their_faces_before_explaining",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "小雅忽然抬头。她的脸色在这一夜里第一次变得很白，白得比刚才那种怕还重。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "数数的声音又来了。它这次不是在我旁边。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "在哪儿。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "在外面。在楼下。它一直在往这栋楼的方向数。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩第一个走到窗边。他没有开灯，只是把百叶窗掀起一条缝，往下看。研究所的院子在夜里只亮着两盏安全灯，灯下是空的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩掀起百叶窗往下看。你要不要跟着看？",
+      "options": [
+        {
+          "text": "跟着看，亲眼确认那块砖",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "verified_the_wet_brick_with_my_own_eyes",
+          "next": ""
+        },
+        {
+          "text": "不看，留下守着小雅",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "stayed_to_guard_xya",
+          "next": "#l03"
+        },
+        {
+          "text": "不看，先去把门反锁",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "locked_the_lab_door",
+          "next": "#l03"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我走到窗边，把眼睛贴在缝上，什么也没看见，只看见那块砖比周围深一号。"
+    },
+    {
+      "type": "narration",
+      "label": "l03",
+      "text": "他看了十几秒，把百叶窗放下去，转过身来。他的脸在暗处，我看不清，但他说话的方式变了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "院子靠东那块砖是湿的。今天没下过雨。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "意思呢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "意思是刚才有人站在那儿看着我们，站了很久。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "有人站了很久。要不要现在下楼去找？",
+      "options": [
+        {
+          "text": "下楼去找，趁痕迹还没干",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "went_down_to_find_the_watcher",
+          "next": ""
+        },
+        {
+          "text": "不下楼，今晚谁都不单独走动",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_everyone_on_this_floor",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝立刻去拿相机和记录纸。她走到门口又停住，因为她想起来今晚的档案柜动过。"
+    },
+    {
+      "type": "narration",
+      "text": "下午我们翻过的那沓旧档现在还在桌上，顺序和下午完全一样。可那份会议记录不是下午的位置——它下午在倒数第三页，现在在最后一页。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "有人在我们出去吃饭的时候进来过。他知道我们翻到哪儿了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "他知道我们在查删除。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "档案被动过又装回去。先查哪一件？",
+      "options": [
+        {
+          "text": "查这栋楼今晚的进出登记",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "checked_the_buildings_entry_log",
+          "next": ""
+        },
+        {
+          "text": "查那份会议记录原来夹在哪一页",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "checked_where_the_minutes_had_been",
+          "next": ""
+        },
+        {
+          "text": "两样都查，分头去",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "split_up_to_check_both",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "他知道我们在查，而且他没有阻止我们。"
+    },
+    {
+      "type": "narration",
+      "text": "她把那页会议记录夹进自己的东西里，不是档案夹，是她那个贴了三个月标签的本子。她把本子塞进包，拉链拉到底。"
+    },
+    {
+      "type": "narration",
+      "text": "接下来的两个小时我们做了一件很小的事：把这一晚所有结论抄了三份。雷恩抄一份放车上，小雅抄一份贴身带着，我抄一份夹进本子。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝给那张螺旋图拍了照，底片她说不留在研究所。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "底片不留在研究所。你替她收哪一份？",
+      "options": [
+        {
+          "text": "收底片，贴身带着",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "carried_the_film_on_my_body",
+          "next": ""
+        },
+        {
+          "text": "收抄件，底片让小雅带出去",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "let_xya_take_the_film_out",
+          "next": ""
+        },
+        {
+          "text": "两份都不收，只记住放的地方",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "memorized_the_hiding_places_only",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "从今天起，我们的东西不全放在一个地方。谁丢一份，其他两份还在。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "你怀疑队里有人。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩把这句话问出口了。你要不要表态？",
+      "options": [
+        {
+          "text": "说：我不怀疑人，但我怀疑记录会丢",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "said_i_trust_no_one_but_the_copies",
+          "next": ""
+        },
+        {
+          "text": "不说话，把三份抄件各自数一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "counted_the_three_copies_in_silence",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我怀疑的是这栋楼。至于队里，我现在谁都不怀疑，也谁都不排除。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候没有人反驳。四个人坐在同一间实验室里，坐得很近，可这句话说完以后，我忽然觉得那间屋子比刚才大了一圈。"
+    },
+    {
+      "type": "narration",
+      "text": "凌晨一点，我们分两辆车离开研究所。我和小雅一辆，雷恩和艾莉丝一辆。约好每天早上七点对一次表。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "分两辆车走，早上七点对表。要不要改约定？",
+      "options": [
+        {
+          "text": "改成每四个小时对一次",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "shortened_the_check_in_to_four_hours",
+          "next": ""
+        },
+        {
+          "text": "不改，七点就七点",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_the_seven_oclock_check_in",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "车开出研究院大门的时候，我回头看了一眼那栋楼。三楼有两扇窗是亮的，那两扇窗的灯本来今晚该关。"
+    },
+    {
+      "type": "narration",
+      "text": "我把本子摊在膝盖上，在螺旋图的空白处写了三行字。本子上的字很歪，因为我握笔的手在抖。"
+    },
+    {
+      "type": "narration",
+      "text": "第一行：裂缝是删除的伤口。第二行：删除在往中心收，四月三号那一圈，半径按图上的比例是上一次的六倍。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "第三行还没落笔。要不要在车上写完？",
+      "options": [
+        {
+          "text": "写完，把那句问话留在本子上",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_the_third_line_in_the_car",
+          "next": ""
+        },
+        {
+          "text": "留白，回去在灯下写",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "left_the_third_line_blank",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "第三行我写得很慢。我写的是：「删除的东西会自己长出替代品。那我记得的那个人，是不是谁的替代品。」"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "六天后的下一圈，你想怎么应对？",
+      "options": [
+        {
+          "text": "回图书馆第三层，先把那里掉下来的东西查清楚",
+          "affectionWho": "老周",
+          "affection": 6,
+          "insomnia": 1,
+          "flag": "return_to_library_first",
+          "next": ""
+        },
+        {
+          "text": "按螺旋外圈布点，抢在下一次删除前把落点压住",
+          "affectionWho": "雷恩",
+          "affection": 7,
+          "insomnia": 1,
+          "flag": "grid_the_outer_ring",
+          "next": ""
+        },
+        {
+          "text": "先把三份记录分发出去，再去追那个在楼下数数的人",
+          "affectionWho": "艾莉丝",
+          "affection": 7,
+          "insomnia": 1,
+          "flag": "chase_the_counter",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那天我在车上没有睡。我看着窗外的城市，忽然意识到这一年以来我一直在做同一件事：把被删掉的人写进本子。"
+    },
+    {
+      "type": "narration",
+      "text": "以前我以为那是一种纪念。现在我知道了，那是一份不能交出去的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "只要有一个人的本子上还写着那些名字，删除就不算完成。这大概就是老周说的别回头的意思。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "老周说的别回头，你现在信了几分？",
+      "options": [
+        {
+          "text": "信了，但我不打算照做",
+          "affectionWho": "老周",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "believed_zhou_but_would_not_obey",
+          "next": ""
+        },
+        {
+          "text": "信一半，剩下的等他再说一次",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "half_believed_zhou_so_far",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我在本子最后一页写下今天的日期，然后把笔盖扣上。车往前开，路灯一盏一盏往后退，退到看不见为止。"
+    }
+  ]
+}

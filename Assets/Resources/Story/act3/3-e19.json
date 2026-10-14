@@ -1,0 +1,286 @@
+{
+  "sceneId": "3-e19",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·醒着的城市",
+  "background": "cg_ending_e19",
+  "bgm": "bgm_warm",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十一号上午十点，我在自己的床上醒过来。闹钟响过一遍，是七点，我自己没听见。"
+    },
+    {
+      "type": "narration",
+      "text": "从夜里十一点到上午十点，这中间是一整块空白。这块空白是我的，谁也没有借走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "我睡过去了，而且我知道自己睡过去了。这两件事能同时成立，我等了三十天。"
+    },
+    {
+      "type": "narration",
+      "text": "下楼的时候，巷口的早点摊正在收摊。老板娘隔着炉子跟一个扫地的老头说话，嗓门比平时高。"
+    },
+    {
+      "type": "narration",
+      "text": "老头把扫把拄在地上，听一句应一句，扫得很慢，一下一下，像在数这条街的门牌。"
+    },
+    {
+      "type": "narration",
+      "text": "新闻说，四月十号早上六点四十，全城的闹钟一个都没响，但所有人都同时醒了。主持人把这当成一次普通集体失眠，后面接了天气。"
+    },
+    {
+      "type": "narration",
+      "text": "只有我知道那不是失眠。那一分钟里，全城的人一起想起了一批人，想起的就是他们回来的日子。"
+    },
+    {
+      "type": "narration",
+      "text": "被删掉的人回来了。没有人去接他们，他们自己走到自己该去的地方，像下班回家一样自然。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "总坐角落写作业的男孩回来了。他进门先找座位，找到了就坐下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "你还记得他以前坐在哪儿？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "记得。全城都记得。摊上老板娘记得他欠了两天豆浆钱，他今天早上特意来还了。"
+    },
+    {
+      "type": "narration",
+      "text": "中午店里不忙。小雅把架子最里面那只空了三年的杯子收下来，说从今天起拿来装吸管。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "以前摆着，是怕有人回来没得喝。现在人都在，杯子就该干杯子的活。"
+    },
+    {
+      "type": "narration",
+      "text": "下午我回图书馆。老周在登记台后面填核对表，一格一笔，比三月里还快。",
+      "background": "bg_library_day"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "你回来啦。这张表我断了一个月，前面填的都在，就是手生。"
+    },
+    {
+      "type": "narration",
+      "text": "他记得每一张表。开门数座位，年初换新格纸，这些他全记得，记得一点不打折。"
+    },
+    {
+      "type": "narration",
+      "text": "我上楼还书。借书卡最上面那张的名字是苏禾。卡片是新的，日期是今天。"
+    },
+    {
+      "type": "narration",
+      "text": "她在三楼靠窗的位置找书，找了很久。她回头看我那一眼很平静，像看一个常来的读者。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "苏禾，你回来了。"
+    },
+    {
+      "type": "narration",
+      "text": "她应了一声，问她的借书证还算不算数。我说算。她笑了一下，低头继续找她的书。"
+    },
+    {
+      "type": "narration",
+      "text": "书架第三层，我三月十二号夜班看见的那撮灰，四月十一号落了，趴在书顶上，一层薄薄的、正常的灰。"
+    },
+    {
+      "type": "narration",
+      "text": "我伸手把它抹掉，抹的时候停了一下。这一停是习惯，不是预感。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "对着一把灰发什么呆。擦了就是擦了，灰又不是什么稀罕东西。"
+    },
+    {
+      "type": "narration",
+      "text": "傍晚雷恩来了，不是一个人来的。他妹妹站在他身后半步，拎着一袋橘子，站姿跟他一模一样。",
+      "background": "bg_cafe_evening",
+      "bgm": "bgm_hope"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "小满。她叫雷小满。档案上她的名字一直在，现在人对上了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你手背上那块疤……"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "还在。它替我记过事。现在不用记了，我也不赶它走。"
+    },
+    {
+      "type": "narration",
+      "text": "雷小满开口说的第一句就让大家不知道该怎么接：院子里的藤今年开得很好，她哥每天数花。雷恩瞪了她一眼，她低头剥橘子，不理。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "数花好啊。我耳朵最闹的那阵子，就是靠数花活下来的。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝最后到。她进门先看的是我，看的不是脸，是眼睛。她看了两秒，点点头坐下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "瞳孔的颜色退干净了。你昨晚那一觉，比任何一份报告都管用。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你还打算接着给我测吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_smile",
+      "text": "不测了。数字这个东西，从今天起让它歇着。"
+    },
+    {
+      "type": "narration",
+      "text": "研究所这次没有删名字。结案报告写了二百多页，附了三千多个证人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我写了七年报告，第一次写一份不需要谁签字也成立的。全城都记得，它就是成立。"
+    },
+    {
+      "type": "narration",
+      "text": "维拉来过一次。她站在门口把店里的人扫了一圈，合上一份四十年的旧档案。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "名单上最后一个名字，有人念对了。守望者的账今天平了。你们往后过自己的日子。"
+    },
+    {
+      "type": "narration",
+      "text": "她说走就走。小雅追出去，喊她下次来喝杯热的。她摆了摆手，步子一点没慢。"
+    },
+    {
+      "type": "narration",
+      "text": "打烊以后我们留在店里。雷小满替她哥值班，冲的第一杯太苦，所有人都喝完了。"
+    },
+    {
+      "type": "narration",
+      "text": "那天夜里我走回家。一路的窗户亮着一半。亮着的那些人不是在熬夜，是在跟回来的人说话。"
+    },
+    {
+      "type": "narration",
+      "text": "我在路口站了一会儿。这座城市从来不睡觉。以前我觉得那是它吵，现在我知道，那是它记性好。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "走到楼下，我回头看了一眼。"
+    },
+    {
+      "type": "narration",
+      "text": "上楼，开门，洗手。那本硬皮账我交给了图书馆，跟老周的核对表放在一起。"
+    },
+    {
+      "type": "narration",
+      "text": "交出去之前我把最后一页撕了下来，那一页空着：十一个名字都回到了该在的地方，纸上只剩笔尖的印子。"
+    },
+    {
+      "type": "narration",
+      "text": "空页我留着。我在上面写了明天的安排：七点起，八点上班，下班去咖啡馆，路上买两个橘子。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e19",
+      "text": "那天夜里十一点我关了灯。窗外还亮着一半的窗，每一扇亮着的窗里都有人在说话，在吃饭，在记着同一批回来的人。"
+    },
+    {
+      "type": "narration",
+      "text": "我在那一半灯光里睡着了。睡着之前我想，奇迹不是从井底爬上来的那一下。"
+    },
+    {
+      "type": "narration",
+      "text": "奇迹是第二天早上，全城的人一起记得，而我睡得着。"
+    },
+    {
+      "type": "narration",
+      "text": "偶尔我还是会有一次既视感，走到路口愣半秒。但那半秒里，没有人被拿走。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十二号早上七点，闹钟响之前我自己醒了。牙刷到一半我照镜子：眼睛是黑的，只装得下一个人。"
+    },
+    {
+      "type": "narration",
+      "text": "楼下传来扫把的声音，一下一下。老板娘的摊子出得比平时早，她说最近大家都爱早起，早起的人多，生意就好。"
+    },
+    {
+      "type": "narration",
+      "text": "上班路上我数了一遍：艾莉丝在补她那二百页报告，雷恩在院子里数花，小雅在擦那只装吸管的杯子，老周在给新书贴条码，苏禾在三楼靠窗找她那本没找完的书。"
+    },
+    {
+      "type": "narration",
+      "text": "墙根下那个扫地的老头还在数门牌，数到四十号，就从头再数一遍。"
+    },
+    {
+      "type": "narration",
+      "text": "他们记得自己少了三十天，也记得四月十号早上忽然全想了起来。至于为什么，没人说得清。这样挺好。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "今天书还得挺齐。你最近气色好，是睡觉睡出来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "周叔，我睡得着。我每天都睡得着。"
+    },
+    {
+      "type": "narration",
+      "text": "这就是所有人都在的一天。它普通得没有任何一句话值得被引用，而我打算把这样的日子一直过下去。"
+    },
+    {
+      "type": "narration",
+      "text": "第二天晚上十一点，我又关了灯。城市醒着，替所有人记着。我睡得着，因为没有人需要我替他们记。"
+    }
+  ],
+  "kind": "ending"
+}

@@ -1,0 +1,478 @@
+{
+  "sceneId": "3-e09",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·钥匙在锁孔里",
+  "background": "cg_ending_e09",
+  "bgm": "bgm_sad",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号凌晨四点四十，我把那一页从本子上撕下来。撕的时候纸的声音很干，像一片旧叶子。"
+    },
+    {
+      "type": "narration",
+      "text": "那一页上写着十一个名字，最下面还留着一行空白的页脚。我没有在页脚上写任何东西。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你要把它送进门里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "门要的那一页本来就是这一页。它要的是有人把这一页交回去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "交回去的那个人不算在出去的人数里。这一笔你算过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "算过。所以本子留给你们，纸我带走。"
+    },
+    {
+      "type": "narration",
+      "text": "我把硬皮本子塞给艾莉丝。她接的时候手在抖，这是这个月里我第一次看见她手抖。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "你带着那页纸进去，你会变成什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "变成这一页的一部分。以后有人翻到它，就会看见我这一行。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "我以后天天翻，翻到纸烂了我还翻。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "林晓。上面还剩两节梯子，我一脚就能踹断，我们四个人挤一挤能过去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "三个人挤过去，这口井就得再收一个人。你比我清楚这一笔怎么算。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩没有说话。他把手背上的那块烙印举起来给我看，那里的光已经快要灭了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "我这个月借过三次。再借一次，我连自己都换不回来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "所以你留着。留到有人真的需要的时候再用。"
+    },
+    {
+      "type": "narration",
+      "text": "我走到井底那道口子边上。那不是门，是井壁上一道竖着的口子，里面是纸背面的颜色。"
+    },
+    {
+      "type": "narration",
+      "text": "我把那一页折起来，折成一个手掌那么大，边角对齐，跟我在图书馆整理旧报纸一样。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我把纸送进去。纸进去的时候没有响声，像是被那一层灰白吸进去的。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": "那一页进去以后，井底安静了半秒。半秒之后，那道口子往外吐了一口气，很凉。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "它开了。它在等一个人。"
+    },
+    {
+      "type": "narration",
+      "text": "我把手撑在口子边上，回头看了他们三个人一眼。这一眼我看得很仔细，仔细到记住了他们站的位置。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cry",
+      "text": "林晓，你按着那一页要做什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "表你留着。别修。"
+    },
+    {
+      "type": "narration",
+      "text": "我说完这句就进去了。里面很窄，窄到只够一个人侧着站。我在里面摸到了内侧那一面。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": "门合上的时候，外面那一圈天闪了一下白。"
+    },
+    {
+      "type": "narration",
+      "text": "我在门里听见的第一件事是钟声。那枚钟转完最后一格，然后停了。"
+    },
+    {
+      "type": "narration",
+      "text": "我听见的第二件事是他们的脚步。三个人往上走，越走越远，最后只剩下铁梯的响动。"
+    },
+    {
+      "type": "narration",
+      "text": "上面这些是我看见的。接下来的这些我没有看见。",
+      "background": "bg_black",
+      "bgm": "bgm_sad"
+    },
+    {
+      "type": "narration",
+      "text": "它们是后来一点一点到我手边来的：从艾莉丝记录本的最后一页，从小雅每个月的账单，从雷恩口袋里的收据，从老周那张核对表。"
+    },
+    {
+      "type": "narration",
+      "text": "我把它们按顺序放好，像放一叠借来的书。"
+    },
+    {
+      "type": "narration",
+      "text": "那天早上他们从楼里出来的时候，天已经亮了。雷恩走在最前面，他没有回头。",
+      "background": "bg_dawn_city",
+      "bgm": "bgm_sad"
+    },
+    {
+      "type": "narration",
+      "text": "他回到守望者的院子，先把那块烙印用凉水冲了一刻钟。冲完他把袖子放下来，没有处理伤口。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十三号他去了西边那条路。路的尽头原来是一所学校，现在只剩一段围墙。"
+    },
+    {
+      "type": "narration",
+      "text": "他在围墙根下站了很久，从口袋里掏出那张收据，在背面重新描了一遍雷小满三个字。"
+    },
+    {
+      "type": "narration",
+      "text": "他描得很慢，笔画压得很深。那张收据的纸已经很薄，薄到光能透过去。"
+    },
+    {
+      "type": "narration",
+      "text": "描完他把纸折好，对着墙说了一句话。那句话后来没有人替他记下来。"
+    },
+    {
+      "type": "narration",
+      "text": "五月他换了工作，去了守望者的登记组。登记组的活是给来登记的人写名字、编号、归档。"
+    },
+    {
+      "type": "narration",
+      "text": "他做这份活做得很认真。他给每个人写完名字以后都要用指头按一下，像在压一个小小的坑。"
+    },
+    {
+      "type": "narration",
+      "text": "登记组的门开在一楼最里面，门口挂着一块搪瓷牌子，上面漆着两个褪色的字。"
+    },
+    {
+      "type": "narration",
+      "text": "来登记的人多半是老人。他们拿着一张旧照片，说一个名字，让雷恩写下来。"
+    },
+    {
+      "type": "narration",
+      "text": "有一个老太太来过三次，每一次都带同一个名字。雷恩每次都替她写，写完给她念一遍。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "念一遍。念对了才归档。"
+    },
+    {
+      "type": "narration",
+      "text": "老太太第一次听的时候哭了。第二次听的时候笑了。第三次她把照片留在桌上，人走了。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把那张照片夹进登记册的最后一页，夹在自己那一本的后头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "名字写清楚。写清楚了，谁也拿不走。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅后来跟我说，雷恩现在写字写得很慢，写一个字要停一下。她说他停下来是在数笔画。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅回咖啡馆上班了。她把围裙洗了三遍，右边那片咖啡渍还是没有洗掉。",
+      "background": "bg_cafe_evening",
+      "bgm": "bgm_warm"
+    },
+    {
+      "type": "narration",
+      "text": "从四月十号起，她每天早上会在单子上多写一行：一杯热牛奶，放最里面。"
+    },
+    {
+      "type": "narration",
+      "text": "那杯牛奶没有人喝。她下班的时候把它倒掉，第二天再点一杯。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "这是我们这儿的规矩。点一杯不喝的，给还没回来的人。"
+    },
+    {
+      "type": "narration",
+      "text": "有客人问过她那杯是给谁的。她说是一个熟客的。客人说不认识，她说你不认识很正常。"
+    },
+    {
+      "type": "narration",
+      "text": "那杯牛奶她放在最里面靠窗的位置，杯底垫一张纸巾，杯把朝左。"
+    },
+    {
+      "type": "narration",
+      "text": "有一次艾莉丝来喝咖啡，看见那杯牛奶，问是谁点的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "一个熟客。他喝牛奶，不喝咖啡。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "他今天会来吗，还是又一个人坐一下午。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "不来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "那我替他喝。凉了倒掉可惜。"
+    },
+    {
+      "type": "narration",
+      "text": "她喝完那一杯，把杯子放回原来的位置，杯把还是朝左。走的时候她没有说下次还来不来。"
+    },
+    {
+      "type": "narration",
+      "text": "第二个星期她又来了，还是坐那张桌子，还是把那杯牛奶喝掉。"
+    },
+    {
+      "type": "narration",
+      "text": "六月她在账单背面写过几行字，艾莉丝把那几行字收进了记录本。"
+    },
+    {
+      "type": "narration",
+      "text": "那几行写的是：门关上那天，我耳朵里的底噪没了。以前那些说话的人也不见了。我不知道这是好事还是坏事。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "要是哪天底噪回来了，我第一个告诉艾莉丝。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝的表停在一点四十。她戴着它上班，戴着它做实验，戴着它签字。",
+      "background": "bg_institute_night",
+      "bgm": "bgm_ambient"
+    },
+    {
+      "type": "narration",
+      "text": "她那份结案文件写到第七页就停住了。第七页上有一行是归档号，那一行她一直空着。"
+    },
+    {
+      "type": "narration",
+      "text": "档案室没有窗。她每天上午把文件摆在灯下面，摆得很正，四边对齐。"
+    },
+    {
+      "type": "narration",
+      "text": "她桌上那支笔换过三支。每一支都写到一半就没人再动，笔帽都还盖着。"
+    },
+    {
+      "type": "narration",
+      "text": "她把记录本的最后一页压在那份文件下面，压了很久，纸角都翘起来了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "编号要等结论。结论不来，这一行就空着。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候面对着一面空白的墙，那面墙上什么也没有挂。"
+    },
+    {
+      "type": "narration",
+      "text": "有人催过她补那一行。她说这个编号要等一个结论，结论还没有出。"
+    },
+    {
+      "type": "narration",
+      "text": "她的工位换到了地下一层的档案室，那里有一台很吵的换气扇。她说吵一点好，安静下来她会听见秒针。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "秒针不走了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "它停的那一格，是我们四个人最后一次看见同一个数字的时候。"
+    },
+    {
+      "type": "narration",
+      "text": "她每个月来一次老城区。她不带仪器，也不写记录，就在围档外面站一会儿。"
+    },
+    {
+      "type": "narration",
+      "text": "有一次她在围档前面碰到雷恩。两个人隔着半米站着，谁都没有先说话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "你今天来这里到底想做什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "核对。三分钟。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "三分钟够了。超过三分钟就不像样了。"
+    },
+    {
+      "type": "narration",
+      "text": "他们站满三分钟，各自往相反的方向走。这件事他们做过十一次，一次都没多过。"
+    },
+    {
+      "type": "narration",
+      "text": "老周那边没有人跟他说过那口井。他这辈子知道的最大的事，是四楼那口钟坏了。",
+      "background": "bg_library_day",
+      "bgm": "bgm_silence"
+    },
+    {
+      "type": "narration",
+      "text": "七月的一天下午，他上楼锁窗，在四楼的楼梯口站了一会儿。"
+    },
+    {
+      "type": "narration",
+      "text": "他站的位置正好是我三月十二号站过的位置。他朝那个方向看了两眼，什么也没有看见。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "这儿怎么总有一层灰。上个月才擦过。"
+    },
+    {
+      "type": "narration",
+      "text": "他说完就下楼了。走到三楼他停下来，回头看了一眼，然后又往下走。"
+    },
+    {
+      "type": "narration",
+      "text": "他不知道自己为什么回头。他这一辈子回头看过很多东西，都是书。"
+    },
+    {
+      "type": "narration",
+      "text": "老周的抽屉里有一张过了塑的核对表。他偶尔把它拿出来，看一眼，又放回去。"
+    },
+    {
+      "type": "narration",
+      "text": "他自己也不知道那张表是干什么用的。他只是觉得这一张纸不能扔。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_grim",
+      "text": "馆里的东西，过了塑的都不能扔。"
+    },
+    {
+      "type": "narration",
+      "text": "这句话他跟两个来借书的人说过。两个人听完都点了点头。"
+    },
+    {
+      "type": "narration",
+      "text": "秋天的时候老城区那片围档拆了，那里修成了一个小广场，广场中间有一棵树。",
+      "background": "bg_street_night",
+      "bgm": "bgm_mystery"
+    },
+    {
+      "type": "narration",
+      "text": "树是新的，根还没长开。风大的时候它会往一边倒一点，像在找一个能靠的方向。"
+    },
+    {
+      "type": "narration",
+      "text": "我在这扇门里待着。门里没有白天也没有黑夜，只有一格一格往回收的时间。"
+    },
+    {
+      "type": "narration",
+      "text": "我数不清过了多久。我唯一数得清的是，我进来的那一页还在，十一个名字都在。"
+    },
+    {
+      "type": "narration",
+      "text": "我有时候会想他们三个人现在在做什么。想完我就把那一页折起来，再打开，让他们回到原来的位置上。"
+    },
+    {
+      "type": "narration",
+      "text": "这一页上有一行空白的页脚。我没有写它，他们也没有写它。"
+    },
+    {
+      "type": "narration",
+      "text": "空着的最好。空着就说明这本书还没有写完。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e09",
+      "text": "门里没有光。我能感觉到外面那座城市在走，走得又稳又慢，一格一格，像一块修好了的表。"
+    },
+    {
+      "type": "narration",
+      "text": "它走得比我在外面的时候还要准。它准到不需要我给它的名字。"
+    }
+  ],
+  "kind": "ending"
+}

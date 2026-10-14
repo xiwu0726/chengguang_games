@@ -1,0 +1,1389 @@
+{
+  "sceneId": "3-1",
+  "chapter": "第三幕·最终决战",
+  "title": "团队会议",
+  "background": "bg_base_room",
+  "bgm": "bgm_tension",
+  "dense": true,
+  "next": "3-1a",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "第二十六天，四月六号，上午九点。我们从三号那天起就没有回过研究所。这三天我们四个人睡在同一间地下室里，睡的时间加起来不到十个小时。"
+    },
+    {
+      "type": "narration",
+      "text": "四月三号以后，城里的规则变了。地面上从晚上八点到早上六点宵禁，公交车减到三分之一，几条主干道围着黄带子，带子上印的不是「危险」，是「施工」。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "规则变了。先检查什么？",
+      "options": [
+        {
+          "text": "检查本子里的名字还在不在。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "checked_the_names_survived",
+          "next": ""
+        },
+        {
+          "text": "摸一下碎片还是不是凉的。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "checked_the_fragment_temperature",
+          "next": ""
+        },
+        {
+          "text": "什么都不查。先坐下。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "sat_before_checking",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "记录本在口袋里。它还在，我摸得到它的角。"
+    },
+    {
+      "type": "narration",
+      "text": "大家都说那是煤气管道爆了。只有我们四个知道，那一段路上原来是有一整条街的。"
+    },
+    {
+      "type": "narration",
+      "text": "今天早上我们要开会。会议的起因很简单：研究所已经把这件事列为「重大城市事件」，换句话说，他们准备自己动手。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "先说结论。昨晚我收到两份东西。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "第一份是研究所的内部通知，他们要在一周内对时间核心做一次「清空」。操作方式是直接把核心拆下来运走。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "碎片要在四号前收走。你口袋里那块怎么办？",
+      "options": [
+        {
+          "text": "不上交。继续贴身带着。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_the_fragment_unlisted",
+          "next": ""
+        },
+        {
+          "text": "问什么才算碎片。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_what_counted_as_a_fragment",
+          "next": ""
+        },
+        {
+          "text": "交小留大，先过今天。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "surrendered_the_small_pieces",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我按住口袋。里面那块没有动，我也没有动。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "拆下来以后呢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "运走，封存在城北的仓库。所有还没被删干净的东西，会跟着它一起被封起来。"
+    },
+    {
+      "type": "narration",
+      "text": "地下室里有张长桌，桌上摊着这两天我们能弄到的全部东西：两套管网图、三块碎片残渣、艾莉丝的仪器、小雅的笔记本，还有我那个写满了名字的本子。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "东西分成两堆。你的放哪边？",
+      "options": [
+        {
+          "text": "放她那堆，一起算。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "put_things_on_alices_side",
+          "next": ""
+        },
+        {
+          "text": "放中间，谁也不属于。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "put_things_in_the_middle",
+          "next": ""
+        },
+        {
+          "text": "先不摆出来。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_things_put_away",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "两堆各有各的排法。桌子中间空着一条，像一条河。"
+    },
+    {
+      "type": "narration",
+      "text": "第二份东西是一张手写的便条，昨晚有人从地下室的门缝底下塞进来的。便条上只有一句话：明天上午，我来说清楚。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "署名呢。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "没有署名。但字的笔压和我们见过的一份文件一样。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "没有署名的便条。要猜名字么？",
+      "options": [
+        {
+          "text": "把猜到的名字说出口。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "spoke_the_guessed_name",
+          "next": ""
+        },
+        {
+          "text": "不猜。等人自己上门。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "waited_for_the_note_writer",
+          "next": "#l01"
+        },
+        {
+          "text": "问这算谁的笔迹。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_whose_handwriting_it_was",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "没有人说出名字。地下室静了两秒，让窗外的雨声填满了。"
+    },
+    {
+      "type": "narration",
+      "text": "九点零七分，地下室的门被敲了两下。敲门的节奏很短，两下之间隔了半秒，像是有人在礼貌和着急之间取了个中间值。",
+      "label": "l01"
+    },
+    {
+      "type": "narration",
+      "text": "门开进来的人是维拉。守望者的负责人，四十岁上下，穿着和雷恩一样的深色外套，外套上没有队标。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "便条是我写的。坐下说。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她承认便条。先逼她么？",
+      "options": [
+        {
+          "text": "问她为什么不署名。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_why_no_signature",
+          "next": ""
+        },
+        {
+          "text": "问她怎么找到这里的。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_how_she_found_the_base",
+          "next": ""
+        },
+        {
+          "text": "不逼。等她先把袋子放下。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "waited_for_her_to_open_up",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "这句话把屋子按住了。没有人替她拉椅子。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有寒暄。她把一个很旧的牛皮纸袋放在桌上，袋口用线缠了三圈，缠得很紧，像是怕里面的东西自己跑出来。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她带着一个纸袋。先问袋子里是什么么？",
+      "options": [
+        {
+          "text": "问袋子里装的是什么。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_whats_in_the_paper_bag",
+          "next": ""
+        },
+        {
+          "text": "看袋子，不问。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "looked_at_the_bag_silently",
+          "next": ""
+        },
+        {
+          "text": "问她盯了我们多久。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_how_long_she_watched_us",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "袋子放在桌子上。没有人伸手去拿它。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_smile",
+      "text": "守望者从三年前就在找时间核心的入口。找到过两次，两次都只差最后一步。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "第一次的队长姓雷恩。他带了七个人进去，回来一个。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "七个人进去，回来一个。这句怎么接？",
+      "options": [
+        {
+          "text": "把手搭在雷恩的手腕上。",
+          "affectionWho": "雷恩",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "steadied_raine_under_the_table",
+          "next": ""
+        },
+        {
+          "text": "不动。把数字听完。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_listening_to_the_count",
+          "next": ""
+        },
+        {
+          "text": "问那六个人叫什么。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_who_the_six_were",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "数字七还挂在屋子里。没有人去把它摘下来。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩的手在桌面上收了一下。他没有抬头，可他收手那一下的动静比任何一句话都响。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_smile",
+      "text": "第二次是去年冬天。那次连回来的都没有。所以守望者现在只剩我一个。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "我的立场很简单：核心必须有人亲手碰到。研究所那套清空的操作，成功率是零。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她要有人亲手碰核心。这句答不答？",
+      "options": [
+        {
+          "text": "问碰是什么意思。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_what_touching_meant",
+          "next": ""
+        },
+        {
+          "text": "说会有人去碰。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "said_someone_would_touch_it",
+          "next": ""
+        },
+        {
+          "text": "问她自己碰过什么。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_what_she_had_touched",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "碰这个字在我嘴里太轻了。我不敢把它给任何人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你怎么知道是零。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "因为核心不认设备，只认同类。这是守望者用两条命换来的结论。"
+    },
+    {
+      "type": "narration",
+      "text": "她把纸袋里的东西抽出来。里面是三块透明的小方块，每块里面都封着一样很普通的东西：一枚扣子、一段电线、半张车票。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三个小方块，编号磨浅了。要上手么？",
+      "options": [
+        {
+          "text": "拿起一个，对着灯看编号。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "lifted_a_worn_cube",
+          "next": ""
+        },
+        {
+          "text": "不上手。凑近了看。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "read_the_cubes_from_above",
+          "next": ""
+        },
+        {
+          "text": "问编号是被谁的手磨浅的。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_whose_hands_wore_them",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "编号上的磨损是别人过的日子。我没有权利借。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_smile",
+      "text": "这三个是三个人在裂缝里最后碰到的东西。它们现在还在这儿，是因为有人还记得他们。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "你早就知道删掉的人不会真的没有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "我知道。但我没能力把人捞回来，所以我只能留着这些东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她把记录交给有能力的人。怎么接？",
+      "options": [
+        {
+          "text": "说我们可能也没有能力。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "doubted_our_own_ability",
+          "next": ""
+        },
+        {
+          "text": "问她想要什么回报。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_for_the_price_first",
+          "next": ""
+        },
+        {
+          "text": "说：你已经试过很多次了。",
+          "affectionWho": "维拉",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "thanked_her_for_trying",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我接下了话，没有接袋子。袋子要由她自己打开。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完这句，把三块小方块推到桌子中间，谁也没有碰。地下室的灯管响了一下，那声响把桌上的灰震下来一层。"
+    },
+    {
+      "type": "narration",
+      "text": "会议是这时候才真正开始的。因为维拉把方案摊开以后，我们四个人第一次发现，我们并不在同一个方向上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我反对直接碰核心。核心是删除的执行端，碰它等于把自己写进删除名单。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她把结果指在墙上。要看墙么？",
+      "options": [
+        {
+          "text": "看那面墙。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "looked_at_the_yellow_tape",
+          "next": ""
+        },
+        {
+          "text": "不看墙，只看她。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_eyes_on_her",
+          "next": ""
+        },
+        {
+          "text": "问名单是谁第一个贴上去的。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_who_pinned_the_list",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "黄带子的边已经翘起来了。翘起来的那一角，朝里。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝说这话的时候，手里没有拿任何东西。她平时总是拿着仪器的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我的方案是先用核心的读取口，把被删掉的人从残留里提出来，一次一个。提出来的人有名字、有落点，删除就不成立。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "时间不够。读取口的功率你算过没有。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "功率、时间，都是数字。要插你的数么？",
+      "options": [
+        {
+          "text": "说你能读得比四十秒快。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "offered_faster_reading",
+          "next": ""
+        },
+        {
+          "text": "不说。让两个数字自己吵。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_the_numbers_argue",
+          "next": ""
+        },
+        {
+          "text": "问功率不够会怎么样。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_about_power_failure",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我没有加进去。两个数字在打架，加进我的那个只会多输一次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "算过。一个名字要四十秒。按我手上的名单，全场提完要十一个小时。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "十一个小时以后，我们全在名单上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "我的方案不一样。我带两个人进去，把守卫的方向引开，剩下的人在读取口动手。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他把自己写成诱饵。先问哪一头？",
+      "options": [
+        {
+          "text": "问另两个名额给谁。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_who_the_two_would_be",
+          "next": ""
+        },
+        {
+          "text": "先记下来，回头再问。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "noted_the_lure_plan",
+          "next": "#l02"
+        },
+        {
+          "text": "问他打算怎么引。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_how_he_would_lure",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "方案摊在桌上。引开这个字，比读取那个字重。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "引开守卫这件事，守望者熟。我去过一次，知道那道门在哪儿。",
+      "label": "l02"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "你上次进去是被人拖出来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "所以我记得路。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他记得路。信这条信么？",
+      "options": [
+        {
+          "text": "信。让他带路。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "believed_the_remembered_road",
+          "next": ""
+        },
+        {
+          "text": "请他把路画在图上。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_him_to_draw_the_road",
+          "next": ""
+        },
+        {
+          "text": "说你也记得一段路。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "claimed_the_same_memory",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "记得路和走得脱是两回事。我把这两回事都记进了本子。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅一直没有说话。她坐在桌子的末端，把三个小方块摆成一排，从左到右看了很多遍。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "你们吵的其实不是方案。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "你们吵的是先救谁。艾莉丝想先救那些人，雷恩想先救我们。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她把真正的问题说破了。撑她么？",
+      "options": [
+        {
+          "text": "朝小雅点头。",
+          "affectionWho": "小雅",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "nodded_at_xyas_question",
+          "next": ""
+        },
+        {
+          "text": "说这不是先救谁的问题。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "denied_the_order_question",
+          "next": ""
+        },
+        {
+          "text": "问她会先选哪一边。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_her_which_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "小雅这句话比我们的都站得直。我没有把它接起来，我让它躺在地上。"
+    },
+    {
+      "type": "narration",
+      "text": "她说得很平。她把这句话说完以后，桌边四个人都没有立刻接。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "不是先救谁的问题。是不提出来，我们就是在替他们做决定。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "我们替人做决定已经做了三号那天那一次。结果在黄带子里。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "结果在黄带子里。这句怎么接？",
+      "options": [
+        {
+          "text": "说错的不是决定，是情报。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "blamed_the_information_not_choice",
+          "next": ""
+        },
+        {
+          "text": "不接。让这句话落地。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "stayed_silent_at_the_tape",
+          "next": ""
+        },
+        {
+          "text": "问三号那天是谁做的决定。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_who_decided_on_the_third",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我想起艾莉丝在桌子底下的手指。这句话我不敢快答。"
+    },
+    {
+      "type": "narration",
+      "text": "这句话落地的时候，我看见艾莉丝的手指在桌子底下收紧了一下。那个女人是她的母亲。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_smile",
+      "text": "你们吵得都对。但今天必须有一个能执行的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "她把那三块小方块收回去，放进纸袋，重新缠上线。她做这件事的时候很慢，像在为接下来的话留出位置。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "桌上空出一个位置。要填么？",
+      "options": [
+        {
+          "text": "把手放在空位上。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "laid_hand_on_the_empty_spot",
+          "next": ""
+        },
+        {
+          "text": "把本子压上去填了它。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "filled_the_spot_with_the_book",
+          "next": ""
+        },
+        {
+          "text": "不填。让它空着。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "left_the_spot_empty",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "空位是留着的东西。填得太快，会忘记它原来是谁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "守望者能提供两样：一条不怎么体面的进入路线，和一次性的干扰器。干扰器只能响三分钟。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_smile",
+      "text": "除此之外我给不了你们任何保证。进那道门以后，我不会替任何人回头。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完站起来。她走到门口又停下，回头看了雷恩一眼，这一眼里没有队长的意思，只有同事之间的一种很短的东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她走之前看了雷恩一眼。要留她么？",
+      "options": [
+        {
+          "text": "说等一下，名单还没给。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_her_to_wait_for_list",
+          "next": ""
+        },
+        {
+          "text": "问雷恩那一眼是什么意思。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_raine_about_the_look",
+          "next": ""
+        },
+        {
+          "text": "不留。把这一眼记下。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_down_the_last_look",
+          "next": "#l03"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那一眼不需要翻译。桌上的人都听懂了，听懂了也都没有说。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_cold",
+      "text": "四月九号晚上十点，那道门会开一次。错过这一次，下一次要等两年。",
+      "label": "l03"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "维拉",
+      "sprite": "vera_smile",
+      "text": "四月八号之前，给我一个名单。写谁进去。"
+    },
+    {
+      "type": "narration",
+      "text": "门关上以后，地下室安静了大概二十秒。这二十秒里我听见头顶的路面有车经过，车轮和地面摩擦的声音很长，说明外面在下雨。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "二十秒的安静。谁来破？",
+      "options": [
+        {
+          "text": "我先开口。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "broke_the_twenty_seconds",
+          "next": ""
+        },
+        {
+          "text": "等雷恩先说。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_raine_open_his_mouth",
+          "next": ""
+        },
+        {
+          "text": "等艾莉丝把结论补上。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "let_alice_fill_the_silence",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "雨把这二十秒盖了一层。盖完，每个人的声音都有点哑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "她的名单上不会只写要进去的人。还会写不进去的人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "对。所以今天下午我们要先把两件事定下来：进门的路线，和留在外面的人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "留在外面的人是干什么的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她问留在外面是干什么的。怎么答？",
+      "options": [
+        {
+          "text": "照实说：负责把记录带出去。",
+          "affectionWho": "小雅",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "told_xya_the_outside_truth",
+          "next": ""
+        },
+        {
+          "text": "说外面更安全。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "sold_the_outside_as_safe",
+          "next": ""
+        },
+        {
+          "text": "反问她为什么要知道。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_why_she_needed_to_know",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "这个问题在空气里挂着。它太实了，没有人想第一个把它接住。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "如果里面失败，外面的人负责把记录带出去。带出去的名字越多，这件事就越不算完成。"
+    },
+    {
+      "type": "narration",
+      "text": "这句话我懂。我这一年唯一做成的事，就是把被删掉的名字写在纸上。纸上的字没有人能收走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "那我就进读取口那一边。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "你把自己报上去了。加什么话？",
+      "options": [
+        {
+          "text": "不添话，接住她的眼神。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "accepted_her_look_silently",
+          "next": ""
+        },
+        {
+          "text": "加一句：我只念十一个。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "limited_his_own_reading",
+          "next": ""
+        },
+        {
+          "text": "加一条：小雅不进里面。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "barred_xya_from_going_in",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "话出了口，比我本人笃定。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "为什么。这件事非你不可吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "因为只有我能读出已经被删掉的名字。读取口要有人念，你们念不出来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "你读出来的每一个名字，都会从你身上走一遍。三号那天你读了十一个，吐了两次。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "名字要过你一遍。要讲条件么？",
+      "options": [
+        {
+          "text": "说全部念，一个不落。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "agreed_to_read_all_names",
+          "next": ""
+        },
+        {
+          "text": "要求每个名字之间停十秒。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_for_gaps_between_names",
+          "next": ""
+        },
+        {
+          "text": "说只念一半。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "offered_to_read_half",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "二十这个数还摊在桌上。十一要加上去，加的时候没有人跟我商量。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "十一个是十一个。这一次我准备多吐几次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "他在里面念的时候，我在外面听着。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "我听见过那个动静。像很多人在很远的地方同时说同一句话，说着说着就少一个声音。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "少一个我就记一个。我记东西比谁都牢，你们知道的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她要在外面往回念。同意么？",
+      "options": [
+        {
+          "text": "说好。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "agreed_to_her_reading_back",
+          "next": ""
+        },
+        {
+          "text": "不说话，把笔递给她。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "handed_her_the_pen",
+          "next": ""
+        },
+        {
+          "text": "请她把字写小一点。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_for_smaller_writing",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "笔已经在她手里了。笔上还留着我手心的温度。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "小雅，你在外面记，别跟着我进去。"
+    },
+    {
+      "type": "narration",
+      "text": "她没答应，也没摇头。她只是把桌上那支笔拿起来，别在自己上衣口袋里，像是先占住一个位置。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅笑了一下。她笑的时候眼睛下边还有没睡好的青，但那一下是真的笑。这是这一天里唯一像样的东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "唯一像样的东西是她的笑。要留住么？",
+      "options": [
+        {
+          "text": "说：留着，明天还要用。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_the_smile_for_tomorrow",
+          "next": ""
+        },
+        {
+          "text": "不说话。把它记下来。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "memorized_the_short_smile",
+          "next": ""
+        },
+        {
+          "text": "问她完事以后想吃什么。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_about_meals_afterwards",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我把它记下来了。笑是这几天里唯一不用上交的东西。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "那我把剩下的部分说清楚。三条路线摆在这儿，你们选。"
+    },
+    {
+      "type": "narration",
+      "text": "她把管网图铺开，用三颗图钉钉住两个方案的位置，一个留着让第三个人自己决定。第一颗钉在核心正上方，第二颗钉在外环的检修井。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "走正上方快，四十分钟能到门；被发现的概率最高。走检修井慢，要绕两个半小时，但守望者那条旧路在井下面。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三条路，各带一个代价。要问她的意见么？",
+      "options": [
+        {
+          "text": "问她自己要走哪条。",
+          "affectionWho": "艾莉丝",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "asked_alices_own_choice",
+          "next": ""
+        },
+        {
+          "text": "问哪条最难回来。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_which_was_no_return",
+          "next": ""
+        },
+        {
+          "text": "说旧路你走过一段。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "claimed_the_old_road",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "三颗图钉各有一小片影子。影子都很短，方向是一样的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "还有一种，是我们谁都不动，先把名单和记录送出去。今晚就送。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "第三条不算方案。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "它算。它只是不好看。"
+    },
+    {
+      "type": "narration",
+      "text": "我拿着笔在图上看了一会儿。纸上那颗钉在正上方的图钉，钉帽上有一道划痕，是艾莉丝今天上午刚弄出来的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "四月九号进门的方案，怎么定？",
+      "options": [
+        {
+          "text": "走正上方，快、直接，把三分钟干扰器用在最需要的地方",
+          "affectionWho": "雷恩",
+          "affection": 8,
+          "insomnia": 1,
+          "flag": "plan_direct_assault",
+          "next": "3-2"
+        },
+        {
+          "text": "走检修井，绕两个半小时，用守望者那条旧路线保全部队形",
+          "affectionWho": "艾莉丝",
+          "affection": 8,
+          "insomnia": 1,
+          "flag": "plan_maintenance_shaft",
+          "next": "3-2"
+        },
+        {
+          "text": "两条都走，我今晚留在档案间把三条路线对着图纸再核一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "plan_final_draft_alone",
+          "next": "3-1a"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "方案定下来的时候是下午两点。雨还没停。我们把图纸分了三份，一份压在桌角，一份塞进车里的工具袋，第三份卷起来用胶带缠好，交给小雅。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "这份我贴身带着。哪怕我把今天全忘光，它还在。"
+    },
+    {
+      "type": "narration",
+      "text": "散会之后每个人去了不同的地方。艾莉丝去整理读取口的参数，雷恩去下面清点干扰器，小雅上街买明天开始要吃的干粮。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "每个人都有了去处。你去哪儿？",
+      "options": [
+        {
+          "text": "去档案间。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "went_to_the_archive_room",
+          "next": ""
+        },
+        {
+          "text": "先去街上走一圈。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "walked_the_changed_streets",
+          "next": ""
+        },
+        {
+          "text": "回去看那把空椅子。",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "went_to_see_the_chair",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "档案间的灯是暗的。四张纸还在原来的位置上。"
+    },
+    {
+      "type": "narration",
+      "text": "我留在档案间。我把三条路线重画了一遍，又在旁边画了第四张：如果进去以后出事，谁能从哪儿退出来。"
+    },
+    {
+      "type": "narration",
+      "text": "那张图我画到晚上十一点四十。画完我趴在桌上，本子摊在左手边，笔掉在地上，没去捡。"
+    }
+  ]
+}

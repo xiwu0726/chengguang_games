@@ -1,0 +1,201 @@
+# Alert Rules for Game Server
+
+groups:
+  - name: game-server-health
+    interval: 30s
+    rules:
+      # High error rate
+      - alert: HighErrorRate
+        expr: |
+          rate(errors_total[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "Game server has high error rate"
+          description: "Error rate is {{ $value | humanizePercentage }} in the last 5 minutes"
+
+      # Circuit breaker open
+      - alert: CircuitBreakerOpen
+        expr: circuit_breaker_state{state="OPEN"} == 1
+        for: 2m
+        labels:
+          severity: critical
+          component: game-server
+        annotations:
+          summary: "Circuit breaker is OPEN"
+          description: "Circuit breaker {{ $labels.name }} has been OPEN for {{ $value }} minutes"
+
+      # Degraded mode enabled
+      - alert: DegradedModeEnabled
+        expr: degraded_mode_enabled == 1
+        for: 2m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "Degraded mode is enabled"
+          description: "System is operating in degraded mode with failure rate {{ $value | humanizePercentage }}"
+
+      # Server downtime
+      - alert: ServerDown
+        expr: up{job="game-server"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          component: infrastructure
+        annotations:
+          summary: "Game server is down"
+          description: "Game server has been down for more than 1 minute"
+
+      # Health check failed
+      - alert: HealthCheckFailed
+        expr: health_status != "healthy"
+        for: 2m
+        labels:
+          severity: critical
+          component: game-server
+        annotations:
+          summary: "Health check failed"
+          description: "Server status is {{ $labels.status }}"
+
+  - name: game-server-performance
+    interval: 30s
+    rules:
+      # High request latency
+      - alert: HighRequestLatency
+        expr: |
+          histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) > 1
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "High request latency detected"
+          description: "95th percentile latency is {{ $value }}s"
+
+      # High error rate in specific endpoint
+      - alert: HighEndpointErrorRate
+        expr: |
+          rate(endpoint_errors_total[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "High error rate on endpoint {{ $labels.endpoint }}"
+          description: "Error rate is {{ $value | humanizePercentage }} on endpoint {{ $labels.endpoint }}"
+
+      # High CPU usage
+      - alert: HighCPUUsage
+        expr: |
+          100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+          component: infrastructure
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is {{ $value }}% on {{ $labels.instance }}"
+
+      # High memory usage
+      - alert: HighMemoryUsage
+        expr: |
+          (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          component: infrastructure
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is {{ $value }}% on {{ $labels.instance }}"
+
+      # Disk space low
+      - alert: LowDiskSpace
+        expr: |
+          (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100 < 20
+        for: 5m
+        labels:
+          severity: warning
+          component: infrastructure
+        annotations:
+          summary: "Low disk space"
+          description: "Disk space is {{ $value }}% on {{ $labels.instance }}"
+
+  - name: game-server-reliability
+    interval: 30s
+    rules:
+      # High retry rate
+      - alert: HighRetryRate
+        expr: |
+          rate(retry_attempts_total[5m]) > 0.2
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "High retry rate detected"
+          description: "Retry rate is {{ $value | humanizePercentage }}"
+
+      # Many failed requests
+      - alert: ManyFailedRequests
+        expr: |
+          rate(failed_requests_total[5m]) > 0.5
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "Many failed requests"
+          description: "Failed request rate is {{ $value | humanizePercentage }}"
+
+      # High error rate by type
+      - alert: HighErrorRateByType
+        expr: |
+          sum(rate(errors_total{error_type=~"429|500|network"}[5m])) by (error_type) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "High error rate by type"
+          description: "Error rate for {{ $labels.error_type }} is {{ $value | humanizePercentage }}"
+
+  - name: game-server-metrics
+    interval: 30s
+    rules:
+      # Metric collection issues
+      - alert: MetricCollectionFailed
+        expr: metric_collection_error_total > 0
+        for: 1m
+        labels:
+          severity: warning
+          component: monitoring
+        annotations:
+          summary: "Metric collection failed"
+          description: "Metric collection has failed {{ $value }} times"
+
+      # High metrics collection latency
+      - alert: HighMetricsLatency
+        expr: |
+          histogram_quantile(0.95, sum(rate(metric_collection_duration_seconds_bucket[5m])) by (le)) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          component: monitoring
+        annotations:
+          summary: "High metrics collection latency"
+          description: "95th percentile metrics collection latency is {{ $value }}s"
+
+      # High number of circuit breaker failures
+      - alert: HighCircuitBreakerFailures
+        expr: |
+          rate(circuit_breaker_failure_total[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          component: game-server
+        annotations:
+          summary: "High circuit breaker failures"
+          description: "Circuit breaker failure rate is {{ $value | humanizePercentage }}"

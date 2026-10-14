@@ -1,0 +1,464 @@
+{
+  "sceneId": "3-e01",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·归途",
+  "background": "cg_ending_e01",
+  "bgm": "bgm_warm",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号早上六点四十，我们从那栋楼里走出来。天是灰白的，路上已经有洒水车。"
+    },
+    {
+      "type": "narration",
+      "text": "楼下停着一辆修路的车。两个工人蹲在井盖边上，一个人说昨晚这一段又断了一次电。"
+    },
+    {
+      "type": "narration",
+      "text": "他们说断了一次电，就像在说一件每天都发生的事。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "他们什么都不知道。他们旁边昨天晚上裂开过一条那么大的缝。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "知道的人越少越好。这条规矩是我写的，现在我自己也觉得它难听。"
+    },
+    {
+      "type": "narration",
+      "text": "我们四个人在路口分开之前，谁都没有说话。分开这件事本身，比昨晚那一格钟还难走。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩先走的。他往西边走，那是守望者的方向。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅第二个走。她走之前把录音机留给了我，说里面的东西她已经没有用了。"
+    },
+    {
+      "type": "narration",
+      "text": "最后剩下我和艾莉丝。她站在路口看了一会儿那辆修路的车，然后转过来看着我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你的失眠值，我明天给你测一次。站在你那个位置上的人，不能一个人住。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那你测完以后，打算把我搬到哪里去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_smile",
+      "text": "研究所的观察室。那里有床，有窗，还有一个很吵的换气扇。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句的时候，脸上第一次没有那种把话说完就收回去的表情。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十一号，我在研究所的观察室睡了十一个小时。"
+    },
+    {
+      "type": "narration",
+      "text": "醒过来的时候，我分不清哪一段是梦里听来的，哪一段是我自己记得的。这是因为失眠值还在高位。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "比昨天低了一点。这一点是你自己睡出来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "那我多睡几天，是不是就能睡回去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "回不去了。你丢掉的三十个小时不会回来，这跟失眠是两件事。"
+    },
+    {
+      "type": "narration",
+      "text": "她说得很直接。这一个月我听她说过很多直接的话，这一句听着最不难受。"
+    },
+    {
+      "type": "narration",
+      "text": "研究所把这件事结掉了。结案文件上写的是设备故障引起的区域停电，附了七页数据。"
+    },
+    {
+      "type": "narration",
+      "text": "那七页数据是艾莉丝写的。她写数据从来不掺假，只有这一次，她在里面删掉了我们四个人的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你把我们写掉了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我写过很多份报告。这一份是我第一次签完字以后坐了很久的一份。"
+    },
+    {
+      "type": "narration",
+      "text": "结案之后她被调去做档案整理。她的工位换到了地下二层，那里没有窗，只有一个很吵的换气扇。"
+    },
+    {
+      "type": "narration",
+      "text": "我说这像是被发配。她说这样也好，档案室里有的是纸，她可以慢慢看。"
+    },
+    {
+      "type": "narration",
+      "text": "她的表一直没有修。停在一分四十秒的秒针上，她戴着它上班，戴着它吃饭。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "不修。修好了它就是一块普通的表。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十五号，我回图书馆上班。三楼还是那排书架，四楼还是那口坏了的钟，灰还是没人擦。"
+    },
+    {
+      "type": "narration",
+      "text": "老周还在登记台后面。他看见我，先问的是我这几天去哪了，账面上一本没还的书都没有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "老周，你那张核对表还在吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "核对表。哪张核对表。"
+    },
+    {
+      "type": "narration",
+      "text": "他问得很自然，自然到我一瞬间以为自己记错了。"
+    },
+    {
+      "type": "narration",
+      "text": "我看了他一会儿，没有把话往下说。他这四十年一直在等一个人，现在他不等了。"
+    },
+    {
+      "type": "narration",
+      "text": "被删掉的是他自己那段日常：每天早上开门先数一遍座位，每年年初换一叠新格纸，一笔一笔填同一张表。这些他现在一个都想不起来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "你这么看着我干什么。我脸上有灰。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "没事。你今天气色挺好。"
+    },
+    {
+      "type": "narration",
+      "text": "他笑了一下，低头继续盖章。他盖章的动作还是三下，一下比一下重。"
+    },
+    {
+      "type": "narration",
+      "text": "那天晚上我在书架后面站了很久。楼梯口的灰还在灯下面浮着，只是比三月的时候薄。"
+    },
+    {
+      "type": "narration",
+      "text": "我伸手在那个位置比了一下。什么也没有碰到。"
+    },
+    {
+      "type": "narration",
+      "text": "城市自己长回去了。它长得很干净，干净到只剩我们四个人记得那一个晚上。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩那边我去看过两次。守望者的院子在老城区，墙上爬满了那种开小白花的藤。"
+    },
+    {
+      "type": "narration",
+      "text": "他手上的烙印成了一块褐色的疤，天冷的时候会疼。他说疼的时候好，疼说明那块肉还认得他。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "我周末还去西边那条路。走到头就回来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那边现在什么都没有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "我知道。我就是去走一遍，走完再写一遍她的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "他从口袋里掏出那张纸给我看。上面的小满两个字被他描过很多次，描得纸都快透了。"
+    },
+    {
+      "type": "narration",
+      "text": "他说这一个月我教了他一件有用的东西：记一个名字就少一个缺口。"
+    },
+    {
+      "type": "narration",
+      "text": "我说这不是我教的，是那本账教的。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅的耳朵慢慢回来了一点。她还能听见，但不像三月那样铺天盖地。"
+    },
+    {
+      "type": "narration",
+      "text": "现在她听见的声音一次只有一个，而且大多是活人。她说这样挺好，至少能分清楚谁在说话。"
+    },
+    {
+      "type": "narration",
+      "text": "她回咖啡馆上班了，围裙上还是那片洗不掉的咖啡渍。她一天能走两万多步，晚上倒头就睡。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "你那个本子还写着吗。你别停啊，停了我会听出来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "还写。现在一个晚上写不了那么多，一般只写一个。"
+    },
+    {
+      "type": "narration",
+      "text": "我确实还在写。四月十号以后，本子上新添的名字越来越少，因为想起来的人越来越少。"
+    },
+    {
+      "type": "narration",
+      "text": "第一页上的字在退色。苏禾那两个字我描过五次，阿灰那两个字我描过三次。"
+    },
+    {
+      "type": "narration",
+      "text": "描的时候我会念出声。念出声的时候，图书馆那个位置的灰会顿一下，像有人在很远的地方应了一声。"
+    },
+    {
+      "type": "narration",
+      "text": "我的失眠值一个月里降了一截。艾莉丝说这是她见过的最慢的一次恢复。"
+    },
+    {
+      "type": "narration",
+      "text": "降下来那一段是浅眠。浅眠有一个好处：我还能记住自己记得什么。"
+    },
+    {
+      "type": "narration",
+      "text": "五月中旬，我们四个人在咖啡馆聚了一次。那是分开以后第一次四个人都在。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅点的单，她报得很顺：三杯黑咖啡，一杯热牛奶，还有一杯放在桌子最里面，谁都不喝。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "最里面那杯是给谁的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "给还没回来的人。我每个月都会多点一杯，习惯了。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候在擦杯子，没有抬头。她擦杯子的动作跟以前一模一样。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩拿出来一张收据，在背面写了两个字，推给艾莉丝。他写的字很大，笔画压得很深。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你写她的名字给我做什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_grin",
+      "text": "你不是有本子吗。你抄一遍，我这边就轻一点。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝看了他两秒，把收据折起来放进外套内侧的口袋里。"
+    },
+    {
+      "type": "narration",
+      "text": "她那个口袋我知道，里面放着她的硬皮本子。本子的第一页是空的，第二页上写着我的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "抄可以。抄完这一页我就要换个新本子，字写满了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "你那本子上写了什么，能看吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "不能。这一页是私事，跟研究所没有关系。"
+    },
+    {
+      "type": "narration",
+      "text": "她拒绝得很干脆。这一个月我听她拒绝过很多次，这一次听着最舒服。"
+    },
+    {
+      "type": "narration",
+      "text": "那天下午我们聊的都是些没用的事。雷恩说他院子里的藤开花了，小雅说她学会了拉花。"
+    },
+    {
+      "type": "narration",
+      "text": "没有人提那个晚上。不是不能说，是说出来以后，桌上的那杯牛奶会凉。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e01",
+      "text": "四杯喝完，一杯还满着。窗外的天开始暗下去，咖啡馆的灯一盏一盏亮起来，我们四个人的影子落在同一张桌子上。"
+    },
+    {
+      "type": "narration",
+      "text": "散场的时候，小雅把那杯凉了的牛奶端起来，倒进了水池。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "明天再来一杯。倒了不可惜，放着才可惜。"
+    },
+    {
+      "type": "narration",
+      "text": "我在回家的路上绕了一段，去了图书馆。那天不是我值班，四楼没有开灯。"
+    },
+    {
+      "type": "narration",
+      "text": "我在楼梯口站了一会儿。这一层楼的灰不多，风从楼梯井里往上走，带着纸的味道。"
+    },
+    {
+      "type": "narration",
+      "text": "我小声念了两个名字。念完以后什么也没发生，只是那层灰薄了一点。"
+    },
+    {
+      "type": "narration",
+      "text": "回到家我把本子放进抽屉。抽屉没有锁，我从来不给它上锁。"
+    },
+    {
+      "type": "narration",
+      "text": "我知道哪天晚上要是忘了写，第二天早上我会在抽屉缝里看见一层很薄的灰。"
+    },
+    {
+      "type": "narration",
+      "text": "那也是提醒。提醒我有人还在等一个名字被念对。"
+    },
+    {
+      "type": "narration",
+      "text": "六月初，城市里下了一场很大的雨。新闻里说那是一次普通的降雨过程，附了两页气象图。"
+    },
+    {
+      "type": "narration",
+      "text": "雨停的第二天，图书馆来了一批新书。我和老周一起把它们上架，从三楼搬到四楼，来回走了十一趟。"
+    },
+    {
+      "type": "narration",
+      "text": "搬完最后一趟，他坐在台阶上喘气，说了句今年夏天来得早。"
+    },
+    {
+      "type": "narration",
+      "text": "我说是啊。他说完这句就下去了，登记台那边有人在喊他盖章。"
+    },
+    {
+      "type": "narration",
+      "text": "我一个人站在四楼。窗户开着，雨后的风把书架上的纸页吹得轻轻响。"
+    },
+    {
+      "type": "narration",
+      "text": "我伸手把最上面一排书推正，推的时候看见书脊上有一层很薄的灰，被我的手指按出一个印子。"
+    },
+    {
+      "type": "narration",
+      "text": "那个印子很小，太阳下去以后就看不见了。"
+    },
+    {
+      "type": "narration",
+      "text": "我下楼去还钥匙。这一个月我丢过三十个小时，丢过一个同事，丢过一段借来的记忆。"
+    },
+    {
+      "type": "narration",
+      "text": "可我每天还能走路，能上班，能记得我们四个人坐在同一张桌子前面的样子。"
+    },
+    {
+      "type": "narration",
+      "text": "这就是我们选的那一种日子。它不响亮，也不值得写进任何一份报告。"
+    },
+    {
+      "type": "narration",
+      "text": "晚上七点，我关上图书馆的门。钥匙在锁孔里转了两圈，第二圈比第一圈重。"
+    },
+    {
+      "type": "narration",
+      "text": "回去的路上我买了一份面包，一杯热牛奶。牛奶是给小雅的，我明天早上带给她。"
+    },
+    {
+      "type": "narration",
+      "text": "走到楼下的时候我抬头看了一眼。四楼那扇窗黑着，跟这一带所有的窗一样。"
+    },
+    {
+      "type": "narration",
+      "text": "我从口袋里摸出笔，在面包袋的背面写了一个名字，写得很快。"
+    },
+    {
+      "type": "narration",
+      "text": "写完我把袋子折好，塞进口袋，上楼，开门，洗手，把本子从抽屉里拿出来。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我坐下来，翻开新的一页，等着想起今天该写的那个名字。"
+    }
+  ],
+  "kind": "ending"
+}

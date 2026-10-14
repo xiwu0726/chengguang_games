@@ -1,0 +1,312 @@
+{
+  "sceneId": "1-1b",
+  "chapter": "第一幕·异变初现",
+  "title": "一个人的第三层",
+  "background": "bg_library_night",
+  "bgm": "bgm_mystery",
+  "dense": true,
+  "next": "1-2",
+  "lines": [
+    { "type": "narration", "text": "我没有回头。我做了相反的事：我往前走了两步，站到那排书架最里面。" },
+    { "type": "narration", "text": "楼下的门响了一声，很重，像是有人故意让我听见，又不想让我听清楚。然后整栋楼就安静了。" },
+    { "type": "narration", "text": "这一次的安静和刚才不一样。刚才是有东西在动，声音退远了；现在是连退远的声音都没有了，像有人把整栋楼的声音装进一个盒子盖上了盖。" },
+    { "type": "dialogue", "speaker": "老周", "sprite": "zhou_grim", "text": "小林——别回头，继续往里走。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "楼下喊话的人叫我不回头，脚印却朝上。",
+      "options": [
+        { "text": "回头看一眼门厅的方向", "affectionWho": "", "affection": 0, "insomnia": 2, "flag": "looked_back_toward_the_hall", "next": "" },
+        { "text": "不回头，把手往书上伸", "affectionWho": "老周", "affection": 1, "insomnia": -2, "flag": "kept_hand_on_the_book", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "不管回不回头，那声音落下去以后，楼里的人声就彻底停了。" },
+    { "type": "narration", "text": "他的声音是从门厅传来的。可我刚才看见他的胶鞋印在往楼上走。两件事都成立，那就说明我正在听的，不是现在。" },
+    { "type": "narration", "text": "我把手伸向那本书。封面是空的，摸上去却不是纸的质感，比纸冷，比布硬，像有人把一层皮钉在硬壳上。" },
+    { "type": "narration", "text": "我翻开第一页。空白。第二页，空白。第三页开始有字了——只有日期，一年一年往下排，每年一行。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "书到第三页才开始有字，一年只有一行。",
+      "options": [
+        { "text": "一页一页翻到二一一〇年", "affectionWho": "", "affection": 0, "insomnia": 2, "flag": "paged_to_year_2110", "next": "" },
+        { "text": "先摸封面，再决定翻不翻", "affectionWho": "", "affection": 0, "insomnia": -2, "flag": "felt_the_cover_first", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "手指停在页边上，纸很凉，凉得像刚从外面拿进来。" },
+    { "type": "narration", "text": "二一一〇年那一行被反复描过，纸都被描薄了。旁边没有任何内容，就一个年份，自己站在那儿。" },
+    { "type": "narration", "text": "我把手指按在那行字上。手心里那块东西跳得几乎要烫起来，跳的节奏和纸下面某个东西的节奏对上了。" },
+    { "type": "narration", "text": "灰重新开始往下落。落得很慢，慢到我能看清每一粒在空中转了几个圈才肯落到书页上。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "碎片已经在指尖上，纸就在下面。按还是收？",
+      "options": [
+        { "text": "把碎片按在二一一〇年那一行", "affectionWho": "", "affection": 0, "insomnia": 3, "flag": "pressed_shard_on_the_year", "next": "" },
+        { "text": "先把手收回来，看清楚再动", "affectionWho": "", "affection": 0, "insomnia": -2, "flag": "withdrew_the_shard_first", "next": "#l01" }
+      ]
+    },
+    { "type": "narration", "label": "l01", "text": "收手也一样。光已经顺着指缝爬上来，白得发细。" },
+    { "type": "narration", "text": "我把碎片从手心挪到指尖，轻轻碰上纸面。" },
+    { "type": "fx", "fx": "flash", "text": "" },
+    { "type": "narration", "text": "光散掉的时候，图书馆不见了。不是变暗，是被抽掉了一层。地板还在脚下，可地板下面的东西露出来了。" },
+    { "type": "narration", "text": "不是地下室，不是管道。是线。" },
+    { "type": "fx", "fx": "timeline", "text": "" },
+    { "type": "narration", "text": "每一样东西下面都牵着一条线，桌子、书架、灯管、我的鞋尖，全都牵着。线很细，颜色不一样，粗细也不一样。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "每样东西下面都牵着线。先看哪一条？",
+      "options": [
+        { "text": "看自己鞋尖底下那一条", "affectionWho": "", "affection": 0, "insomnia": 2, "flag": "checked_the_line_under_his_shoe", "next": "" },
+        { "text": "看灯管和书架上面那几条", "affectionWho": "", "affection": 0, "insomnia": 0, "flag": "checked_the_lines_above", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "线都在动，可我盯住哪一条，哪一条就慢一点，像知道有人在看。" },
+    { "type": "narration", "text": "线往同一个方向流。我顺着它看过去，看见了很远的地方有一条更粗的线，横着铺开，一眼望不到头。" },
+    { "type": "narration", "text": "那不是河。河会分岔，它不会。它只是往前，很稳，很整齐，像有人已经替它排好了位置。" },
+    { "type": "narration", "text": "线上站满了人。密密麻麻的，肩挨着肩，谁也不说话，谁也没回头。" },
+    { "type": "narration", "text": "他们不是在走，是被推着走。每往前一格，脚底下那条线就往前挪一格，人就跟着挪一格，姿势完全不变。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "队伍里没有人回头。要不要跟着挪一格？",
+      "options": [
+        { "text": "跟着往前挪一格试试", "affectionWho": "", "affection": 0, "insomnia": 3, "flag": "stepped_one_square_with_the_queue", "next": "" },
+        { "text": "站在原地，先看这队排到哪", "affectionWho": "", "affection": 0, "insomnia": -1, "flag": "stayed_out_of_the_queue", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "我没动。队伍从我身边挪过去，肩膀擦着肩膀，一点声音都没有。" },
+    { "type": "narration", "text": "我在队伍里找。找穿校服的，找眉骨高的，找嘴角往下压着的。找了很久，找到了一个背影。" },
+    { "type": "narration", "text": "她站在队伍靠后的位置，袖口有墨点。她身上的线是断的——从胸口往下，线断成两截，中间那一截悬着，没能接上。" },
+    { "type": "narration", "text": "我想叫她。喉咙里像塞了棉花，一个字都挤不出来。我只能看着，看着她的线在风里一样的东西里摆动。" },
+    { "type": "narration", "text": "然后我低头找我自己。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "所有人都在线上，只有我站在外面。先找谁？",
+      "options": [
+        { "text": "先找那个穿校服的背影", "affectionWho": "", "affection": 0, "insomnia": 2, "flag": "looked_for_the_school_uniform", "next": "" },
+        { "text": "先摸清自己身上那条线", "affectionWho": "", "affection": 0, "insomnia": 3, "flag": "checked_his_own_line_first", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "低头的时候我看见自己的鞋尖悬着，踩不到底下那条线。" },
+    { "type": "narration", "text": "我在队伍外面。所有人都站成一条线，只有我站在旁边，脚底下是空的，什么也没牵。" },
+    { "type": "narration", "text": "我抬脚踩了踩。空的，踩不实。好像我不属于这条线，也不属于这条线以外的地方。" },
+    { "type": "narration", "text": "我伸手摸自己的胸口。那一段线还在，从头往下，只有中间有一小截颜色不对，比别处浅，接了两次，接口不齐。" },
+    { "type": "narration", "text": "三十个小时。接口的宽度，正好是我丢掉的那三十个小时的宽度。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "接口的宽度刚好是三十个小时。要不要说出来？",
+      "options": [
+        { "text": "把那句话说出来：有人剪过我的线", "affectionWho": "", "affection": 0, "insomnia": 4, "flag": "said_the_line_was_cut", "next": "" },
+        { "text": "不说，先把这个宽度记住", "affectionWho": "", "affection": 0, "insomnia": 2, "flag": "memorized_the_thirty_hours", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "那句话在喉咙里转了一圈，最后又掉回肚子里。" },
+    { "type": "dialogue", "speaker": "林晓", "sprite": "linxiao_shock", "text": "……有人剪过我的线。" },
+    { "type": "narration", "text": "没有人回答。队伍继续往前挪，一格，又一格，脚步声整齐得不像人走出来的。" },
+    { "type": "narration", "text": "我沿着那条线往尽头看。尽头有一个口子，队伍到那里就少一个人，后面的自动补上前一格，队形一点都不会乱。" },
+    { "type": "narration", "text": "每一次补位，周围所有人的身影都会亮一下，像被人替他们擦了擦。亮完以后，最前面那个人的空缺就彻底没有了。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "每补上一个人，周围所有人都亮一下。还看吗？",
+      "options": [
+        { "text": "继续看，看清补位是怎么完成的", "affectionWho": "", "affection": 0, "insomnia": 4, "flag": "watched_the_refill_to_the_end", "next": "" },
+        { "text": "移开眼睛，先看别的地方", "affectionWho": "", "affection": 0, "insomnia": -2, "flag": "looked_away_from_the_refill", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "我一直看到第三个人被补上，才明白这个口子每天都在吃人。" },
+    { "type": "narration", "text": "这就是老周说的补全。不是有人忘了谁，是整个世界都同意那个人没有来过。" },
+    { "type": "narration", "text": "我想往前挤，想挤到那个女孩身边。脚下的地板软了一下，我整条腿陷进去半寸。" },
+    { "type": "fx", "fx": "shake", "text": "" },
+    { "type": "narration", "text": "我立刻把脚抽回来。鞋面上多了一道细细的白痕，像是被什么划过的纸边割的。" },
+    { "type": "narration", "text": "手心里那块东西在发抖，抖得比我厉害。我忽然明白它为什么一直跳——它不是在响，它是在认路。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "手里的东西不是在响，是在认路。跟不跟？",
+      "options": [
+        { "text": "跟着它指的方向往尽头看", "affectionWho": "", "affection": 0, "insomnia": 3, "flag": "followed_where_the_shard_pointed", "next": "" },
+        { "text": "停下来，问它要找的是谁", "affectionWho": "", "affection": 0, "insomnia": 1, "flag": "asked_the_shard_who_it_wanted", "next": "#l02" }
+      ]
+    },
+    { "type": "narration", "label": "l02", "text": "问也问不出声音。它只会跳，跳得更快就是催我往前走。" },
+    { "type": "narration", "text": "它不是碎掉的一小块时间。它是被剪下来的那一截，被谁从线上捡走，藏进了一本书的夹层里。" },
+    { "type": "narration", "text": "而它现在要找一个人。一个还记得那个缺口的人。" },
+    { "type": "narration", "text": "队伍里那个穿校服的背影忽然停了一下。所有人都往前挪，只有她没动，于是她和前面那个人之间多出了一格空隙。" },
+    { "type": "narration", "text": "她慢慢地转过头，动作像是费了很大的力气，脖子转得很慢，很涩。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "那个背影转过头来了。要不要走近一步？",
+      "options": [
+        { "text": "走近一步，看清她的脸", "affectionWho": "", "affection": 0, "insomnia": 4, "flag": "stepped_closer_to_the_face", "next": "" },
+        { "text": "不走近，站在原地等她说", "affectionWho": "老周", "affection": 0, "insomnia": -1, "flag": "waited_for_her_to_speak", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "我停在原地。她的脖子还在转，转得很慢，像卡住的门轴。" },
+    { "type": "narration", "text": "她的脸是空的。五官都在原来的位置上，可凑不成一张能被记住的脸。我盯着看了三秒，已经开始记不清她的眉骨是什么形状。" },
+    { "type": "narration", "text": "她说了三个字。我听不见声音，但我知道她说什么。那种知道不在耳朵里，在骨头里。" },
+    { "type": "narration", "text": "她说的是：你也少过。" },
+    { "type": "fx", "fx": "flash", "text": "" },
+    { "type": "narration", "text": "我睁开眼的时候，人还站在第三层。书摊在我手里，翻在二一一〇年那一页。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "睁眼还在第三层，书还摊在手里。先做什么？",
+      "options": [
+        { "text": "先看页面右下角多了什么", "affectionWho": "", "affection": 0, "insomnia": 2, "flag": "checked_the_page_corner", "next": "" },
+        { "text": "先合上书，看封面有没有变", "affectionWho": "", "affection": 0, "insomnia": 0, "flag": "closed_the_book_first", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "书页上那股凉气散得很慢，散到后来，指尖都麻了。" },
+    { "type": "narration", "text": "页面右下角多了一行字。不是印刷体，是手写的，笔尖顿下去的地方墨还没干：缺一，待补。" },
+    { "type": "narration", "text": "缺一。我第一反应是图书馆少了一本书。第二反应是我知道自己想错了，这个一指的是一个人。" },
+    { "type": "dialogue", "speaker": "林晓", "sprite": "linxiao_shock", "text": "缺一。缺的那个人，是不是已经被写在这本书上了。" },
+    { "type": "narration", "text": "书没有回答。整层的灰又落下来半寸，落在我肩上一小片，很轻，凉得像雪。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "灰落了一小片在肩上。要不要拍掉？",
+      "options": [
+        { "text": "不拍，让它留在肩上", "affectionWho": "", "affection": 0, "insomnia": 2, "flag": "left_the_ash_on_his_shoulder", "next": "" },
+        { "text": "拍掉，把袖子抖干净", "affectionWho": "", "affection": 0, "insomnia": -2, "flag": "brushed_the_ash_away", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "灰很轻，落在肩上没有一点分量，可我知道它落下来了。" },
+    { "type": "narration", "text": "我把书合上。封面还是空的。可我把它对着应急灯举起来的时候，光从纸背透过去，照出了一行被写过很多次的压痕。" },
+    { "type": "narration", "text": "压痕一层压着一层，最下面的几乎平了，最上面那一层很新，笔画很深。" },
+    { "type": "narration", "text": "那两个字是我的名字。不是苏禾。是我。" },
+    { "type": "dialogue", "speaker": "林晓", "sprite": "linxiao_shock", "text": "……写在书上的是我。" },
+    { "type": "narration", "text": "我站在那儿，握着那本书，握了很久。第三层的灯管只剩最后一根还亮着，光偏黄，把我的影子拉得很长，一直拉到第七排书架里。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "影子的尽头站着一个没有影子的轮廓。",
+      "options": [
+        { "text": "顺着影子看过去，盯住它", "affectionWho": "", "affection": 0, "insomnia": 4, "flag": "stared_at_the_shadowless_shape", "next": "" },
+        { "text": "收回视线，先看手里的书", "affectionWho": "", "affection": 0, "insomnia": -1, "flag": "pulled_his_eyes_back_to_the_book", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "它占着那一小块地方，不靠近，也不退，像在等谁先动。" },
+    { "type": "narration", "text": "影子的尽头，书架的空隙里，站着一个没有影子的轮廓。它不动，也不靠近，只是在那个位置占着一小块地方。" },
+    { "type": "narration", "text": "我没有跑。跑了就等于承认它是对的。" },
+    { "type": "narration", "text": "我把书塞回第三层，塞得很深，然后转身下楼。第一级台阶踩下去的时候，整层的灰终于一起落了下来。" },
+    { "type": "dialogue", "speaker": "老周", "sprite": "zhou_grim", "text": "灯关了没有。关了就出来，别站在架子里面。" },
+    { "type": "dialogue", "speaker": "林晓", "sprite": "linxiao_resolve", "text": "周叔，我看见那条线了。我也看见我的名字了。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "我喊出去了，楼下没有回答。还要再喊吗？",
+      "options": [
+        { "text": "再喊一遍，把名字也喊出来", "affectionWho": "老周", "affection": 2, "insomnia": 4, "flag": "called_zhou_a_second_time", "next": "" },
+        { "text": "不喊了，先下楼去看灯", "affectionWho": "老周", "affection": 0, "insomnia": -1, "flag": "stopped_calling_and_went_down", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "楼上楼下都很静，静到我能听见自己的膝盖在响。" },
+    { "type": "narration", "text": "楼下没有回答。回答我的是灯——第四根灯管灭了，走廊往深处缩了一格。" },
+    { "type": "narration", "text": "那声音像一屋子的纸同时叹气。我没有回头。" },
+    { "type": "narration", "text": "门厅里没有人。前台的钥匙串挂在钩子上，老周的伞不见了，伞架下面留着一圈湿印。" },
+    { "type": "narration", "text": "湿印是往门外去的。伞是干的，印子却是湿的，这两件事凑不到一起，可它们就摆在我眼前。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "干伞底下留着湿印，两件事凑不到一起。",
+      "options": [
+        { "text": "顺着湿印跟到门口去看", "affectionWho": "", "affection": 0, "insomnia": 3, "flag": "followed_the_wet_print_outside", "next": "" },
+        { "text": "先回前台，看钥匙串少没少", "affectionWho": "老周", "affection": 0, "insomnia": 1, "flag": "went_back_to_check_the_keys", "next": "#l03" }
+      ]
+    },
+    { "type": "narration", "label": "l03", "text": "查也白查。钩子上的钥匙串在，绳子的结却被人重新打过一次。" },
+    { "type": "narration", "text": "我掏出手机，想给老周打电话。通讯录里没有他的号码，一条都没有。我明明存过，我上周还打给他问过排班。" },
+    { "type": "dialogue", "speaker": "林晓", "sprite": "linxiao_tired", "text": "不对。我上周打的那通电话，是什么时候？" },
+    { "type": "narration", "text": "我想不起来。想起来的东西是空的，只有动作，没有内容。就像有人把一段录音擦成了静音，长度还在，声音没了。" },
+    { "type": "fx", "fx": "insomnia", "text": "" },
+    { "type": "narration", "text": "窗外的雨声里混进了一声蝉。三月不该有蝉。我站在门厅里，听见夏天的声音从冬天的雨里穿过去。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三月的雨里有蝉声。要不要听下去？",
+      "options": [
+        { "text": "站着把那一声蝉听完", "affectionWho": "", "affection": 0, "insomnia": 3, "flag": "listened_to_the_cicada", "next": "" },
+        { "text": "不想听，推门走出去", "affectionWho": "", "affection": 0, "insomnia": -2, "flag": "walked_out_of_the_door", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "蝉声只有一声，随后被雨声盖回去了，像没出现过。" },
+    { "type": "narration", "text": "灯管开始拉长，走廊朝四个方向散。我知道这是三天没睡的症状。可刚才那一层楼的线还挂在我眼睛里，怎样眨眼都掉不下去。" },
+    { "type": "narration", "text": "我扶着柜台站了一会儿。柜台上的借阅登记簿还摊着，苏禾那一行还在，墨还没干。" },
+    { "type": "narration", "text": "我拿起笔，想在自己的名字后面补一句说明。笔尖落在纸上，纸面自己往下陷了半毫米。" },
+    { "type": "narration", "text": "然后我看见我的字，和苏禾那一行是同一个笔迹。不是像，是同一个。连顿笔抖一下的毛病都一样。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "我的字和苏禾那一行是同一个笔迹。",
+      "options": [
+        { "text": "再写一遍，看笔迹会不会变", "affectionWho": "", "affection": 0, "insomnia": 4, "flag": "wrote_the_line_again", "next": "" },
+        { "text": "把登记簿合上，不再动笔", "affectionWho": "", "affection": 0, "insomnia": -1, "flag": "closed_the_register", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "我又拿起笔，在废纸上写了两个字，笔尖抖得一模一样。" },
+    { "type": "narration", "text": "我把笔扔在柜台上。笔滚了两圈，停在木板的裂缝边上，没有再动。" },
+    { "type": "narration", "text": "外面的街上很空。凌晨的雨把整条路洗得发亮，几层高架上的车灯从头顶划过去，一辆接一辆，谁也不往下看。" },
+    { "type": "narration", "text": "我锁门的时候，玻璃门上映出我的脸。眼睛里有一点点蓝，很淡，像灯管的余色，眨眼就没了。" },
+    { "type": "narration", "text": "我以为是看错了。我把它归到没睡够上，并且很努力地希望它是没睡够。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "玻璃门映出的眼睛有一点点蓝。",
+      "options": [
+        { "text": "凑近玻璃，把那点蓝看清", "affectionWho": "", "affection": 0, "insomnia": 3, "flag": "leaned_in_to_see_the_blue", "next": "" },
+        { "text": "转身走开，当自己看错了", "affectionWho": "", "affection": 0, "insomnia": -2, "flag": "walked_away_from_the_glass", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "凑近时那点蓝退进瞳孔最里面，眨一下就不见了。" },
+    { "type": "narration", "text": "我锁门的时候，外套左边口袋硌了一下。我掏出来，是一个牛皮纸信封，边角压得很平，封口没有粘。" },
+    { "type": "narration", "text": "里面三样东西。一张塑封的读者卡，照片上的女孩比登记簿里那一行字年轻；一份「A-三一七」的复印件，纸边裁得很齐；还有一张便条，上面只有四个字。" },
+    { "type": "dialogue", "speaker": "林晓", "sprite": "linxiao_shock", "text": "「别来上班。」" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "信封里那张便条写着「别来上班」。听他的吗？",
+      "options": [
+        { "text": "明天照常上班，把话当面问清", "affectionWho": "老周", "affection": -2, "insomnia": 3, "flag": "planned_to_show_up_anyway", "next": "" },
+        { "text": "听他的，明天先不回图书馆", "affectionWho": "老周", "affection": 3, "insomnia": -1, "flag": "planned_to_stay_away_tomorrow", "next": "#l04" }
+      ]
+    },
+    { "type": "narration", "label": "l04", "text": "不回也一样。这栋楼少了谁都照常开灯，只是灯会记得少过一个人。" },
+    { "type": "narration", "text": "字是老周的。他写「班」字的时候最后一横总往上挑，我看了四年，不会认错。" },
+    { "type": "narration", "text": "他没有当面给我。这东西是在我上楼以后才进我口袋的——他知道，当着面，我不会接。" },
+    { "type": "narration", "text": "我把信封按回口袋里，按得很用力。街上的雨还在下，高架上的车灯一辆一辆往北划过去，谁也不往下看。" },
+    { "type": "choice", "text": "", "prompt": "书里写的是你的名字，可你现在有两条路。今晚怎么处理这件事？", "options": [{"text":"把碎片和书都带走，自己查下去","affectionWho":"","affection":0,"insomnia":5,"flag":"shard_taken_home","next":""},{"text":"把书锁进前台抽屉，先当作没发生过","affectionWho":"老周","affection":4,"insomnia":-1,"flag":"locked_nameless_book","next":""}] },
+    { "type": "narration", "text": "我做完了这个决定，才发现自己一直在数那个节奏：一、二、三。数到第三层就停。" },
+    { "type": "narration", "text": "这栋楼从上到下正好六层。替我数数的那个人，每一次都停在我在的那一层。" },
+    { "type": "narration", "text": "剩下的三层我从来没上去过，今晚也不会上去。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "替我数数的那个人，每次都停在我这一层。",
+      "options": [
+        { "text": "上楼的时候自己数一遍", "affectionWho": "", "affection": 0, "insomnia": 3, "flag": "counted_the_floors_himself", "next": "" },
+        { "text": "不数，把这个念头压住", "affectionWho": "", "affection": 0, "insomnia": -2, "flag": "refused_to_count_the_floors", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "我数到第三层的时候，脚自己停了半拍，像是被谁按住。" },
+    { "type": "narration", "text": "回到宿舍已经四点。我躺下，没有闭眼，因为一闭眼那条线就自己铺开来，队伍排得整整齐齐，等着往前挪一格。" },
+    { "type": "narration", "text": "天快亮的时候手机亮了。一个没有归属地的号码，一行字：登记编号 A-三一七，明早九时，到时空异常研究所说明情况。" },
+    { "type": "dialogue", "speaker": "林晓", "sprite": "linxiao_tired", "text": "缺一，待补。要补的那个人，大概已经挑好了。" },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "一条没有归属地的短信，只给了时间地点。",
+      "options": [
+        { "text": "回一条短信，问他是谁", "affectionWho": "", "affection": 0, "insomnia": 3, "flag": "replied_to_the_number", "next": "" },
+        { "text": "不回，把手机扣在枕头上", "affectionWho": "老周", "affection": 0, "insomnia": -2, "flag": "left_the_message_unanswered", "next": "" }
+      ]
+    },
+    { "type": "narration", "text": "手机一直黑着，我没有回。那行字却已经落进脑子里，跟登记簿上那两行、书上那一行排在一起，像三条线并排往前，谁也不肯先断。天已经亮了，我还躺着不动，数着墙上的裂纹，等九点自己走过来，也等那本书里的人先动。" },
+    { "type": "narration", "text": "我没有回。我把手机扣在枕头上，看着窗外的天色从黑变成灰，再变成一种很薄的、几乎不算颜色的蓝。" }
+  ]
+}

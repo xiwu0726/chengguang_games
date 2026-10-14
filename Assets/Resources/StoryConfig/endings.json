@@ -1,0 +1,240 @@
+{
+  "version": 2,
+  "minEndings": 20,
+  "comment": "20 结局可达优先序 v3: 特化在前/catch-all 收尾; 已移除结构性不可达的 shardsMin/flagCountMin(走图器与运行时均无 shards 来源); returned_watch 埋于 3-7, ledger_balanced 埋于 3-6a, kept_the_page 埋于 3-7。",
+  "rules": [
+    {
+      "scene": "3-e17",
+      "title": "结局·十一个名字都清了",
+      "when": {
+        "flags": [
+          "ending_miracle",
+          "ledger_balanced"
+        ],
+        "notFlags": [
+          "ending_normal",
+          "ending_hero",
+          "ending_tragic",
+          "ending_open"
+        ]
+      }
+    },
+    {
+      "scene": "3-e18",
+      "title": "结局·钟重新走起来",
+      "when": {
+        "flags": [
+          "ending_miracle",
+          "returned_watch"
+        ],
+        "notFlags": [
+          "ending_normal",
+          "ending_hero",
+          "ending_tragic",
+          "ending_open"
+        ]
+      }
+    },
+    {
+      "scene": "3-e16",
+      "title": "结局·一个都没少",
+      "when": {
+        "flags": [
+          "ending_miracle"
+        ],
+        "insomniaMax": 54,
+        "notFlags": [
+          "ending_normal",
+          "ending_hero",
+          "ending_tragic",
+          "ending_open"
+        ]
+      }
+    },
+    {
+      "scene": "3-e19",
+      "title": "结局·醒着的城市",
+      "when": {
+        "flags": [
+          "ending_miracle"
+        ],
+        "notFlags": [
+          "ending_normal",
+          "ending_hero",
+          "ending_tragic",
+          "ending_open"
+        ]
+      }
+    },
+    {
+      "scene": "3-e20",
+      "title": "结局·把借来的记忆当成自己的",
+      "when": {
+        "insomniaMin": 80
+      }
+    },
+    {
+      "scene": "3-e03",
+      "title": "结局·重新学睡",
+      "when": {
+        "flags": [
+          "ending_normal",
+          "returned_watch"
+        ]
+      }
+    },
+    {
+      "scene": "3-e01",
+      "title": "结局·归途",
+      "when": {
+        "flags": [
+          "ending_normal",
+          "kept_the_page"
+        ],
+        "topAffection": "艾莉丝",
+        "affectionMin": 60
+      }
+    },
+    {
+      "scene": "3-e02",
+      "title": "结局·两个人的研究所",
+      "when": {
+        "flags": [
+          "ending_normal"
+        ],
+        "topAffection": "雷恩",
+        "affectionMin": 60
+      }
+    },
+    {
+      "scene": "3-e04",
+      "title": "结局·没人记得的门",
+      "when": {
+        "flags": [
+          "ending_normal"
+        ]
+      }
+    },
+    {
+      "scene": "3-e06",
+      "title": "结局·被纪念的陌生人",
+      "when": {
+        "flags": [
+          "ending_hero",
+          "ledger_balanced"
+        ]
+      }
+    },
+    {
+      "scene": "3-e07",
+      "title": "结局·图书馆的新管理员",
+      "when": {
+        "flags": [
+          "ending_hero",
+          "returned_watch"
+        ]
+      }
+    },
+    {
+      "scene": "3-e08",
+      "title": "结局·雕像下面的空位",
+      "when": {
+        "flags": [
+          "ending_hero"
+        ],
+        "insomniaMin": 55,
+        "insomniaMax": 79
+      }
+    },
+    {
+      "scene": "3-e05",
+      "title": "结局·写进页脚的名字",
+      "when": {
+        "flags": [
+          "ending_hero"
+        ],
+        "insomniaMax": 54
+      }
+    },
+    {
+      "scene": "3-e12",
+      "title": "结局·账没有平",
+      "when": {
+        "flags": [
+          "ending_tragic",
+          "gave_book_to_xya_at_core"
+        ],
+        "insomniaMin": 55,
+        "insomniaMax": 79
+      }
+    },
+    {
+      "scene": "3-e11",
+      "title": "结局·雷小满",
+      "when": {
+        "flags": [
+          "ending_tragic",
+          "traded_with_raine_at_core"
+        ],
+        "insomniaMin": 55,
+        "insomniaMax": 79
+      }
+    },
+    {
+      "scene": "3-e10",
+      "title": "结局·留在井底的那个人",
+      "when": {
+        "flags": [
+          "ending_tragic",
+          "stayed_at_switch"
+        ],
+        "insomniaMin": 55,
+        "insomniaMax": 79
+      }
+    },
+    {
+      "scene": "3-e09",
+      "title": "结局·钥匙在锁孔里",
+      "when": {
+        "flags": [
+          "ending_tragic"
+        ],
+        "insomniaMax": 54
+      }
+    },
+    {
+      "scene": "3-e14",
+      "title": "结局·那页纸还在口袋里",
+      "when": {
+        "flags": [
+          "ending_open",
+          "kept_the_page"
+        ],
+        "insomniaMin": 55,
+        "insomniaMax": 79
+      }
+    },
+    {
+      "scene": "3-e15",
+      "title": "结局·每个月丢一件东西",
+      "when": {
+        "flags": [
+          "ending_open"
+        ],
+        "insomniaMin": 55,
+        "insomniaMax": 79
+      }
+    },
+    {
+      "scene": "3-e13",
+      "title": "结局·门留着一条缝",
+      "when": {
+        "flags": [
+          "ending_open"
+        ],
+        "insomniaMax": 54
+      }
+    }
+  ],
+  "fallback": "3-e20"
+}

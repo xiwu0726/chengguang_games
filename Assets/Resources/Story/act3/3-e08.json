@@ -1,0 +1,255 @@
+{
+  "sceneId": "3-e08",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·雕像下面的空位",
+  "background": "cg_ending_e08",
+  "bgm": "bgm_sad",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "新东京靠西有一片空地，原先只有一根断了的电线杆。"
+    },
+    {
+      "type": "narration",
+      "text": "六月，空地上立起一座石头像。石头脸朝着那口井的方向，井早就填了。"
+    },
+    {
+      "type": "narration",
+      "text": "石头没有刻脸。眼窝里两道浅浅的横线，谁站在底下，都会被那两道线对着。"
+    },
+    {
+      "type": "narration",
+      "text": "底座背面刻着立像的月份。刻工把月份刻在背面，正面留给了名字。"
+    },
+    {
+      "type": "narration",
+      "text": "谁立的没人说得清。市里的记录上写着一座社团捐建，社团的名字查不到。"
+    },
+    {
+      "type": "narration",
+      "text": "落成那天上午我去看了一次。天很亮，石头在太阳底下发白。"
+    },
+    {
+      "type": "narration",
+      "text": "底座上刻着十一行名字。名字之间刻得很紧，没有留空当。"
+    },
+    {
+      "type": "narration",
+      "text": "第十一行下面空着一块。石头凿平了，留着，没刻字。"
+    },
+    {
+      "type": "narration",
+      "text": "有个孩子踮着脚摸那块空处，问那是不是留给别人的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "是。有人被划掉了，就得留一块地方给他。"
+    },
+    {
+      "type": "narration",
+      "text": "孩子听不懂，跑开了。他跑的时候手在石头边上蹭了一下。"
+    },
+    {
+      "type": "narration",
+      "text": "那块空处本来是给第十二个名字留的。刻字的人留了，没敢动笔。"
+    },
+    {
+      "type": "narration",
+      "text": "我知道那块空处最后是给谁的。第十二个名字是我。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "那天我从早上站到中午。我的眼睛不太对，看东西会叠。"
+    },
+    {
+      "type": "narration",
+      "text": "石头的眼睛叠成两只，井口叠成两个，我把手按住石头才把它们压回一个。"
+    },
+    {
+      "type": "narration",
+      "text": "失眠到了这个份上，别人的记忆会自己找过来。"
+    },
+    {
+      "type": "narration",
+      "text": "我站着的时候，身上多出了四十来个下午。"
+    },
+    {
+      "type": "narration",
+      "text": "有一个下午是别人在下雨天修屋顶。瓦片从手里滑下去，声音很脆。"
+    },
+    {
+      "type": "narration",
+      "text": "有一个下午是别人在柜台后数硬币，数到十七个，把其中一个放回口袋。"
+    },
+    {
+      "type": "narration",
+      "text": "还有一个下午是苏禾的。她在图书馆四楼靠窗那张桌子，桌角写着一个字。"
+    },
+    {
+      "type": "narration",
+      "text": "这些下午都不是我的。它们在我身上待一会儿，再走。"
+    },
+    {
+      "type": "narration",
+      "text": "家里、学校、往后要去干什么，这些我从来没有过。"
+    },
+    {
+      "type": "narration",
+      "text": "有过的只是一连串决定，四十来个，每个决定都少一点东西。"
+    },
+    {
+      "type": "narration",
+      "text": "一块石头留了空处，还有记号。人的记忆里没有那一格。"
+    },
+    {
+      "type": "narration",
+      "text": "十点有人来献花。来的人不多，十几个，都站在石头正面。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "这上头有十一个名字。我们图书馆也有一张表，上头也有十一格。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_grim",
+      "text": "表是空的。我填了四十年，最近才发现它一直是空的。"
+    },
+    {
+      "type": "narration",
+      "text": "他站在第十一行前面看了很久。他没有看那块空处。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅也来了。她站着的时候头稍微往一边侧，像在听什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "他们在念自己的名字。念得很小声，一个一个来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "谁的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "名字在这块石头上的。还有几个不在上头，也在念。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完就不说了。她大概是听到那块空处也在念。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝站在最后一排。她抬头看石头脸，看了很久。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我看了三遍登记册。捐建方那一栏是空的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "别查了。查到了也是别人的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩绕到石头背面，绕着底座走了半圈。"
+    },
+    {
+      "type": "narration",
+      "text": "他蹲下来，用袖口擦底座上的灰。石头太硬，他擦不掉。"
+    },
+    {
+      "type": "narration",
+      "text": "他盯着那块空处，手腕内侧那圈细线露在外面，一圈，很齐。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "这块地方留着是对的。总得有一个地方，是给没有名字的人站的。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有答。我看着那圈细线，看了很久。"
+    },
+    {
+      "type": "narration",
+      "text": "献花的人一波一波来，又一波一波走。花堆在石头脚边，叶子开始发蔫。"
+    },
+    {
+      "type": "narration",
+      "text": "有人认出老周，跟他打招呼，说图书馆的旧事。没人跟我打招呼。"
+    },
+    {
+      "type": "narration",
+      "text": "他们从我身边走过去，眼睛会滑过去。不是不理，是滑过去。"
+    },
+    {
+      "type": "narration",
+      "text": "这条街记得我干过的事。它记不住干这些事的人。"
+    },
+    {
+      "type": "narration",
+      "text": "太阳往西偏，石头的影子倒到井口那一边，很长。"
+    },
+    {
+      "type": "narration",
+      "text": "我走到石头底下，伸手摸那块空处。石头是热的，太阳晒了一整天。"
+    },
+    {
+      "type": "narration",
+      "text": "空处边上刻着一行小字，是日期，四月十号。"
+    },
+    {
+      "type": "narration",
+      "text": "这是留空处的人顺手刻的。刻字的人把日期也记住了。"
+    },
+    {
+      "type": "narration",
+      "text": "散场以后广场上只剩花和石头。清洁车从街口开过去，没有停。"
+    },
+    {
+      "type": "narration",
+      "text": "我把手从石头上拿下来，手上有一层灰。"
+    },
+    {
+      "type": "narration",
+      "text": "我在石头上按了一个印子。印子很浅，谁也看不出是手印。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e08",
+      "text": "石头像站在旧街区的空地上，脸朝着井口。底座十一行名字下面，那块凿平的空处还空着，日头把石头影子拉过整条街。"
+    },
+    {
+      "type": "narration",
+      "text": "那块空处就一直空着。刻字的人再没有回来补。"
+    },
+    {
+      "type": "narration",
+      "text": "后来有人说，那是留给他自己的。"
+    }
+  ],
+  "kind": "ending"
+}

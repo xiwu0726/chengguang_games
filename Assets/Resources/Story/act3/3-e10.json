@@ -1,0 +1,238 @@
+{
+  "sceneId": "3-e10",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·留在井底的那个人",
+  "background": "cg_ending_e10",
+  "bgm": "bgm_ending",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号凌晨三点四十，井底只剩下最后一格。"
+    },
+    {
+      "type": "narration",
+      "text": "那枚压平的钟还在转。每转一格，周围的空气就少一点声音。"
+    },
+    {
+      "type": "narration",
+      "text": "本子摊在墙角。最后一页十一个名字，前面七个已经念过了。"
+    },
+    {
+      "type": "narration",
+      "text": "念名字的是小雅。她站在开关旁边，捧着本子，手在抖。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝和雷恩站在铁梯底下。四十七级，上去要三分钟，一分钟都不能多。"
+    },
+    {
+      "type": "narration",
+      "text": "我的手按在开关上。手心里全是汗，铁柄被汗浸得发滑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "上头开始叫了。他们说地基在往下沉。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "别听。你念你的。念完我把她拉上去。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅把本子抬高了一点，声音出来了。念被抹掉的人的名字，要用很平的声调。"
+    },
+    {
+      "type": "narration",
+      "text": "她念得慢。每念一个名字之前先吸一口气，念完把气吐掉，再念下一个。"
+    },
+    {
+      "type": "narration",
+      "text": "第七个名字念完，井壁上的土往下掉了一层，落在她的鞋面上。"
+    },
+    {
+      "type": "narration",
+      "text": "那些名字我一路上都记着。念出来的时候，声音像是从别的地方来的。"
+    },
+    {
+      "type": "narration",
+      "text": "我数着。她每念一个，我手底下的开关就轻一点。"
+    },
+    {
+      "type": "narration",
+      "text": "名单里有一行是雷小满。念到那三个字的时候，雷恩的手往下压了一下铁梯。"
+    },
+    {
+      "type": "narration",
+      "text": "他没有说话。他妹妹已经没了，只是被人从册子上划掉的那一种。"
+    },
+    {
+      "type": "narration",
+      "text": "名单里也有苏禾。她在二一一零年坐图书馆四楼靠窗那张桌子，只留了一个名字下来。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅念第八个的时候看了我一眼，又低下去念第九个。"
+    },
+    {
+      "type": "narration",
+      "text": "灯有节奏地亮了两下，又暗下去。井底最后剩下的是换气的声音。"
+    },
+    {
+      "type": "narration",
+      "text": "这本子本来该由我来念。它是从我手里传出去的，一页一页都经过我的手。"
+    },
+    {
+      "type": "narration",
+      "text": "剩下最后一个。她停下来，把本子往我这边推了两寸。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "最后一个你念。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "不。你念。我念了，你就得按这个。"
+    },
+    {
+      "type": "narration",
+      "text": "她看了我三秒，把本子收回去，低头念了第十一个名字。"
+    },
+    {
+      "type": "narration",
+      "text": "最后一个名字念完，那枚压平的钟停住了。井底连换气的声音都没有了。"
+    },
+    {
+      "type": "narration",
+      "text": "她伸手去够开关。我先把她的手挡开了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "开关不认你。第一页是我念的。"
+    },
+    {
+      "type": "narration",
+      "text": "她看着我，眼睛很亮。她没有再伸手，因为我说的是规矩。"
+    },
+    {
+      "type": "narration",
+      "text": "然后门开始动。那扇门开在井壁那一面，铁做的，很高，边上有很深的合页。"
+    },
+    {
+      "type": "narration",
+      "text": "门往里合，合得很慢。门缝里的光一点一点变细，变成一条线。"
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝站在门外。她把手掌贴在铁门上，铁门也是凉的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我在上面等你。等到哪天你不在了，我把这一段写进档案。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "别写名字。写井底有一个人。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩一直没说话。他把外套脱下来，从门缝里塞进来，搭在我膝盖上。"
+    },
+    {
+      "type": "narration",
+      "text": "那件外套有一股旧街区花坛的味道。他大概在院子里坐了一整夜。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "我下周还来。从四十七级下来，看看你还在不在。"
+    },
+    {
+      "type": "narration",
+      "text": "门合到只剩一巴掌宽的时候，雷恩伸手把小雅拽了出去。她的鞋跟在铁门上磕了一下。"
+    },
+    {
+      "type": "narration",
+      "text": "她抓着门框不肯松。我把本子从那条缝里递出去，塞进艾莉丝手里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "你回来啊。"
+    },
+    {
+      "type": "narration",
+      "text": "我没答。答了她会听出来，我的声音已经掉得接不上了。"
+    },
+    {
+      "type": "narration",
+      "text": "门是我从里面推上的。锁舌落下去，声音顺着四十七级台阶往上走到尽头。"
+    },
+    {
+      "type": "narration",
+      "text": "井底从此是暗的。钟停在我背后，开关在我手底下，铁柄是凉的。"
+    },
+    {
+      "type": "narration",
+      "text": "我试着数日子。数到第三天就乱了，因为这里没有天亮。"
+    },
+    {
+      "type": "narration",
+      "text": "我改数名字。十一个名字我一个字一个字数，数完从头再来一遍。"
+    },
+    {
+      "type": "narration",
+      "text": "念到最后一个的时候会有回应，很小，像有人在很远的地方把书合上。"
+    },
+    {
+      "type": "narration",
+      "text": "被删掉的人不会喊疼。这句话我听过很多次，现在轮到我自己验证。"
+    },
+    {
+      "type": "narration",
+      "text": "真的不疼。留下来的那部分不疼，被拿走的那部分，连疼一起被拿走了。"
+    },
+    {
+      "type": "narration",
+      "text": "上面的人照常过日子。图书馆四楼那扇窗每天六点亮一次，灯灭了我看得见。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅每周来一次，站在井口念两个名字。她念得很慢，跟那天一样。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把外套拿走了。他说留着没用，先拿回去洗，冬天再拿下来。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e10",
+      "text": "井底那一格只剩开关和那枚钟。铁门从里面合着，门上没有把手，门缝里什么也透不进来。"
+    },
+    {
+      "type": "narration",
+      "text": "门是从里面合上的。这件事只有一个好处：谁也别想再来换我。"
+    },
+    {
+      "type": "narration",
+      "text": "我把手按在开关上，等下一个把名字念完的人。"
+    }
+  ],
+  "kind": "ending"
+}

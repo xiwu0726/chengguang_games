@@ -1,0 +1,297 @@
+{
+  "sceneId": "3-e04",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·没人记得的门",
+  "background": "cg_ending_e04",
+  "bgm": "bgm_sad",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十一号，市政的人来封旧街区那口井。水泥车停在巷口，泵管一直伸到井沿。"
+    },
+    {
+      "type": "narration",
+      "text": "我站在警戒线外面看了两个钟头。他们灌了十四车，最后一车倒下去的时候，井口平了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "底下什么都没有。你别站在这里看。"
+    },
+    {
+      "type": "narration",
+      "text": "他说这句话的时候在看我的手。我的手在抖，抖得他自己都看出来了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "底下有一扇门。铁的，边缘有一条焊缝，门把手是横着的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "我下去过三次。底下是砖，是石头，是谁家倒的旧家具。"
+    },
+    {
+      "type": "narration",
+      "text": "他说得很确定。他不是在骗我，他是真的没有见过那扇门。"
+    },
+    {
+      "type": "narration",
+      "text": "我把门的尺寸说给他听：一米九高，八十公分宽，门槛上有一道被踢出来的凹。"
+    },
+    {
+      "type": "narration",
+      "text": "他听完看着我，看了很久，最后说了一句：你记得住这么多，是因为你睡不着。"
+    },
+    {
+      "type": "narration",
+      "text": "这个解释他不是第一个给我的。医生也这么说过：长期缺觉的人会把梦里见过的和真见过的缝在一起。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "梦里的人不会去数门槛上的凹。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩没有接这句话。他掐了烟，说送我回去。"
+    },
+    {
+      "type": "fx",
+      "fx": "insomnia",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "那天夜里两点，我在宿舍听见时间在重叠。楼上有人走路，走路的节奏是两个人的。"
+    },
+    {
+      "type": "narration",
+      "text": "深眠的时候我会捡到别人的东西。捡到的不是物件，是记忆。"
+    },
+    {
+      "type": "narration",
+      "text": "有人记得小时候的棉袄收在衣柜最下层，有人记得楼下早点摊的面汤有多咸。"
+    },
+    {
+      "type": "narration",
+      "text": "这些记忆不是我的。它们的气味很陌生，像别人家厨房里的饭。"
+    },
+    {
+      "type": "narration",
+      "text": "我试过把它们写下来。写下来它们就变成我的了，这让我有点怕。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十四号，艾莉丝给我做了一次测量。她把电极贴在我额头上，让我盯着一盏灯看。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "还在能恢复的那一段。再往下就是崩解，我不建议你去那里。"
+    },
+    {
+      "type": "narration",
+      "text": "她撕电极的时候有一片胶粘在我眉毛上。她伸手把那片胶抹掉了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你为什么还管我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "你是我这份报告里的数据。数据坏了，我的报告就不成立。"
+    },
+    {
+      "type": "narration",
+      "text": "这是她回答人的方式。我听完居然觉得很踏实。"
+    },
+    {
+      "type": "narration",
+      "text": "五月，旧街区拆了两排房子，铺了新的路面。那口井的位置成了一个花坛。"
+    },
+    {
+      "type": "narration",
+      "text": "花坛边上有一条长椅。夜里十一点以后那里没有人，只有高架上的车灯一排一排扫下来。"
+    },
+    {
+      "type": "narration",
+      "text": "我差不多每个礼拜都去。我不是去找门，门已经没有了。我是去看一眼它不在的地方。"
+    },
+    {
+      "type": "narration",
+      "sfx": "sfx_footstep",
+      "text": "站在那个位置上，我能听见自己的心跳。我知道那扇门在第几块砖下面。"
+    },
+    {
+      "type": "narration",
+      "text": "准确地说，它在水泥下面。跟这块地上的其他地方没有区别。"
+    },
+    {
+      "type": "narration",
+      "text": "有一次小雅陪我去了。她在长椅上坐了一会儿，说她什么也听不见。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_curious",
+      "text": "这里很平。平得像刚拖过的地。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你以前能听见底下有人说话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "以前？这里以前是什么？"
+    },
+    {
+      "type": "narration",
+      "text": "她不是在开玩笑。她是真的不记得这里以前是什么。"
+    },
+    {
+      "type": "narration",
+      "text": "我那天没有再说下去。再往下说，她回去会做噩梦，她的耳朵刚安静下来。"
+    },
+    {
+      "type": "narration",
+      "text": "老周的核对表上也没有这一格。他把四十年填的纸装订成一沓，装订线压得很齐。"
+    },
+    {
+      "type": "narration",
+      "text": "六月，高架上加了一条新的匝道。新闻里说，旧城区的改造提前完成了。"
+    },
+    {
+      "type": "narration",
+      "text": "井底那件事在档案里变成了回填工程，编号后面跟着一长串数字。我查过一次，查完就走了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "你那本子还在写吗。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "写。写不写我都记得。写下来是为了以后能有别人记得。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "你这个样子，是打算一个人记着。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "一个人记着，比没有人记着好。"
+    },
+    {
+      "type": "narration",
+      "text": "她把随身本子拿出来，翻到第二页。她的第二页上写着我的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "门的事我记不住。但你说的这个，我替你记。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "记什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_smile",
+      "text": "记你每周三晚上十一点在花坛边上坐着。"
+    },
+    {
+      "type": "narration",
+      "text": "她把这一句写在本子上。字很小，写得很工整，像一份要交上去的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "那天以后我把时间改到了周四。她知道以后，又把她的记录改了。"
+    },
+    {
+      "type": "narration",
+      "text": "我的睡眠一直没有回来。一个夜里睡三个钟头是常事，睡满四个我就觉得那天很轻。"
+    },
+    {
+      "type": "narration",
+      "text": "深眠里我还是会捡到别人的记忆。有一次是一个老头在阳台上晾被子，被角对得很齐。"
+    },
+    {
+      "type": "narration",
+      "text": "这些记忆我写在本子最后几页，标上日期。它们不能进那本账，账是给被删掉的人留的。"
+    },
+    {
+      "type": "narration",
+      "text": "秋天的时候，花坛那排灌木开了小白花。有一次我在长椅边上遇见一个老太太。"
+    },
+    {
+      "type": "narration",
+      "text": "她问我这下面以前是不是有口井。我说是。她说她小时候在这里打过水。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这话的时候很确定，比我确定那扇门还确定。我们两个人在长椅上坐了一会儿，谁也没提别的。"
+    },
+    {
+      "type": "narration",
+      "text": "走的时候我很想告诉她底下还有一扇门。我没有说。说了她也只会觉得我脑子坏了。"
+    },
+    {
+      "type": "fx",
+      "fx": "timeline",
+      "text": ""
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e04",
+      "text": "秋风起的夜里，路灯照在花坛上，地上的影子摊开一块，形状像一扇门。"
+    },
+    {
+      "type": "narration",
+      "text": "我蹲下去摸了摸那块地。水泥很凉，凉得很实在。"
+    },
+    {
+      "type": "narration",
+      "text": "我知道门在下面。城市在它上面照常运转，车照常过，人照常走。"
+    },
+    {
+      "type": "narration",
+      "text": "只有我一个人记得它。这件事我说不给别人听，也没打算说。"
+    },
+    {
+      "type": "narration",
+      "text": "临走时我从花坛里捡了一片花瓣，夹进本子。花瓣很薄，第二天就干了。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我回家，关灯，躺下，等着看今晚会捡到谁的记忆。"
+    }
+  ],
+  "kind": "ending"
+}

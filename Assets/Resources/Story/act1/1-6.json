@@ -1,0 +1,1186 @@
+{
+  "sceneId": "1-6",
+  "chapter": "第一幕·异变初现",
+  "title": "第一次交锋",
+  "background": "bg_library_basement",
+  "bgm": "bgm_lord",
+  "dense": true,
+  "next": "1-7",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "第六天，三月十七号，早上十点。我没听老周的话，我还是来了图书馆。"
+    },
+    {
+      "type": "narration",
+      "text": "我告诉自己是因为那三张纸还压在三层的字典下面。真实的原因是我想看看，到底谁会来。"
+    },
+    {
+      "type": "narration",
+      "text": "馆里比平时安静。不是没人的那种安静，是有人但都不出声的那种安静。自习室坐着十几个人，翻页的声音整齐得像被人指挥过。"
+    },
+    {
+      "type": "narration",
+      "text": "我上到三层，把那本厚字典抬起来。三张纸还在。最上面那张的边缘被人对齐过，整齐得不像是被风弄的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "三张纸被人对齐过。你要先查这道边吗？",
+      "options": [
+        {
+          "text": "看对齐的边，判断是手还是风",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "checked_the_aligned_edges",
+          "next": ""
+        },
+        {
+          "text": "不查纸，先看谁上了三层",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "watched_who_came_upstairs",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我抬头。那六个陌生人坐在大厅的六把椅子上，围成一个不完整的圈。他们穿着很普通的旧衣服，脸上没有任何标记，安静地坐着手放在膝盖上。"
+    },
+    {
+      "type": "narration",
+      "text": "圈缺了一角。缺的那个位置正好对着旧报纸那一排。"
+    },
+    {
+      "type": "narration",
+      "text": "我走过去。走到离他们三米的地方，最靠里那个男人开口了。他很年轻，大概三十出头，说话的时候不抬眼睛。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你们在等人？"
+    },
+    {
+      "type": "narration",
+      "text": "他抬起眼睛看我。他的眼球很干净，干净得不太像活人，但那是错觉，只是他把睡眠补得很好。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "",
+      "text": "我们在等你。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "声音不是从那六个人嘴里出来的。你要出声吗？",
+      "options": [
+        {
+          "text": "出声问一句：刚才是谁在说话",
+          "affectionWho": "时间领主",
+          "affection": -2,
+          "insomnia": 0,
+          "flag": "asked_who_spoke_through_them",
+          "next": ""
+        },
+        {
+          "text": "不出声，先记下声音来的方向",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "marked_where_the_voice_came_from",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "又来了。那个声音。它从大厅的穹顶落下来，从我脚下升上来，从中间那根柱子后面过来，但没有一个字是从这些年青人的嘴里出来的。"
+    },
+    {
+      "type": "narration",
+      "text": "我环视四周。自习室那十几个人依然在翻页，没有一个人抬头。他们听不见。"
+    },
+    {
+      "type": "narration",
+      "text": "年轻男人站起来。他站得很慢，像在遵守某种礼节。他摊开双手，掌心朝上，手上什么都没有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "",
+      "text": "你昨天看见的那把灰，你觉得那是死。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "",
+      "text": "不是。那是一道算错的题被擦掉了。草稿纸上写错了，你不擦，后面的整页都会歪。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他那句话太顺了。你要不要把心里那句说出来？",
+      "options": [
+        {
+          "text": "说出来：这不是擦草稿，是擦人",
+          "affectionWho": "时间领主",
+          "affection": -3,
+          "insomnia": 0,
+          "flag": "said_it_was_erasing_people",
+          "next": ""
+        },
+        {
+          "text": "咽回去。跟他吵只会记得更牢",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "swallowed_the_rebuttal",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我说不上话。不是被他震住，是这句话太顺了，顺到像有人替我把最坏的那种心安理得念了出来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "那个人在等我。他有地址。他有菜。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "",
+      "text": "都是错的答案。等待是错，地址是错，菜是错。错的东西凑在一起，看起来就像一个人。"
+    },
+    {
+      "type": "narration",
+      "text": "六个陌生人同时低下头。动作一致，像一个人被复制了六次。"
+    },
+    {
+      "type": "narration",
+      "text": "然后他们开始动。不是扑上来，是散开。两个人往大厅两侧走，两个往下楼的楼梯口走，两个朝旧报纸那一排走。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他们散开的方向全是出口。你先做什么？",
+      "options": [
+        {
+          "text": "先喊自习室那十几个人",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "shouted_at_the_reading_room",
+          "next": "#l01"
+        },
+        {
+          "text": "先退，把碎片按在胸口",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "pressed_the_shard_to_the_chest",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我喊了两声。翻页的声音没有停，那十几个人连头都没有抬，像隔着一层很厚的玻璃。",
+      "label": "l01"
+    },
+    {
+      "type": "narration",
+      "text": "有一个人抬了头。他看的不是我，是我身后那面墙；看完他就低头，把那一页翻回去。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他们围过来的速度不快。你先动哪只脚？",
+      "options": [
+        {
+          "text": "往旧报纸那一排闪，那边人少",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "dodged_toward_the_old_papers",
+          "next": ""
+        },
+        {
+          "text": "往楼梯口退，先离开这三层",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "retreated_toward_the_stairs",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他们的围法很整齐。我很快就明白了：他们不是要抓我，他们是要清场。清场的意思是——把图书馆三层这一片，从时间上摘下来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "楼里还有人。自习室有十几个。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "",
+      "text": "他们不在此次修改范围内。你才在。"
+    },
+    {
+      "type": "narration",
+      "text": "他把我一个人圈进了范围。绕过那两排书架，就在那面墙的前面。墙的位置，正好是我昨天看见那张空座位的地方。"
+    },
+    {
+      "type": "narration",
+      "text": "我口袋里的碎片开始烫。它在往那面墙跳，跳得比上次更急。它认得这个地方。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "再退两步就是昨天那个空位置。你停不停？",
+      "options": [
+        {
+          "text": "停住，把脚钉在原地",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "stopped_before_the_empty_seat",
+          "next": ""
+        },
+        {
+          "text": "再退一步，看那里到底有没有人",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "stepped_toward_the_empty_seat",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我退后一步。退错了方向——再退两步，我会退到自己昨天坐过的位置。那个位置已经空了，那里本来就缺一个人。"
+    },
+    {
+      "type": "fx",
+      "fx": "shake",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "后楼梯的门被撞开了。"
+    },
+    {
+      "type": "narration",
+      "text": "不是被撞开的。是被一脚踩开的，铁门撞在墙上弹回来两次。雷恩站在门口，浑身湿透，肩上还挂着雨。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_alert",
+      "text": "往这边。"
+    },
+    {
+      "type": "narration",
+      "text": "我没有问为什么。我这一次直接跑了。这是我这几天做的第一件正确的事。"
+    },
+    {
+      "type": "narration",
+      "text": "我们往楼下跑。楼梯间的应急灯一层一层亮起来，从远处往近处，和我第一天夜里看见的那种亮法一模一样。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "六个人的脚步齐得像一双鞋。你要回头吗？",
+      "options": [
+        {
+          "text": "回头数，确认是六个人",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "counted_the_pursuers",
+          "next": ""
+        },
+        {
+          "text": "不回头，盯住雷恩的背",
+          "affectionWho": "雷恩",
+          "affection": 3,
+          "insomnia": 0,
+          "flag": "kept_eyes_on_raine",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "六个人的脚步在背后追过来。他们的脚步很齐，齐得像六个人共用一双鞋，踩在木楼梯上一下一下，很重。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "地下室。别停。"
+    },
+    {
+      "type": "narration",
+      "text": "他把楼梯口的消防栓一脚踹开，抓出里面一卷老旧的水带，飞快地扯出来撒在台阶上。我记得他腰上别着一把很短的工具，不是刀，像一把撬棍。"
+    },
+    {
+      "type": "narration",
+      "text": "我们冲进地下书库。那扇铁门在他身后关上，他拿撬棍卡住门轴，动作快得练过一百遍。"
+    },
+    {
+      "type": "narration",
+      "text": "铁门外面「砰」地响了一下。门上的铁皮往里凹了一小块，凹得很干净，像被一把很大的手按了一下。"
+    },
+    {
+      "type": "fx",
+      "fx": "shake",
+      "text": ""
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "铁门裂了。你要不要提醒他？",
+      "options": [
+        {
+          "text": "提醒：门撑不住第三下",
+          "affectionWho": "雷恩",
+          "affection": 2,
+          "insomnia": 0,
+          "flag": "warned_about_the_door",
+          "next": ""
+        },
+        {
+          "text": "不出声，听第二下从哪个位置来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "listened_to_the_second_blow",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "第二下。凹坑更深了，门缝里开始漏出很细的白灰。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "退到我后面。"
+    },
+    {
+      "type": "narration",
+      "text": "他把我往墙边一推。我撞在书架上，后脑勺磕了一下，疼得眼前发黑。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我看见他从口袋里把昨天那块碎片拿出来，用左手捏着，右手摊开，掌心朝着门。"
+    },
+    {
+      "type": "narration",
+      "text": "我不知道他要干什么。我只看见他手腕上那圈细线亮了。"
+    },
+    {
+      "type": "fx",
+      "fx": "flash",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "text": "门被撞开的那一瞬间，从他掌心里爆出来一团没有颜色的东西。不是光，是那种盯久了会让人忘记自己在看什么的那种东西。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "那团没有颜色的东西就在门口。你要看它吗？",
+      "options": [
+        {
+          "text": "看。看清楚它到底是什么",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "looked_into_the_colorless_thing",
+          "next": "#l02"
+        },
+        {
+          "text": "低头护住自己的眼睛",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "shielded_his_eyes",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我盯着它看。看了不到两秒，我就忘了自己刚才在想什么，连站在哪儿都要重新找一遍。",
+      "label": "l02"
+    },
+    {
+      "type": "narration",
+      "text": "我赶紧移开视线。先看见雷恩的袖口，再看见自己的鞋；顺序找回来了，东西才重新有了名字。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "年轻人越走越慢，脸停在半路上。你要看吗？",
+      "options": [
+        {
+          "text": "看他的脸，记下他停在哪一步",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "watched_the_young_man_freeze",
+          "next": ""
+        },
+        {
+          "text": "移开眼。他马上要散了",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "looked_away_from_the_dissolving",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "冲在最前面的那个年轻人撞进那团东西，整个人慢了下来，慢成了一种很奇怪的姿态：手臂伸着，脚还没落地，脸上的表情在半路上停住。"
+    },
+    {
+      "type": "narration",
+      "text": "然后他身上的时间往回走了一步。"
+    },
+    {
+      "type": "narration",
+      "text": "我看见他的脸变年轻，又变回来，再变年轻。他的衣服反复变成另一件旧的，再变回来。他站在原地被倒着翻了好几遍，翻到最后整个人散成一把灰，落在书库的水泥地上。"
+    },
+    {
+      "type": "narration",
+      "text": "灰落地的声音很轻。剩下的五个人在门口停住了，像一排被按住的人偶。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "",
+      "text": "守望者。你又在借。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "那个声音又下来了。你要不要抬头？",
+      "options": [
+        {
+          "text": "抬头，对着天花板回一句",
+          "affectionWho": "时间领主",
+          "affection": -3,
+          "insomnia": 1,
+          "flag": "spoke_back_to_the_ceiling",
+          "next": ""
+        },
+        {
+          "text": "低头，先看雷恩的右手",
+          "affectionWho": "雷恩",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "checked_raines_hand_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那个声音这次是从书库的天花板下来的，落到我们头顶上，很缓慢地散开。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "",
+      "text": "借来的时间要还。你知道规矩。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "我付。"
+    },
+    {
+      "type": "narration",
+      "text": "他说完这两个字，抬起了右手。"
+    },
+    {
+      "type": "narration",
+      "text": "接下来发生的事情没有声音。他的小臂从手腕开始，往上，一段一段地变淡。"
+    },
+    {
+      "type": "narration",
+      "text": "不是变透明，是变淡，像有人拿一块干净的橡皮，从他手臂上擦过去。皮肤、肌肉、那圈细线、袖口磨白的那道边，全都在被擦。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "雷恩！"
+    },
+    {
+      "type": "narration",
+      "text": "我扑过去想抓他的胳膊。我的手穿了过去。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "你的手穿过去了。再试一次吗？",
+      "options": [
+        {
+          "text": "再伸一次手，抓他的袖子",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": 1,
+          "flag": "tried_to_grab_him_again",
+          "next": ""
+        },
+        {
+          "text": "把手收回来，确认它还在",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "checked_his_own_hand",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "不是隔空，是真的穿过去。我碰到的地方没有阻力，像伸进一团还没冷透的雾。我的手从他小臂的位置穿到了另一边，指尖是干的。"
+    },
+    {
+      "type": "narration",
+      "text": "他的小臂停在了离手肘三指的位置。擦到那儿，就停了。"
+    },
+    {
+      "type": "narration",
+      "text": "他的手还在。只是从手腕到手肘之间那一段，变成了影子。灰色的，薄的，贴在那儿的影子。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "……值。"
+    },
+    {
+      "type": "narration",
+      "text": "他撑着门框站住。他的额头上全是汗，顺着下巴往下滴，滴在地上。地上那些灰被汗打湿了，变成几点黑。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "那五个人退了，年轻男人回头看了你一眼。你要开口吗？",
+      "options": [
+        {
+          "text": "开口：让他把手擦干净再走",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "called_after_the_retreating_five",
+          "next": ""
+        },
+        {
+          "text": "不出声，先扶住雷恩",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": 0,
+          "flag": "held_raine_instead",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "门口的五个人退了。他们退的时候还是那个整齐的样子，一起退，一起转，一起走进楼道的黑里。"
+    },
+    {
+      "type": "narration",
+      "text": "走出最后那个之前，年轻男人回头看了我一眼。他终于不用那种礼节性的站法了，他看我的眼神里有一样很朴素的东西——恨。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "",
+      "text": "你脚下那块地方，本来该是空的。"
+    },
+    {
+      "type": "narration",
+      "text": "声音消失以后，地下室安静得只剩下滴水。不知道哪根管子漏水，一下，一下，很稳。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他跪着，右手还捏着那块裂开的碎片。你先看哪样？",
+      "options": [
+        {
+          "text": "先看碎片上那道裂缝有多深",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "examined_the_cracked_shard",
+          "next": ""
+        },
+        {
+          "text": "先看他那只完好的右手",
+          "affectionWho": "雷恩",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "looked_at_the_intact_hand",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我跪在雷恩旁边。他的右手还是完整的，手指很稳地捏着那一小块碎片，碎片上面裂开了一道缝。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你的手……"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "少了一截。不疼。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "怎么会不疼。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "因为它不是被切掉的。是被认为不存在的。不存在的东西不会疼。别人也看不见。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他把袖子放下来，盖住那截影子。你要不要问？",
+      "options": [
+        {
+          "text": "问：这个动作你做过几次",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": 1,
+          "flag": "asked_how_many_times",
+          "next": ""
+        },
+        {
+          "text": "不问。先把撬棍捡起来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "picked_up_the_crowbar",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他把袖子放下来，把那截影子盖住。我注意到他做这个动作的时候很熟练，像已经做过很多次。"
+    },
+    {
+      "type": "narration",
+      "text": "楼上传来很整齐的脚步声，很多人，一路从楼梯上下来。雷恩把撬棍重新捏紧，往前挪了半步，挡在我和门口之间。"
+    },
+    {
+      "type": "narration",
+      "text": "门被推开了。进来的第一个人穿着研究所的深色工作外套，手里拎着一台比昨天更厚的仪器。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "楼上下来的是研究所的人。你先说什么？",
+      "options": [
+        {
+          "text": "先说他是为了救我",
+          "affectionWho": "雷恩",
+          "affection": 4,
+          "insomnia": 1,
+          "flag": "spoke_up_for_raine",
+          "next": ""
+        },
+        {
+          "text": "先看他们手里那台仪器",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "watched_the_instrument_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "研究所封锁这栋楼。全部人员从后门撤离，包括你们。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有先看我。她扫了一眼地上的灰，扫了一眼书库门上那个凹坑，最后才看向雷恩的右臂。"
+    },
+    {
+      "type": "narration",
+      "text": "她的仪器屏幕在她手里滚了一串数字，然后停住。她盯着那个数字看了两秒。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "这条手臂的时间坐标缺了三厘米。缺失不是连续的，是被规则删掉的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "能修吗。"
+    },
+    {
+      "type": "narration",
+      "text": "她抬头看我。这是我第一次看见她犹豫。她的犹豫很短，短到像一次眨眼，但我看见了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "按流程，不能。观测者不得干预实体。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她说按流程不能修。你要追问吗？",
+      "options": [
+        {
+          "text": "追问：流程之外呢",
+          "affectionWho": "艾莉丝",
+          "affection": 5,
+          "insomnia": 1,
+          "flag": "asked_what_is_outside_the_rules",
+          "next": ""
+        },
+        {
+          "text": "不追问，先看她的屏幕",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "looked_at_her_screen_first",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "按我现在要做的，我叫一台车。"
+    },
+    {
+      "type": "narration",
+      "text": "她把手腕上的仪器解下来，塞进我手里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "拿好。它会记录你身边的时间异常。从今天起，你每一次看见东西，它都会留下数据。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我不管你为什么能看见。我只要你每次都在场。"
+    },
+    {
+      "type": "narration",
+      "text": "她转身去打电话。她的背挺得很直，说话语速和平时一样快，一样整齐。她没有解释为什么把设备交给一个她本该上报的人。"
+    },
+    {
+      "type": "narration",
+      "text": "这就是她第一次为我破例。她自己不会承认，她只会说这是为了采集数据。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她把仪器塞进你手里，转身去打电话。你要叫住她吗？",
+      "options": [
+        {
+          "text": "叫住她，问一句为什么是我",
+          "affectionWho": "艾莉丝",
+          "affection": 5,
+          "insomnia": 1,
+          "flag": "asked_why_me",
+          "next": "#l03"
+        },
+        {
+          "text": "不叫。先把仪器拿稳",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "held_the_device_steady",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "因为你是唯一一个带着偏差走进来、还活着的人。",
+      "label": "l03"
+    },
+    {
+      "type": "narration",
+      "text": "她说完就继续拨号，没有回头。这一秒是她今天多给的第二秒。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "仪器还在响。你先管哪一样？",
+      "options": [
+        {
+          "text": "先读仪器，把数据按时间记下来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "read_the_device_first",
+          "next": ""
+        },
+        {
+          "text": "先看雷恩站不站得住",
+          "affectionWho": "雷恩",
+          "affection": 4,
+          "insomnia": 0,
+          "flag": "checked_if_raine_could_stand",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我低头看手里的仪器。屏幕亮起来，第一行字慢慢跳出来：观测者，林晓。关联时间偏移：一百二十小时。"
+    },
+    {
+      "type": "narration",
+      "text": "一百二十小时。从三月十二号晚上闭馆那一刻算起，我一共只清醒了这么多。而正常人这六天里应该睡掉的，我算到一半就停了。算这种数没有意义，我的问题不是数错了，是我根本没有睡。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩靠在墙上，用左手把碎片塞回口袋里。他的右臂垂着，那截影子在袖子里看不出厚度。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "他们说的那些话，你别听。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "哪句。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩说别听他们的话。你要问他哪句吗？",
+      "options": [
+        {
+          "text": "问他：哪一句最不能听",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": 1,
+          "flag": "asked_which_sentence",
+          "next": ""
+        },
+        {
+          "text": "不问，自己把那些话过一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "reviewed_their_words_alone",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "「擦掉是净化」。这句最好听。好听的话最贵。"
+    },
+    {
+      "type": "narration",
+      "text": "我说我知道了。其实我不太知道。今天早上那个声音说我脚下那块地方本来该是空的，我到现在还在想这句话——如果那块地方本来该是空的，那我昨天看见的那个坐在空座位旁边的影子，和我之间，到底谁是真的。"
+    },
+    {
+      "type": "narration",
+      "text": "研究所的人开始清场。他们拿着仪器一层一层走，把自习室那十几个学生请出去。学生们对着镜头抱怨，说今天什么都没发生。"
+    },
+    {
+      "type": "narration",
+      "text": "什么都没发生，确实是他们今天的全部内容。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "研究所的人一层一层清场。你先跟谁走？",
+      "options": [
+        {
+          "text": "跟着学生们往后门走",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "followed_the_students_out",
+          "next": ""
+        },
+        {
+          "text": "留下来，找老周问一句",
+          "affectionWho": "老周",
+          "affection": 5,
+          "insomnia": 1,
+          "flag": "stayed_to_ask_zhou",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我跟着人群往后门走。经过三层的时候，我回头看了一眼那张桌子。那本厚字典还压着我的三张纸。"
+    },
+    {
+      "type": "narration",
+      "text": "然后我看见老周站在书架后面。他一直没有出来，从头到尾都没有。他今天穿的是那双布鞋，站在六排书架之间，像一堵很旧的墙。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_grim",
+      "text": "我说过别来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我想看看是谁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_worried",
+      "text": "看见了吧。他们不杀你，他们只是觉得你不该在这张纸上。"
+    },
+    {
+      "type": "narration",
+      "text": "他把那本旧报纸合订本从架子上抽出来，翻到合影那一页，什么都没说，只是把它摊在桌面上，然后走了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "老周把那张合影摊在桌上就走了。你要不要记住那一页？",
+      "options": [
+        {
+          "text": "记住合影上的人数",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 1,
+          "flag": "memorized_the_group_photo",
+          "next": ""
+        },
+        {
+          "text": "不去记。照片里的人我认不出",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "refused_to_memorize_the_photo",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我下楼的时候在想一件事：明天我还会不会记得今天有人替我挡了一下，替我被擦掉了一截手臂。我不确定。不确定性现在成了我最熟悉的一种感觉。"
+    },
+    {
+      "type": "narration",
+      "text": "我握紧手里的仪器。它有记录，它记得住。这是我今晚敢闭上眼睛的唯一理由——虽然我知道我闭不上。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "车上还有很长的路。你要先问谁？",
+      "options": [
+        {
+          "text": "问艾莉丝：什么叫观测者不得干预",
+          "affectionWho": "艾莉丝",
+          "affection": 6,
+          "insomnia": 0,
+          "flag": "asked_about_observer_rule",
+          "next": ""
+        },
+        {
+          "text": "问雷恩：你那条手臂还缺着，多少次了",
+          "affectionWho": "雷恩",
+          "affection": 8,
+          "insomnia": 1,
+          "flag": "raine_trusts_you",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "车是研究所派来的，黑色，很旧，后座有一股消毒水味。雨又开始了，敲在车顶上像一把小石子。"
+    },
+    {
+      "type": "narration",
+      "text": "我坐在中间。左边是艾莉丝，她把手提终端摊开在膝盖上，一页一页地过去。右边是雷恩，他闭着眼睛，右臂放在腿上，那截影子被袖口严严实实地盖着。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "按条例，观测者不得干预。我干预了。"
+    },
+    {
+      "type": "narration",
+      "text": "她说话的时候眼睛没有离开屏幕。这是我第一次听她主动讲一句多余的话，她的语速甚至比平时慢了一点点。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她说是措辞，不是撒谎。你信这句话吗？",
+      "options": [
+        {
+          "text": "信。归档的语言有自己的规矩",
+          "affectionWho": "艾莉丝",
+          "affection": 5,
+          "insomnia": 1,
+          "flag": "accepted_the_wording",
+          "next": ""
+        },
+        {
+          "text": "不信。措辞不过是假的另一种写法",
+          "affectionWho": "艾莉丝",
+          "affection": -3,
+          "insomnia": 1,
+          "flag": "rejected_the_wording",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "我把它记成设备调配，不是干预。记录要经得起人看。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "那就是撒谎。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "不。是措辞。人只信能归档的东西。"
+    },
+    {
+      "type": "narration",
+      "text": "她翻到下一页，屏幕上跳出一张图：一条很细的线，中间缺了一小段。缺口的形状我很熟，那是我今天早上看见的那面墙。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "这不是裂缝第一次出现。七年前也有一次，是在这栋楼里。"
+    },
+    {
+      "type": "narration",
+      "text": "七年前。旧报纸的合影是八年前。我算了一下这两个数之间的差值，算到一半，把这些线头先按在纸上。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩闭着眼开口。你要不要接他的话？",
+      "options": [
+        {
+          "text": "接：你数次数，我数天数",
+          "affectionWho": "雷恩",
+          "affection": 5,
+          "insomnia": 1,
+          "flag": "traded_counts_with_raine",
+          "next": ""
+        },
+        {
+          "text": "不接。听他把七次说完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "let_him_finish_counting",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "右边，雷恩没有睁眼，但他开口了。他的声音很低，几乎被雨盖住。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_tired",
+      "text": "七次。这是第七次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你还剩多少。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "够用。够用到把人找回来。"
+    },
+    {
+      "type": "narration",
+      "text": "他说完这句就不再说话了。雨敲着车顶，一格一格地过去。我在中间坐着，两边各有一个把自己少掉一部分的人。"
+    },
+    {
+      "type": "narration",
+      "text": "车往研究所的方向开。城市在雨里退后，旧街区那栋楼的轮廓越来越小，最后变成雾里一块偏暗的方形。"
+    }
+  ]
+}

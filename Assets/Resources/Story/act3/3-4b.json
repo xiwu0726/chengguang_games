@@ -1,0 +1,1430 @@
+{
+  "sceneId": "3-4b",
+  "chapter": "第三幕·最终决战",
+  "title": "交易",
+  "background": "bg_lord_hall",
+  "bgm": "bgm_lord",
+  "next": "3-5",
+  "dense": true,
+  "lines": [
+    {
+      "type": "narration",
+      "text": "我在那张长桌前站了很久，久到墙上的签一张都没有再响。"
+    },
+    {
+      "type": "narration",
+      "text": "这是一笔交易，不是一场打架。来之前我们说好过：只要能带走那些名字，我做什么都可以。"
+    },
+    {
+      "type": "narration",
+      "text": "领主把账往我这边推了一寸。那本账很旧，封面被反复摸过，摸得发亮。"
+    },
+    {
+      "type": "narration",
+      "text": "他把账推过来的时候，桌上那盏灯跟着晃了一下。桌面是石头的，很凉，我的指节贴上去，凉气顺着骨头往上爬。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他把账推给你。先碰它吗？",
+      "options": [
+        {
+          "text": "伸手碰一下，按住封面",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "laid_hand_on_the_lords_ledger",
+          "next": ""
+        },
+        {
+          "text": "不碰，等他先说条件",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "waited_before_touching_the_ledger",
+          "next": ""
+        },
+        {
+          "text": "把账往自己这边拉半寸",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "pulled_the_ledger_half_back",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "等一下。在你说条件之前，请把他的计数方式说清楚。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "一格就是一个人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "不对。二百七十天前那次删除，城里有四个人同时消失。那一次你画了几格。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "一格。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "另外三个是你们自己补上去的。世界不愿意留空，它宁可编造，也不肯承认少了一个。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "一格算四个人，世界自己补位。这句要核对吗？",
+      "options": [
+        {
+          "text": "要核对，让艾莉丝调档案",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_alice_to_verify_the_four",
+          "next": ""
+        },
+        {
+          "text": "不核对。他犯不着在这种事上撒谎",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "took_the_lords_counting_at_face_value",
+          "next": ""
+        },
+        {
+          "text": "先问小雅：那四个人还在说话吗",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_xya_about_the_missing_four",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝的笔盖在手里捏着，没有放下。"
+    },
+    {
+      "type": "narration",
+      "text": "我听见艾莉丝把笔盖按上，那一声比平时重。她这一个月查过每一次异常事故，从来没有在档案里见过「四个人」这三个字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "所以我们一直在数错人。我们数的是补全之后的版本。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你刚才看见的那一格，是二百七十天前空出来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "每一格空出来，城里就少一个人。每一格里的人和别人都没有关系，所以没有人会觉得疼。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "没有人会觉得疼。这句扎到你了吗？",
+      "options": [
+        {
+          "text": "说出：我们不补空位，所以会疼",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "refused_to_autofill",
+          "next": ""
+        },
+        {
+          "text": "不说，把这句记进胸口",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "kept_the_autofill_rule_unsaid",
+          "next": "#l01"
+        },
+        {
+          "text": "看艾莉丝，让她来答这句",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "let_alice_answer_the_counting",
+          "next": "#l01"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我们不补空位。所以会疼。"
+    },
+    {
+      "type": "narration",
+      "label": "l01",
+      "text": "他说这句话的时候看着我。我听见自己心里的某个地方响了一下，像有人在很远的地方合上一本书。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "现在把笔拿起来。你只要划掉一个名字，剩下的格子就都锁上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "城留着。人少一个。这笔账平了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "划一个名字，锁所有格子。先拿笔吗？",
+      "options": [
+        {
+          "text": "拿起来，先握在手里再说",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "took_the_pen_before_talking",
+          "next": ""
+        },
+        {
+          "text": "不拿。先把条件问完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_terms_before_taking_the_pen",
+          "next": ""
+        },
+        {
+          "text": "把笔递给艾莉丝拿着",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "handed_the_pen_to_alice",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我看了一眼那支笔。笔看起来很普通。普通才吓人。"
+    },
+    {
+      "type": "narration",
+      "text": "「划掉一个名字」这五个字在屋里转了一圈。我知道他说的不是杀人，他刚才自己也说过，抹除不是杀人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你说清楚一点。划掉之后那个人会变成什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "他会变成从来没有写过的东西。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你们会照常过日子。他的位置会被别的东西补上，补得很自然，自然到你们不会发觉。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "「从来没有写过」。你先问哪一头？",
+      "options": [
+        {
+          "text": "问他：被划掉的人现在在哪",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_where_the_erased_goes",
+          "next": ""
+        },
+        {
+          "text": "问疼不疼",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_if_the_erasure_hurts",
+          "next": ""
+        },
+        {
+          "text": "不问。让他把话说完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_the_lord_finish_explaining",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "从来没有写过。这四个字比死了更冷。"
+    },
+    {
+      "type": "narration",
+      "text": "我想起车站那天左手心里那一小把灰的温度。我想起老周说，全馆十一个人都记得那排书架本来就少一个位置。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "那你告诉我一个数。你到现在删掉过多少人，只要一个数就行。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "我删过四千七百一十二次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "其中四千六百八十九次记为订正。剩下二十三次记为未决。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "四千七百一十二。这个数字你抓哪一头？",
+      "options": [
+        {
+          "text": "抓那二十三次未决",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "grabbed_the_twentythree_unresolved",
+          "next": ""
+        },
+        {
+          "text": "问他：每一笔都是你亲手划的吗",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_if_every_stroke_was_his",
+          "next": ""
+        },
+        {
+          "text": "不抓。把数字原样放下",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "put_the_number_down",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他报数像图书馆在报还书。"
+    },
+    {
+      "type": "narration",
+      "text": "我原以为他会含糊过去。他说得很平，平到像是在报一张早就核对过十遍的清单。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你不必替那些人难过。难过是最没有用的一种记账。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你不必替那个人难过。难过是最没有用的一种记账。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩在门口的暗处动了一下。他没有说话，但他把身体往门框上靠了靠，那是他要开口之前的习惯。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他改了一个字。要点破吗？",
+      "options": [
+        {
+          "text": "点破：哪一个是「那个人」",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_who_the_one_person_was",
+          "next": ""
+        },
+        {
+          "text": "不点破。把这个改动收进心里",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "filed_the_word_change_quietly",
+          "next": ""
+        },
+        {
+          "text": "把这句复述给艾莉丝听",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "repeated_the_line_to_alice",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "他改了一个字。从那些人改成那个人。我听见了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "……你要谁的名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "我要的那个人，本来就不该在这张纸上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你们四个人里有一个是补上来的缺口。我上一次数过，这一次也数过，数出来的是同一个。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他说四人里有一个是补上来的缺口。回头吗？",
+      "options": [
+        {
+          "text": "回头，把三个人挨个看一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "looked_at_each_of_the_three",
+          "next": ""
+        },
+        {
+          "text": "不回头。眼睛钉在领主身上",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_eyes_on_the_lord_after_the_gap",
+          "next": ""
+        },
+        {
+          "text": "问他：你数出来的是哪一个",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_which_one_was_the_gap",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "补上来的缺口。我后颈发凉。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅站在我右后方半步的地方。她没有听清那句话，她听的是别的东西——从进门起她就一直看着那一墙的签。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "墙上那个空格子里，有人在小声说话。声音很陡，像我外婆家那台旧收音机。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "她说的是三个字。她一直在说这三个字，说的时候还笑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "她一直在说的三个字，是什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "「别答应我。」"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅在替空格子里的人听话。打断吗？",
+      "options": [
+        {
+          "text": "不打断。让她听完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_xya_listen_to_the_end",
+          "next": ""
+        },
+        {
+          "text": "打断，先问声音从哪一格来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_which_cell_the_voice_came_from",
+          "next": ""
+        },
+        {
+          "text": "站到她和墙中间",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "stood_between_xya_and_the_wall",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我问那一句的时候，听见自己的声音是平的。"
+    },
+    {
+      "type": "narration",
+      "text": "我的手停在半空里。领主看着我那只手，他没有催我，他只是把账又往前推了半寸。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "她的话没有分量。她的名字比她的声音早一年被收走。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_cry",
+      "text": "可她还在这儿说话。你要是真的把她删干净了，她就不会说话。"
+    },
+    {
+      "type": "narration",
+      "text": "领主没有回答。小雅这句话说得很轻，可她说完以后，他放在账上的那只手换了个姿势。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "「别答应我」是说给你听的。回应吗？",
+      "options": [
+        {
+          "text": "回应：说出「我听见了」",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "said_he_heard_her",
+          "next": ""
+        },
+        {
+          "text": "不回应。把这三个字收进胸口",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -2,
+          "flag": "kept_the_three_words_in_his_chest",
+          "next": "#l02"
+        },
+        {
+          "text": "先看雷恩的脸色再说",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "looked_at_raine_before_answering",
+          "next": "#l02"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我开口，只回了两个字：听见。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "label": "l02",
+      "text": "你在她的位置上听。这一点你自己也不知道为什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_serious",
+      "text": "……空格子里那个人说的是哪三个字，你再说一遍。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_scared",
+      "text": "「别答应我。」她说完还笑了一下。笑的时候她嘴里缺了一颗牙。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩听完没有吭声。他往账那边走了一步，把那本东西从头到尾翻了一遍，翻得很快，一页一页往下甩。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "这本东西没有年龄，没有地址。它只有名字和一行编号。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "雷恩把整本账翻完了。问他找到什么了吗？",
+      "options": [
+        {
+          "text": "问：你找到你要的了？",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_raine_what_he_found",
+          "next": ""
+        },
+        {
+          "text": "不问。他翻页的手在抖",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "noticed_raines_shaking_hand",
+          "next": ""
+        },
+        {
+          "text": "记住他停过的那一页",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "marked_the_page_raine_stopped_on",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "人不需要年龄和地址。人只需要被写下来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你们守望者的名册也一样，进册的子只写编号，不写姓。"
+    },
+    {
+      "type": "narration",
+      "text": "雷恩把账合上了。他合得很轻，轻到没有声音，这个动作比他摔东西更让我心慌。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅退了半步。她退的时候没有看我，也没有看雷恩，她一直看着那面墙。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "那只格子里的人已经不在名单上了。她的话没有分量。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "小雅一直盯着签墙。要把她拉回来吗？",
+      "options": [
+        {
+          "text": "拉她回来，站到墙和她中间",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "pulled_xya_from_the_tag_wall",
+          "next": ""
+        },
+        {
+          "text": "不拉。让她把墙看完",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "let_her_finish_the_wall",
+          "next": ""
+        },
+        {
+          "text": "问她：还空着几格",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_how_many_cells_were_empty",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "她退的那半步很轻。轻得像怕碰倒什么东西。"
+    },
+    {
+      "type": "narration",
+      "text": "我看见艾莉丝的仪表指针轻轻碰了一下底。她把它扶起来，又看着它落回去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "这里的等价关系不对。一页的删除，换一整座城市。这个比例太便宜了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "便宜的东西都有第二笔账。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "艾莉丝说价太便宜。替她追问吗？",
+      "options": [
+        {
+          "text": "追问：第二笔账是什么",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "pressed_the_lord_about_the_second_ledger",
+          "next": ""
+        },
+        {
+          "text": "不追问。先听领主自己开价",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "listened_before_backing_alice",
+          "next": ""
+        },
+        {
+          "text": "把「便宜」两个字记进本子",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_too_cheap_in_the_notebook",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "艾莉丝说便宜。这个词从她嘴里出来是警告。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "有。第二笔账不在纸上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "第二笔账在你自己身上：你今天划这一笔，明天你会忘掉你划的是哪一格。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "你会记得你做过一件大事，但你不会记得是为了谁。这就是我要的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_cold",
+      "text": "第二笔账如果落在他身上，那就等于没有人替他记。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "林晓，我们四个人里只有你还记得所有被删掉的名字。你要是变成记不住的人，这一个月做过的事就全部作废。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她说没人替你记。你接这句吗？",
+      "options": [
+        {
+          "text": "接：那我现在就把它背下来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "vowed_to_remember_it_in_advance",
+          "next": ""
+        },
+        {
+          "text": "不接话，把账页拉回自己面前",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "picked_at_the_ledger_page",
+          "next": ""
+        },
+        {
+          "text": "反问艾莉丝：你会替我记吗",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_alice_if_she_would_keep_it",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "这句说得很低。低得像在跟自己核对。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "我知道。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "我记不住的时候你来记。你抽屉最底下压着那段记录，三月十二号那天你自己留的。"
+    },
+    {
+      "type": "narration",
+      "text": "她看了我一眼，那一眼很短。她没有说她会不会记，她只是把仪表收进了外套内侧的口袋，收得很慢。"
+    },
+    {
+      "type": "narration",
+      "text": "我把笔拿起来了。笔杆上的漆掉了一块，露出底下的黄铜，那块黄铜是温的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "她没承诺会记，但她把仪表收了。怎么读？",
+      "options": [
+        {
+          "text": "读成承诺",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "read_her_silence_as_a_promise",
+          "next": ""
+        },
+        {
+          "text": "不读。只说一声谢谢",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "thanked_her_without_reading_it",
+          "next": ""
+        },
+        {
+          "text": "把这个动作记在本子里",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "stored_the_way_she_pocketed_it",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那支仪表收进内侧口袋的时候，拉链的声音很短。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我答应。"
+    },
+    {
+      "type": "narration",
+      "text": "我听见身后有三样东西同时静止：雷恩的呼吸，艾莉丝翻页的手，还有小雅拽住我衣角的那两根手指。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "雷恩",
+      "sprite": "raine_hurt",
+      "text": "……你刚才那两个字，算什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "算我认账。雷恩，你替我挡过一次抹除，那次你少掉了一截手腕，我到现在还记得它变淡的样子。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "这一回轮到我自己出头。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "你说了「自己出头」。拿笔之前还留什么？",
+      "options": [
+        {
+          "text": "回头把三个人看一眼",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "looked_at_the_three_before_signing",
+          "next": ""
+        },
+        {
+          "text": "先把四个名字写进页角",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_four_names_on_the_corner",
+          "next": "#l03"
+        },
+        {
+          "text": "什么都不留，直接拿笔",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "took_the_pen_with_nothing_left",
+          "next": "#l03"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我回头把三个人挨个看了一眼。没有人拦我。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "label": "l03",
+      "text": "很好。"
+    },
+    {
+      "type": "narration",
+      "text": "他翻到账的最前面一页。那一页和别的不一样，墨色更深，边上没有格线。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "第一笔。"
+    },
+    {
+      "type": "narration",
+      "text": "他让我看。第一格上写着两行字，字很密，笔画之间互相咬得很紧，像是有人不愿意让别人读出来。"
+    },
+    {
+      "type": "narration",
+      "text": "我数了一下，那两行里的字我一个都认不出。但名字那一栏是空的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "第一格没有名字。要碰那一页吗？",
+      "options": [
+        {
+          "text": "碰。用指腹顺着墨迹走一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "traced_the_first_cells_ink",
+          "next": ""
+        },
+        {
+          "text": "不碰。问是谁写的",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_who_wrote_the_first_cell",
+          "next": ""
+        },
+        {
+          "text": "把那行编号抄进自己本子",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "copied_the_first_cell_number",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那一页没有格线。字落在上面没有依靠。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "这一格没有名字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "这一格本来有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "写它的人把名字先划掉了，然后把这一页交给下一任。我就是从这一页上出来的。"
+    },
+    {
+      "type": "narration",
+      "text": "屋里静了一下。签墙上有三张签同时轻轻晃了晃，晃完就停了，像是有人从它们旁边走过去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "所以要拿走的不是一个人的名字。你要替我把这一格补完：写上一个名字，让这一页看上去是完整的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "这样我就可以把它合上。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他要你把第一格补完。问写什么吗？",
+      "options": [
+        {
+          "text": "问：什么样的名字算数",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_what_name_would_count",
+          "next": ""
+        },
+        {
+          "text": "不问。他会自己说规则",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "waited_for_his_writing_rule",
+          "next": ""
+        },
+        {
+          "text": "问：补不完会怎样",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_what_if_it_stayed_open",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "补完。他用这两个字的时候，像在递一样很轻的东西。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "写谁。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "写一个已经没有人记得、但确实存在过的人。"
+    },
+    {
+      "type": "narration",
+      "text": "我的笔尖碰到纸上。我本来想写老周。他教过我怎么在一栋楼里跟人打桩。"
+    },
+    {
+      "type": "narration",
+      "text": "我又想写小雅。她今天一直在替我数那些签。"
+    },
+    {
+      "type": "narration",
+      "text": "最后我打算写苏禾。我在图书馆的登记簿上见过自己的笔迹写下的这个名字，见过四楼那口不存在的钟，见过第三层那些没有名字的书。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "你想过老周，想过小雅。这一笔怎么落？",
+      "options": [
+        {
+          "text": "写下去，手别抖",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_suhe_without_shaking",
+          "next": ""
+        },
+        {
+          "text": "写之前，把那个名字念出声",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "said_the_name_before_writing_it",
+          "next": ""
+        },
+        {
+          "text": "闭着眼写完，再睁开",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "wrote_it_with_eyes_closed",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我在心里把她的名字写了一遍，又划掉。"
+    },
+    {
+      "type": "narration",
+      "text": "所以我把那两个字写下去了。那个名字是我在图书馆的登记簿上见过的：苏禾。"
+    },
+    {
+      "type": "narration",
+      "text": "写的时候我的手很稳，一笔也没有抖。我知道自己写的不是别人，是那个连自己都不记得有没有过生日的人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_resolve",
+      "text": "我写完了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "我知道你会写这一个。你从三月十二号起就没有放下过它。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "名字写完了。要不要跟她说一句？",
+      "options": [
+        {
+          "text": "说：这是我记得你的方式",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "gave_her_his_remembrance",
+          "next": ""
+        },
+        {
+          "text": "不说，把页角按平",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "pressed_the_written_page_flat",
+          "next": ""
+        },
+        {
+          "text": "把那个名字轻声念一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "whispered_the_written_name_once",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "最后一笔收住。手记得自己写过，胸口没有。"
+    },
+    {
+      "type": "fx",
+      "fx": "timeline",
+      "text": "我在纸上写下的那两个字，和账上原来的墨迹并排着，像两条走了很久才碰上的线。"
+    },
+    {
+      "type": "narration",
+      "text": "笔尖离开纸的那一秒，我听见的合页声比刚才更近。那声音从墙的方向来，从最里面那个空钉子那儿来。"
+    },
+    {
+      "type": "narration",
+      "text": "我数了数墙上的签。我进来的时候数过一遍，现在少了一张。少了的那一张不是我写的名字，是另一个我一辈子没有见过的人。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "签少了一张。告诉后面三个人吗？",
+      "options": [
+        {
+          "text": "告诉。一起数一遍",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "counted_the_missing_tag_with_them",
+          "next": ""
+        },
+        {
+          "text": "不说。把数目记在自己心里",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "kept_the_tag_count_to_himself",
+          "next": ""
+        },
+        {
+          "text": "问领主：那张签去哪了",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_where_the_taken_tag_went",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我没有出声。墙上签的数目我记下了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你收的帐不止一笔。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "帐只收一笔。你写下的那一笔。"
+    },
+    {
+      "type": "narration",
+      "text": "我把笔放回笔架上，用袖子把刚才写的那两个字按了一下。墨迹是干的，干得很快，像本来就在那儿的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "你今天收的这一笔，是第三十一个。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "第四千七百一十三次。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "数字不重要。重要的是这一笔是你划的。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他说这一笔是你划的。认这个说法吗？",
+      "options": [
+        {
+          "text": "认。是我划的",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "admitted_the_stroke_was_his",
+          "next": ""
+        },
+        {
+          "text": "不认。是账借我的手",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "blamed_the_stroke_on_the_ledger",
+          "next": ""
+        },
+        {
+          "text": "认，并且让他把日期记上",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "asked_to_date_his_own_stroke",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我划的。这两个字落在我手上。"
+    },
+    {
+      "type": "narration",
+      "text": "他把账合上，双手压着封面。我看见他的指关节都露出来了，那双手的样子和我自己的手重叠了一下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "刚才那张签是你进来以前的旧账，它本来就松了，是你把它碰掉的。"
+    },
+    {
+      "type": "narration",
+      "text": "写完，我听见很远的地方有东西轻轻合上了。"
+    },
+    {
+      "type": "narration",
+      "text": "整面签墙上的签在同一瞬间安静下来。那种安静不是没人说话，是所有的名字同时闭了嘴。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "整面签墙同时安静了。这一刻你信吗？",
+      "options": [
+        {
+          "text": "信。先把肩膀放下来",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "let_his_shoulders_drop",
+          "next": ""
+        },
+        {
+          "text": "信一半。眼睛盯着他的手",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "half_believed_the_ledger_was_balanced",
+          "next": ""
+        },
+        {
+          "text": "不信。手还压在笔上",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "kept_his_hand_on_the_pen",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "那一声合得很远。远得像别人家的门。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "账平了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "从现在起，城里不会再多一道裂缝。你们今晚可以走出去。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "时间领主",
+      "sprite": "lord_calm",
+      "text": "但你要记住一件事：你划掉的那个人，是刚刚被你选出来的。"
+    },
+    {
+      "type": "narration",
+      "text": "门外传来很远的一阵刹车声。我这才发现，我们进来的时候有没有关门，我已经想不起来了。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "他说你们今晚可以走出去。出门前先做什么？",
+      "options": [
+        {
+          "text": "回头数一遍身后的三个人",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": -1,
+          "flag": "counted_the_three_before_leaving",
+          "next": ""
+        },
+        {
+          "text": "先把笔放回笔架",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "returned_the_pen_to_the_holder",
+          "next": ""
+        },
+        {
+          "text": "问艾莉丝：第二笔账还在不在",
+          "affectionWho": "",
+          "affection": 0,
+          "insomnia": 0,
+          "flag": "asked_alice_about_the_second_ledger",
+          "next": ""
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "我记得。不用你提醒我记得。"
+    },
+    {
+      "type": "choice",
+      "text": "",
+      "prompt": "名字已经写上去了，笔还没放下。",
+      "options": [
+        {
+          "text": "把笔收好，什么也不解释，转身先出门",
+          "affectionWho": "雷恩",
+          "affection": 6,
+          "insomnia": 3,
+          "flag": "trade_kept_silence",
+          "next": "3-5"
+        },
+        {
+          "text": "出门之前，当着他们三个把刚才写下的名字轻声念一遍",
+          "affectionWho": "艾莉丝",
+          "affection": 8,
+          "insomnia": 6,
+          "flag": "trade_spoke_name",
+          "next": "3-5"
+        },
+        {
+          "text": "出门之前，再问领主最后一句：第一格上原来写的是谁",
+          "affectionWho": "小雅",
+          "affection": 4,
+          "insomnia": 4,
+          "flag": "trade_asked_first_line",
+          "next": "3-5"
+        }
+      ]
+    }
+  ]
+}

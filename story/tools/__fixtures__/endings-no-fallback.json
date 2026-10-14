@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "_comment": "反面：缺 fallback → count-story EXIT=1",
+  "minEndings": 2,
+  "rules": [
+    {
+      "scene": "3-e01",
+      "title": "结局·夹具甲",
+      "when": {
+        "flags": [
+          "fixture_a"
+        ]
+      }
+    },
+    {
+      "scene": "3-e02",
+      "title": "结局·夹具乙",
+      "when": {
+        "insomniaMin": 40
+      }
+    }
+  ]
+}

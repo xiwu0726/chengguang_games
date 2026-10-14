@@ -1,0 +1,305 @@
+{
+  "sceneId": "3-e03",
+  "chapter": "第三幕·最终决战",
+  "title": "结局·重新学睡",
+  "background": "cg_ending_e03",
+  "bgm": "bgm_hope",
+  "next": "",
+  "lines": [
+    {
+      "type": "narration",
+      "text": "四月十号下午，我把她的表放在研究所的桌上。那天夜里她摘下来交给我保管，表针停在一点四十。"
+    },
+    {
+      "type": "narration",
+      "text": "她没有马上拿。她先看了一眼表，又看了我一眼。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "我以为你会把它留下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "它不认我。它认你。"
+    },
+    {
+      "type": "narration",
+      "text": "她把表戴回左手腕。扣带扣上的声音很轻。"
+    },
+    {
+      "type": "narration",
+      "text": "就在扣上的那一下，秒针动了一格。"
+    },
+    {
+      "type": "fx",
+      "fx": "wait",
+      "text": ""
+    },
+    {
+      "type": "narration",
+      "sfx": "sfx_clock",
+      "text": "一格，很小的一格。她低头看了三秒，才把手腕抬起来给我看。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_worried",
+      "text": "它动了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "你不是说，修好了它就是一块普通的表。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_smile",
+      "text": "我没有修它。是它自己要走的。"
+    },
+    {
+      "type": "narration",
+      "text": "她说完把袖子往下拉了半寸，又拉回去。她没有笑，可那一句话我记住了。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十一号早上八点二十，我醒过来。窗帘缝里透进来的是白天的光。"
+    },
+    {
+      "type": "narration",
+      "text": "我躺着没动，先把昨天的事想了一遍，怕自己记错。昨天在，前天在，上礼拜也在。"
+    },
+    {
+      "type": "narration",
+      "text": "我睡了八个钟头。这是我自己看表看出来的。从三月十四号那天起，我没有睡够过八个钟头。"
+    },
+    {
+      "type": "narration",
+      "text": "坐起来的时候，床垫上有一个我压出来的人形凹。以前那个位置总是平的。"
+    },
+    {
+      "type": "narration",
+      "text": "这一个月我住在研究所的观察室。有床，有窗，还有一个很吵的换气扇。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_tired",
+      "text": "七点四十我来看过一眼。你呼吸很慢，我就没叫你。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这句话的时候在翻手上的记录板，翻了两页才抬头。"
+    },
+    {
+      "type": "narration",
+      "text": "我把八块碎片装在一个铁盒里交给她登记。一块比一块小，最后一块只有指甲盖那么大。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "八块。你捡这些东西的时候，每一块都少睡一夜。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_tired",
+      "text": "现在捡完了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "捡完了就得还。你先把它睡回来。"
+    },
+    {
+      "type": "narration",
+      "text": "她把登记表推给我。表上有碎片编号和上交日期，签名那栏我写了自己的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "登记表下面压着一张纸条，是她画的睡眠记录表。第一列写日期，第二列写睡了几个钟头。"
+    },
+    {
+      "type": "narration",
+      "text": "那张表后来填了一个多月。最长的一格是五月三号，九个钟头。"
+    },
+    {
+      "type": "narration",
+      "text": "四月十七号，我回图书馆上班。三楼的书架还在，靠墙那一排往里挪了半米。"
+    },
+    {
+      "type": "narration",
+      "text": "老周在登记台后面盖章。他看见我，先问的是我这些天去哪了，账面上一本没还的书都没有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_kind",
+      "text": "你来得正好。四楼那口钟，昨天晚上自己响了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_shock",
+      "text": "响了？"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "老周",
+      "sprite": "zhou_grim",
+      "text": "响了一声。就一声。我上去看，钟摆是动的。"
+    },
+    {
+      "type": "narration",
+      "text": "那口钟坏了四年。四年前换季的时候停的，修过两次，师傅说里面的轴磨了，换不了。"
+    },
+    {
+      "type": "narration",
+      "text": "我上到四楼。楼梯口的灰还浮在灯下面，比三月薄，薄到能看清地板的纹。"
+    },
+    {
+      "type": "narration",
+      "sfx": "sfx_clock",
+      "text": "钟摆一下一下地摆。指针走在两点十分上，走过的时候有一点卡，但没有停。"
+    },
+    {
+      "type": "narration",
+      "text": "我站在钟底下听了一会儿。这个声音我在三月十二号夜里听过一次，那次是错觉，这次不是。"
+    },
+    {
+      "type": "narration",
+      "text": "我给艾莉丝发了一条消息：四楼的钟在走。她回得很快：收到，我记一下。"
+    },
+    {
+      "type": "narration",
+      "text": "过了十分钟她又发来一条：你今晚几点睡。"
+    },
+    {
+      "type": "narration",
+      "text": "我盯着那两条消息看了很久。认识她一个月，这是她第一次问跟工作没有关系的事。"
+    },
+    {
+      "type": "narration",
+      "text": "四月二十号晚上，我十点关灯。换气扇转到十点半，之后我就什么都不记得了。"
+    },
+    {
+      "type": "narration",
+      "text": "再睁眼是早上六点五十。外面在下雨，雨点砸在空调外机上，一下一下很整齐。"
+    },
+    {
+      "type": "narration",
+      "text": "我在床上躺了一分钟，把梦里的东西捋了一遍。梦里是一间教室，课桌是新的，黑板上写着值日生的名字。"
+    },
+    {
+      "type": "narration",
+      "text": "那个名字我不认得。但我记得自己在那间教室里坐了很久，一点也不害怕。"
+    },
+    {
+      "type": "narration",
+      "text": "起床以后我在睡眠记录表上填了第二十七格。填完把它折起来，夹在登记表后面。"
+    },
+    {
+      "type": "narration",
+      "text": "五月，图书馆开始有人来问那口钟。老周跟每一个问的人说，坏了四年，前天自己好了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_smile",
+      "text": "你们那口钟很吵啊。我隔着两条街都能听见。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_smile",
+      "text": "隔着两条街听不见钟声。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "小雅",
+      "sprite": "xya_determined",
+      "text": "那就是我听见的别的东西。反正它跟以前不一样了，以前它是停着的。"
+    },
+    {
+      "type": "narration",
+      "text": "小雅说她现在听见的声音一天比一天少。她说安静下来有点像失重，走了几步才发现脚底下没有东西。"
+    },
+    {
+      "type": "narration",
+      "text": "六月，艾莉丝的表走到了两点四十。她给它上过一次弦，上弦的时候手很稳。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "表快了十一分钟。我每天拨回来一分。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "林晓",
+      "sprite": "linxiao_normal",
+      "text": "为什么不直接送去校准。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_smile",
+      "text": "校准它会变准。准了就没有那十一分钟了。"
+    },
+    {
+      "type": "narration",
+      "text": "她说这话的时候在看表。表针走过一点四十的那一下，她抬头看了我一眼。"
+    },
+    {
+      "type": "narration",
+      "text": "她什么也没说。这一点我们已经不用说了。"
+    },
+    {
+      "type": "narration",
+      "text": "七月，我的记录表上连着二十天都是六个钟头以上。有一次我睡到中午，醒来天是亮的，人是空的。"
+    },
+    {
+      "type": "narration",
+      "text": "我把这件事讲给艾莉丝听。她听完在本子上写了一行，写完说这是好现象。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "艾莉丝",
+      "sprite": "alice_calm",
+      "text": "睡眠会回来得很慢。它会一次还你一格，不会一次还你一整个晚上。"
+    },
+    {
+      "type": "narration",
+      "text": "我说那我就一格一格地收。她说行，反正表在她手上走。"
+    },
+    {
+      "type": "cg",
+      "background": "cg_ending_e03",
+      "text": "八月的一个早晨，四楼的钟走到八点整。钟声落下来的时候，整栋楼的窗玻璃都跟着轻轻震了一下。"
+    },
+    {
+      "type": "narration",
+      "text": "我在登记台后面抬起头。老周正把核对表的纸往外抽，抽了一半又推了回去。"
+    },
+    {
+      "type": "narration",
+      "text": "她腕上那块表还在走。它不会再停在一点四十，除非有人想让它歇一会儿。"
+    },
+    {
+      "type": "narration",
+      "text": "那天晚上我十点关灯。关灯之前我拉开抽屉看了一眼，本子和记录表都在。"
+    },
+    {
+      "type": "narration",
+      "text": "我躺下去，听见换气扇转起来。这一次我没有数它转了几圈。"
+    }
+  ],
+  "kind": "ending"
+}

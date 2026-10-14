@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "_comment": "夹具用结局规则表（反面：#3 指向无人进入的 3-e03 → check-endings EXIT=1）",
+  "minEndings": 2,
+  "rules": [
+    {
+      "scene": "3-e01",
+      "title": "结局·夹具甲",
+      "when": {
+        "flags": [
+          "fixture_a"
+        ],
+        "insomniaMax": 10
+      }
+    },
+    {
+      "scene": "3-e02",
+      "title": "结局·夹具乙",
+      "when": {
+        "insomniaMin": 40
+      }
+    },
+    {
+      "scene": "3-e03",
+      "title": "结局·夹具丙",
+      "when": {
+        "flags": [
+          "never_set_flag"
+        ]
+      }
+    }
+  ],
+  "fallback": "3-e02"
+}
