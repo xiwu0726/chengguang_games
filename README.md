@@ -4,11 +4,22 @@
 
 《时光之痕》是一款科幻奇幻视觉小说游戏，结合了时间线穿梭、失眠状态系统、记忆碎片收集等创新机制。
 
+## 快速试玩（免安装）
+
+**双击即玩**：下载单文件 Windows 试玩包（约 92 MB，内嵌全部 54 场剧本 · 约 17 万字 · 86 张美术，无需 Unity / Node）：
+
+- [时光之痕-试玩.exe（GitHub Release v1.0.0 下载）](https://github.com/xiwu0726/chengguang_games/releases/download/v1.0.0/TimeOfFragments-demo-v1.0.0.exe)
+- Release 页：https://github.com/xiwu0726/chengguang_games/releases/tag/v1.0.0
+- 首次运行若出现 SmartScreen 蓝框，点「更多信息 → 仍要运行」即可（未做代码签名）。
+- 轻量网页版：打开 [`preview/index.html`](preview/index.html) 同样可玩（0.86 MB，单文件）。
+
 ## 项目状态
 
+✅ **剧本已完成**：54 场 / 约 170,648 字（目标 10 万字的 170.6%），20 条结局规则全部可达
+✅ **试玩 exe 已出包**：`node story/tools/build-exe.js` 一键重建，产物 `dist/时光之痕-试玩.exe`
 ✅ **代码已完成**：45个C#脚本文件，约11300行代码
 ✅ **文档已完成**：32个详细设计文档
-⏳ **Unity项目**：正在创建中...
+⏳ **Unity 原生包**：需本人登录 Unity Hub 领取免费 Personal 许可证后，菜单「时光之痕 → 构建 Windows 可执行文件」出包（见 [Unity 激活与出包说明.md](<Unity 激活与出包说明.md>)）
 
 ## 核心系统
 
