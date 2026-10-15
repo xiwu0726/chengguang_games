@@ -51,14 +51,11 @@
   #app{position:relative;width:100vw;height:100vh;overflow:hidden;
     background:radial-gradient(120% 90% at 50% 0%,#0d1220 0%,#05070c 62%)}
 
-  /* ============ 16:9 舞台（居中留黑边）============ */
-  #stage-wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-  /* 尺寸只交给一条轴：width 取「视口宽」与「视口高换算出的 16:9 宽」里的小值，
-     height 由 aspect-ratio 推出来。两边都写 100% 会把 aspect-ratio 顶掉（原来就是这样，
-     舞台只剩 454px 高，上下各空一条黑带）。 */
-  #stage{position:relative;width:min(100%,calc(100vh * 16 / 9));height:auto;
-    aspect-ratio:16/9;background:#080a10;overflow:hidden;
-    box-shadow:0 40px 120px rgba(0,0,0,.85)}
+  /* ============ 舞台：满屏沉浸（橙光式铺满，不再留 16:9 黑边）============ */
+  /* 背景与 CG 都是 object-fit:cover，铺满不变形；美术按 16:9 出图，
+     在 16:10 / 4:3 的窗口里只是上下各裁掉一点，比留两条黑带更像在"玩"。 */
+  #stage-wrap{position:absolute;inset:0}
+  #stage{position:absolute;inset:0;background:#080a10;overflow:hidden}
   .layer{position:absolute;inset:0}
 
   /* ---- 背景 / CG：交叉淡入，轻微呼吸位移 ---- */
@@ -102,10 +99,11 @@
   #vignette{pointer-events:none;z-index:7;box-shadow:inset 0 0 220px rgba(0,0,0,.78)}
   #flash{background:#fff;opacity:0;pointer-events:none;z-index:8}
 
-  /* ============ HUD：章节 / 场景 + 失眠表 / 进度 / 用时 / 入口 ============ */
+  /* ============ HUD：顶部一条窄信息带（章节 / 失眠 / 进度 / 用时）============ */
+  /* 入口按钮全部搬到右缘菜单栏，这里只留信息；右边留出菜单条的宽度，别被压住。 */
   #hud{position:absolute;top:0;left:0;right:0;z-index:9;display:flex;justify-content:space-between;
-    align-items:flex-start;gap:16px;padding:14px 20px 26px;pointer-events:none;
-    background:linear-gradient(180deg,rgba(3,5,10,.72),transparent)}
+    align-items:center;gap:16px;padding:12px 84px 24px 20px;pointer-events:none;
+    background:linear-gradient(180deg,rgba(3,5,10,.66),transparent)}
   .hud-left{display:flex;flex-direction:column;gap:4px;min-width:0;text-shadow:0 1px 8px rgba(0,0,0,.8)}
   #hud-chapter{font-size:12px;letter-spacing:.34em;color:var(--gold);text-transform:uppercase}
   #hud-title{font-size:13px;color:var(--dim);letter-spacing:.06em;white-space:nowrap;
@@ -128,16 +126,23 @@
   #hud-progress .pbar i{position:absolute;inset:0 auto 0 0;background:var(--gold);opacity:.75;
     transition:width .5s var(--ease)}
   #hud-time{font-size:12px;color:var(--faint);letter-spacing:.08em;font-variant-numeric:tabular-nums}
-  .hud-btns{display:flex;gap:6px;pointer-events:auto}
-  .ibtn{min-width:44px;min-height:44px;padding:0 12px;border-radius:10px;cursor:pointer;
-    border:1px solid var(--line-soft);background:rgba(12,16,26,.62);color:var(--dim);
-    font-size:13px;letter-spacing:.1em;backdrop-filter:blur(8px);
-    transition:border-color .18s,color .18s,background .18s}
-  .ibtn:hover{border-color:var(--gold);color:var(--gold-ink);background:rgba(26,22,12,.72)}
+  /* ============ 右缘竖排菜单栏（橙光式：贴在画面右边）============ */
+  /* 只写两字中文标签、不塞图标字体：任何系统都能正常渲染，也不会出现方块豆腐。 */
+  #rail{position:absolute;right:8px;top:50%;transform:translateY(-50%);z-index:11;
+    display:flex;flex-direction:column;gap:4px;padding:8px 7px;border-radius:14px;
+    background:rgba(6,9,16,.5);border:1px solid var(--line-soft);backdrop-filter:blur(10px)}
+  .rail-btn{display:block;width:54px;min-height:44px;padding:0;border-radius:10px;cursor:pointer;
+    border:1px solid transparent;background:transparent;color:var(--dim);
+    font-size:12px;letter-spacing:.16em;text-indent:.16em;
+    transition:color .18s,border-color .18s,background .18s}
+  .rail-btn:hover{color:var(--gold-ink);border-color:var(--line-soft);background:rgba(30,25,14,.68)}
+  .rail-sep{height:1px;margin:5px 8px;
+    background:linear-gradient(90deg,transparent,var(--line-soft),transparent)}
 
   /* ============ 对话框 ============ */
-  #dialog{position:absolute;left:5.5%;right:5.5%;bottom:4.6%;z-index:9;
-    padding:28px 32px 22px;min-height:24%;max-height:54%;overflow:auto;
+  /* 底部通宽对话条：右边缘让开菜单栏（8 + 54 + 14 ≈ 76px），正文不会被菜单压住 */
+  #dialog{position:absolute;left:3%;right:78px;bottom:2.6%;z-index:9;
+    padding:26px 30px 20px;min-height:22%;max-height:56%;overflow:auto;
     background:linear-gradient(180deg,var(--panel),rgba(5,7,12,.94));
     border:1px solid var(--line-soft);border-top-color:var(--line);
     border-radius:var(--r);backdrop-filter:blur(16px) saturate(140%);
@@ -147,6 +152,9 @@
   #dialog::before{content:"";position:absolute;left:32px;right:32px;top:0;height:1px;
     background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.55}
   #dialog.cg-mode{padding-top:22px;text-align:center}
+  /* 快进中（长按 / Z）：右上角给个角标，免得画面自己往前跑看着发慌 */
+  #dialog.fast::after{content:"快进中";position:absolute;right:16px;top:12px;
+    font-size:11px;letter-spacing:.24em;color:var(--gold);opacity:.85}
   /* 姓名板：面板内左上角的名牌。
      别用 top:-18px 压在边框上——#dialog 是 overflow:auto，会把名牌上沿裁掉一半。 */
   #speaker{display:inline-block;max-width:60%;padding:6px 16px;margin:0 0 10px;
@@ -237,6 +245,26 @@
     border:1px solid var(--line-soft);background:rgba(255,255,255,.04);color:var(--ink)}
   .mini:hover{border-color:var(--gold);color:var(--gold-ink)}
   .mini:disabled{opacity:.38;cursor:not-allowed}
+  /* 存档改名（橙光的存档可以起名字，配 取消 / 确定） */
+  .slot-input{width:100%;min-height:40px;padding:8px 12px;border-radius:9px;font-size:14px;
+    font-family:var(--font-ui);letter-spacing:normal;color:var(--ink);
+    background:rgba(255,255,255,.06);border:1px solid var(--gold)}
+
+  /* ---- 设置面板 ---- */
+  .set-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    padding:13px 0;border-bottom:1px dashed rgba(255,255,255,.08)}
+  .set-k{font-size:13px;letter-spacing:.24em;color:var(--dim)}
+  .seg{display:flex;gap:6px;flex-wrap:wrap}
+  .seg button{min-width:92px;min-height:44px;padding:0 14px;border-radius:9px;cursor:pointer;
+    font-size:13px;letter-spacing:.1em;border:1px solid var(--line-soft);
+    background:rgba(255,255,255,.04);color:var(--ink);
+    transition:border-color .18s,color .18s,background .18s}
+  .seg button:hover{border-color:var(--gold);color:var(--gold-ink)}
+  .seg button[aria-pressed="true"]{color:#1a1305;border-color:#efd8a4;
+    background:linear-gradient(180deg,#f2dda9,#cda65f)}
+  .set-note{margin-top:16px;font-size:12px;line-height:2.1;color:var(--faint);letter-spacing:.04em}
+  .set-note kbd{font-family:var(--font-ui);font-size:11px;color:var(--dim);
+    border:1px solid var(--line-soft);border-radius:5px;padding:1px 6px;margin:0 2px}
 
   /* ============ 标题 / 结局 ============ */
   #title,#ending{position:absolute;inset:0;z-index:14;display:flex;flex-direction:column;
@@ -326,14 +354,16 @@
 
   /* ============ 窄窗 / 矮窗适配 ============ */
   @media (max-width:900px){
-    #hud{padding:10px 12px 20px}
+    #hud{padding:10px 70px 18px 12px}
     #hud-title{max-width:20ch}
     #hud-time{display:none}
     .meter .bar{width:64px}
     #hud-progress .pbar{width:48px}
-    #dialog{left:3%;right:3%;bottom:3.4%;padding:24px 18px 18px}
+    #dialog{left:2%;right:66px;bottom:2.4%;padding:22px 18px 16px}
     #dialog::before{left:18px;right:18px}
     #speaker{left:18px;font-size:15px;padding:6px 14px}
+    #rail{right:4px;padding:6px 5px}
+    .rail-btn{width:48px;font-size:11px}
     .choice{width:92%}
     #slot-grid{grid-template-columns:1fr}
     #title .foot{font-size:11px}
@@ -375,11 +405,6 @@
         </div>
         <div id="hud-progress"></div>
         <span id="hud-time">00:00</span>
-        <div class="hud-btns">
-          <button class="ibtn no-advance" id="btn-backlog" type="button" title="回想 (H)">回想</button>
-          <button class="ibtn no-advance" id="btn-slots" type="button" title="存档 / 读档 (S / L)">存档</button>
-          <button class="ibtn no-advance" id="btn-title" type="button" title="回到标题">标题</button>
-        </div>
       </div>
     </div>
 
@@ -387,13 +412,24 @@
       <div id="speaker" class="empty"></div>
       <div id="dialog-text"><span id="body"></span><span id="caret">▍</span></div>
       <div class="dialog-foot">
-        <div id="next-hint"><span class="chev">›</span><span>点击 / 空格 继续</span></div>
+        <div id="next-hint"><span class="chev">›</span><span>点击 / V 继续</span></div>
       </div>
     </div>
 
     <div id="choices">
       <div id="choice-prompt"></div>
       <div id="choice-list"></div>
+    </div>
+
+    <!-- 右缘菜单栏（橙光式竖排入口）：整条 no-advance，点它不会推进剧情 -->
+    <div id="rail" class="no-advance">
+      <button class="rail-btn no-advance" id="btn-slots" type="button" title="存档 (S)">存档</button>
+      <button class="rail-btn no-advance" id="btn-load" type="button" title="读档 (L)">读档</button>
+      <button class="rail-btn no-advance" id="btn-backlog" type="button" title="回想 (H)">回想</button>
+      <button class="rail-btn no-advance" id="btn-settings" type="button" title="设置 (P)">设置</button>
+      <button class="rail-btn no-advance" id="btn-fullscreen" type="button" title="全屏 / 退出全屏 (F)">全屏</button>
+      <div class="rail-sep"></div>
+      <button class="rail-btn no-advance" id="btn-title" type="button" title="回到标题">标题</button>
     </div>
 
     <!-- 回想 -->
@@ -423,6 +459,18 @@
       </div>
     </div>
 
+    <!-- 设置：字速三档 + 全屏 + 快捷键（照橙光的操作口径） -->
+    <div class="overlay no-advance" id="settings">
+      <div class="sheet">
+        <div class="sheet-head">
+          <h3>设置</h3>
+          <button class="xbtn no-advance" id="btn-settings-close" type="button" title="关闭 (Esc)">✕</button>
+        </div>
+        <div class="sheet-body" id="settings-body"></div>
+        <div class="sheet-foot"><span>设置存在本机浏览器，与存档互不影响</span></div>
+      </div>
+    </div>
+
     <div id="toast"></div>
     <div id="dev"></div>
 
@@ -438,8 +486,9 @@
         <button class="btn" id="btn-continue" type="button">继续上次</button>
       </div>
       <p class="foot">
-        <kbd>空格</kbd><kbd>回车</kbd><kbd>点击</kbd> 继续　<kbd>1</kbd>–<kbd>4</kbd> 选择　<kbd>H</kbd> 回想
-        <kbd>S</kbd> 存档　<kbd>L</kbd> 读档　<kbd>Esc</kbd> 关闭面板　<kbd>F1</kbd> 调试面板<br>
+        <kbd>单击</kbd><kbd>V</kbd> 下一句　<kbd>长按</kbd><kbd>Z</kbd> 快进　<kbd>1</kbd>–<kbd>4</kbd> 选择
+        <kbd>H</kbd> 回想　<kbd>S</kbd> 存档　<kbd>L</kbd> 读档　<kbd>P</kbd> 设置　<kbd>F</kbd> 全屏
+        <kbd>Esc</kbd> 关闭面板　<kbd>F1</kbd> 调试面板<br>
         网页版立绘/背景为程序生成的占位图，补齐 Assets/Resources/Art 后重新打包即可替换
       </p>
       <p id="title-build" class="kicker" style="color:var(--faint)"></p>
@@ -468,6 +517,12 @@ const CAST_ORDER = /*__CAST__*/[];
 const ART = '../Assets/Resources/Art/';
 const SAVE_KEY = 'shiguang_zhithen_preview_v1';
 const SLOT_NAMES = ['自动存档', '存档 1', '存档 2', '存档 3'];
+/* 玩家偏好（字速 / 存档名）单独存一份：它不属于剧情进度，读档不该把它一起覆盖掉 */
+const PREF_KEY = 'shiguang_zhithen_prefs_v1';
+/* 字速三档，照橙光的口径（正常 / 较快 / 超快）；单位＝每个字的毫秒 */
+const SPEED_NAMES = ['正常字速', '较快字速', '超快字速'];
+const SPEED_MS = [22, 11, 4];
+const prefs = { speed: 0, slotNames: {} };
 const TIER_NAMES = ['平稳', '浅眠', '长夜', '临界'];
 /* 失眠值分档的视觉：色相随分档推进（蓝 → 紫 → 红），mix-blend-mode:screen 叠加在画面上 */
 const TIER_TINT = [
@@ -500,6 +555,7 @@ const el = {
   choices: $('choices'), choicePrompt: $('choice-prompt'), choiceList: $('choice-list'),
   backlog: $('backlog'), backlogList: $('backlog-list'),
   slots: $('slots'), slotGrid: $('slot-grid'), slotHint: $('slot-hint'),
+  rail: $('rail'), settings: $('settings'), settingsBody: $('settings-body'),
   title: $('title'), titleStats: $('title-stats'), titleBuild: $('title-build'),
   ending: $('ending'), endingTitle: $('ending-title'),
   endingBody: $('ending-body'), endingMeta: $('ending-meta'),
@@ -521,6 +577,39 @@ let devVisible = false;
 let tickTimer = null;
 let toastTimer = null;
 let titleBgDone = false;
+let renaming = null;     // 正在改名的槽位号（橙光的存档可以起名字）
+let fastFwd = false;     // 快进中（长按 / Z 键）
+let fastTimer = null;
+let pressTimer = null;   // 长按判定
+let justFast = false;    // 刚结束快进：那一下 click 不该再推进一句
+
+/* ---------- 玩家偏好（字速 / 存档名）---------- */
+function loadPrefs() {
+  let raw = null;
+  try { raw = localStorage.getItem(PREF_KEY); } catch (e) { raw = null; }
+  if (!raw) return;
+  let obj = null;
+  try { obj = JSON.parse(raw); } catch (e) { obj = null; }   // 偏好坏了就回默认值，不打断游戏
+  if (!obj || typeof obj !== 'object') return;
+  if (typeof obj.speed === 'number' && obj.speed >= 0 && obj.speed < SPEED_MS.length) {
+    prefs.speed = Math.floor(obj.speed);
+  }
+  if (obj.slotNames && typeof obj.slotNames === 'object') {
+    for (let i = 0; i <= 3; i++) {
+      const v = obj.slotNames[i];
+      if (typeof v === 'string' && v.trim()) prefs.slotNames[i] = v.trim().slice(0, 20);
+    }
+  }
+}
+function savePrefs() {
+  try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); }
+  catch (e) { toastErr('设置无法保存：本机存储不可用'); }
+}
+function slotLabel(slot) {
+  const custom = prefs.slotNames[slot];
+  return (typeof custom === 'string' && custom.trim()) ? custom.trim() : SLOT_NAMES[slot];
+}
+loadPrefs();
 
 /* ---------- 界面小工具 ---------- */
 function esc(s) {
@@ -617,11 +706,14 @@ function updateProgress() {
 }
 /** 标题页不显示 HUD：否则它会从标题遮罩后面透出一层看不清的脏印子。 */
 function setHudVisible(on) { el.hud.style.display = on ? 'flex' : 'none'; }
+/** 菜单栏与 HUD 同进退：标题页 / 结局结算页都不给入口。 */
+function setRailVisible(on) { el.rail.style.display = on ? 'flex' : 'none'; }
 function hidden() {
   return el.title.style.display !== 'none' || el.ending.style.display === 'flex';
 }
 function panelOpen() {
-  return el.backlog.classList.contains('open') || el.slots.classList.contains('open');
+  return el.backlog.classList.contains('open') || el.slots.classList.contains('open') ||
+    el.settings.classList.contains('open');
 }
 
 /* ---------- 存档 ---------- */
@@ -630,7 +722,7 @@ function save(slot) {
   try {
     localStorage.setItem(SAVE_KEY + '_slot' + slot, JSON.stringify(state));
   } catch (err) { toastErr('存档失败：浏览器本地存储不可用'); return false; }
-  toast(slot === 0 ? '已自动存档' : '已存到' + SLOT_NAMES[slot]);
+  toast(slot === 0 ? '已自动存档' : '已存到' + slotLabel(slot));
   if (el.slots.classList.contains('open')) renderSlots();
   return true;
 }
@@ -735,6 +827,7 @@ function newGame() {
     endingId: '', endingRule: -1, savedAt: 0 });
   hideScreen(el.title);
   setHudVisible(true);
+  setRailVisible(true);
   el.ending.style.display = 'none';
   closePanels();
   el.cg.style.display = 'none';
@@ -864,7 +957,7 @@ function startTyping(text) {
       el.nextHint.style.opacity = '1';
       return;
     }
-    typeTimer = setTimeout(step, 22);
+    typeTimer = setTimeout(step, SPEED_MS[prefs.speed] || SPEED_MS[0]);
   };
   step();
 }
@@ -877,6 +970,31 @@ function completeTyping() {
   typingDone = true;
   el.caret.style.opacity = '0';
   el.nextHint.style.opacity = '1';
+}
+
+/* ---------- 快进（橙光：长按画面 / 按住 Z）---------- */
+/** 一路自动往下跑，撞到选项或结局就自己停；松手（keyup / pointerup）调 stopFast。 */
+function startFast() {
+  if (fastFwd) return;
+  if (el.ending.style.display === 'flex' || el.title.style.display !== 'none') return;
+  fastFwd = true;
+  el.dialog.classList.add('fast');
+  fastTick();
+}
+function stopFast() {
+  if (!fastFwd) return;
+  fastFwd = false;
+  clearTimeout(fastTimer);
+  el.dialog.classList.remove('fast');
+  justFast = true;                       // 长按松开那一下会跟着一个 click，别让它再推进
+  setTimeout(() => { justFast = false; }, 0);
+}
+function fastTick() {
+  if (!fastFwd) return;
+  if (pendingChoice || el.ending.style.display === 'flex') { stopFast(); return; }
+  if (typing) completeTyping(); else advance();
+  if (pendingChoice || el.ending.style.display === 'flex') { stopFast(); return; }
+  fastTimer = setTimeout(fastTick, 80);
 }
 
 function endScene() {
@@ -1054,6 +1172,8 @@ function showEnding(pick) {
   closePanels();
   el.choices.style.display = 'none';
   setHudVisible(false); // 结局是全屏结算，HUD 不该从结算层后面透出来
+  setRailVisible(false);
+  stopFast();
   showScreen(el.ending);
 }
 
@@ -1081,6 +1201,25 @@ function renderBacklog() {
     el.backlogList.appendChild(row);
   });
 }
+function mkMini(text, onClick) {
+  const b = document.createElement('button');
+  b.className = 'mini';
+  b.type = 'button';
+  b.textContent = text;
+  b.onclick = onClick;
+  return b;
+}
+/** 改名是纯前端偏好（存在 prefs 里），不动存档本身的数据，读错槽也不会串档。 */
+function commitRename(slot, raw) {
+  const v = String(raw == null ? '' : raw).trim().slice(0, 20);
+  if (!v) { toastErr('名字不能为空'); return; }
+  if (v === SLOT_NAMES[slot]) delete prefs.slotNames[slot];
+  else prefs.slotNames[slot] = v;
+  savePrefs();
+  renaming = null;
+  renderSlots();
+  toast('已改名为「' + v + '」');
+}
 function renderSlots() {
   el.slotGrid.innerHTML = '';
   for (let slot = 0; slot <= 3; slot++) {
@@ -1089,7 +1228,6 @@ function renderSlots() {
     box.className = 'slot';
     const name = document.createElement('div');
     name.className = 'slot-name';
-    name.textContent = SLOT_NAMES[slot];
     const meta = document.createElement('div');
     meta.className = 'slot-meta';
     if (!info) {
@@ -1107,45 +1245,110 @@ function renderSlots() {
     }
     const btns = document.createElement('div');
     btns.className = 'slot-btns';
-    const bSave = document.createElement('button');
-    bSave.className = 'mini';
-    bSave.type = 'button';
-    bSave.textContent = '存档';
-    bSave.onclick = () => { save(slot); renderSlots(); };
-    const bLoad = document.createElement('button');
-    bLoad.className = 'mini';
-    bLoad.type = 'button';
-    bLoad.textContent = '读档';
-    bLoad.disabled = !info || info.broken;
-    bLoad.onclick = () => {
-      if (!load(slot)) { toastErr('这个槽位还没有存档'); return; }
-      closePanels();
-      hideScreen(el.title);
-      el.ending.style.display = 'none';
-      applyInsomniaVisual();
-      updateProgress();
-      gotoScene(state.sceneId);
-      toast('已读取' + SLOT_NAMES[slot]);
-    };
-    btns.appendChild(bSave); btns.appendChild(bLoad);
+    if (renaming === slot) {
+      const inp = document.createElement('input');
+      inp.className = 'slot-input';
+      inp.type = 'text';
+      inp.maxLength = 20;
+      inp.placeholder = '给这个存档起个名字';
+      inp.value = slotLabel(slot);
+      inp.onkeydown = (ev) => {
+        if (ev.key === 'Enter') commitRename(slot, inp.value);
+        else if (ev.key === 'Escape') { renaming = null; renderSlots(); }
+      };
+      name.appendChild(inp);
+      btns.appendChild(mkMini('确定', () => commitRename(slot, inp.value)));
+      btns.appendChild(mkMini('取消', () => { renaming = null; renderSlots(); }));
+    } else {
+      name.textContent = slotLabel(slot);
+      btns.appendChild(mkMini('存档', () => { save(slot); renderSlots(); }));
+      const bLoad = mkMini('读档', () => {
+        if (!load(slot)) { toastErr('这个槽位还没有存档'); return; }
+        closePanels();
+        hideScreen(el.title);
+        setHudVisible(true);
+        setRailVisible(true);
+        el.ending.style.display = 'none';
+        applyInsomniaVisual();
+        updateProgress();
+        gotoScene(state.sceneId);
+        toast('已读取「' + slotLabel(slot) + '」');
+      });
+      bLoad.disabled = !info || info.broken;
+      btns.appendChild(bLoad);
+      btns.appendChild(mkMini('改名', () => { renaming = slot; renderSlots(); }));
+    }
     box.appendChild(name); box.appendChild(meta); box.appendChild(btns);
     el.slotGrid.appendChild(box);
   }
-  el.slotHint.textContent = '共 4 个槽位';
+  el.slotHint.textContent = '共 4 个槽位 · 可改名';
 }
 function openBacklog() {
+  stopFast();
   renderBacklog();
   el.backlog.classList.add('open');
   const body = el.backlogList.parentNode;
   if (body && body.scrollHeight) body.scrollTop = body.scrollHeight;
 }
-function openSlots() {
+/** mode 只影响提示语：存档入口强调"写入"，读档入口强调"取回"。 */
+function openSlots(mode) {
+  stopFast();
   renderSlots();
   el.slots.classList.add('open');
+  el.slotHint.textContent = mode === 'load'
+    ? '点槽位里的「读档」回到那段进度'
+    : '点槽位里的「存档」写入当前进度';
+}
+function renderSettings() {
+  const seg = SPEED_NAMES.map((n, i) =>
+    '<button type="button" data-speed="' + i + '" aria-pressed="' + (i === prefs.speed) + '">' +
+    esc(n) + '</button>').join('');
+  el.settingsBody.innerHTML =
+    '<div class="set-row"><span class="set-k">字速</span><span class="seg">' + seg + '</span></div>' +
+    '<div class="set-row"><span class="set-k">画面</span><span class="seg">' +
+      '<button type="button" data-act="fullscreen">' +
+      (isFullscreen() ? '退出全屏' : '进入全屏') + '</button></span></div>' +
+    '<div class="set-note">' +
+      '<kbd>单击</kbd> 或 <kbd>V</kbd> 下一句　<kbd>长按</kbd> 或 <kbd>Z</kbd> 快进（松手即停）<br>' +
+      '<kbd>空格</kbd>/<kbd>回车</kbd> 继续　<kbd>1</kbd>–<kbd>4</kbd> 选择分支　<kbd>H</kbd> 回想　' +
+      '<kbd>S</kbd> 存档　<kbd>L</kbd> 读档<br>' +
+      '<kbd>P</kbd> 设置　<kbd>F</kbd> 全屏　<kbd>Esc</kbd> 关闭面板　<kbd>F1</kbd> 调试面板' +
+    '</div>';
+}
+function openSettings() {
+  stopFast();
+  renderSettings();
+  el.settings.classList.add('open');
+}
+function toggleSettings() {
+  if (el.settings.classList.contains('open')) closePanels(); else openSettings();
 }
 function closePanels() {
   el.backlog.classList.remove('open');
   el.slots.classList.remove('open');
+  el.settings.classList.remove('open');
+  renaming = null;
+}
+
+/* ---------- 全屏 ---------- */
+function isFullscreen() {
+  return !!(document.fullscreenElement || document.webkitFullscreenElement);
+}
+function toggleFullscreen() {
+  try {
+    if (isFullscreen()) {
+      const exit = document.exitFullscreen || document.webkitExitFullscreen;
+      if (typeof exit !== 'function') { toastErr('当前环境不支持退出全屏'); return; }
+      exit.call(document);
+      return;
+    }
+    const root = document.documentElement;
+    if (!root || typeof root.requestFullscreen !== 'function') {
+      toastErr('当前环境不支持全屏，请用浏览器的 F11');
+      return;
+    }
+    root.requestFullscreen();
+  } catch (e) { toastErr('全屏切换失败：' + e.message); }
 }
 
 function renderDev() {
@@ -1180,7 +1383,10 @@ function renderDev() {
 }
 
 /* ---------- 事件 ---------- */
+/* 橙光的两个主操作：单击 / V 键下一句，长按 / Z 键快进。 */
 document.addEventListener('keydown', (ev) => {
+  const tag = ev.target && ev.target.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return;   // 正在给存档改名：按键交给输入框
   if (ev.key === 'F1') {
     devVisible = !devVisible;
     el.dev.style.display = devVisible ? 'block' : 'none';
@@ -1189,14 +1395,19 @@ document.addEventListener('keydown', (ev) => {
     return;
   }
   if (ev.key === 'Escape') { closePanels(); return; }
+  if (ev.key === 'v' || ev.key === 'V') { ev.preventDefault(); advance(); return; }
+  if (ev.key === 'z' || ev.key === 'Z') { if (!ev.repeat) startFast(); return; }
   if (ev.key === 'h' || ev.key === 'H') {
     if (el.backlog.classList.contains('open')) closePanels(); else openBacklog();
     return;
   }
+  if (ev.key === 'p' || ev.key === 'P') { toggleSettings(); return; }
+  if (ev.key === 'f' || ev.key === 'F') { toggleFullscreen(); return; }
   if (ev.key === 's' || ev.key === 'S') { save(1); return; }
   if (ev.key === 'l' || ev.key === 'L') {
     if (load(1)) {
-      hideScreen(el.title); setHudVisible(true); el.ending.style.display = 'none';
+      hideScreen(el.title); setHudVisible(true); setRailVisible(true);
+      el.ending.style.display = 'none';
       applyInsomniaVisual(); updateProgress();
       gotoScene(state.sceneId);
       toast('已读档');
@@ -1210,40 +1421,85 @@ document.addEventListener('keydown', (ev) => {
   }
   if (ev.key === ' ' || ev.key === 'Enter') { ev.preventDefault(); advance(); }
 });
+document.addEventListener('keyup', (ev) => { if (ev.key === 'z' || ev.key === 'Z') stopFast(); });
+document.addEventListener('fullscreenchange', () => {
+  const b = $('btn-fullscreen');
+  if (b) b.title = isFullscreen() ? '退出全屏 (F)' : '全屏 (F)';
+  if (el.settings.classList.contains('open')) renderSettings();
+});
+
+/* 长按画面＝快进（橙光），松手即停；短按还是"下一句"。 */
+el.stage.addEventListener('pointerdown', (ev) => {
+  const t = ev.target;
+  if (t && t.closest && t.closest('.no-advance')) return;
+  clearTimeout(pressTimer);
+  pressTimer = setTimeout(() => { pressTimer = null; startFast(); }, 320);
+});
+function endPress() {
+  clearTimeout(pressTimer);
+  pressTimer = null;
+  stopFast();
+}
+el.stage.addEventListener('pointerup', endPress);
+el.stage.addEventListener('pointercancel', endPress);
+el.stage.addEventListener('pointerleave', endPress);
+
 el.stage.addEventListener('click', (ev) => {
   const t = ev.target;
   if (t && t.closest && t.closest('.no-advance')) return;
   if (t && t.classList && t.classList.contains('choice')) return;
+  if (justFast) return;          // 长按快进松手跟来的那一下 click 不算"下一句"
   advance();
 });
+
+function backToTitle() {
+  closePanels();
+  stopFast();
+  el.ending.style.display = 'none';
+  showScreen(el.title);
+  setHudVisible(false);
+  setRailVisible(false);
+  refreshTitle();
+}
 $('btn-new').onclick = newGame;
 $('btn-continue').onclick = () => {
   if (!load(0)) { toastErr('还没有自动存档'); return; }
   hideScreen(el.title);
   setHudVisible(true);
+  setRailVisible(true);
   el.ending.style.display = 'none';
   closePanels();
   applyInsomniaVisual();
   updateProgress();
   gotoScene(state.sceneId);
 };
-$('btn-again').onclick = () => {
-  el.ending.style.display = 'none';
-  showScreen(el.title);
-  setHudVisible(false);
-  refreshTitle();
-};
+$('btn-again').onclick = backToTitle;
 $('btn-backlog').onclick = () => { openBacklog(); };
 $('btn-backlog-close').onclick = () => { closePanels(); };
-$('btn-slots').onclick = () => { openSlots(); };
+$('btn-slots').onclick = () => { openSlots('save'); };
 $('btn-slots-close').onclick = () => { closePanels(); };
-$('btn-title').onclick = () => {
-  closePanels();
-  el.ending.style.display = 'none';
-  showScreen(el.title);
-  setHudVisible(false);
-  refreshTitle();
-};
+$('btn-load').onclick = () => { openSlots('load'); };
+$('btn-settings').onclick = () => { openSettings(); };
+$('btn-settings-close').onclick = () => { closePanels(); };
+$('btn-fullscreen').onclick = () => { toggleFullscreen(); };
+$('btn-title').onclick = backToTitle;
+/* 设置面板的按钮走事件委托：面板内容是 innerHTML 拼的，逐个绑反而脆。 */
+el.settingsBody.addEventListener('click', (ev) => {
+  const b = ev.target && ev.target.closest ? ev.target.closest('button') : null;
+  if (!b) return;
+  const sp = b.dataset.speed;
+  if (sp != null && sp !== '') {
+    const i = Number(sp) | 0;
+    if (i >= 0 && i < SPEED_MS.length) {
+      prefs.speed = i;
+      savePrefs();
+      renderSettings();
+      toast('字速：' + SPEED_NAMES[i]);
+    }
+    return;
+  }
+  if (b.dataset.act === 'fullscreen') toggleFullscreen();
+});
 
 /* ---------- 启动 ---------- */
 function refreshTitle() {
@@ -1277,6 +1533,7 @@ function refreshTitle() {
   }
   if (el.titleBuild) el.titleBuild.textContent = '试玩构建 ' + DATA.builtAt;
   setHudVisible(false);
+  setRailVisible(false);
   refreshTitle();
   // 标题页也要有画面：用第一场（或 bg_base）做底，给个缓慢的呼吸位移
   const firstScene = DATA.scenes[DATA.start] || {};

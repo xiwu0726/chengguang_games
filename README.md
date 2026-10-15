@@ -11,17 +11,32 @@
 - [时光之痕-试玩.exe（GitHub Release v1.0.0 下载）](https://github.com/xiwu0726/chengguang_games/releases/download/v1.0.0/TimeOfFragments-demo-v1.0.0.exe)
 - Release 页：https://github.com/xiwu0726/chengguang_games/releases/tag/v1.0.0
 - 首次运行若出现 SmartScreen 蓝框，点「更多信息 → 仍要运行」即可（未做代码签名）。
-- 轻量网页版：打开 [`preview/index.html`](preview/index.html) 同样可玩（1.03 MB，单文件；美术走相对路径）。
+- 轻量网页版：打开 [`preview/index.html`](preview/index.html) 同样可玩（1.05 MB，单文件；美术走相对路径）。
 
 ## 界面预览
 
-网页播放器界面于 2026-10-14 重做：深夜蓝底 + 古铜金，电影感压角遮罩、人物姓名板、失眠度实时可视化，回想 / 存档 / 结局结算全部重绘。
+播放器版式参照橙光（66rpg）交互习惯重做，配色保留本作自己的深夜蓝 + 古铜金：**背景铺满全屏无黑边**、**底部对话条**、**右缘竖排菜单栏**（存档 / 读档 / 回想 / 设置 / 全屏 / 标题），并支持三档字速与存档改名。
 
 | 标题页 | 对话 | 选择 | 结局结算 |
 | --- | --- | --- | --- |
 | ![标题页](docs/ui/01-title.png) | ![对话](docs/ui/02-dialogue.png) | ![选择](docs/ui/03-choices.png) | ![结局结算](docs/ui/07-ending.png) |
+| **设置（字速 / 全屏 / 快捷键）** | **存档改名** | 回想 | 第三幕深夜 |
+| ![设置](docs/ui/09-settings.png) | ![改名](docs/ui/10-rename.png) | ![回想](docs/ui/05-backlog.png) | ![深夜](docs/ui/08-act3-night.png) |
 
-其余截图（CG 演出、回想、存档、第三幕深夜）见 [`docs/ui/`](docs/ui/)。
+其余截图（CG 演出、存档列表）见 [`docs/ui/`](docs/ui/)。
+
+## 操作方式
+
+| 操作 | 鼠标 | 键盘 |
+| --- | --- | --- |
+| 下一句 | 单击画面 | `V` / 空格 / 回车 |
+| 快进 | 长按 0.32 秒（松手即停） | 按住 `Z` |
+| 选分支 | 点选项卡 | `1`–`4` |
+| 回想 / 存档 / 读档 | 右缘菜单 | `H` / `S` / `L` |
+| 设置（字速三档）/ 全屏 | 右缘菜单 | `P` / `F` |
+| 关闭面板 / 调试面板 | — | `Esc` / `F1` |
+
+存档槽 0 是自动存档（每进一场自动写入）；槽 1–3 可在存档面板里点「改名」自定义名称。字速、存档名等设置存在浏览器本机，与剧本存档互不影响。
 
 ## 项目状态
 
