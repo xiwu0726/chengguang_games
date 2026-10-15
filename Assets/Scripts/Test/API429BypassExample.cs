@@ -1,7 +1,9 @@
+#if CG_LEGACY  // 这些子系统是早期生成的脚手架，运行时（Assets/Scripts/Story + Editor）完全不引用它们，
+             // 且存在跨命名空间未 using 的历史编译错误；先整体屏蔽保证出包，需要时加 define 再修。
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+using UnityEngine.UI;
 
 namespace TimeStamp.Test
 {
@@ -18,9 +20,9 @@ namespace TimeStamp.Test
         [Header("UI元素")]
         [SerializeField] private Button getButton;
         [SerializeField] private Button postButton;
-        [SerializeField] private TextMeshProUGUI statusText;
-        [SerializeField] private TextMeshProUGUI resultText;
-        [SerializeField] private TextMeshProUGUI attemptText;
+        [SerializeField] private Text statusText;
+        [SerializeField] private Text resultText;
+        [SerializeField] private Text attemptText;
 
         [Header("API绕过配置")]
         [SerializeField] private int maxRetries = 10;
@@ -172,3 +174,4 @@ namespace TimeStamp.Test
         }
     }
 }
+#endif

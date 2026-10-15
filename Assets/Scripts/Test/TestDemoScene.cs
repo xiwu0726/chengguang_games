@@ -1,8 +1,10 @@
+#if CG_LEGACY  // 这些子系统是早期生成的脚手架，运行时（Assets/Scripts/Story + Editor）完全不引用它们，
+             // 且存在跨命名空间未 using 的历史编译错误；先整体屏蔽保证出包，需要时加 define 再修。
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+using UnityEngine.UI;
 
 namespace TimeStamp.Test
 {
@@ -20,13 +22,13 @@ namespace TimeStamp.Test
         [SerializeField] private Button testEndingButton;
 
         [Header("状态显示")]
-        [SerializeField] private TextMeshProUGUI insomniaValueText;
-        [SerializeField] private TextMeshProUGUI timeLineText;
-        [SerializeField] private TextMeshProUGUI memoryShardText;
-        [SerializeField] private TextMeshProUGUI statusText;
+        [SerializeField] private Text insomniaValueText;
+        [SerializeField] private Text timeLineText;
+        [SerializeField] private Text memoryShardText;
+        [SerializeField] private Text statusText;
 
         [Header("测试结果")]
-        [SerializeField] private TextMeshProUGUI testResultText;
+        [SerializeField] private Text testResultText;
 
         private void Start()
         {
@@ -225,3 +227,4 @@ namespace TimeStamp.Test
         }
     }
 }
+#endif

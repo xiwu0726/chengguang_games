@@ -1,0 +1,2171 @@
+{
+  "version": 1,
+  "project": "时光之痕",
+  "generatedAt": "2026-10-15",
+  "stylePrefix": "现代日式视觉小说风格，高质量，高清，细节丰富",
+  "globalNegative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+  "sizeSpec": {
+    "bg": "1920x1080",
+    "cg": "1920x1080",
+    "portrait": "900x1300"
+  },
+  "characters": {
+    "linxiao": {
+      "name": "林晓",
+      "identity": "22岁青年男性林晓，黑色短发略微凌乱，黑色瞳孔（失眠时褪为发淡蓝色微光的瞳孔），身高178cm，清瘦",
+      "basePortrait": "linxiao_normal",
+      "source": "art/角色立绘_林晓.md#L11-L46,#L109-L125"
+    },
+    "alice": {
+      "name": "艾莉丝",
+      "identity": "25岁女性研究员艾莉丝，银色长发整齐束在脑后，深蓝色清澈眼睛（失眠时微微发光），身高170cm，气质冷静专业",
+      "basePortrait": "alice_calm",
+      "source": "art/角色立绘_艾莉丝.md#L11-L45,#L109-L120"
+    },
+    "raine": {
+      "name": "雷恩",
+      "identity": "28岁男性雷恩，黑色短发略微凌乱，深绿色眼睛，身高182cm，体格结实，气质沉稳内敛",
+      "basePortrait": "raine_alert",
+      "source": "art/角色立绘_雷恩.md#L11-L60"
+    },
+    "xya": {
+      "name": "小雅",
+      "identity": "19岁女性店员小雅，粉色长发微微卷曲，棕色眼睛，身高165cm，活泼有艺术气质",
+      "basePortrait": "xya_smile",
+      "source": "art/角色立绘_小雅.md#L11-L57"
+    },
+    "lord": {
+      "name": "时间领主",
+      "identity": "时间领主（约60岁男性，林晓的未来自己），银色长发整齐束在脑后，深蓝色发光瞳孔，面部大半隐在阴影里看不清五官，身高175cm",
+      "basePortrait": "lord_calm",
+      "source": "art/角色立绘_时间领主.md#L3-L48；story/BIBLE.md#L68-L70"
+    },
+    "zhou": {
+      "name": "老周",
+      "identity": "61岁男性图书馆管理员老周，花白短发，脸上皱纹明显，眼神温和而疲惫，深灰色工装外套，腰间挂着一大串钥匙",
+      "basePortrait": "zhou_kind",
+      "source": "story/cast.json#L44-L51；story/BIBLE.md#L71"
+    },
+    "vera": {
+      "name": "维拉",
+      "identity": "40岁女性守望者负责人维拉，深棕色头发利落盘起，灰色眼睛，神情克制疏离，黑色高领长风衣，胸前一枚简约金属胸针",
+      "basePortrait": "vera_cold",
+      "source": "story/cast.json#L52-L59；story/BIBLE.md#L72"
+    }
+  },
+  "counts": {
+    "total": 104,
+    "used": 86,
+    "unused": 18,
+    "byKind": {
+      "bg": 30,
+      "cg": 42,
+      "portrait": 32
+    }
+  },
+  "entries": [
+    {
+      "id": "bg_title",
+      "kind": "bg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Bg/bg_title.png",
+      "size": "1920x1080",
+      "title": "标题画面",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "新东京夜空下的历史图书馆玻璃穹顶远景，一道淡紫色时空裂缝在云层中若隐若现，雨丝飘落，冷蓝主色调，标题画面构图，画面上方留出标题空间，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#4A90E2",
+        "#9B59B6"
+      ],
+      "source": "story/ASSETS.md#L23",
+      "notes": "补写：指南无标题画面 prompt，融合图书馆穹顶与裂缝母题"
+    },
+    {
+      "id": "bg_black",
+      "kind": "bg",
+      "used": true,
+      "refCount": 3,
+      "target": "Assets/Resources/Art/Bg/bg_black.png",
+      "size": "1920x1080",
+      "title": "纯黑过渡",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "纯黑色画面，无任何内容，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#000000"
+      ],
+      "source": "story/ASSETS.md#L24",
+      "notes": "无需出图：solidColor 字段由工具本地生成",
+      "solidColor": "#000000"
+    },
+    {
+      "id": "bg_library_night",
+      "kind": "bg",
+      "used": true,
+      "refCount": 8,
+      "target": "Assets/Resources/Art/Bg/bg_library_night.png",
+      "size": "1920x1080",
+      "title": "历史图书馆·夜（开场）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "历史图书馆古代书籍区，深夜，六层楼高的深色木质书架延伸至黑暗，大型玻璃穹顶外雨点轻敲，暖黄台灯与冷蓝夜色交织，宏伟壮观、宁静庄严，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#E8B06C",
+        "#87CEEB"
+      ],
+      "source": "art/场景设计_历史图书馆.md#L29-L45,#L130-L134",
+      "notes": "雨点敲穹顶与六层书架取自 1-1 开场叙述"
+    },
+    {
+      "id": "bg_library_day",
+      "kind": "bg",
+      "used": true,
+      "refCount": 10,
+      "target": "Assets/Resources/Art/Bg/bg_library_day.png",
+      "size": "1920x1080",
+      "title": "历史图书馆·日",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "历史图书馆入口大厅，白天，大型玻璃穹顶洒下明亮自然光，古典与现代结合的宏伟空间，智能灯光与信息屏，明亮温暖、宁静庄严，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#87CEEB",
+        "#E8B06C",
+        "#FFFFFF"
+      ],
+      "source": "art/场景设计_历史图书馆.md#L10-L27,#L124-L128",
+      "notes": ""
+    },
+    {
+      "id": "bg_library_basement",
+      "kind": "bg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Bg/bg_library_basement.png",
+      "size": "1920x1080",
+      "title": "图书馆地下书库",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "历史图书馆地下书库，昏暗的混凝土阶梯向下延伸，成排旧书架与档案盒，悬挂式工作灯投下昏黄光晕，神秘安静略带压迫感，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#E8B06C",
+        "#0A0A0E"
+      ],
+      "source": "art/场景设计_历史图书馆.md#L65-L82",
+      "notes": "地下书库场景依据 1-1a/1-1b 老周引路剧情与秘密档案区描述"
+    },
+    {
+      "id": "bg_institute_day",
+      "kind": "bg",
+      "used": true,
+      "refCount": 4,
+      "target": "Assets/Resources/Art/Bg/bg_institute_day.png",
+      "size": "1920x1080",
+      "title": "时空异常研究所·日",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时空异常研究所入口大厅，白天，冷白色调的现代科技建筑，挑高中庭与全息信息屏，硬朗线条，冷静专业，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#FFFFFF",
+        "#4A90E2",
+        "#CCCCCC"
+      ],
+      "source": "art/场景设计_时空研究所.md#L10-L27",
+      "notes": ""
+    },
+    {
+      "id": "bg_institute_night",
+      "kind": "bg",
+      "used": true,
+      "refCount": 7,
+      "target": "Assets/Resources/Art/Bg/bg_institute_night.png",
+      "size": "1920x1080",
+      "title": "时空异常研究所·夜",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时空异常研究所入口大厅，夜晚，蓝色灯带与屏幕冷光在金属地面上拉出长反光，空旷安静，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#4A90E2",
+        "#87CEEB"
+      ],
+      "source": "art/场景设计_时空研究所.md#L10-L27,#L120-L133",
+      "notes": ""
+    },
+    {
+      "id": "bg_lab",
+      "kind": "bg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Bg/bg_lab.png",
+      "size": "1920x1080",
+      "title": "研究所实验舱",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "研究所实验室中央的环形实验舱，透明舱体与淡蓝色能量管线，环绕的数据屏幕发出冷光，科技感强烈，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#4A90E2",
+        "#87CEEB",
+        "#0A1A2A"
+      ],
+      "source": "art/场景设计_时空研究所.md#L28-L46",
+      "notes": ""
+    },
+    {
+      "id": "bg_dorm_night",
+      "kind": "bg",
+      "used": true,
+      "refCount": 5,
+      "target": "Assets/Resources/Art/Bg/bg_dorm_night.png",
+      "size": "1920x1080",
+      "title": "林晓的宿舍·夜（失眠）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "林晓的学生宿舍房间，深夜，书桌上散乱着资料与亮着的旧终端，窗外城市霓虹微光透进来，台灯昏黄，床铺凌乱无人入睡，失眠的孤独氛围，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#E8B06C",
+        "#4A90E2"
+      ],
+      "source": "story/ASSETS.md#L31；story/BIBLE.md#L23-L24",
+      "notes": "补写：简报无宿舍条目，按失眠基调补写"
+    },
+    {
+      "id": "bg_dorm_dawn",
+      "kind": "bg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Bg/bg_dorm_dawn.png",
+      "size": "1920x1080",
+      "title": "林晓的宿舍·黎明",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "林晓的学生宿舍房间，黎明，橙金色晨光透过窗帘缝隙落在凌乱床铺与摊开的资料上，一夜未眠后的安静，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#ECB074",
+        "#87CEEB",
+        "#FFFFFF"
+      ],
+      "source": "story/ASSETS.md#L32",
+      "notes": "补写：简报无宿舍条目，按失眠基调补写"
+    },
+    {
+      "id": "bg_cafe_evening",
+      "kind": "bg",
+      "used": true,
+      "refCount": 7,
+      "target": "Assets/Resources/Art/Bg/bg_cafe_evening.png",
+      "size": "1920x1080",
+      "title": "街角咖啡馆·黄昏",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "咖啡馆「时间角落」内部，黄昏转夜，温暖灯光，复古与现代结合的装潢，温暖木质家具、复古装饰品、现代咖啡设备与艺术品展示墙，温馨舒适，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#E8B06C",
+        "#FFB6C1",
+        "#2C3E50"
+      ],
+      "source": "art/美术资源生成指南.md#L761-L771；art/场景设计_咖啡馆.md#L25-L45",
+      "notes": "沿用指南咖啡馆#4「内部晚上」，光线改为黄昏暖调"
+    },
+    {
+      "id": "bg_street_night",
+      "kind": "bg",
+      "used": true,
+      "refCount": 7,
+      "target": "Assets/Resources/Art/Bg/bg_street_night.png",
+      "size": "1920x1080",
+      "title": "新东京街道·夜",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "新东京城市街道，晚上，霓虹闪烁，流光溢彩，摩天大楼林立，智能交通系统，全息广告牌，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#4A90E2",
+        "#9B59B6",
+        "#0A0A1E"
+      ],
+      "source": "art/美术资源生成指南.md#L643-L653",
+      "notes": "逐字沿用指南新东京#2「夜晚街道」"
+    },
+    {
+      "id": "bg_street_rain",
+      "kind": "bg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Bg/bg_street_rain.png",
+      "size": "1920x1080",
+      "title": "新东京街道·雨",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "新东京城市街道，深夜暴雨，霓虹在路面积水中拉出长长的彩色倒影，撑伞的行人匆匆走过，雨丝在路灯下发光，冷、湿、安静，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#87CEEB",
+        "#4A90E2"
+      ],
+      "source": "art/美术资源生成指南.md#L643-L653；story/BIBLE.md#L15",
+      "notes": "由指南夜晚街道改造：加入暴雨与积水倒影（1-5 雨夜救人）"
+    },
+    {
+      "id": "bg_rooftop",
+      "kind": "bg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Bg/bg_rooftop.png",
+      "size": "1920x1080",
+      "title": "研究所天台",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时空研究所楼顶天台，黄昏入夜，护栏外是整座城市的天际线与高架桥灯河，风把云层压低，开阔而安静，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#ECB074",
+        "#2C3E50",
+        "#4A90E2"
+      ],
+      "source": "art/场景设计_时空研究所.md#L66-L84",
+      "notes": "补写：简报只有观测室，天台按城市天际线描述补写"
+    },
+    {
+      "id": "bg_hospital",
+      "kind": "bg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Bg/bg_hospital.png",
+      "size": "1920x1080",
+      "title": "医院走廊",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "医院走廊，冷白色灯光，浅色地面反射灯光，护士站与病房门依次排开，安静得近乎凝固，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#FFFFFF",
+        "#D6EAEA",
+        "#8C9698"
+      ],
+      "source": "story/ASSETS.md#L37",
+      "notes": "补写：简报无医院条目，按走廊母题补写"
+    },
+    {
+      "id": "bg_train",
+      "kind": "bg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Bg/bg_train.png",
+      "size": "1920x1080",
+      "title": "城际列车车厢",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "城际列车车厢内部，夜晚，成排空座椅与车窗，窗外掠过的光带在行李架上流动，安静而略带漂泊感，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#ECB074",
+        "#4A90E2"
+      ],
+      "source": "story/ASSETS.md#L38",
+      "notes": "补写：简报无列车条目"
+    },
+    {
+      "id": "bg_base",
+      "kind": "bg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Bg/bg_base.png",
+      "size": "1920x1080",
+      "title": "守望者地下基地",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "守望者地下基地，旧设施改造的作战空间，金属壁板与裸露管线，中央长桌铺满地图与终端，冷青色工作灯，尘埃浮动，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#1A2A30",
+        "#80C8D2",
+        "#0A1014"
+      ],
+      "source": "story/ASSETS.md#L39；story/BIBLE.md#L27",
+      "notes": "补写：简报无基地条目，按守望者地下组织设定补写"
+    },
+    {
+      "id": "bg_base_room",
+      "kind": "bg",
+      "used": true,
+      "refCount": 10,
+      "target": "Assets/Resources/Art/Bg/bg_base_room.png",
+      "size": "1920x1080",
+      "title": "基地作战室",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "基地作战室，环形屏幕墙显示城市监控与裂缝警报，长桌与折叠椅，冷青灯光，紧张而克制，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#1A2A30",
+        "#80C8D2",
+        "#4A90E2"
+      ],
+      "source": "story/ASSETS.md#L40",
+      "notes": "补写：简报无基地条目，与 bg_base 同一空间体系"
+    },
+    {
+      "id": "bg_ruins",
+      "kind": "bg",
+      "used": true,
+      "refCount": 4,
+      "target": "Assets/Resources/Art/Bg/bg_ruins.png",
+      "size": "1920x1080",
+      "title": "时空裂缝区的废墟",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "新东京混沌区，时空裂缝出现，空间扭曲，色彩异常，紫色、粉色、蓝色交织，时间碎片光芒闪烁，倒塌的楼体与漂浮的建筑碎片，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#9B59B6",
+        "#FF69B4",
+        "#4A90E2"
+      ],
+      "source": "art/美术资源生成指南.md#L685-L695；art/场景设计_新东京.md#L100-L112",
+      "notes": "沿用指南新东京#5「混沌区时空裂缝」"
+    },
+    {
+      "id": "bg_corridor",
+      "kind": "bg",
+      "used": true,
+      "refCount": 3,
+      "target": "Assets/Resources/Art/Bg/bg_corridor.png",
+      "size": "1920x1080",
+      "title": "裂缝内部的走廊",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "裂缝内部的走廊，无限延伸的门与扭曲的空间透视，淡蓝色淡紫色光芒在墙面上流动，安静而不真实，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#D8BFD8",
+        "#4B0082",
+        "#87CEEB"
+      ],
+      "source": "art/美术资源生成指南.md#L700-L709；story/ASSETS.md#L42",
+      "notes": "由指南「时间碎片光芒」改造为走廊构图"
+    },
+    {
+      "id": "bg_crack",
+      "kind": "bg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Bg/bg_crack.png",
+      "size": "1920x1080",
+      "title": "时空裂缝本体",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时空裂缝本体，夜空中撕开的巨大裂口，紫色粉色蓝色光芒从裂口倾泻，周围空间扭曲，悬浮的碎片缓慢旋转，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#9B59B6",
+        "#FF69B4",
+        "#4A90E2"
+      ],
+      "source": "art/美术资源生成指南.md#L685-L695",
+      "notes": "沿用指南新东京#5「混沌区时空裂缝」并聚焦裂缝本体"
+    },
+    {
+      "id": "bg_memory_white",
+      "kind": "bg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Bg/bg_memory_white.png",
+      "size": "1920x1080",
+      "title": "记忆空间·白",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "纯白记忆空间，无边界的柔和白光，远处漂浮半透明的生活物件剪影，安静、失重、略带不安，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#FFFFFF",
+        "#D6DADC",
+        "#CCCCCC"
+      ],
+      "source": "story/ASSETS.md#L44；art/README.md#L80",
+      "notes": "补写：简报无记忆空间条目，按白色主色与「熟悉的东西少了一块」基调补写"
+    },
+    {
+      "id": "bg_memory_school",
+      "kind": "bg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Bg/bg_memory_school.png",
+      "size": "1920x1080",
+      "title": "记忆空间·旧校舍",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "记忆空间中的旧校舍，褪色的走廊与教室，阳光把浮尘照成金色，轮廓清晰却细节缺失，像被忘记的旧照片，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#F6F0DC",
+        "#E8B06C",
+        "#8C7850"
+      ],
+      "source": "story/ASSETS.md#L45",
+      "notes": "补写：简报无旧校舍条目，按记忆空间母题补写"
+    },
+    {
+      "id": "bg_alt_city",
+      "kind": "bg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Bg/bg_alt_city.png",
+      "size": "1920x1080",
+      "title": "平行世界的新东京",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "平行世界的新东京，白天，街道整洁却空无一人，天空颜色略微偏紫，建筑轮廓正常但细节错位，熟悉又陌生，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#9B59B6",
+        "#87CEEB",
+        "#362858"
+      ],
+      "source": "art/美术资源生成指南.md#L629-L639；story/ASSETS.md#L46",
+      "notes": "由指南新东京#1「白天街道」改造：无人空城与偏紫天空"
+    },
+    {
+      "id": "bg_lord_hall",
+      "kind": "bg",
+      "used": true,
+      "refCount": 4,
+      "target": "Assets/Resources/Art/Bg/bg_lord_hall.png",
+      "size": "1920x1080",
+      "title": "时间领主的领域",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时间领主的领域，深紫与深蓝交织的巨大殿堂，悬浮的时间碎片如星辰环绕，高拱与镜面地面，压迫性的寂静，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#4B0082",
+        "#9B59B6",
+        "#2C3E50"
+      ],
+      "source": "art/角色立绘_时间领主.md#L11-L22；art/README.md#L76",
+      "notes": "补写：简报无领主领域条目，按长袍配色与紫色系主色补写"
+    },
+    {
+      "id": "bg_time_core",
+      "kind": "bg",
+      "used": true,
+      "refCount": 3,
+      "target": "Assets/Resources/Art/Bg/bg_time_core.png",
+      "size": "1920x1080",
+      "title": "时间核心",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时间核心，巨大的淡蓝色发光晶体悬浮在空间中央，环状时间流如星轨旋转，光线在空间中折射，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#87CEEB",
+        "#4A90E2",
+        "#6EE2E2"
+      ],
+      "source": "art/美术资源生成指南.md#L700-L709；story/ASSETS.md#L48",
+      "notes": "由指南「时间碎片光芒」扩展为核心构图"
+    },
+    {
+      "id": "bg_timeline",
+      "kind": "bg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Bg/bg_timeline.png",
+      "size": "1920x1080",
+      "title": "时间线具象化",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时间线具象化，无数条发光的平行光带在黑暗空间中延伸交错，每条光带里隐约浮现不同的城市剪影，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#6EE2E2",
+        "#4A90E2",
+        "#0A0E20"
+      ],
+      "source": "story/ASSETS.md#L49",
+      "notes": "补写：简报无时间线条目，按时间碎片光芒体系补写"
+    },
+    {
+      "id": "bg_final_arena",
+      "kind": "bg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Bg/bg_final_arena.png",
+      "size": "1920x1080",
+      "title": "最终决战之地",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "最终决战之地，时间核心碎裂后的虚空战场，漂浮的残骸与未合拢的裂缝环绕，紫蓝光芒在黑暗中脉动，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#4B0082",
+        "#9B59B6",
+        "#87CEEB"
+      ],
+      "source": "story/ASSETS.md#L50",
+      "notes": "补写：简报无决战条目，融合裂缝与核心母题"
+    },
+    {
+      "id": "bg_dawn_city",
+      "kind": "bg",
+      "used": true,
+      "refCount": 8,
+      "target": "Assets/Resources/Art/Bg/bg_dawn_city.png",
+      "size": "1920x1080",
+      "title": "决战后的黎明城市",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "决战后的新东京黎明，橙金色晨光漫过高架与楼群，雨后空气清透，城市苏醒，安静而带着余烬般的希望，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#ECB074",
+        "#D6A880",
+        "#87CEEB"
+      ],
+      "source": "story/ASSETS.md#L51；story/BIBLE.md#L19",
+      "notes": "补写：按黎明色板与 2150 新东京设定补写"
+    },
+    {
+      "id": "bg_ending_void",
+      "kind": "bg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Bg/bg_ending_void.png",
+      "size": "1920x1080",
+      "title": "结局用·空白空间",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "结局用的空白空间，深灰近黑的无边界虚空，只有一束柔和的冷光照亮画面中央的一小块地面，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#14141C",
+        "#1A1A24",
+        "#87CEEB"
+      ],
+      "source": "story/ASSETS.md#L52",
+      "notes": "补写：按结局空白空间用途补写"
+    },
+    {
+      "id": "cg_first_fragment",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_first_fragment.png",
+      "size": "1920x1080",
+      "title": "林晓第一次触到时间碎片",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "深夜历史图书馆古代书籍区，22岁黑短发青年林晓（白色T恤、深蓝色牛仔裤）伸手触碰悬浮的淡蓝色时间碎片结晶，碎片光芒照亮他的脸与成排书架，震撼而静谧，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#87CEEB",
+        "#E8B06C"
+      ],
+      "source": "story/ASSETS.md#L70；art/场景设计_历史图书馆.md#L29-L45",
+      "notes": "补写：指南无 CG prompt；林晓身份取自角色立绘_林晓.md#L11-L21"
+    },
+    {
+      "id": "cg_awaken_eye",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_awaken_eye.png",
+      "size": "1920x1080",
+      "title": "失眠觉醒·瞳孔变蓝的特写",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "林晓面部大特写，连续失眠数日后的双眼，黑色瞳孔褪为发光的淡蓝色并带光晕，眼下黑眼圈，冷色调，惊悚而安静，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#87CEEB",
+        "#2C3E50",
+        "#0A0A0E"
+      ],
+      "source": "story/ASSETS.md#L71；art/角色立绘_林晓.md#L23-L33",
+      "notes": "补写：瞳孔淡蓝+光晕为林晓失眠设定"
+    },
+    {
+      "id": "cg_crack_open",
+      "kind": "cg",
+      "used": true,
+      "refCount": 4,
+      "target": "Assets/Resources/Art/Cg/cg_crack_open.png",
+      "size": "1920x1080",
+      "title": "时空裂缝张开",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "新东京上空时空裂缝张开，紫色粉色蓝色交织的裂口撕开夜空，下方街道霓虹与车流凝固，空间扭曲，末日感，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#9B59B6",
+        "#FF69B4",
+        "#4A90E2"
+      ],
+      "source": "story/ASSETS.md#L72；art/美术资源生成指南.md#L685-L695",
+      "notes": "由指南混沌区 prompt 改造为裂缝张开瞬间"
+    },
+    {
+      "id": "cg_raine_rescue",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_raine_rescue.png",
+      "size": "1920x1080",
+      "title": "雷恩在雨中救人",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "暴雨中的新东京街道，黑色战术装备的雷恩（黑短发、深绿眼睛）在积水中扶起受伤者，霓虹倒影破碎，雨水成帘，紧张克制，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#4A90E2",
+        "#80C8D2"
+      ],
+      "source": "story/ASSETS.md#L73；art/角色立绘_雷恩.md#L11-L22",
+      "notes": "补写：雨夜救人对应 1-5 剧情；雷恩身份取自简报"
+    },
+    {
+      "id": "cg_team_first",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_team_first.png",
+      "size": "1920x1080",
+      "title": "四人第一次同框",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "咖啡馆暖灯下四人第一次同框：林晓（白T恤黑短发）、艾莉丝（银发白实验服）、雷恩（黑色战术装）、小雅（粉发咖啡馆制服围裙），彼此打量，气氛微妙而温暖，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#E8B06C",
+        "#FFB6C1",
+        "#4A90E2"
+      ],
+      "source": "story/ASSETS.md#L74；art/场景设计_咖啡馆.md#L25-L45",
+      "notes": "补写：四人身份各取自对应角色简报"
+    },
+    {
+      "id": "cg_base_establish",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_base_establish.png",
+      "size": "1920x1080",
+      "title": "基地建立",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "守望者地下基地落成，长桌上地图与终端亮起，林晓、艾莉丝、雷恩三人的剪影围立，冷青灯光，尘埃浮动，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#1A2A30",
+        "#80C8D2",
+        "#0A1014"
+      ],
+      "source": "story/ASSETS.md#L75",
+      "notes": "补写：基地设定与 bg_base 同一体系"
+    },
+    {
+      "id": "cg_alice_lab",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_alice_lab.png",
+      "size": "1920x1080",
+      "title": "艾莉丝在实验舱",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "研究所实验舱前，银发深蓝眼睛的艾莉丝身着白实验服与白手套，淡蓝色能量光映在她脸上，专注而忧虑，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#4A90E2",
+        "#FFFFFF",
+        "#87CEEB"
+      ],
+      "source": "story/ASSETS.md#L76；art/角色立绘_艾莉丝.md#L11-L21",
+      "notes": "补写：艾莉丝身份取自简报"
+    },
+    {
+      "id": "cg_alice_past",
+      "kind": "cg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Cg/cg_alice_past.png",
+      "size": "1920x1080",
+      "title": "艾莉丝的过去（失去的亲人）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "泛黄的记忆色调中，少女时代的艾莉丝（银发）与一位看不清面容的亲人站在老式住宅门前，光晕柔和，回忆的失落感，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#F6F0DC",
+        "#E8B06C",
+        "#8C7850"
+      ],
+      "source": "story/ASSETS.md#L77",
+      "notes": "补写：未引用条目；「失去的亲人」具体形象剧本未给出，留待编剧确认"
+    },
+    {
+      "id": "cg_raine_secret",
+      "kind": "cg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Cg/cg_raine_secret.png",
+      "size": "1920x1080",
+      "title": "雷恩的秘密（守望者烙印）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "冷光下雷恩挽起袖口，小臂上守望者的烙印纹路微微发亮，他的表情平静而戒备，背景是基地金属壁板，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#1A2A30",
+        "#80C8D2",
+        "#9B59B6"
+      ],
+      "source": "story/ASSETS.md#L78",
+      "notes": "补写：未引用条目；烙印样式剧本未给出，留待编剧确认"
+    },
+    {
+      "id": "cg_xya_awaken",
+      "kind": "cg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Cg/cg_xya_awaken.png",
+      "size": "1920x1080",
+      "title": "小雅的能力觉醒",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "咖啡馆后厨，小雅的粉色长发微微发光，棕色眼睛睁大望着掌心一枚淡粉色光点，能力觉醒的瞬间，惊惶与新奇并存，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#FFB6C1",
+        "#FF69B4",
+        "#E8B06C"
+      ],
+      "source": "story/ASSETS.md#L79；art/角色立绘_小雅.md#L34-L45",
+      "notes": "补写：未引用条目；头发微光为小雅失眠设定"
+    },
+    {
+      "id": "cg_truth_reveal",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_truth_reveal.png",
+      "size": "1920x1080",
+      "title": "时间真相揭露",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "图书馆秘密档案区，成排档案盒悬浮展开，金色与蓝色光芒交织的数据流环绕林晓与艾莉丝，真相揭露的震撼瞬间，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#E8B06C",
+        "#4A90E2",
+        "#4B0082"
+      ],
+      "source": "story/ASSETS.md#L80；art/场景设计_历史图书馆.md#L136-L140",
+      "notes": "色彩变化依据图书馆简报「发现秘密档案时：金色、蓝色交织」"
+    },
+    {
+      "id": "cg_betrayal",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_betrayal.png",
+      "size": "1920x1080",
+      "title": "背叛揭露",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "基地作战室，雷恩背对众人按住通讯器，林晓与艾莉丝的表情凝固，冷光与阴影把画面割裂，信任崩塌的瞬间，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#1A2A30",
+        "#80C8D2",
+        "#0A0A0E"
+      ],
+      "source": "story/ASSETS.md#L81",
+      "notes": "补写：对应 2-6/2-7 真相与背叛"
+    },
+    {
+      "id": "cg_collapse",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_collapse.png",
+      "size": "1920x1080",
+      "title": "时空崩溃",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时空崩溃，新东京的城市、图书馆与研究所的碎片在紫色裂缝风暴中剥离升空，人物剪影在前景坠落，末日构图，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#9B59B6",
+        "#4B0082",
+        "#FF69B4"
+      ],
+      "source": "story/ASSETS.md#L82；art/场景设计_新东京.md#L128-L133",
+      "notes": "补写：裂缝风暴母题沿用指南混沌区"
+    },
+    {
+      "id": "cg_final_choice",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_final_choice.png",
+      "size": "1920x1080",
+      "title": "最终抉择",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时间核心前，林晓面对悬浮的众多时间线光幕，每一条光幕里都有不同结局的城市，深紫深蓝光芒，抉择的重量，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#4A90E2",
+        "#6EE2E2",
+        "#4B0082"
+      ],
+      "source": "story/ASSETS.md#L83；story/BIBLE.md#L11-L12",
+      "notes": "补写：「救所有人还是保自己」的核心抉择"
+    },
+    {
+      "id": "cg_trade_ledger",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_trade_ledger.png",
+      "size": "1920x1080",
+      "title": "最终交易账页（四行名字并成一行）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "巨大的账页在空中展开，四行名字并成一行被光抹去，林晓伸手按住纸面，金蓝色光与泛黄纸页，超现实构图，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#E8B06C",
+        "#4A90E2",
+        "#F6F0DC"
+      ],
+      "source": "story/ASSETS.md#L84；story/BIBLE.md#L239",
+      "notes": "补写：对应 3-4a 最终交易（账页四行名字并一行）"
+    },
+    {
+      "id": "cg_lord_face",
+      "kind": "cg",
+      "used": true,
+      "refCount": 1,
+      "target": "Assets/Resources/Art/Cg/cg_lord_face.png",
+      "size": "1920x1080",
+      "title": "时间领主的真面目",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时间领区长袍的兜帽被风吹开，露出与林晓相似却苍老数十年的脸，银发深蓝发光眼，震惊的对视，紫蓝光芒环绕，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#4B0082",
+        "#87CEEB",
+        "#9B59B6"
+      ],
+      "source": "story/ASSETS.md#L85；art/角色立绘_时间领主.md#L3-L4",
+      "notes": "补写：真面目=林晓的未来自己（BIBLE 人物口径）"
+    },
+    {
+      "id": "cg_miracle",
+      "kind": "cg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Cg/cg_miracle.png",
+      "size": "1920x1080",
+      "title": "奇迹瞬间",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "全员生还的黎明，林晓、艾莉丝、雷恩、小雅四人并肩站在修复后的城市天际线前，橙金色晨光，劫后余生的安静，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#ECB074",
+        "#87CEEB",
+        "#FFFFFF"
+      ],
+      "source": "story/ASSETS.md#L86；story/BIBLE.md#L85",
+      "notes": "补写：未引用条目；对应 ending_miracle 口径"
+    },
+    {
+      "id": "cg_ending_normal",
+      "kind": "cg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Cg/cg_ending_normal.png",
+      "size": "1920x1080",
+      "title": "正常结局",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "正常结局：黄昏的图书馆门口，林晓与艾莉丝并肩看着城市亮灯，暖色与冷色交界，平静的日常感，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#E8B06C",
+        "#2C3E50",
+        "#87CEEB"
+      ],
+      "source": "story/ASSETS.md#L87",
+      "notes": "补写：未引用条目；按默认结局口径"
+    },
+    {
+      "id": "cg_ending_hero",
+      "kind": "cg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Cg/cg_ending_hero.png",
+      "size": "1920x1080",
+      "title": "英雄结局",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "英雄结局：纪念碑前的清晨，人群远景，一束暖光落在无人认领的花束上，克制的悲壮，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#F6F0DC",
+        "#E8B06C",
+        "#2C3E50"
+      ],
+      "source": "story/ASSETS.md#L88；story/BIBLE.md#L232-L235",
+      "notes": "补写：未引用条目；按英雄结局口径"
+    },
+    {
+      "id": "cg_ending_tragic",
+      "kind": "cg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Cg/cg_ending_tragic.png",
+      "size": "1920x1080",
+      "title": "悲剧结局",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "悲剧结局：空荡的地下书库，长桌两端各坐着一个年龄不同的同一人，成排档案盒缺了一格，冷蓝主调，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#4A90E2",
+        "#0A0A0E"
+      ],
+      "source": "story/ASSETS.md#L89",
+      "notes": "补写：未引用条目；「长桌两端同一人」意象取自老周讲 2110 年事件"
+    },
+    {
+      "id": "cg_ending_open",
+      "kind": "cg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Cg/cg_ending_open.png",
+      "size": "1920x1080",
+      "title": "开放结局",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "开放结局：雨后的新东京街道，林晓撑伞走远，身后一扇门的缝隙透出淡蓝色光，悬念感，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#87CEEB",
+        "#4A90E2"
+      ],
+      "source": "story/ASSETS.md#L90",
+      "notes": "补写：未引用条目；按开放结局口径"
+    },
+    {
+      "id": "cg_ending_miracle",
+      "kind": "cg",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Cg/cg_ending_miracle.png",
+      "size": "1920x1080",
+      "title": "奇迹结局",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "奇迹结局：四个人从井底阶梯走上地面，晨光落在四人身上，裂缝在远处合拢成一线淡蓝，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#ECB074",
+        "#87CEEB",
+        "#FFFFFF"
+      ],
+      "source": "story/ASSETS.md#L91；story/BIBLE.md#L243",
+      "notes": "补写：未引用条目；对应 e16「一个都没少」意象"
+    },
+    {
+      "id": "cg_ending_e01",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e01.png",
+      "size": "1920x1080",
+      "title": "结局·归途",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "图书馆古代书籍区夜班，林晓与艾莉丝在暖黄台灯下并肩值班，窗外夜雨，玻璃穹顶映着灯光，平静幸福，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#E8B06C",
+        "#2C3E50",
+        "#87CEEB"
+      ],
+      "source": "story/BIBLE.md#L228",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e02",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e02.png",
+      "size": "1920x1080",
+      "title": "结局·两个人的研究所",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "研究所的公开档案墙前，林晓与雷恩并肩而立，墙面滚动着被还原的删除记录，冷白光中有了一丝温度，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#FFFFFF",
+        "#4A90E2",
+        "#80C8D2"
+      ],
+      "source": "story/BIBLE.md#L229",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e03",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e03.png",
+      "size": "1920x1080",
+      "title": "结局·重新学睡",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "宿舍床上，林晓侧身熟睡，眉头舒展，晨光透过窗帘，床头旧终端显示连续八小时睡眠记录，安宁，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#ECB074",
+        "#F6F0DC",
+        "#87CEEB"
+      ],
+      "source": "story/BIBLE.md#L230",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e04",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e04.png",
+      "size": "1920x1080",
+      "title": "结局·没人记得的门",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "照常运转的城市街景，林晓独自站在一扇无人注意的旧门前，行人从他身边流过，孤独冷色，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#8C9698",
+        "#4A90E2"
+      ],
+      "source": "story/BIBLE.md#L231",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e05",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e05.png",
+      "size": "1920x1080",
+      "title": "结局·写进页脚的名字",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "图书馆书页特写，页脚一行小字的名字被暖黄灯光照亮，书架虚化在背景里，克制的纪念感，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#E8B06C",
+        "#F6F0DC",
+        "#2C3E50"
+      ],
+      "source": "story/BIBLE.md#L232",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e06",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e06.png",
+      "size": "1920x1080",
+      "title": "结局·被纪念的陌生人",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "纪念碑上一个谁都认不出的名字，清晨的光斜切过石面，碑前放着无人认领的献花，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#D6DADC",
+        "#8C9698",
+        "#ECB074"
+      ],
+      "source": "story/BIBLE.md#L233",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e07",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e07.png",
+      "size": "1920x1080",
+      "title": "结局·图书馆的新管理员",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "图书馆前台，小雅（粉发，便装）认真核对管理员表格，阳光洒进大厅，温暖日常，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#FFB6C1",
+        "#E8B06C",
+        "#FFFFFF"
+      ],
+      "source": "story/BIBLE.md#L234",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e08",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e08.png",
+      "size": "1920x1080",
+      "title": "结局·雕像下面的空位",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "落成的雕像基座上刻意留出的空位，人群在远景中散去，黄昏光线拉长影子，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#8C9698",
+        "#ECB074",
+        "#2C3E50"
+      ],
+      "source": "story/BIBLE.md#L235",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e09",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e09.png",
+      "size": "1920x1080",
+      "title": "结局·钥匙在锁孔里",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "门从内侧合上的特写，钥匙留在锁孔里，走廊冷白灯光，诀别的安静，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#FFFFFF",
+        "#2C3E50",
+        "#8C9698"
+      ],
+      "source": "story/BIBLE.md#L236",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e10",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e10.png",
+      "size": "1920x1080",
+      "title": "结局·留在井底的那个人",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "井底的幽蓝空间，一个人影替林晓念完名字，光从头顶的井口洒下，牺牲感，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#4A90E2",
+        "#0A1A2A",
+        "#87CEEB"
+      ],
+      "source": "story/BIBLE.md#L237",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e11",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e11.png",
+      "size": "1920x1080",
+      "title": "结局·雷小满",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "战术装备的雷恩单膝跪地与归来的妹妹（黑短发少女）额头相抵，基地冷光转暖，哽咽的重逢，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#80C8D2",
+        "#E8B06C",
+        "#2C3E50"
+      ],
+      "source": "story/BIBLE.md#L238",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e12",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e12.png",
+      "size": "1920x1080",
+      "title": "结局·账没有平",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "小雅握着翻开的账本，纸面最后一行空缺，远处一道未合拢的裂缝透出紫光，悬而未决，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#FFB6C1",
+        "#9B59B6",
+        "#F6F0DC"
+      ],
+      "source": "story/BIBLE.md#L239",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e13",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e13.png",
+      "size": "1920x1080",
+      "title": "结局·门留着一条缝",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "一扇留着一条缝的门透出一线光，林晓站在门外回望，走廊安静，月度探访的克制，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#E8B06C",
+        "#0A0A0E"
+      ],
+      "source": "story/BIBLE.md#L240",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e14",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e14.png",
+      "size": "1920x1080",
+      "title": "结局·那页纸还在口袋里",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "林晓外套口袋露出一角泛黄纸页，城市夜色中的街道，他把那页纸留给了自己，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#F6F0DC",
+        "#2C3E50",
+        "#4A90E2"
+      ],
+      "source": "story/BIBLE.md#L241",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e15",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e15.png",
+      "size": "1920x1080",
+      "title": "结局·每个月丢一件东西",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "日常街景中一处突兀的空位：长椅上少了一个人、咖啡杯只剩一只，无人察觉的缺失，冷幽默式超现实，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#8C9698",
+        "#E8B06C",
+        "#2C3E50"
+      ],
+      "source": "story/BIBLE.md#L242；story/BIBLE.md#L15",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e16",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e16.png",
+      "size": "1920x1080",
+      "title": "结局·一个都没少",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "四个人并肩从井底阶梯走上地面，晨光落在四人身上，裂缝在远处合拢，奇迹的团圆，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#ECB074",
+        "#87CEEB",
+        "#FFFFFF"
+      ],
+      "source": "story/BIBLE.md#L243",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e17",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e17.png",
+      "size": "1920x1080",
+      "title": "结局·十一个名字都清了",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "名单光幕上十一个名字逐一点亮清零，窗外裂缝合上，冷蓝光芒转为暖色，释然，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#4A90E2",
+        "#6EE2E2",
+        "#E8B06C"
+      ],
+      "source": "story/BIBLE.md#L244",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e18",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e18.png",
+      "size": "1920x1080",
+      "title": "结局·钟重新走起来",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "特写：艾莉丝手腕上的旧钟开始走动，林晓把表扣回她腕上，两只手与表盘，温柔的光，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#E8B06C",
+        "#FFFFFF",
+        "#87CEEB"
+      ],
+      "source": "story/BIBLE.md#L245",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e19",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e19.png",
+      "size": "1920x1080",
+      "title": "结局·醒着的城市",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "俯瞰全城，夜晚的灯火同时亮起，无数窗口里的人们同时睁眼望向同一片天空，震撼的集体清醒，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#2C3E50",
+        "#4A90E2",
+        "#ECB074"
+      ],
+      "source": "story/BIBLE.md#L246",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "cg_ending_e20",
+      "kind": "cg",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Cg/cg_ending_e20.png",
+      "size": "1920x1080",
+      "title": "结局·把借来的记忆当成自己的",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "纯白记忆空间，林晓抱着不属于自己的童年物件微笑，眼神空洞，美丽而不安，冷白光，现代日式视觉小说风格，高质量，高清，细节丰富，1920x1080",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点",
+      "palette": [
+        "#FFFFFF",
+        "#D6DADC",
+        "#87CEEB"
+      ],
+      "source": "story/BIBLE.md#L247",
+      "notes": "补写：指南无 CG prompt，按 BIBLE §9.3 结局一句话内容补写"
+    },
+    {
+      "id": "linxiao_normal",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 94,
+      "target": "Assets/Resources/Art/Portrait/linxiao_normal.png",
+      "size": "900x1300",
+      "title": "林晓·日常（基准）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "22岁青年男性林晓，黑色短发略微凌乱，黑色瞳孔（失眠时褪为发淡蓝色微光的瞳孔），身高178cm，清瘦，白色T恤、深蓝色牛仔裤、白色运动鞋，表情平静温和，目光自然，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#2C3E50",
+        "#87CEEB"
+      ],
+      "source": "art/美术资源生成指南.md#L41-L51；art/角色立绘_林晓.md#L11-L21",
+      "notes": "基准图。由指南#1「温和微笑」改造：表情改为平静，背景改为纯色抠图底",
+      "character": "linxiao",
+      "transparent": true,
+      "consistency": "本图为该角色基准图：先出此图，后续同角色变体一律以本图为参考图",
+      "identitySource": "art/角色立绘_林晓.md#L11-L46,#L109-L125"
+    },
+    {
+      "id": "linxiao_smile",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 21,
+      "target": "Assets/Resources/Art/Portrait/linxiao_smile.png",
+      "size": "900x1300",
+      "title": "林晓·温和微笑",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "22岁青年男性林晓，黑色短发略微凌乱，黑色瞳孔（失眠时褪为发淡蓝色微光的瞳孔），身高178cm，清瘦，白色T恤、深蓝色牛仔裤、白色运动鞋，温和真诚的微笑，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#2C3E50",
+        "#87CEEB"
+      ],
+      "source": "art/美术资源生成指南.md#L41-L51",
+      "notes": "沿用指南#1「温和微笑」的表情与服装，背景改为纯色抠图底",
+      "character": "linxiao",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/linxiao_normal.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_林晓.md#L11-L46,#L109-L125"
+    },
+    {
+      "id": "linxiao_tired",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 167,
+      "target": "Assets/Resources/Art/Portrait/linxiao_tired.png",
+      "size": "900x1300",
+      "title": "林晓·失眠疲惫",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "22岁青年男性林晓，黑色短发略微凌乱，黑色瞳孔（失眠时褪为发淡蓝色微光的瞳孔），身高178cm，清瘦，白色衬衫敞领、黑色西裤，眼下明显黑眼圈，疲惫恍惚，动作迟缓，瞳孔泛淡蓝色微光，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#2C3E50",
+        "#87CEEB"
+      ],
+      "source": "art/美术资源生成指南.md#L83-L94；art/角色立绘_林晓.md#L23-L33",
+      "notes": "沿用指南#4「失眠疲惫与迷茫」，背景改为纯色抠图底",
+      "character": "linxiao",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/linxiao_normal.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_林晓.md#L11-L46,#L109-L125"
+    },
+    {
+      "id": "linxiao_shock",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 137,
+      "target": "Assets/Resources/Art/Portrait/linxiao_shock.png",
+      "size": "900x1300",
+      "title": "林晓·震惊",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "22岁青年男性林晓，黑色短发略微凌乱，黑色瞳孔（失眠时褪为发淡蓝色微光的瞳孔），身高178cm，清瘦，白色T恤、深蓝色牛仔裤、白色运动鞋，震惊，瞳孔收缩，身体微微后退，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#2C3E50",
+        "#87CEEB"
+      ],
+      "source": "",
+      "notes": "补写：指南无对应条目，按林晓日常服装与失眠瞳孔设定（角色立绘_林晓.md#L23-L33）补写",
+      "character": "linxiao",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/linxiao_normal.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_林晓.md#L11-L46,#L109-L125"
+    },
+    {
+      "id": "linxiao_resolve",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 80,
+      "target": "Assets/Resources/Art/Portrait/linxiao_resolve.png",
+      "size": "900x1300",
+      "title": "林晓·坚定",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "22岁青年男性林晓，黑色短发略微凌乱，黑色瞳孔（失眠时褪为发淡蓝色微光的瞳孔），身高178cm，清瘦，白色T恤、深蓝色牛仔裤、白色运动鞋，坚定决绝，眉头微皱，目光直视前方，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#2C3E50",
+        "#87CEEB"
+      ],
+      "source": "art/美术资源生成指南.md#L128-L139",
+      "notes": "由指南#7「战斗严肃」改造：保留坚定神情，服装改回日常",
+      "character": "linxiao",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/linxiao_normal.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_林晓.md#L11-L46,#L109-L125"
+    },
+    {
+      "id": "linxiao_sleep",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 2,
+      "target": "Assets/Resources/Art/Portrait/linxiao_sleep.png",
+      "size": "900x1300",
+      "title": "林晓·安睡",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "22岁青年男性林晓，黑色短发略微凌乱，黑色瞳孔（失眠时褪为发淡蓝色微光的瞳孔），身高178cm，清瘦，白色衬衫敞领、黑色西裤，闭眼安睡，眉头舒展，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#2C3E50",
+        "#87CEEB"
+      ],
+      "source": "",
+      "notes": "补写：指南无对应条目，按失眠服装设定补写（角色立绘_林晓.md#L23-L33）",
+      "character": "linxiao",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/linxiao_normal.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_林晓.md#L11-L46,#L109-L125"
+    },
+    {
+      "id": "alice_calm",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 200,
+      "target": "Assets/Resources/Art/Portrait/alice_calm.png",
+      "size": "900x1300",
+      "title": "艾莉丝·冷静专注（基准）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "25岁女性研究员艾莉丝，银色长发整齐束在脑后，深蓝色清澈眼睛（失眠时微微发光），身高170cm，气质冷静专业，白色实验服、黑色西裤、白手套，冷静专注，先给结论式的沉静表情，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#4A90E2",
+        "#CCCCCC"
+      ],
+      "source": "art/美术资源生成指南.md#L163-L173；art/角色立绘_艾莉丝.md#L11-L21",
+      "notes": "基准图。沿用指南#1「专业专注」，背景改为纯色抠图底",
+      "character": "alice",
+      "transparent": true,
+      "consistency": "本图为该角色基准图：先出此图，后续同角色变体一律以本图为参考图",
+      "identitySource": "art/角色立绘_艾莉丝.md#L11-L45,#L109-L120"
+    },
+    {
+      "id": "alice_cold",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 172,
+      "target": "Assets/Resources/Art/Portrait/alice_cold.png",
+      "size": "900x1300",
+      "title": "艾莉丝·冷淡",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "25岁女性研究员艾莉丝，银色长发整齐束在脑后，深蓝色清澈眼睛（失眠时微微发光），身高170cm，气质冷静专业，白色实验服、黑色西裤、白手套，面无表情，简洁直接的距离感，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#4A90E2",
+        "#CCCCCC"
+      ],
+      "source": "art/美术资源生成指南.md#L177-L187",
+      "notes": "沿用指南#2「简洁直接」，背景改为纯色抠图底",
+      "character": "alice",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/alice_calm.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_艾莉丝.md#L11-L45,#L109-L120"
+    },
+    {
+      "id": "alice_worried",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 133,
+      "target": "Assets/Resources/Art/Portrait/alice_worried.png",
+      "size": "900x1300",
+      "title": "艾莉丝·忧虑",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "25岁女性研究员艾莉丝，银色长发整齐束在脑后，深蓝色清澈眼睛（失眠时微微发光），身高170cm，气质冷静专业，白色实验服、黑色西裤、白手套，忧虑，欲言又止，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#4A90E2",
+        "#CCCCCC"
+      ],
+      "source": "",
+      "notes": "补写：指南无对应条目，按工作服装与「她开始多解释一句」的感情线口径（BIBLE.md#L63）补写",
+      "character": "alice",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/alice_calm.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_艾莉丝.md#L11-L45,#L109-L120"
+    },
+    {
+      "id": "alice_smile",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 9,
+      "target": "Assets/Resources/Art/Portrait/alice_smile.png",
+      "size": "900x1300",
+      "title": "艾莉丝·温柔微笑",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "25岁女性研究员艾莉丝，银色长发整齐束在脑后，深蓝色清澈眼睛（失眠时微微发光），身高170cm，气质冷静专业，简约时尚的休闲装，温柔微笑，略带不习惯的生涩，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#4A90E2",
+        "#CCCCCC"
+      ],
+      "source": "art/美术资源生成指南.md#L205-L215；art/角色立绘_艾莉丝.md#L23-L32",
+      "notes": "沿用指南#4「休闲温柔微笑」，背景改为纯色抠图底",
+      "character": "alice",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/alice_calm.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_艾莉丝.md#L11-L45,#L109-L120"
+    },
+    {
+      "id": "alice_cry",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 7,
+      "target": "Assets/Resources/Art/Portrait/alice_cry.png",
+      "size": "900x1300",
+      "title": "艾莉丝·流泪",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "25岁女性研究员艾莉丝，银色长发整齐束在脑后，深蓝色清澈眼睛（失眠时微微发光），身高170cm，气质冷静专业，白色实验服、黑色西裤、白手套，流泪，仍努力维持克制，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#4A90E2",
+        "#CCCCCC"
+      ],
+      "source": "",
+      "notes": "补写：指南无对应条目，按工作服装与冷静性格补写",
+      "character": "alice",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/alice_calm.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_艾莉丝.md#L11-L45,#L109-L120"
+    },
+    {
+      "id": "alice_tired",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 13,
+      "target": "Assets/Resources/Art/Portrait/alice_tired.png",
+      "size": "900x1300",
+      "title": "艾莉丝·失眠",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "25岁女性研究员艾莉丝，银色长发整齐束在脑后，深蓝色清澈眼睛（失眠时微微发光），身高170cm，气质冷静专业，白色连衣裙，失眠疲惫，眼睛微微发光，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFFFFF",
+        "#4A90E2",
+        "#CCCCCC"
+      ],
+      "source": "art/美术资源生成指南.md#L219-L230；art/角色立绘_艾莉丝.md#L34-L45",
+      "notes": "沿用指南#5「失眠疲惫与迷茫」，背景改为纯色抠图底",
+      "character": "alice",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/alice_calm.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_艾莉丝.md#L11-L45,#L109-L120"
+    },
+    {
+      "id": "raine_alert",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 33,
+      "target": "Assets/Resources/Art/Portrait/raine_alert.png",
+      "size": "900x1300",
+      "title": "雷恩·战术警觉（基准）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "28岁男性雷恩，黑色短发略微凌乱，深绿色眼睛，身高182cm，体格结实，气质沉稳内敛，黑色战术装备、战术背心、护目镜推在额前、黑色战术靴，警觉，身体微侧，随时准备行动，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#0A0A0E",
+        "#2C3E50",
+        "#80C8D2"
+      ],
+      "source": "art/美术资源生成指南.md#L268-L278；art/角色立绘_雷恩.md#L11-L22",
+      "notes": "基准图。沿用指南#1「简洁有力」，背景改为纯色抠图底",
+      "character": "raine",
+      "transparent": true,
+      "consistency": "本图为该角色基准图：先出此图，后续同角色变体一律以本图为参考图",
+      "identitySource": "art/角色立绘_雷恩.md#L11-L60"
+    },
+    {
+      "id": "raine_grin",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 12,
+      "target": "Assets/Resources/Art/Portrait/raine_grin.png",
+      "size": "900x1300",
+      "title": "雷恩·休闲真诚微笑",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "28岁男性雷恩，黑色短发略微凌乱，深绿色眼睛，身高182cm，体格结实，气质沉稳内敛，黑色T恤、深色牛仔裤、休闲运动鞋，咧嘴的真诚微笑，难得放松，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#0A0A0E",
+        "#2C3E50",
+        "#80C8D2"
+      ],
+      "source": "art/美术资源生成指南.md#L310-L320；art/角色立绘_雷恩.md#L24-L34",
+      "notes": "沿用指南#4「休闲真诚微笑」，背景改为纯色抠图底",
+      "character": "raine",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/raine_alert.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_雷恩.md#L11-L60"
+    },
+    {
+      "id": "raine_serious",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 112,
+      "target": "Assets/Resources/Art/Portrait/raine_serious.png",
+      "size": "900x1300",
+      "title": "雷恩·严肃坚定",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "28岁男性雷恩，黑色短发略微凌乱，深绿色眼睛，身高182cm，体格结实，气质沉稳内敛，黑色战术装备、战术背心、黑色战术靴，严肃坚定，少解释多行动的气场，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#0A0A0E",
+        "#2C3E50",
+        "#80C8D2"
+      ],
+      "source": "art/美术资源生成指南.md#L296-L306",
+      "notes": "沿用指南#3「坚定决心」，背景改为纯色抠图底",
+      "character": "raine",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/raine_alert.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_雷恩.md#L11-L60"
+    },
+    {
+      "id": "raine_hurt",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 37,
+      "target": "Assets/Resources/Art/Portrait/raine_hurt.png",
+      "size": "900x1300",
+      "title": "雷恩·负伤",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "28岁男性雷恩，黑色短发略微凌乱，深绿色眼睛，身高182cm，体格结实，气质沉稳内敛，黑色战术装备，护甲破损带血污，负伤咬牙忍耐，单膝微沉，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#0A0A0E",
+        "#2C3E50",
+        "#80C8D2"
+      ],
+      "source": "",
+      "notes": "补写：指南无对应条目，按战术服装与「对同伴极度护短」口径（BIBLE.md#L65）补写",
+      "character": "raine",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/raine_alert.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_雷恩.md#L11-L60"
+    },
+    {
+      "id": "raine_tired",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 38,
+      "target": "Assets/Resources/Art/Portrait/raine_tired.png",
+      "size": "900x1300",
+      "title": "雷恩·失眠",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "28岁男性雷恩，黑色短发略微凌乱，深绿色眼睛，身高182cm，体格结实，气质沉稳内敛，深绿色运动服，身体散发淡淡绿色光芒，失眠疲惫，幻觉般的失神，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#0A0A0E",
+        "#2C3E50",
+        "#80C8D2"
+      ],
+      "source": "art/美术资源生成指南.md#L324-L334；art/角色立绘_雷恩.md#L36-L47",
+      "notes": "沿用指南#5「失眠疲惫与迷茫」，背景改为纯色抠图底",
+      "character": "raine",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/raine_alert.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_雷恩.md#L11-L60"
+    },
+    {
+      "id": "xya_smile",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 38,
+      "target": "Assets/Resources/Art/Portrait/xya_smile.png",
+      "size": "900x1300",
+      "title": "小雅·活泼微笑（基准）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "19岁女性店员小雅，粉色长发微微卷曲，棕色眼睛，身高165cm，活泼有艺术气质，咖啡馆制服、咖啡色围裙、白色围裙带，活泼热情的笑容，唯一会主动笑的人，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFB6C1",
+        "#FF69B4",
+        "#FFFFFF"
+      ],
+      "source": "art/美术资源生成指南.md#L373-L383；art/角色立绘_小雅.md#L11-L21",
+      "notes": "基准图。沿用指南#1「活泼热情」，背景改为纯色抠图底",
+      "character": "xya",
+      "transparent": true,
+      "consistency": "本图为该角色基准图：先出此图，后续同角色变体一律以本图为参考图",
+      "identitySource": "art/角色立绘_小雅.md#L11-L57"
+    },
+    {
+      "id": "xya_curious",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 68,
+      "target": "Assets/Resources/Art/Portrait/xya_curious.png",
+      "size": "900x1300",
+      "title": "小雅·好奇",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "19岁女性店员小雅，粉色长发微微卷曲，棕色眼睛，身高165cm，活泼有艺术气质，咖啡馆制服、咖啡色围裙、白色围裙带，好奇地歪头，眼睛发亮，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFB6C1",
+        "#FF69B4",
+        "#FFFFFF"
+      ],
+      "source": "art/美术资源生成指南.md#L401-L411",
+      "notes": "由指南#3「温柔关怀」改造为好奇神情",
+      "character": "xya",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/xya_smile.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_小雅.md#L11-L57"
+    },
+    {
+      "id": "xya_scared",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 74,
+      "target": "Assets/Resources/Art/Portrait/xya_scared.png",
+      "size": "900x1300",
+      "title": "小雅·惊恐",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "19岁女性店员小雅，粉色长发微微卷曲，棕色眼睛，身高165cm，活泼有艺术气质，咖啡馆制服、咖啡色围裙、白色围裙带，惊恐后退，双手攥紧围裙边，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFB6C1",
+        "#FF69B4",
+        "#FFFFFF"
+      ],
+      "source": "",
+      "notes": "补写：指南无对应条目，按制服设定补写",
+      "character": "xya",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/xya_smile.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_小雅.md#L11-L57"
+    },
+    {
+      "id": "xya_determined",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 76,
+      "target": "Assets/Resources/Art/Portrait/xya_determined.png",
+      "size": "900x1300",
+      "title": "小雅·坚定",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "19岁女性店员小雅，粉色长发微微卷曲，棕色眼睛，身高165cm，活泼有艺术气质，咖啡馆制服、咖啡色围裙、白色围裙带，认真坚定，关键时异常清醒的眼神，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFB6C1",
+        "#FF69B4",
+        "#FFFFFF"
+      ],
+      "source": "art/美术资源生成指南.md#L473-L483；story/BIBLE.md#L67",
+      "notes": "由指南#8「专注创作」改造：保留专注感，服装改回制服",
+      "character": "xya",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/xya_smile.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_小雅.md#L11-L57"
+    },
+    {
+      "id": "xya_cry",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 39,
+      "target": "Assets/Resources/Art/Portrait/xya_cry.png",
+      "size": "900x1300",
+      "title": "小雅·哭泣",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "19岁女性店员小雅，粉色长发微微卷曲，棕色眼睛，身高165cm，活泼有艺术气质，咖啡馆制服、咖啡色围裙、白色围裙带，哭泣，粉色长发微微发光，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#FFB6C1",
+        "#FF69B4",
+        "#FFFFFF"
+      ],
+      "source": "art/角色立绘_小雅.md#L34-L45",
+      "notes": "补写：指南无对应条目，按失眠头发微光设定补写",
+      "character": "xya",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/xya_smile.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_小雅.md#L11-L57"
+    },
+    {
+      "id": "lord_calm",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 132,
+      "target": "Assets/Resources/Art/Portrait/lord_calm.png",
+      "size": "900x1300",
+      "title": "时间领主·冷酷理性（基准）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时间领主（约60岁男性，林晓的未来自己），银色长发整齐束在脑后，深蓝色发光瞳孔，面部大半隐在阴影里看不清五官，身高175cm，深紫色与深蓝色长袍，神秘纹饰，深色手套，周身散发淡蓝淡紫的时间碎片光芒，冷酷理性，缓慢宣读判词般的沉静，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#4B0082",
+        "#9B59B6",
+        "#87CEEB"
+      ],
+      "source": "art/美术资源生成指南.md#L505-L515；art/角色立绘_时间领主.md#L11-L22",
+      "notes": "基准图。沿用指南#1「冷酷理性」，背景改为纯色抠图底",
+      "character": "lord",
+      "transparent": true,
+      "consistency": "本图为该角色基准图：先出此图，后续同角色变体一律以本图为参考图",
+      "identitySource": "art/角色立绘_时间领主.md#L3-L48；story/BIBLE.md#L68-L70"
+    },
+    {
+      "id": "lord_amused",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 4,
+      "target": "Assets/Resources/Art/Portrait/lord_amused.png",
+      "size": "900x1300",
+      "title": "时间领主·玩味",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时间领主（约60岁男性，林晓的未来自己），银色长发整齐束在脑后，深蓝色发光瞳孔，面部大半隐在阴影里看不清五官，身高175cm，深紫色与深蓝色长袍，时间碎片光芒环绕，居高临下的轻蔑微笑，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#4B0082",
+        "#9B59B6",
+        "#87CEEB"
+      ],
+      "source": "art/美术资源生成指南.md#L549-L559",
+      "notes": "由指南#4「智慧」改造：智慧感转为居高临下的玩味",
+      "character": "lord",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/lord_calm.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_时间领主.md#L3-L48；story/BIBLE.md#L68-L70"
+    },
+    {
+      "id": "lord_angry",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 3,
+      "target": "Assets/Resources/Art/Portrait/lord_angry.png",
+      "size": "900x1300",
+      "title": "时间领主·怒意",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时间领主（约60岁男性，林晓的未来自己），银色长发整齐束在脑后，深蓝色发光瞳孔，面部大半隐在阴影里看不清五官，身高175cm，深紫色与深蓝色长袍，光芒变得强烈刺目，怒意克制，长袍上的纹饰发光，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#4B0082",
+        "#9B59B6",
+        "#87CEEB"
+      ],
+      "source": "art/美术资源生成指南.md#L520-L530；art/角色立绘_时间领主.md#L57",
+      "notes": "由指南#2「坚定执着」与表情系列「复仇心」补写",
+      "character": "lord",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/lord_calm.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_时间领主.md#L3-L48；story/BIBLE.md#L68-L70"
+    },
+    {
+      "id": "lord_broken",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 16,
+      "target": "Assets/Resources/Art/Portrait/lord_broken.png",
+      "size": "900x1300",
+      "title": "时间领主·崩溃",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "时间领主（约60岁男性，林晓的未来自己），银色长发整齐束在脑后，深蓝色发光瞳孔，面部大半隐在阴影里看不清五官，身高175cm，深紫色与深蓝色长袍破损，光芒黯淡，崩溃与疲惫，束起的银发散落，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#4B0082",
+        "#9B59B6",
+        "#87CEEB"
+      ],
+      "source": "art/美术资源生成指南.md#L535-L545",
+      "notes": "由指南#3「孤独」改造：孤独感加深为崩溃",
+      "character": "lord",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/lord_calm.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "art/角色立绘_时间领主.md#L3-L48；story/BIBLE.md#L68-L70"
+    },
+    {
+      "id": "zhou_kind",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 29,
+      "target": "Assets/Resources/Art/Portrait/zhou_kind.png",
+      "size": "900x1300",
+      "title": "老周·和蔼",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "61岁男性图书馆管理员老周，花白短发，脸上皱纹明显，眼神温和而疲惫，深灰色工装外套，腰间挂着一大串钥匙，深灰色工装外套、深色长裤，腰间一大串钥匙，和蔼的微笑，话说一半的耐人寻味，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#8C7850",
+        "#2C3E50",
+        "#E8B06C"
+      ],
+      "source": "story/cast.json#L44-L51；Assets/Resources/Story/act1/1-1.json#L22",
+      "notes": "补写：老周无美术简报，按61岁图书馆管理员设定与钥匙串细节补写",
+      "character": "zhou",
+      "transparent": true,
+      "consistency": "本图为该角色基准图：先出此图，后续同角色变体一律以本图为参考图",
+      "identitySource": "story/cast.json#L44-L51；story/BIBLE.md#L71"
+    },
+    {
+      "id": "zhou_grim",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 29,
+      "target": "Assets/Resources/Art/Portrait/zhou_grim.png",
+      "size": "900x1300",
+      "title": "老周·凝重",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "61岁男性图书馆管理员老周，花白短发，脸上皱纹明显，眼神温和而疲惫，深灰色工装外套，腰间挂着一大串钥匙，深灰色工装外套、深色长裤，腰间一大串钥匙，神色凝重，欲言又止，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#8C7850",
+        "#2C3E50",
+        "#E8B06C"
+      ],
+      "source": "story/cast.json#L44-L51；story/BIBLE.md#L71",
+      "notes": "补写：老周无美术简报，按「知道的多，说得少」口径补写",
+      "character": "zhou",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/zhou_kind.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "story/cast.json#L44-L51；story/BIBLE.md#L71"
+    },
+    {
+      "id": "zhou_worried",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 23,
+      "target": "Assets/Resources/Art/Portrait/zhou_worried.png",
+      "size": "900x1300",
+      "title": "老周·担忧",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "61岁男性图书馆管理员老周，花白短发，脸上皱纹明显，眼神温和而疲惫，深灰色工装外套，腰间挂着一大串钥匙，深灰色工装外套、深色长裤，腰间一大串钥匙，担忧，眉头紧锁，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#8C7850",
+        "#2C3E50",
+        "#E8B06C"
+      ],
+      "source": "story/cast.json#L44-L51",
+      "notes": "补写：老周无美术简报，按管理员设定补写",
+      "character": "zhou",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/zhou_kind.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "story/cast.json#L44-L51；story/BIBLE.md#L71"
+    },
+    {
+      "id": "vera_cold",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 11,
+      "target": "Assets/Resources/Art/Portrait/vera_cold.png",
+      "size": "900x1300",
+      "title": "维拉·冷漠（基准）",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "40岁女性守望者负责人维拉，深棕色头发利落盘起，灰色眼睛，神情克制疏离，黑色高领长风衣，胸前一枚简约金属胸针，黑色高领长风衣，简约金属胸针，冷漠审视，台词像命令与交易的气场，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#0A0A0E",
+        "#8C9698",
+        "#9B59B6"
+      ],
+      "source": "story/cast.json#L52-L59；story/BIBLE.md#L72",
+      "notes": "补写：维拉无美术简报，按40岁守望者负责人设定补写",
+      "character": "vera",
+      "transparent": true,
+      "consistency": "本图为该角色基准图：先出此图，后续同角色变体一律以本图为参考图",
+      "identitySource": "story/cast.json#L52-L59；story/BIBLE.md#L72"
+    },
+    {
+      "id": "vera_smile",
+      "kind": "portrait",
+      "used": true,
+      "refCount": 6,
+      "target": "Assets/Resources/Art/Portrait/vera_smile.png",
+      "size": "900x1300",
+      "title": "维拉·疏离微笑",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "40岁女性守望者负责人维拉，深棕色头发利落盘起，灰色眼睛，神情克制疏离，黑色高领长风衣，胸前一枚简约金属胸针，黑色高领长风衣，简约金属胸针，礼貌而疏离的微笑，谈判式的善意，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#0A0A0E",
+        "#8C9698",
+        "#9B59B6"
+      ],
+      "source": "story/cast.json#L52-L59",
+      "notes": "补写：维拉无美术简报，按负责人口径补写",
+      "character": "vera",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/vera_cold.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "story/cast.json#L52-L59；story/BIBLE.md#L72"
+    },
+    {
+      "id": "vera_angry",
+      "kind": "portrait",
+      "used": false,
+      "refCount": 0,
+      "target": "Assets/Resources/Art/Portrait/vera_angry.png",
+      "size": "900x1300",
+      "title": "维拉·怒",
+      "style": "现代日式视觉小说风格，高质量，高清，细节丰富",
+      "prompt": "40岁女性守望者负责人维拉，深棕色头发利落盘起，灰色眼睛，神情克制疏离，黑色高领长风衣，胸前一枚简约金属胸针，黑色高领长风衣，简约金属胸针，怒而不失威仪，眼神锋利，全身立绘，正面站姿，完整身形入画，纯中灰色纯色背景（仅用于后期抠图，无任何场景与道具），竖构图，现代日式视觉小说风格，高质量，高清，细节丰富，900x1300",
+      "negative": "文字，字母，数字，水印，logo，签名，画框，边框，多余手指，畸形手，低质量，模糊，噪点，背景场景元素，复杂背景，道具杂物",
+      "palette": [
+        "#0A0A0E",
+        "#8C9698",
+        "#9B59B6"
+      ],
+      "source": "story/cast.json#L52-L59",
+      "notes": "补写：维拉无美术简报，按负责人口径补写",
+      "character": "vera",
+      "transparent": true,
+      "consistency": "以基准图 Assets/Resources/Art/Portrait/vera_cold.png 为参考图生成表情变体：保持同一张脸、发型发色、瞳色、服装与体型完全一致，只改变表情、视线与姿态细节",
+      "identitySource": "story/cast.json#L52-L59；story/BIBLE.md#L72"
+    }
+  ]
+}

@@ -148,7 +148,10 @@ namespace TimeOfFragments.Story
             dialogueBox.sizeDelta = new Vector2(-80f, 330f);
             dialogueBox.anchoredPosition = new Vector2(0f, 40f);
             VNUiKit.AddImage(boxGo, VNUiKit.PanelBg);   // 不接收射线, 点击穿透到 ClickCatcher
-            VNUiKit.AddImage(VNUiKit.Solid("BoxLine", boxGo.transform, new Color(0.45f, 0.78f, 0.95f, 0.55f)), new Color(0.45f, 0.78f, 0.95f, 0.55f));
+            // 对话框顶边的高亮细线。原先写成 AddImage(Solid(...), color)：Solid 已经返回 Image，
+            // 再套一层 AddImage 是类型错误（CS1503，编译不过），这里直接用 Solid 并拉成 2px 顶边条。
+            Image boxLine = VNUiKit.Solid("BoxLine", boxGo.transform, new Color(0.45f, 0.78f, 0.95f, 0.55f));
+            VNUiKit.Stretch(boxLine.gameObject, 0f, -2f, 0f, 0f);
 
             GameObject namePlateGo = VNUiKit.Node("NamePlate", boxGo.transform);
             namePlate = namePlateGo;
@@ -202,8 +205,9 @@ namespace TimeOfFragments.Story
             bg.sprite = ArtRegistry.Background("bg_title");
             bg.color = new Color(0.75f, 0.78f, 0.86f, 1f);
 
-            VNUiKit.AddImage(VNUiKit.Solid("TitleShade", titleScreen.transform, new Color(0f, 0f, 0f, 0.45f)), new Color(0f, 0f, 0f, 0.45f));
-            VNUiKit.Stretch(titleScreen.transform.Find("TitleShade").gameObject);
+            // 标题页压暗层。同样去掉多余的 AddImage(Solid(...)) 嵌套，顺手不再靠 Find 找刚创建的节点。
+            Image titleShade = VNUiKit.Solid("TitleShade", titleScreen.transform, new Color(0f, 0f, 0f, 0.45f));
+            VNUiKit.Stretch(titleShade.gameObject);
 
             Text title = VNUiKit.Label("GameTitle", titleScreen.transform, "时光之痕", 104, TextAnchor.MiddleCenter, VNUiKit.Ink, true);
             VNUiKit.Anchor(title.gameObject, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(1200f, 150f), new Vector2(0f, 300f));

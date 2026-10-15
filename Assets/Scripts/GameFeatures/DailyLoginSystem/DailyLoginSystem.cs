@@ -1,3 +1,5 @@
+#if CG_LEGACY  // 这些子系统是早期生成的脚手架，运行时（Assets/Scripts/Story + Editor）完全不引用它们，
+             // 且存在跨命名空间未 using 的历史编译错误；先整体屏蔽保证出包，需要时加 define 再修。
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -121,8 +123,7 @@ namespace TimeStamp.GameFeatures
 
         private string GetRewardDescription(int reward, int consecutiveDays)
         {
-            return $"连续登录 {consecutiveDays} 天
-奖励: {reward} 金币";
+            return $"连续登录 {consecutiveDays} 天\n奖励: {reward} 金币";
         }
 
         private void ShowRewardPopup(int reward, string description)
@@ -165,3 +166,4 @@ namespace TimeStamp.GameFeatures
         public int GetConsecutiveDays() => currentDay;
     }
 }
+#endif

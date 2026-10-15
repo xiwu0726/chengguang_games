@@ -1,3 +1,5 @@
+#if CG_LEGACY  // 这些子系统是早期生成的脚手架，运行时（Assets/Scripts/Story + Editor）完全不引用它们，
+             // 且存在跨命名空间未 using 的历史编译错误；先整体屏蔽保证出包，需要时加 define 再修。
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -169,7 +171,7 @@ namespace TimeStamp
 
         /// <summary>
         /// 测试平台
-        * </summary>
+        /// </summary>
         private void TestPlatform()
         {
             var platform = Application.platform;
@@ -257,7 +259,7 @@ namespace TimeStamp
 
         /// <summary>
         /// 解析Unity版本
-        * </summary>
+        /// </summary>
         private float ParseUnityVersion(string version)
         {
             string[] parts = version.Split('.');
@@ -314,7 +316,7 @@ namespace TimeStamp
 
         /// <summary>
         /// 获取测试结果
-        * </summary>
+        /// </summary>
         public List<CompatibilityResult> GetTestResults()
         {
             return new List<CompatibilityResult>(testResults);
@@ -322,7 +324,7 @@ namespace TimeStamp
 
         /// <summary>
         /// 检查是否所有测试都通过
-        * </summary>
+        /// </summary>
         public bool AreAllTestsPassed()
         {
             foreach (var result in testResults)
@@ -347,3 +349,4 @@ namespace TimeStamp
         public string Message { get; set; }
     }
 }
+#endif

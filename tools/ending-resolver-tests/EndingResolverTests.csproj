@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- 位于 Assets 之外的独立测试工程：Unity 不会编译本目录。
+       通过 Compile Include 把纯 C# 的 EndingResolver.cs 纳入本程序集，
+       internal 类型因此对测试可见。 -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>EndingResolverTests</AssemblyName>
+    <RootNamespace>Shiguang.Story.Tests</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="../../Assets/Scripts/Story/EndingResolver.cs" Link="EndingResolver.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="cases.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

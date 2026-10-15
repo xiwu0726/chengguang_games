@@ -6,7 +6,7 @@
 
 ## 快速试玩（免安装）
 
-**双击即玩**：下载单文件 Windows 试玩包（约 92 MB，内嵌全部 54 场剧本 · 约 17 万字 · 86 张美术，无需 Unity / Node）：
+**双击即玩**：下载单文件 Windows 试玩包（约 91 MB，内嵌全部 54 场剧本 · 约 17 万字 · 86 张美术，无需 Unity / Node）：
 
 - [时光之痕-试玩.exe（GitHub Release v1.0.0 下载）](https://github.com/xiwu0726/chengguang_games/releases/download/v1.0.0/TimeOfFragments-demo-v1.0.0.exe)
 - Release 页：https://github.com/xiwu0726/chengguang_games/releases/tag/v1.0.0
@@ -41,10 +41,13 @@
 ## 项目状态
 
 ✅ **剧本已完成**：54 场 / 约 170,648 字（目标 10 万字的 170.6%），20 条结局规则全部可达
-✅ **试玩 exe 已出包**：`node story/tools/build-exe.js` 一键重建，产物 `dist/时光之痕-试玩.exe`
+✅ **试玩 exe 已出包**：`node story/tools/build-exe.js` 一键重建，产物 `dist/时光之痕-试玩.exe`（约 91 MB，内嵌页面 2.91 MB）
+✅ **结局路由已实现**：`Assets/Scripts/Story/EndingResolver.cs` 读取 `StoryConfig/endings.json`，与网页播放器同一套语义；测试见 `tools/ending-resolver-tests/`（C# 91 例全过，与 JS 交叉比对 61 例全一致）
+✅ **Unity 脚本已离线验证 0 编译错误**：61 个历史脚手架文件用 `#if CG_LEGACY` 屏蔽（运行时链路不引用它们），详见说明文档
+✅ **美术已重生成**：`Assets/Resources/Art` 104 张占位氛围图（不再烙资源名）；正式出图流水线见 `art/manifest.json` + `story/tools/gen-art.js`
 ✅ **代码已完成**：45个C#脚本文件，约11300行代码
 ✅ **文档已完成**：32个详细设计文档
-⏳ **Unity 原生包**：需本人登录 Unity Hub 领取免费 Personal 许可证后，菜单「时光之痕 → 构建 Windows 可执行文件」出包（见 [Unity 激活与出包说明.md](<Unity 激活与出包说明.md>)）
+⏳ **Unity 原生包**：编辑器已装（2021.3.45f2），**只差本人登录 Unity Hub 领取免费 Personal 许可证**。激活后一条命令出包：`powershell -File scripts\build-unity.ps1`（见 [Unity 激活与出包说明.md](<Unity 激活与出包说明.md>)）
 
 ## 核心系统
 
@@ -58,18 +61,25 @@
 
 ## 快速开始
 
-### 方法1：使用Unity Hub（推荐）
+**只想试玩**：下载上面的 Release exe，或双击 `preview/index.html`（轻量网页版，需保留仓库目录结构）。
 
-1. 打开Unity Hub
-2. 创建新项目，选择"3D"模板
-3. 将本项目中的 `Assets/Scripts/` 文件夹复制到Unity项目的 `Assets/` 目录下
-4. 打开项目，创建一个新场景
-5. 将所有脚本拖入场景中
-6. 运行项目
+**要出 Unity 原生包**：先按 [Unity 激活与出包说明.md](<Unity 激活与出包说明.md>) 的第一步激活许可证（只有本人能做），然后：
 
-### 方法2：等待自动创建
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\build-unity.ps1        # 出包到 Build\Windows\时光之痕.exe
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\build-unity.ps1 -Run   # 出完直接跑
+```
 
-子代理正在自动创建Unity项目，完成后会提供项目文件。
+也可以在编辑器里用菜单 **时光之痕 → 构建 Windows 可执行文件**；**时光之痕 → 在编辑器里试玩（Play）** 任意场景直接开局（工程是零场景设计，UI 全部由代码在运行时创建）。
+
+**改剧本后重建网页版与 exe**：
+
+```powershell
+node story/tools/build-preview.js --standalone   # 自包含单文件 preview/时光之痕-试玩.html
+node story/tools/build-preview.js                # 轻量版 preview/index.html
+node story/tools/smoke-preview.js                # 冒烟：跑通全流程到结局
+node story/tools/build-exe.js                    # 重打 dist/时光之痕-试玩.exe（自带自检）
+```
 
 ## 项目结构
 

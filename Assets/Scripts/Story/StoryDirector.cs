@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Shiguang.Story;
 using UnityEngine;
 
 namespace TimeOfFragments.Story
@@ -32,6 +33,16 @@ namespace TimeOfFragments.Story
         TextSpeedSetting speed = TextSpeedSetting.ById(1);
         string currentBgm = "";
 
+        /// <summary>结局路由标记：场景顶层 next 等于它时按 endings.json 解析结局场景。</summary>
+        const string EndingRouteToken = "@ending";
+
+        /// <summary>topAffection 并列时的优先顺序，与 story/cast.json 的 characters[].name 顺序保持一致。</summary>
+        static readonly string[] EndingCastOrder = { "林晓", "艾莉丝", "雷恩", "小雅", "时间领主", "老周", "维拉" };
+
+        // 数据驱动结局表（语义与网页版 player-template.html 一致）；null = 表缺失/非法，回退旧五结局文案。
+        EndingTable endingTable;
+        bool endingRouteTaken;
+
         void Awake()
         {
             Instance = this;
@@ -53,6 +64,7 @@ namespace TimeOfFragments.Story
 
             Library = new StoryLibrary();
             Library.Load();
+            LoadEndingTable();
 
             View.OnAdvance = Advance;
             View.OnToggleAuto = ToggleAuto;
@@ -97,6 +109,7 @@ namespace TimeOfFragments.Story
         public void NewGame()
         {
             State = new GameState();
+            endingRouteTaken = false;
             View.SetEndingVisible(false);
             View.SetTitleVisible(false);
             View.SetInsomniaTier(0);
@@ -113,6 +126,7 @@ namespace TimeOfFragments.Story
                 return;
             }
             State = s;
+            endingRouteTaken = false;
             View.SetEndingVisible(false);
             View.SetTitleVisible(false);
             View.SetInsomniaTier(State.InsomniaTier);
@@ -175,14 +189,7 @@ namespace TimeOfFragments.Story
 
             if (lineIndex >= current.lines.Length)
             {
-                if (!string.IsNullOrEmpty(current.next) && Library.Has(current.next))
-                {
-                    JumpTo(current.next, 0);
-                }
-                else
-                {
-                    ShowEnding();
-                }
+                EndScene();
                 return;
             }
 
@@ -414,6 +421,7 @@ namespace TimeOfFragments.Story
                 return;
             }
             State = loaded;
+            endingRouteTaken = false;
             View.ClosePanels();
             View.SetEndingVisible(false);
             View.SetTitleVisible(false);
@@ -468,41 +476,82 @@ namespace TimeOfFragments.Story
 
         // ==================== 结局 ====================
 
-        void ShowEnding()
+        void LoadEndingTable()
         {
-            string title;
-            string body;
+            TextAsset asset = Resources.Load<TextAsset>("StoryConfig/endings");
+            if (asset == null)
+            {
+                endingTable = null;
+                Debug.LogWarning("[Story] 未找到 StoryConfig/endings.json, 结局将回退旧五结局文案。");
+                return;
+            }
+            try
+            {
+                endingTable = EndingResolver.ParseTable(asset.text);
+                Debug.Log(string.Format("[Story] 结局表载入: {0} 条规则, fallback {1}。",
+                    endingTable.RuleCount,
+                    string.IsNullOrEmpty(endingTable.FallbackScene) ? "(无)" : endingTable.FallbackScene));
+            }
+            catch (EndingTableException e)
+            {
+                endingTable = null;
+                Debug.LogError("[Story] 结局表非法, 回退旧五结局文案: " + e.Message);
+            }
+        }
 
-            if (State.HasFlag("ending_miracle"))
+        /// <summary>场景收尾路由: @ending → 按结局表解析; 否则走 next; 都没有则进结局画面。</summary>
+        void EndScene()
+        {
+            string next = current == null ? "" : current.next;
+            if (next == EndingRouteToken) { RouteToEnding(); return; }
+            if (!string.IsNullOrEmpty(next) && Library.Has(next)) { JumpTo(next, 0); return; }
+            ShowEnding(null);
+        }
+
+        /// <summary>
+        /// 对应网页版 endScene 的 @ending 分支: 无表/无命中/已路由过 → 直接进结局画面;
+        /// 否则记录命中结果并跳转结局场景（目标缺失时由 JumpTo 既有逻辑报错回标题）。
+        /// </summary>
+        void RouteToEnding()
+        {
+            if (endingTable == null) { ShowEnding(null); return; }
+            EndingResolution pick = endingTable.Resolve(BuildEndingSnapshot());
+            if (pick == null || endingRouteTaken) { ShowEnding(pick); return; }
+            endingRouteTaken = true;
+            State.endingId = pick.Scene;
+            State.endingRule = pick.RuleIndex;
+            JumpTo(pick.Scene, 0);
+        }
+
+        EndingSnapshot BuildEndingSnapshot()
+        {
+            Dictionary<string, int> affection = new Dictionary<string, int>();
+            if (State.affection != null)
             {
-                title = "结局 · 奇迹";
-                body = "所有碎片在同一瞬间安静下来。\n你没有回到过去, 也没有抹掉任何一道伤痕——你只是终于愿意带着它们继续往前走。\n时间没有原谅谁, 但它停止了继续索要。";
+                for (int i = 0; i < State.affection.Count; i++)
+                {
+                    AffectionEntry entry = State.affection[i];
+                    if (entry != null && !string.IsNullOrEmpty(entry.who)) affection[entry.who] = entry.value;
+                }
             }
-            else if (State.insomnia >= 80)
-            {
-                title = "结局 · 失眠";
-                body = "你已经分不清自己是在醒来还是在睡去。\n那条链还在向前延伸, 只是再没有人替它念出下一个词。\n窗外的天亮了, 而你不知道这是第几个天亮。";
-            }
-            else if (State.HasFlag("ending_hero"))
-            {
-                title = "结局 · 英雄";
-                body = "你把最后一块碎片按回了它该在的位置。\n代价被记在了别人看不见的地方, 但这一次, 所有人都活着走出了那栋楼。";
-            }
-            else if (State.HasFlag("ending_tragic"))
-            {
-                title = "结局 · 诀别";
-                body = "你救下了能救的一切, 除了那个一直站在你身边的人。\n时间合拢的速度比你说出那句话更快。";
-            }
-            else if (State.HasFlag("ending_open"))
-            {
-                title = "结局 · 未完成";
-                body = "链断了。\n没有人知道断口那边是什么, 也没有人再提起那个名字。\n故事在这里停了下来, 像一句被刻意咽回去的话。";
-            }
-            else
-            {
-                title = "结局 · 归途";
-                body = "碎片的答案不在过去, 而在你决定怎么过完接下来的每一天。\n你合上了那本借来的书, 把它放回原来的位置。";
-            }
+            int shards = State.memoryShards == null ? 0 : State.memoryShards.Count;
+            return new EndingSnapshot(State.flags, State.insomnia, shards, affection, EndingCastOrder);
+        }
+
+        void ShowEnding(EndingResolution pick)
+        {
+            string sceneId = pick != null ? pick.Scene : State.endingId;
+            string ruleTitle = endingTable == null || string.IsNullOrEmpty(sceneId)
+                ? "" : endingTable.RuleTitleFor(sceneId);
+            EndingScreen legacy = LegacyEnding();
+            string pickTitle = pick == null ? "" : pick.Title;
+            string title = !string.IsNullOrEmpty(pickTitle) ? pickTitle
+                : (!string.IsNullOrEmpty(ruleTitle) ? ruleTitle : legacy.Title);
+
+            // 与网页版一致: 规则有标题时用结局场景最后一行作正文, 否则用旧结局文案。
+            string lastText = LastLineText();
+            string body = !string.IsNullOrEmpty(ruleTitle) && !string.IsNullOrEmpty(lastText)
+                ? "「" + lastText + "」" : legacy.Body;
 
             body += "\n\n—— 本次游玩 ——\n时长: " + FormatTime(State.playSeconds) + "　失眠值: " + State.insomnia + " / 100";
             string affection = AffectionSummary();
@@ -510,6 +559,46 @@ namespace TimeOfFragments.Story
             if (State.flags.Count > 0) body += "\n标记: " + State.flags.Count + " 个";
 
             View.ShowEnding(title, body);
+        }
+
+        string LastLineText()
+        {
+            if (current == null || current.lines == null || current.lines.Length == 0) return "";
+            StoryLine last = current.lines[current.lines.Length - 1];
+            return last == null || last.text == null ? "" : last.text;
+        }
+
+        /// <summary>旧五结局文案: 仅在结局表缺失/非法、或无命中且无 fallback 时使用（对应网页版 legacyEnding）。</summary>
+        EndingScreen LegacyEnding()
+        {
+            if (State.HasFlag("ending_miracle"))
+            {
+                return new EndingScreen("结局 · 奇迹", "所有碎片在同一瞬间安静下来。\n你没有回到过去, 也没有抹掉任何一道伤痕——你只是终于愿意带着它们继续往前走。\n时间没有原谅谁, 但它停止了继续索要。");
+            }
+            if (State.insomnia >= 80)
+            {
+                return new EndingScreen("结局 · 失眠", "你已经分不清自己是在醒来还是在睡去。\n那条链还在向前延伸, 只是再没有人替它念出下一个词。\n窗外的天亮了, 而你不知道这是第几个天亮。");
+            }
+            if (State.HasFlag("ending_hero"))
+            {
+                return new EndingScreen("结局 · 英雄", "你把最后一块碎片按回了它该在的位置。\n代价被记在了别人看不见的地方, 但这一次, 所有人都活着走出了那栋楼。");
+            }
+            if (State.HasFlag("ending_tragic"))
+            {
+                return new EndingScreen("结局 · 诀别", "你救下了能救的一切, 除了那个一直站在你身边的人。\n时间合拢的速度比你说出那句话更快。");
+            }
+            if (State.HasFlag("ending_open"))
+            {
+                return new EndingScreen("结局 · 未完成", "链断了。\n没有人知道断口那边是什么, 也没有人再提起那个名字。\n故事在这里停了下来, 像一句被刻意咽回去的话。");
+            }
+            return new EndingScreen("结局 · 归途", "碎片的答案不在过去, 而在你决定怎么过完接下来的每一天。\n你合上了那本借来的书, 把它放回原来的位置。");
+        }
+
+        struct EndingScreen
+        {
+            public string Title;
+            public string Body;
+            public EndingScreen(string title, string body) { Title = title; Body = body; }
         }
 
         static string FormatTime(float seconds)

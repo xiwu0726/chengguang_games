@@ -1,3 +1,5 @@
+#if CG_LEGACY  // 这些子系统是早期生成的脚手架，运行时（Assets/Scripts/Story + Editor）完全不引用它们，
+             // 且存在跨命名空间未 using 的历史编译错误；先整体屏蔽保证出包，需要时加 define 再修。
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -98,7 +100,7 @@ namespace TimeStamp
 
         /// <summary>
         /// 优化输入缓冲
-        * </summary>
+        /// </summary>
         private void OptimizeInputBuffering()
         {
             // 优化输入处理
@@ -177,8 +179,8 @@ namespace TimeStamp
         }
 
         /// <summary>
-        * 获取优化状态
-        * </summary>
+        /// 获取优化状态
+        /// </summary>
         public OptimizationStatus GetStatus()
         {
             return new OptimizationStatus
@@ -204,3 +206,4 @@ namespace TimeStamp
         public List<string> Suggestions { get; set; }
     }
 }
+#endif

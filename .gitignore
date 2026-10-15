@@ -2,12 +2,16 @@
 Library/
 Temp/
 Obj/
+obj/
+bin/
 Build/
 Builds/
 Logs/
 UserSettings/
 MemoryCaptures/
 *.csproj
+# 测试工程的手写 csproj 需要提交（Unity 生成的仍被忽略）
+!tools/**/*.csproj
 *.sln
 *.user
 
@@ -32,6 +36,7 @@ update_log.txt
 # ── 本地工具状态（非项目内容）──
 .agent-teams/
 .memsearch/
+tools/ending-resolver-tests/csharp-results.json
 
 # ── IDE / OS ──
 .vs/

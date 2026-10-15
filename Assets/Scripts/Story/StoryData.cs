@@ -90,6 +90,12 @@ namespace TimeOfFragments.Story
         public string savedAt = "";
         public string chapterLabel = "";
 
+        /// <summary>@ending 路由命中的结局场景 id（与网页版 state.endingId 同口径），未路由时为空。</summary>
+        public string endingId = "";
+
+        /// <summary>命中的结局规则下标；-1 = 未路由或走 fallback（与网页版 resolveEnding 的 index 一致）。</summary>
+        public int endingRule = -1;
+
         public const int InsomniaMin = 0;
         public const int InsomniaMax = 100;
 
@@ -166,6 +172,8 @@ namespace TimeOfFragments.Story
             affection.Clear();
             playSeconds = 0f;
             chapterLabel = "";
+            endingId = "";
+            endingRule = -1;
         }
 
         public string ToJson(bool pretty)

@@ -1,3 +1,5 @@
+#if CG_LEGACY  // 这些子系统是早期生成的脚手架，运行时（Assets/Scripts/Story + Editor）完全不引用它们，
+             // 且存在跨命名空间未 using 的历史编译错误；先整体屏蔽保证出包，需要时加 define 再修。
 using System;
 using UnityEngine;
 
@@ -308,7 +310,7 @@ namespace TimeStamp
 
         /// <summary>
         /// 运行兼容性测试
-        * </summary>
+        /// </summary>
         private void RunCompatibilityTests()
         {
             Debug.Log("\n[兼容性测试] 开始...");
@@ -339,7 +341,7 @@ namespace TimeStamp
 
         /// <summary>
         /// 运行用户体验测试
-        * </summary>
+        /// </summary>
         private void RunUserExperienceTests()
         {
             Debug.Log("\n[用户体验测试] Start...");
@@ -369,8 +371,8 @@ namespace TimeStamp
         }
 
         /// <summary>
-        * 运行Bug修复测试
-        * </summary>
+        /// 运行Bug修复测试
+        /// </summary>
         private void RunBugFixTests()
         {
             Debug.Log("\n[Bug修复测试] Start...");
@@ -402,8 +404,8 @@ namespace TimeStamp
         }
 
         /// <summary>
-        * 生成最终测试报告
-        * </summary>
+        /// 生成最终测试报告
+        /// </summary>
         private void GenerateFinalReport()
         {
             Debug.Log("\n========================================");
@@ -510,13 +512,6 @@ namespace TimeStamp
             Assert.IsTrue(insomniaController.GetCurrentState() == InsomniaState.Light);
         }
 
-        private void Assert.IsTrue(bool condition, string message = "")
-        {
-            if (!condition)
-            {
-                throw new System.Exception(message);
-            }
-        }
     }
 
     /// <summary>
@@ -561,26 +556,12 @@ namespace TimeStamp
             Assert.AreEqual(2150, timeLineController.GetCurrentYear());
         }
 
-        private void Assert.AreEqual(object expected, object actual, string message = "")
-        {
-            if (!object.Equals(expected, actual))
-            {
-                throw new System.Exception(message);
-            }
-        }
 
-        private void Assert.IsNotNull(object obj, string message = "")
-        {
-            if (obj == null)
-            {
-                throw new System.Exception(message);
-            }
-        }
     }
 
     /// <summary>
     /// 记忆碎片系统测试用例
-    * </summary>
+    /// </summary>
     public class MemoryShardSystemTestCase : TestingFramework.ITestCase
     {
         public string TestName => "记忆碎片系统测试";
@@ -629,34 +610,13 @@ namespace TimeStamp
             Assert.AreEqual(0, memoryShardSystem.GetCollectedCount());
         }
 
-        private void Assert.IsTrue(bool condition, string message = "")
-        {
-            if (!condition)
-            {
-                throw new System.Exception(message);
-            }
-        }
 
-        private void Assert.IsNotNull(object obj, string message = "")
-        {
-            if (obj == null)
-            {
-                throw new System.Exception(message);
-            }
-        }
 
-        private void Assert.AreEqual(object expected, object actual, string message = "")
-        {
-            if (!object.Equals(expected, actual))
-            {
-                throw new System.Exception(message);
-            }
-        }
     }
 
     /// <summary>
     /// 对话系统测试用例
-    * </summary>
+    /// </summary>
     public class DialogueSystemTestCase : TestingFramework.ITestCase
     {
         public string TestName => "对话系统测试";
@@ -687,34 +647,13 @@ namespace TimeStamp
             Assert.AreEqual(3, choices.Count);
         }
 
-        private void Assert.AreEqual(object expected, object actual, string message = "")
-        {
-            if (!object.Equals(expected, actual))
-            {
-                throw new System.Exception(message);
-            }
-        }
 
-        private void Assert.IsNotNull(object obj, string message = "")
-        {
-            if (obj == null)
-            {
-                throw new System.Exception(message);
-            }
-        }
 
-        private void Assert.AreEqual(int expected, int actual, string message = "")
-        {
-            if (expected != actual)
-            {
-                throw new System.Exception(message);
-            }
-        }
     }
 
     /// <summary>
     /// 多结局系统测试用例
-    * </summary>
+    /// </summary>
     public class EndingSystemTestCase : TestingFramework.ITestCase
     {
         public string TestName => "多结局系统测试";
@@ -759,26 +698,12 @@ namespace TimeStamp
             Assert.AreEqual(EndingType.Normal, endingManager.GetCurrentEnding());
         }
 
-        private void Assert.AreEqual(object expected, object actual, string message = "")
-        {
-            if (!object.Equals(expected, actual))
-            {
-                throw new System.Exception(message);
-            }
-        }
 
-        private void Assert.IsNotNull(object obj, string message = "")
-        {
-            if (obj == null)
-            {
-                throw new System.Exception(message);
-            }
-        }
     }
 
     /// <summary>
     /// 音频系统测试用例
-    * </summary>
+    /// </summary>
     public class AudioSystemTestCase : TestingFramework.ITestCase
     {
         public string TestName => "音频系统测试";
@@ -816,28 +741,8 @@ namespace TimeStamp
             }
         }
 
-        private void Assert.IsTrue(bool condition, string message = "")
-        {
-            if (!condition)
-            {
-                throw new System.Exception(message);
-            }
-        }
 
-        private void Assert.AreEqual(object expected, object actual, string message = "")
-        {
-            if (!object.Equals(expected, actual))
-            {
-                throw new System.Exception(message);
-            }
-        }
 
-        private void Assert.AreEqual(float expected, float actual, string message = "")
-        {
-            if (Math.Abs(expected - actual) > 0.01f)
-            {
-                throw new System.Exception(message);
-            }
-        }
     }
 }
+#endif
