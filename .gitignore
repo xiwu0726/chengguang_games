@@ -28,6 +28,9 @@ __pycache__/
 # ── 构建产物（大体积 exe 走 GitHub Release 分发，不进 git）──
 dist/
 
+# ── 正式美术出图暂存区（人工审过后再替换 Assets/Resources/Art 里的占位图）──
+art/out/
+
 # ── 运行日志 ──
 logs/
 *.log
